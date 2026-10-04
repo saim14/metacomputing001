@@ -1,0 +1,10 @@
+{
+  "study": "F1-A3", "version": "main-v1",
+  "n_scenarios": 2400, "n_fit": 1200, "n_tune": 400,
+  "scene_seed": 82001, "split_seed": 82002, "noise_seed": 83001,
+  "mismatch_seed": 84002, "bootstrap_seed": 86001, "runtime_seed": 87001,
+  "bootstrap": 4000, "charge": 0.01, "subset_size": 8, "subset_elites": 2,
+  "runtime_cases": 32, "runtime_repeats": 5,
+  "prediction_gain": 0.05, "noninferiority_margin": 0.02,
+  "controller_gain": 0.01, "runtime_reduction": 0.10
+}
