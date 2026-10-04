@@ -1,0 +1,2149 @@
+{
+  "experiment": {
+    "id": "T1.1c-primitive",
+    "name": "Balanced One-hop Retrieval Learning Diagnostic",
+    "version": "0.2.3",
+    "research_object": "Six-layer encoder Transformer on balanced one-hop retrieval with role and pair embeddings"
+  },
+  "hypotheses": {
+    "primary": "The model can learn the equality-based retrieval primitive without token-count leakage.",
+    "attention": "Diagnostic only; no attention-history inference is authorized.",
+    "secondary": "Diagnostic only; no trajectory-history inference is authorized.",
+    "null": "The current model and optimizer cannot reliably learn the retrieval primitive."
+  },
+  "interpretation_boundary": "Probe improvements establish incremental decodability under the stated controls; they do not by themselves establish causal use or metacognition.",
+  "training_and_target_statistics": [
+    {
+      "seed": 101,
+      "layer": 1,
+      "samples": 1600,
+      "current_accuracy": 0.52125,
+      "final_accuracy": 0.52625,
+      "future_flip_rate": 0.3325,
+      "future_correction_rate": 0.16875,
+      "mean_delta_nll": 0.037237126380205154,
+      "median_delta_nll": -0.007898211479187012
+    },
+    {
+      "seed": 101,
+      "layer": 2,
+      "samples": 1600,
+      "current_accuracy": 0.5175,
+      "final_accuracy": 0.52625,
+      "future_flip_rate": 0.20625,
+      "future_correction_rate": 0.1075,
+      "mean_delta_nll": 0.028602125123143196,
+      "median_delta_nll": -0.006342262029647827
+    },
+    {
+      "seed": 101,
+      "layer": 3,
+      "samples": 1600,
+      "current_accuracy": 0.516875,
+      "final_accuracy": 0.52625,
+      "future_flip_rate": 0.168125,
+      "future_correction_rate": 0.08875,
+      "mean_delta_nll": 0.011363539844751358,
+      "median_delta_nll": -0.0048319995403289795
+    },
+    {
+      "seed": 101,
+      "layer": 4,
+      "samples": 1600,
+      "current_accuracy": 0.525625,
+      "final_accuracy": 0.52625,
+      "future_flip_rate": 0.101875,
+      "future_correction_rate": 0.05125,
+      "mean_delta_nll": 0.005564255174249411,
+      "median_delta_nll": -0.0034570693969726562
+    },
+    {
+      "seed": 101,
+      "layer": 5,
+      "samples": 1600,
+      "current_accuracy": 0.5225,
+      "final_accuracy": 0.52625,
+      "future_flip_rate": 0.10125,
+      "future_correction_rate": 0.0525,
+      "mean_delta_nll": 0.0009203837835229933,
+      "median_delta_nll": -0.002675086259841919
+    }
+  ],
+  "run_validity": {
+    "status": "failed",
+    "thresholds": {
+      "minimum_final_accuracy": 0.85,
+      "minimum_future_flip_rate": 0.0,
+      "maximum_future_flip_rate": 1.0,
+      "minimum_valid_layers_per_seed": 0,
+      "minimum_passing_seed_fraction": 1.0
+    },
+    "passing_seed_fraction": 0.0,
+    "seeds": [
+      {
+        "seed": 101,
+        "final_accuracy": 0.52625,
+        "valid_future_flip_layers": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "valid_layer_count": 5,
+        "passed": false
+      }
+    ]
+  },
+  "metric_summary": [
+    {
+      "task": "delta_nll_to_final",
+      "condition": "attention_dimension_matched",
+      "metric": "r2",
+      "n": 5,
+      "mean": -0.0339659088525464,
+      "std": 0.03191255096455235,
+      "ci95_low": -0.07359057447607387,
+      "ci95_high": 0.005658756770981065
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "attention_dimension_matched",
+      "metric": "mae",
+      "n": 5,
+      "mean": 0.11339142038823391,
+      "std": 0.07452217087739835,
+      "ci95_low": 0.020859923741779363,
+      "ci95_high": 0.20592291703468846
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "attention_dimension_matched",
+      "metric": "spearman",
+      "n": 5,
+      "mean": -0.022722940607765158,
+      "std": 0.05851456067934422,
+      "ci95_low": -0.09537836397401646,
+      "ci95_high": 0.04993248275848615
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "current",
+      "metric": "r2",
+      "n": 5,
+      "mean": -0.022546517848968505,
+      "std": 0.03047585909122471,
+      "ci95_low": -0.06038729489687311,
+      "ci95_high": 0.015294259198936098
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "current",
+      "metric": "mae",
+      "n": 5,
+      "mean": 0.11304806545376778,
+      "std": 0.07489216957863339,
+      "ci95_low": 0.02005715474060754,
+      "ci95_high": 0.206038976166928
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "current",
+      "metric": "spearman",
+      "n": 5,
+      "mean": -0.04718412398467771,
+      "std": 0.05844926312323041,
+      "ci95_low": -0.11975846972633182,
+      "ci95_high": 0.025390221756976403
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "current_plus_current_attention",
+      "metric": "r2",
+      "n": 5,
+      "mean": -0.03375000953674316,
+      "std": 0.03180463822517264,
+      "ci95_low": -0.0732406837968353,
+      "ci95_high": 0.0057406647233489705
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "current_plus_current_attention",
+      "metric": "mae",
+      "n": 5,
+      "mean": 0.11338295191526412,
+      "std": 0.074522861406906,
+      "ci95_low": 0.020850597863180234,
+      "ci95_high": 0.20591530596734803
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "current_plus_current_attention",
+      "metric": "spearman",
+      "n": 5,
+      "mean": -0.022754517222942437,
+      "std": 0.058462790918549626,
+      "ci95_low": -0.09534565994101948,
+      "ci95_high": 0.0498366254951346
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "dimension_matched",
+      "metric": "r2",
+      "n": 5,
+      "mean": -0.023841892067184057,
+      "std": 0.030906567994479238,
+      "ci95_low": -0.062217464853965634,
+      "ci95_high": 0.014533680719597524
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "dimension_matched",
+      "metric": "mae",
+      "n": 5,
+      "mean": 0.11311775983763639,
+      "std": 0.0749365576822701,
+      "ci95_low": 0.020071734014241907,
+      "ci95_high": 0.20616378566103088
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "dimension_matched",
+      "metric": "spearman",
+      "n": 5,
+      "mean": -0.046532633136311376,
+      "std": 0.05887505948796656,
+      "ci95_low": -0.1196356748946244,
+      "ci95_high": 0.02657040862200164
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "ordered_attention_history",
+      "metric": "r2",
+      "n": 5,
+      "mean": -0.046228294772244286,
+      "std": 0.04368501784632434,
+      "ci95_low": -0.10047040869291415,
+      "ci95_high": 0.008013819148425576
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "ordered_attention_history",
+      "metric": "mae",
+      "n": 5,
+      "mean": 0.11380760382660067,
+      "std": 0.07456944585918802,
+      "ci95_low": 0.021217407537242133,
+      "ci95_high": 0.2063978001159592
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "ordered_attention_history",
+      "metric": "spearman",
+      "n": 5,
+      "mean": -0.0029827312810822293,
+      "std": 0.06681650495721474,
+      "ci95_low": -0.08594637997225911,
+      "ci95_high": 0.07998091741009465
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "ordered_history",
+      "metric": "r2",
+      "n": 5,
+      "mean": -0.05496864010543869,
+      "std": 0.054423605240350566,
+      "ci95_low": -0.12254447138483571,
+      "ci95_high": 0.012607191173958317
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "ordered_history",
+      "metric": "mae",
+      "n": 5,
+      "mean": 0.11392380326248679,
+      "std": 0.07501784732570041,
+      "ci95_low": 0.020776843015418073,
+      "ci95_high": 0.2070707635095555
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "ordered_history",
+      "metric": "spearman",
+      "n": 5,
+      "mean": -0.009515080603224129,
+      "std": 0.054339197879301165,
+      "ci95_low": -0.07698610630122271,
+      "ci95_high": 0.05795594509477445
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "residual_history",
+      "metric": "r2",
+      "n": 5,
+      "mean": -0.10793354909608484,
+      "std": 0.09783532945121365,
+      "ci95_low": -0.22941215542806126,
+      "ci95_high": 0.013545057235891583
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "residual_history",
+      "metric": "mae",
+      "n": 5,
+      "mean": 0.11494658126724475,
+      "std": 0.07433255123215439,
+      "ci95_low": 0.022650528507641793,
+      "ci95_high": 0.2072426340268477
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "residual_history",
+      "metric": "spearman",
+      "n": 5,
+      "mean": 0.007856031142654162,
+      "std": 0.06558919923370522,
+      "ci95_low": -0.07358371621685152,
+      "ci95_high": 0.08929577850215985
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "r2",
+      "n": 5,
+      "mean": -0.06835085142987145,
+      "std": 0.06256467111427749,
+      "ci95_low": -0.14603515111192877,
+      "ci95_high": 0.009333448252185891
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "mae",
+      "n": 5,
+      "mean": 0.1142987812458878,
+      "std": 0.07389997158620214,
+      "ci95_low": 0.0225398470590195,
+      "ci95_high": 0.20605771543275608
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "spearman",
+      "n": 5,
+      "mean": -0.02632839679784375,
+      "std": 0.053360463668972256,
+      "ci95_low": -0.09258416346306654,
+      "ci95_high": 0.039927369867379034
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "sample_mismatched_history",
+      "metric": "r2",
+      "n": 5,
+      "mean": -0.08858202082544926,
+      "std": 0.05910071229889225,
+      "ci95_low": -0.16196524755518218,
+      "ci95_high": -0.01519879409571634
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "sample_mismatched_history",
+      "metric": "mae",
+      "n": 5,
+      "mean": 0.11593937882221353,
+      "std": 0.07481582306171336,
+      "ci95_low": 0.023043264830501134,
+      "ci95_high": 0.20883549281392594
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "sample_mismatched_history",
+      "metric": "spearman",
+      "n": 5,
+      "mean": -0.039456440933693694,
+      "std": 0.0536454247713359,
+      "ci95_low": -0.10606603354060987,
+      "ci95_high": 0.027153151673222485
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "shuffled_attention_history",
+      "metric": "r2",
+      "n": 5,
+      "mean": -0.05359288307200587,
+      "std": 0.04849516692969281,
+      "ci95_low": -0.1138075859354872,
+      "ci95_high": 0.0066218197914754695
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "shuffled_attention_history",
+      "metric": "mae",
+      "n": 5,
+      "mean": 0.114100904302913,
+      "std": 0.07446994832223904,
+      "ci95_low": 0.021634250523093992,
+      "ci95_high": 0.20656755808273203
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "shuffled_attention_history",
+      "metric": "spearman",
+      "n": 5,
+      "mean": -0.018753186042934678,
+      "std": 0.06482477919624903,
+      "ci95_low": -0.09924378056242543,
+      "ci95_high": 0.06173740847655608
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "shuffled_history",
+      "metric": "r2",
+      "n": 5,
+      "mean": -0.13508933606384396,
+      "std": 0.10346745355047324,
+      "ci95_low": -0.2635611481232868,
+      "ci95_high": -0.006617524004401132
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "shuffled_history",
+      "metric": "mae",
+      "n": 5,
+      "mean": 0.11602606310453752,
+      "std": 0.07454856899608818,
+      "ci95_low": 0.02346178886448551,
+      "ci95_high": 0.20859033734458954
+    },
+    {
+      "task": "delta_nll_to_final",
+      "condition": "shuffled_history",
+      "metric": "spearman",
+      "n": 5,
+      "mean": -0.02705234265708657,
+      "std": 0.03974845841130224,
+      "ci95_low": -0.07640657245050014,
+      "ci95_high": 0.022301887136327008
+    },
+    {
+      "task": "future_correction",
+      "condition": "attention_dimension_matched",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.848238072813316,
+      "std": 0.07124606971847346,
+      "ci95_low": 0.7597743930303721,
+      "ci95_high": 0.9367017525962599
+    },
+    {
+      "task": "future_correction",
+      "condition": "attention_dimension_matched",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.31878621059602547,
+      "std": 0.08925420649047096,
+      "ci95_low": 0.20796247570856297,
+      "ci95_high": 0.42960994548348796
+    },
+    {
+      "task": "future_correction",
+      "condition": "attention_dimension_matched",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.2317495338033233,
+      "std": 0.10089331931269357,
+      "ci95_low": 0.10647393155347515,
+      "ci95_high": 0.35702513605317143
+    },
+    {
+      "task": "future_correction",
+      "condition": "attention_dimension_matched",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.07108881444606271,
+      "std": 0.033665239684678896,
+      "ci95_low": 0.029287898338696293,
+      "ci95_high": 0.11288973055342913
+    },
+    {
+      "task": "future_correction",
+      "condition": "attention_dimension_matched",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.02405797527830448,
+      "std": 0.0032805128513236745,
+      "ci95_low": 0.019984680575171096,
+      "ci95_high": 0.028131269981437862
+    },
+    {
+      "task": "future_correction",
+      "condition": "current",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.854509086157004,
+      "std": 0.0767124997425582,
+      "ci95_low": 0.759257937014454,
+      "ci95_high": 0.9497602352995541
+    },
+    {
+      "task": "future_correction",
+      "condition": "current",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.322150799221956,
+      "std": 0.11479028783695089,
+      "ci95_low": 0.17961983147136665,
+      "ci95_high": 0.4646817669725454
+    },
+    {
+      "task": "future_correction",
+      "condition": "current",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.22726924512361824,
+      "std": 0.10429234208827476,
+      "ci95_low": 0.0977731986642563,
+      "ci95_high": 0.3567652915829802
+    },
+    {
+      "task": "future_correction",
+      "condition": "current",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.07016012560502952,
+      "std": 0.034536599274193884,
+      "ci95_low": 0.027277273665872723,
+      "ci95_high": 0.11304297754418631
+    },
+    {
+      "task": "future_correction",
+      "condition": "current",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.02024139874619008,
+      "std": 0.004166101879150237,
+      "ci95_low": 0.015068500030000181,
+      "ci95_high": 0.025414297462379977
+    },
+    {
+      "task": "future_correction",
+      "condition": "current_plus_current_attention",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8500687232984147,
+      "std": 0.07224604834871477,
+      "ci95_low": 0.760363406051327,
+      "ci95_high": 0.9397740405455023
+    },
+    {
+      "task": "future_correction",
+      "condition": "current_plus_current_attention",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.3241257195452275,
+      "std": 0.08492825892454561,
+      "ci95_low": 0.2186733580084917,
+      "ci95_high": 0.4295780810819633
+    },
+    {
+      "task": "future_correction",
+      "condition": "current_plus_current_attention",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.23068545600159998,
+      "std": 0.10158282463089403,
+      "ci95_low": 0.1045537198215723,
+      "ci95_high": 0.35681719218162766
+    },
+    {
+      "task": "future_correction",
+      "condition": "current_plus_current_attention",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.07089306982859596,
+      "std": 0.0337844342370115,
+      "ci95_low": 0.02894415413681612,
+      "ci95_high": 0.1128419855203758
+    },
+    {
+      "task": "future_correction",
+      "condition": "current_plus_current_attention",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.024755914127123652,
+      "std": 0.0022259810273788675,
+      "ci95_low": 0.021991993624742686,
+      "ci95_high": 0.02751983462950462
+    },
+    {
+      "task": "future_correction",
+      "condition": "dimension_matched",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8608518195721861,
+      "std": 0.07872670714695279,
+      "ci95_low": 0.7630997016106839,
+      "ci95_high": 0.9586039375336884
+    },
+    {
+      "task": "future_correction",
+      "condition": "dimension_matched",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.32619135641493624,
+      "std": 0.11252953452297049,
+      "ci95_low": 0.1864674846631362,
+      "ci95_high": 0.46591522816673625
+    },
+    {
+      "task": "future_correction",
+      "condition": "dimension_matched",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.22485201092315116,
+      "std": 0.1059481305679495,
+      "ci95_low": 0.09330003151993654,
+      "ci95_high": 0.35640399032636577
+    },
+    {
+      "task": "future_correction",
+      "condition": "dimension_matched",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.0703825696025352,
+      "std": 0.034297684090775285,
+      "ci95_low": 0.027796370045253524,
+      "ci95_high": 0.11296876915981686
+    },
+    {
+      "task": "future_correction",
+      "condition": "dimension_matched",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.021849779681146618,
+      "std": 0.00499139474313616,
+      "ci95_low": 0.015652144527770924,
+      "ci95_high": 0.028047414834522312
+    },
+    {
+      "task": "future_correction",
+      "condition": "ordered_attention_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8315681182504704,
+      "std": 0.0636943610988292,
+      "ci95_low": 0.7524811231854638,
+      "ci95_high": 0.910655113315477
+    },
+    {
+      "task": "future_correction",
+      "condition": "ordered_attention_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.28258374742966635,
+      "std": 0.10061795233250193,
+      "ci95_low": 0.15765005844541627,
+      "ci95_high": 0.40751743641391647
+    },
+    {
+      "task": "future_correction",
+      "condition": "ordered_attention_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.24325672636921655,
+      "std": 0.09345738102542873,
+      "ci95_low": 0.1272140609835301,
+      "ci95_high": 0.359299391754903
+    },
+    {
+      "task": "future_correction",
+      "condition": "ordered_attention_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.0743945612852384,
+      "std": 0.03163006894580323,
+      "ci95_low": 0.035120643414531645,
+      "ci95_high": 0.11366847915594516
+    },
+    {
+      "task": "future_correction",
+      "condition": "ordered_attention_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.02698910325772953,
+      "std": 0.007835912819129619,
+      "ci95_low": 0.017259532417152917,
+      "ci95_high": 0.03671867409830614
+    },
+    {
+      "task": "future_correction",
+      "condition": "ordered_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.843312762980706,
+      "std": 0.07260350428697934,
+      "ci95_low": 0.7531636055641311,
+      "ci95_high": 0.9334619203972809
+    },
+    {
+      "task": "future_correction",
+      "condition": "ordered_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.2993343685494251,
+      "std": 0.10402901237356561,
+      "ci95_low": 0.17016528911647474,
+      "ci95_high": 0.4285034479823754
+    },
+    {
+      "task": "future_correction",
+      "condition": "ordered_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.23314584970950394,
+      "std": 0.10000737124778514,
+      "ci95_low": 0.10897029727613089,
+      "ci95_high": 0.357321402142877
+    },
+    {
+      "task": "future_correction",
+      "condition": "ordered_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.07157851290418106,
+      "std": 0.033487774691887656,
+      "ci95_low": 0.029997948689305005,
+      "ci95_high": 0.11315907711905712
+    },
+    {
+      "task": "future_correction",
+      "condition": "ordered_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.02474304307195315,
+      "std": 0.007290318905378382,
+      "ci95_low": 0.01569091655172054,
+      "ci95_high": 0.03379516959218576
+    },
+    {
+      "task": "future_correction",
+      "condition": "residual_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8105821680456445,
+      "std": 0.05480856762218861,
+      "ci95_low": 0.7425283428360565,
+      "ci95_high": 0.8786359932552326
+    },
+    {
+      "task": "future_correction",
+      "condition": "residual_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.24819078871198813,
+      "std": 0.07032877006195572,
+      "ci95_low": 0.160866086888107,
+      "ci95_high": 0.33551549053586927
+    },
+    {
+      "task": "future_correction",
+      "condition": "residual_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.26942347189831944,
+      "std": 0.07882321884731268,
+      "ci95_low": 0.1715515188330749,
+      "ci95_high": 0.367295424963564
+    },
+    {
+      "task": "future_correction",
+      "condition": "residual_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.07902092210534961,
+      "std": 0.029441370795609965,
+      "ci95_low": 0.04246463193067301,
+      "ci95_high": 0.11557721228002621
+    },
+    {
+      "task": "future_correction",
+      "condition": "residual_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.03516286404704312,
+      "std": 0.010365640930745861,
+      "ci95_low": 0.022292220885028628,
+      "ci95_high": 0.048033507209057615
+    },
+    {
+      "task": "future_correction",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8282753906823377,
+      "std": 0.06175287588482449,
+      "ci95_low": 0.7515990679106057,
+      "ci95_high": 0.9049517134540697
+    },
+    {
+      "task": "future_correction",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.2957966413063208,
+      "std": 0.09928264757909326,
+      "ci95_low": 0.17252095216100855,
+      "ci95_high": 0.419072330451633
+    },
+    {
+      "task": "future_correction",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.24742046841706072,
+      "std": 0.09147490349443535,
+      "ci95_low": 0.13383937400885665,
+      "ci95_high": 0.3610015628252648
+    },
+    {
+      "task": "future_correction",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.07426060626997227,
+      "std": 0.03145470831763059,
+      "ci95_low": 0.035204427377969874,
+      "ci95_high": 0.11331678516197467
+    },
+    {
+      "task": "future_correction",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.026757520711187893,
+      "std": 0.011121030222926837,
+      "ci95_low": 0.01294893786044366,
+      "ci95_high": 0.040566103561932125
+    },
+    {
+      "task": "future_correction",
+      "condition": "sample_mismatched_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8348316775930507,
+      "std": 0.06383496991166959,
+      "ci95_low": 0.75557009362731,
+      "ci95_high": 0.9140932615587913
+    },
+    {
+      "task": "future_correction",
+      "condition": "sample_mismatched_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.2890311320229756,
+      "std": 0.06024206990636879,
+      "ci95_low": 0.21423072264296306,
+      "ci95_high": 0.3638315414029881
+    },
+    {
+      "task": "future_correction",
+      "condition": "sample_mismatched_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.2407002571916704,
+      "std": 0.09437576823123452,
+      "ci95_low": 0.12351726347612398,
+      "ci95_high": 0.35788325090721684
+    },
+    {
+      "task": "future_correction",
+      "condition": "sample_mismatched_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.07392156062206011,
+      "std": 0.03223837641211895,
+      "ci95_low": 0.03389232927059058,
+      "ci95_high": 0.11395079197352964
+    },
+    {
+      "task": "future_correction",
+      "condition": "sample_mismatched_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.02497851025927012,
+      "std": 0.0033787126398091226,
+      "ci95_low": 0.020783284414143132,
+      "ci95_high": 0.02917373610439711
+    },
+    {
+      "task": "future_correction",
+      "condition": "shuffled_attention_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8360972862476984,
+      "std": 0.06658557838870222,
+      "ci95_low": 0.7534203707628723,
+      "ci95_high": 0.9187742017325246
+    },
+    {
+      "task": "future_correction",
+      "condition": "shuffled_attention_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.3036065185718707,
+      "std": 0.10717373388987911,
+      "ci95_low": 0.17053275164773718,
+      "ci95_high": 0.43668028549600424
+    },
+    {
+      "task": "future_correction",
+      "condition": "shuffled_attention_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.24294957897879582,
+      "std": 0.09449794681387913,
+      "ci95_low": 0.12561488051582803,
+      "ci95_high": 0.3602842774417636
+    },
+    {
+      "task": "future_correction",
+      "condition": "shuffled_attention_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.07319537586005029,
+      "std": 0.03258729353937437,
+      "ci95_low": 0.03273290667331102,
+      "ci95_high": 0.11365784504678955
+    },
+    {
+      "task": "future_correction",
+      "condition": "shuffled_attention_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.027926303924526726,
+      "std": 0.006841556934150721,
+      "ci95_low": 0.019431388987730454,
+      "ci95_high": 0.036421218861323
+    },
+    {
+      "task": "future_correction",
+      "condition": "shuffled_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8119333365983683,
+      "std": 0.07074182027323711,
+      "ci95_low": 0.7240957651976886,
+      "ci95_high": 0.899770907999048
+    },
+    {
+      "task": "future_correction",
+      "condition": "shuffled_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.27099604947764444,
+      "std": 0.1340684477542254,
+      "ci95_low": 0.10452808460616045,
+      "ci95_high": 0.4374640143491284
+    },
+    {
+      "task": "future_correction",
+      "condition": "shuffled_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.2614117395263271,
+      "std": 0.08758589181180251,
+      "ci95_low": 0.1526594909130421,
+      "ci95_high": 0.37016398813961215
+    },
+    {
+      "task": "future_correction",
+      "condition": "shuffled_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.0763690326082457,
+      "std": 0.030597135373511226,
+      "ci95_low": 0.038377671166789924,
+      "ci95_high": 0.11436039404970147
+    },
+    {
+      "task": "future_correction",
+      "condition": "shuffled_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.033502288941587674,
+      "std": 0.014508295131874733,
+      "ci95_low": 0.015487861201023887,
+      "ci95_high": 0.051516716682151464
+    },
+    {
+      "task": "future_flip",
+      "condition": "attention_dimension_matched",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.9005657693342102,
+      "std": 0.08026043911338294,
+      "ci95_low": 0.8009092716070974,
+      "ci95_high": 1.000222267061323
+    },
+    {
+      "task": "future_flip",
+      "condition": "attention_dimension_matched",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.6220728862788054,
+      "std": 0.14728671898015744,
+      "ci95_low": 0.4391922699075889,
+      "ci95_high": 0.8049535026500219
+    },
+    {
+      "task": "future_flip",
+      "condition": "attention_dimension_matched",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.28188107571213955,
+      "std": 0.15071550809082435,
+      "ci95_low": 0.09474305534477484,
+      "ci95_high": 0.46901909607950426
+    },
+    {
+      "task": "future_flip",
+      "condition": "attention_dimension_matched",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.09246371736205594,
+      "std": 0.05206154436596392,
+      "ci95_low": 0.027820772031950533,
+      "ci95_high": 0.15710666269216134
+    },
+    {
+      "task": "future_flip",
+      "condition": "attention_dimension_matched",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.032925429468441444,
+      "std": 0.0037117915702521145,
+      "ci95_low": 0.028316631506823176,
+      "ci95_high": 0.03753422743005971
+    },
+    {
+      "task": "future_flip",
+      "condition": "current",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.9042195741385667,
+      "std": 0.08160738122343263,
+      "ci95_low": 0.8028906268857405,
+      "ci95_high": 1.0055485213913928
+    },
+    {
+      "task": "future_flip",
+      "condition": "current",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.6361092725147672,
+      "std": 0.12903295746408427,
+      "ci95_low": 0.4758936946498561,
+      "ci95_high": 0.7963248503796784
+    },
+    {
+      "task": "future_flip",
+      "condition": "current",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.27890456551397713,
+      "std": 0.15178428541513128,
+      "ci95_low": 0.09043948282092393,
+      "ci95_high": 0.4673696482070303
+    },
+    {
+      "task": "future_flip",
+      "condition": "current",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.09107366392344912,
+      "std": 0.052842324819486065,
+      "ci95_low": 0.025461251613704064,
+      "ci95_high": 0.1566860762331942
+    },
+    {
+      "task": "future_flip",
+      "condition": "current",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.03489119618789488,
+      "std": 0.00790271036015071,
+      "ci95_low": 0.02507868524546384,
+      "ci95_high": 0.04470370713032592
+    },
+    {
+      "task": "future_flip",
+      "condition": "current_plus_current_attention",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.9012044879913148,
+      "std": 0.08054708347574176,
+      "ci95_low": 0.8011920742791729,
+      "ci95_high": 1.0012169017034567
+    },
+    {
+      "task": "future_flip",
+      "condition": "current_plus_current_attention",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.623324369241337,
+      "std": 0.14637759958707677,
+      "ci95_low": 0.4415725736905777,
+      "ci95_high": 0.8050761647920964
+    },
+    {
+      "task": "future_flip",
+      "condition": "current_plus_current_attention",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.2811611823192141,
+      "std": 0.1511474116063645,
+      "ci95_low": 0.09348688290590557,
+      "ci95_high": 0.46883548173252265
+    },
+    {
+      "task": "future_flip",
+      "condition": "current_plus_current_attention",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.09215151552259204,
+      "std": 0.052244963228775254,
+      "ci95_low": 0.02728082559394232,
+      "ci95_high": 0.15702220545124176
+    },
+    {
+      "task": "future_flip",
+      "condition": "current_plus_current_attention",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.03321296544053089,
+      "std": 0.00498758304199532,
+      "ci95_low": 0.027020063139233684,
+      "ci95_high": 0.03940586774182809
+    },
+    {
+      "task": "future_flip",
+      "condition": "dimension_matched",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.9096695596680625,
+      "std": 0.08527645383266,
+      "ci95_low": 0.8037848570495632,
+      "ci95_high": 1.0155542622865619
+    },
+    {
+      "task": "future_flip",
+      "condition": "dimension_matched",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.6600814308736649,
+      "std": 0.1476109683441905,
+      "ci95_low": 0.4767982057406881,
+      "ci95_high": 0.8433646560066417
+    },
+    {
+      "task": "future_flip",
+      "condition": "dimension_matched",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.2708615927365049,
+      "std": 0.15925294709140433,
+      "ci95_low": 0.0731229417252593,
+      "ci95_high": 0.4686002437477505
+    },
+    {
+      "task": "future_flip",
+      "condition": "dimension_matched",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.08809536689942149,
+      "std": 0.055100204453583386,
+      "ci95_low": 0.019679426735740288,
+      "ci95_high": 0.15651130706310268
+    },
+    {
+      "task": "future_flip",
+      "condition": "dimension_matched",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.031748756445593045,
+      "std": 0.007940025482033696,
+      "ci95_low": 0.021889912659731316,
+      "ci95_high": 0.041607600231454774
+    },
+    {
+      "task": "future_flip",
+      "condition": "ordered_attention_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8977626028824574,
+      "std": 0.07918213253173882,
+      "ci95_low": 0.7994449996167982,
+      "ci95_high": 0.9960802061481165
+    },
+    {
+      "task": "future_flip",
+      "condition": "ordered_attention_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.6202323569181315,
+      "std": 0.14371050248987954,
+      "ci95_low": 0.4417921998126757,
+      "ci95_high": 0.7986725140235873
+    },
+    {
+      "task": "future_flip",
+      "condition": "ordered_attention_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.28558560798104593,
+      "std": 0.1481449591120186,
+      "ci95_low": 0.10163934573628375,
+      "ci95_high": 0.4695318702258081
+    },
+    {
+      "task": "future_flip",
+      "condition": "ordered_attention_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.0929850787485581,
+      "std": 0.051648951213105226,
+      "ci95_low": 0.028854435482262714,
+      "ci95_high": 0.1571157220148535
+    },
+    {
+      "task": "future_flip",
+      "condition": "ordered_attention_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.03497541456387257,
+      "std": 0.007522598465797533,
+      "ci95_low": 0.025634874875948906,
+      "ci95_high": 0.044315954251796234
+    },
+    {
+      "task": "future_flip",
+      "condition": "ordered_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.9064021828218733,
+      "std": 0.08263744559804179,
+      "ci95_low": 0.8037942417192627,
+      "ci95_high": 1.009010123924484
+    },
+    {
+      "task": "future_flip",
+      "condition": "ordered_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.6508172703179362,
+      "std": 0.11839507982976234,
+      "ci95_low": 0.5038103621288597,
+      "ci95_high": 0.7978241785070128
+    },
+    {
+      "task": "future_flip",
+      "condition": "ordered_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.2733844633682624,
+      "std": 0.15394400625196852,
+      "ci95_low": 0.0822377330659379,
+      "ci95_high": 0.4645311936705869
+    },
+    {
+      "task": "future_flip",
+      "condition": "ordered_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.08887159084654184,
+      "std": 0.053809311053073586,
+      "ci95_low": 0.02205850654379249,
+      "ci95_high": 0.15568467514929119
+    },
+    {
+      "task": "future_flip",
+      "condition": "ordered_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.033350878390553264,
+      "std": 0.010648573141298278,
+      "ci95_low": 0.02012892848876363,
+      "ci95_high": 0.0465728282923429
+    },
+    {
+      "task": "future_flip",
+      "condition": "residual_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.892217296508172,
+      "std": 0.0753547496644623,
+      "ci95_low": 0.798652016756152,
+      "ci95_high": 0.9857825762601921
+    },
+    {
+      "task": "future_flip",
+      "condition": "residual_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.6101707952337465,
+      "std": 0.10321308325605688,
+      "ci95_low": 0.482014825611093,
+      "ci95_high": 0.7383267648564
+    },
+    {
+      "task": "future_flip",
+      "condition": "residual_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.30150050471224904,
+      "std": 0.13760025717727697,
+      "ci95_low": 0.13064721923164513,
+      "ci95_high": 0.47235379019285295
+    },
+    {
+      "task": "future_flip",
+      "condition": "residual_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.09666314525622537,
+      "std": 0.04942983666219425,
+      "ci95_low": 0.03528789663568625,
+      "ci95_high": 0.1580383938767645
+    },
+    {
+      "task": "future_flip",
+      "condition": "residual_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.03651271393578531,
+      "std": 0.008909371649571956,
+      "ci95_low": 0.02545026791189453,
+      "ci95_high": 0.047575159959676094
+    },
+    {
+      "task": "future_flip",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8920856735540156,
+      "std": 0.07585570384976273,
+      "ci95_low": 0.7978983770253585,
+      "ci95_high": 0.9862729700826727
+    },
+    {
+      "task": "future_flip",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.5960990247687186,
+      "std": 0.14583456358431537,
+      "ci95_low": 0.4150214974723164,
+      "ci95_high": 0.7771765520651207
+    },
+    {
+      "task": "future_flip",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.2927333437793884,
+      "std": 0.14335251618619793,
+      "ci95_low": 0.11473768537906409,
+      "ci95_high": 0.47072900217971275
+    },
+    {
+      "task": "future_flip",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.09586291284386343,
+      "std": 0.04987146858534503,
+      "ci95_low": 0.0339393057638905,
+      "ci95_high": 0.15778651992383635
+    },
+    {
+      "task": "future_flip",
+      "condition": "sample_mismatched_attention_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.029025196385422704,
+      "std": 0.005721260039884735,
+      "ci95_low": 0.021921313769535995,
+      "ci95_high": 0.03612907900130941
+    },
+    {
+      "task": "future_flip",
+      "condition": "sample_mismatched_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8952383660208054,
+      "std": 0.07887148519821922,
+      "ci95_low": 0.7973064823653155,
+      "ci95_high": 0.9931702496762953
+    },
+    {
+      "task": "future_flip",
+      "condition": "sample_mismatched_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.6181229452837402,
+      "std": 0.15644872366972556,
+      "ci95_low": 0.42386619753811294,
+      "ci95_high": 0.8123796930293675
+    },
+    {
+      "task": "future_flip",
+      "condition": "sample_mismatched_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.2878408002577945,
+      "std": 0.14693073350302102,
+      "ci95_low": 0.10540219823742167,
+      "ci95_high": 0.47027940227816734
+    },
+    {
+      "task": "future_flip",
+      "condition": "sample_mismatched_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.09403590294619552,
+      "std": 0.05131496745926939,
+      "ci95_low": 0.03031995528302303,
+      "ci95_high": 0.157751850609368
+    },
+    {
+      "task": "future_flip",
+      "condition": "sample_mismatched_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.030439072548033335,
+      "std": 0.005574303224198109,
+      "ci95_low": 0.023517660919475377,
+      "ci95_high": 0.03736048417659129
+    },
+    {
+      "task": "future_flip",
+      "condition": "shuffled_attention_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8960102209055902,
+      "std": 0.07823619880277877,
+      "ci95_low": 0.7988671494958675,
+      "ci95_high": 0.993153292315313
+    },
+    {
+      "task": "future_flip",
+      "condition": "shuffled_attention_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.6221796169204308,
+      "std": 0.1349787423747463,
+      "ci95_low": 0.45458137199088744,
+      "ci95_high": 0.7897778618499741
+    },
+    {
+      "task": "future_flip",
+      "condition": "shuffled_attention_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.286063316192878,
+      "std": 0.1477756675378331,
+      "ci95_low": 0.10257559000062194,
+      "ci95_high": 0.46955104238513407
+    },
+    {
+      "task": "future_flip",
+      "condition": "shuffled_attention_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.09300438693620214,
+      "std": 0.051622349748347764,
+      "ci95_low": 0.028906773750995582,
+      "ci95_high": 0.15710200012140868
+    },
+    {
+      "task": "future_flip",
+      "condition": "shuffled_attention_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.03398208225207973,
+      "std": 0.012566801003773612,
+      "ci95_low": 0.01837833787310311,
+      "ci95_high": 0.049585826631056346
+    },
+    {
+      "task": "future_flip",
+      "condition": "shuffled_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean": 0.8842225643754231,
+      "std": 0.0736550208956078,
+      "ci95_low": 0.792767776642401,
+      "ci95_high": 0.9756773521084453
+    },
+    {
+      "task": "future_flip",
+      "condition": "shuffled_history",
+      "metric": "pr_auc",
+      "n": 5,
+      "mean": 0.5825441294656475,
+      "std": 0.1445728305554092,
+      "ci95_low": 0.4030332506465828,
+      "ci95_high": 0.7620550082847122
+    },
+    {
+      "task": "future_flip",
+      "condition": "shuffled_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean": 0.3004841922347455,
+      "std": 0.13847813195758257,
+      "ci95_low": 0.12854088124450508,
+      "ci95_high": 0.4724275032249859
+    },
+    {
+      "task": "future_flip",
+      "condition": "shuffled_history",
+      "metric": "brier",
+      "n": 5,
+      "mean": 0.09767386475048707,
+      "std": 0.04881562169788064,
+      "ci95_low": 0.037061264738294186,
+      "ci95_high": 0.15828646476267996
+    },
+    {
+      "task": "future_flip",
+      "condition": "shuffled_history",
+      "metric": "ece_10",
+      "n": 5,
+      "mean": 0.03304695299534214,
+      "std": 0.005828404819274905,
+      "ci95_low": 0.025810032564291173,
+      "ci95_high": 0.040283873426393106
+    }
+  ],
+  "paired_effect_summary": [
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "attention_dimension_matched",
+      "metric": "mae",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.00041618343836676426,
+      "ci95_low": -0.0013812328416389853,
+      "ci95_high": 0.0005488659649054567,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "attention_dimension_matched",
+      "metric": "r2",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.012262385919697883,
+      "ci95_low": -0.031578390081102144,
+      "ci95_high": 0.00705361824170638,
+      "positive_fraction": 0.2
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "attention_dimension_matched",
+      "metric": "spearman",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.01974020932668293,
+      "ci95_low": -0.006606532762197255,
+      "ci95_high": 0.04608695141556311,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "current_plus_current_attention",
+      "metric": "mae",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.0004246519113365349,
+      "ci95_low": -0.0013959314327244338,
+      "ci95_high": 0.0005466276100513641,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "current_plus_current_attention",
+      "metric": "r2",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.012478285235501119,
+      "ci95_low": -0.03174276716627424,
+      "ci95_high": 0.006786196695272003,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "current_plus_current_attention",
+      "metric": "spearman",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.01977178594186021,
+      "ci95_low": -0.006634294166787194,
+      "ci95_high": 0.04617786605050762,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "sample_mismatched_attention_history",
+      "metric": "mae",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.0004911774192871254,
+      "ci95_low": -0.0014895801616930874,
+      "ci95_high": 0.002471935000267338,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "sample_mismatched_attention_history",
+      "metric": "r2",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.02212255665762717,
+      "ci95_low": -0.030734455892625585,
+      "ci95_high": 0.07497956920787993,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "sample_mismatched_attention_history",
+      "metric": "spearman",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.02334566551676152,
+      "ci95_low": -0.02141056135080831,
+      "ci95_high": 0.06810189238433136,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "shuffled_attention_history",
+      "metric": "mae",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.0002933004763123456,
+      "ci95_low": -0.0004914312654152771,
+      "ci95_high": 0.0010780322180399683,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "shuffled_attention_history",
+      "metric": "r2",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.007364588299761587,
+      "ci95_low": -0.009321390967889627,
+      "ci95_high": 0.0240505675674128,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "attention_history",
+      "comparator": "shuffled_attention_history",
+      "metric": "spearman",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.01577045476185245,
+      "ci95_low": -0.0033889359425675475,
+      "ci95_high": 0.034929845466272445,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "current",
+      "metric": "mae",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.000875737808719007,
+      "ci95_low": -0.0023058000097134963,
+      "ci95_high": 0.0005543243922754822,
+      "positive_fraction": 0.2
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "current",
+      "metric": "r2",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.03242212225647019,
+      "ci95_low": -0.0673773989292792,
+      "ci95_high": 0.0025331544163388203,
+      "positive_fraction": 0.2
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "current",
+      "metric": "spearman",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.03766904338145357,
+      "ci95_low": 0.0004333169621720742,
+      "ci95_high": 0.07490476980073507,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "dimension_matched",
+      "metric": "mae",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.0008060434248503834,
+      "ci95_low": -0.002174872441535601,
+      "ci95_high": 0.0005627855918348343,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "dimension_matched",
+      "metric": "r2",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.031126748038254638,
+      "ci95_low": -0.06536208332808927,
+      "ci95_high": 0.003108587251579982,
+      "positive_fraction": 0.2
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "dimension_matched",
+      "metric": "spearman",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.037017552533087236,
+      "ci95_low": 0.00047028996335238965,
+      "ci95_high": 0.07356481510282209,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "sample_mismatched_history",
+      "metric": "mae",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.0020155755597267427,
+      "ci95_low": -0.00028755148933427843,
+      "ci95_high": 0.004318702608787764,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "sample_mismatched_history",
+      "metric": "r2",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.03361338072001056,
+      "ci95_low": -0.007128343059129634,
+      "ci95_high": 0.07435510449915075,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "sample_mismatched_history",
+      "metric": "spearman",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.02994136033046956,
+      "ci95_low": 0.0024170471833398627,
+      "ci95_high": 0.05746567347759926,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "shuffled_history",
+      "metric": "mae",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.002102259842050731,
+      "ci95_low": 9.522367207665276e-05,
+      "ci95_high": 0.00410929601202481,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "shuffled_history",
+      "metric": "r2",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.08012069595840528,
+      "ci95_low": -0.015891810625682484,
+      "ci95_high": 0.17613320254249304,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "delta_nll_to_final",
+      "feature_family": "state_history",
+      "comparator": "shuffled_history",
+      "metric": "spearman",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.017537262053862444,
+      "ci95_low": -0.019909798796700736,
+      "ci95_high": 0.05498432290442562,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "attention_history",
+      "comparator": "attention_dimension_matched",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.011507192565893254,
+      "ci95_low": -0.02272512144994704,
+      "ci95_high": -0.00028926368183947,
+      "positive_fraction": 0.0
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "attention_history",
+      "comparator": "attention_dimension_matched",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.0166699545628455,
+      "ci95_low": -0.03558728324170439,
+      "ci95_high": 0.0022473741160133863,
+      "positive_fraction": 0.0
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "attention_history",
+      "comparator": "current_plus_current_attention",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.012571270367616572,
+      "ci95_low": -0.02477788195156439,
+      "ci95_high": -0.00036465878366875176,
+      "positive_fraction": 0.0
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "attention_history",
+      "comparator": "current_plus_current_attention",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.018500605047944284,
+      "ci95_low": -0.03955365775951142,
+      "ci95_high": 0.002552447663622847,
+      "positive_fraction": 0.0
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "attention_history",
+      "comparator": "sample_mismatched_attention_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.004163742047844143,
+      "ci95_low": -0.01734830849464265,
+      "ci95_high": 0.025675792590330936,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "attention_history",
+      "comparator": "sample_mismatched_attention_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.003292727568132636,
+      "ci95_low": -0.015520463386719804,
+      "ci95_high": 0.022105918522985078,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "attention_history",
+      "comparator": "shuffled_attention_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.00030714739042069227,
+      "ci95_low": -0.009244870006100234,
+      "ci95_high": 0.008630575225258848,
+      "positive_fraction": 0.2
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "attention_history",
+      "comparator": "shuffled_attention_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.0045291679972280455,
+      "ci95_low": -0.011578760929216638,
+      "ci95_high": 0.002520424934760548,
+      "positive_fraction": 0.0
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "state_history",
+      "comparator": "current",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.005876604585885681,
+      "ci95_low": -0.02026033024232382,
+      "ci95_high": 0.008507121070552457,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "state_history",
+      "comparator": "current",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.011196323176297974,
+      "ci95_low": -0.037988691352891776,
+      "ci95_high": 0.015596045000295832,
+      "positive_fraction": 0.2
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "state_history",
+      "comparator": "dimension_matched",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.008293838786352791,
+      "ci95_low": -0.02829569051669094,
+      "ci95_high": 0.011708012943985357,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "state_history",
+      "comparator": "dimension_matched",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.01753905659148012,
+      "ci95_low": -0.056163775542096346,
+      "ci95_high": 0.021085662359136108,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "state_history",
+      "comparator": "sample_mismatched_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.007554407482166459,
+      "ci95_low": -0.015322675776995226,
+      "ci95_high": 0.030431490741328143,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "state_history",
+      "comparator": "sample_mismatched_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.008481085387655374,
+      "ci95_low": -0.029381420586469136,
+      "ci95_high": 0.04634359136177988,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "state_history",
+      "comparator": "shuffled_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.028265889816823254,
+      "ci95_low": -0.014851038814736244,
+      "ci95_high": 0.07138281844838275,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "future_correction",
+      "feature_family": "state_history",
+      "comparator": "shuffled_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.031379426382337615,
+      "ci95_low": -0.01008750146475177,
+      "ci95_high": 0.07284635422942701,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "attention_history",
+      "comparator": "attention_dimension_matched",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.0037045322689063962,
+      "ci95_low": -0.013734009809454297,
+      "ci95_high": 0.0063249452716415055,
+      "positive_fraction": 0.2
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "attention_history",
+      "comparator": "attention_dimension_matched",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.0028031664517529143,
+      "ci95_low": -0.015860041060879237,
+      "ci95_high": 0.01025370815737341,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "attention_history",
+      "comparator": "current_plus_current_attention",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.004424425661831826,
+      "ci95_low": -0.014886561895840079,
+      "ci95_high": 0.006037710572176426,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "attention_history",
+      "comparator": "current_plus_current_attention",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.0034418851088574122,
+      "ci95_low": -0.016577581812715313,
+      "ci95_high": 0.00969381159500049,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "attention_history",
+      "comparator": "sample_mismatched_attention_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.007147735798342436,
+      "ci95_low": -0.00035927170434462124,
+      "ci95_high": 0.014654743301029494,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "attention_history",
+      "comparator": "sample_mismatched_attention_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.005676929328441949,
+      "ci95_low": -0.0030590510626496816,
+      "ci95_high": 0.01441290971953358,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "attention_history",
+      "comparator": "shuffled_attention_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.00047770821183210077,
+      "ci95_low": -0.003816239466448221,
+      "ci95_high": 0.004771655890112423,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "attention_history",
+      "comparator": "shuffled_attention_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.0017523819768670678,
+      "ci95_low": -0.010291022357066556,
+      "ci95_high": 0.01379578631080069,
+      "positive_fraction": 0.4
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "state_history",
+      "comparator": "current",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.005520102145714673,
+      "ci95_low": -0.002721187719352769,
+      "ci95_high": 0.013761392010782116,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "state_history",
+      "comparator": "current",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.002182608683306664,
+      "ci95_low": -0.0044079548129812495,
+      "ci95_high": 0.008773172179594578,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "state_history",
+      "comparator": "dimension_matched",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.0025228706317575677,
+      "ci95_low": -0.02930807552876162,
+      "ci95_high": 0.024262334265246488,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "state_history",
+      "comparator": "dimension_matched",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": -0.003267376846189074,
+      "ci95_low": -0.016252602547491897,
+      "ci95_high": 0.00971784885511375,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "state_history",
+      "comparator": "sample_mismatched_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.014456336889532111,
+      "ci95_low": -0.014015924593465748,
+      "ci95_high": 0.04292859837252997,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "state_history",
+      "comparator": "sample_mismatched_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.011163816801067905,
+      "ci95_low": -0.012743303871282198,
+      "ci95_high": 0.03507093747341801,
+      "positive_fraction": 0.6
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "state_history",
+      "comparator": "shuffled_history",
+      "metric": "log_loss",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.027099728866482996,
+      "ci95_low": -0.005840603439890828,
+      "ci95_high": 0.06004006117285682,
+      "positive_fraction": 0.8
+    },
+    {
+      "task": "future_flip",
+      "feature_family": "state_history",
+      "comparator": "shuffled_history",
+      "metric": "roc_auc",
+      "n": 5,
+      "mean_effect_favoring_ordered": 0.022179618446450267,
+      "ci95_low": -0.0035431126317608426,
+      "ci95_high": 0.04790234952466138,
+      "positive_fraction": 0.8
+    }
+  ],
+  "elapsed_seconds": 98.53878750599961
+}

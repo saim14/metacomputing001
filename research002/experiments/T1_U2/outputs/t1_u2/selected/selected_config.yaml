@@ -1,0 +1,62 @@
+experiment:
+  id: T1-U2-U2-A-low-aux
+  name: Bounded Weight-Tied Transformer Learning Study
+  version: 0.6.0
+  research_object: Identify a learnable recurrent Transformer configuration without
+    using trajectory-probe performance for model selection.
+hypotheses:
+  learning: Lower intermediate supervision, additional shared-block capacity, or an
+    explicit recurrent time signal can overcome the T1-U accuracy plateau on shortcut-free
+    balanced retrieval.
+  null: None of the bounded candidates reaches the preregistered validation advancement
+    threshold or independent learning-validity threshold.
+seeds:
+- 311
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 4
+  chain_hops: 1
+  train_samples: 8000
+  validation_samples: 1800
+  probe_samples: 4000
+model:
+  n_layers: 6
+  n_classes: 2
+  layer_norm_epsilon: 1.0e-05
+  use_structure_embeddings: true
+  tie_layers: true
+  d_model: 32
+  n_heads: 2
+  d_ff: 64
+  use_step_embeddings: false
+training:
+  batch_size: 96
+  validation_batch_size: 600
+  learning_rate: 0.0005
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.0
+  log_every: 200
+  curriculum:
+  - name: learning
+    steps: 2000
+    data_overrides:
+      chain_hops: 1
+    auxiliary_loss_weight: 0.02
+    learning_rate: 0.0012
+  - name: final_only_finetune
+    steps: 400
+    data_overrides:
+      chain_hops: 1
+    auxiliary_loss_weight: 0.0
+    learning_rate: 0.0005
+probes:
+  test_fraction: 0.4
+  minimum_class_count: 30
+  ridge_alpha: 1.0
+validity:
+  minimum_final_accuracy: 0.95
+  minimum_future_flip_rate: 0.05
+  maximum_future_flip_rate: 0.45
+  minimum_valid_layers_per_seed: 2
+  require_selection_and_replication_seed: true

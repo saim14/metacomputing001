@@ -1,0 +1,172 @@
+experiment:
+  id: T1-U5
+  name: Weight-Tied Transformer Residual-Scale Calibration Study
+  version: 0.9.0
+  research_object: >-
+    Determine whether a residual scale between 0.5 and 1.0 preserves the
+    multi-seed learning stability found in T1-U4 while restoring at least two
+    nonsaturated intermediate decision steps for every exposed development
+    seed.
+
+hypotheses:
+  joint_development: >-
+    At least one residual scale in {0.6, 0.7, 0.8}, under the fixed T1-U4
+    area-matched taper, satisfies both the learning and trajectory-validity
+    gates for all exposed development seeds.
+  sample_holdout: >-
+    The development-selected scale also satisfies the same joint gate on a
+    separately generated, fixed task-sample holdout for every seed.
+  null: >-
+    No candidate clears the joint development gate, or the selected candidate
+    fails the sealed task-sample gate.
+
+scientific_boundary:
+  development_seeds_are_exposed: true
+  sample_holdout_is_not_fresh_initialization: true
+  note: >-
+    Seeds 503, 607, and 709 and the seed-times-100-plus-37 trajectory samples
+    were observed in T1-U4. T1-U5 is a bounded development calibration. The
+    seed-times-100-plus-83 holdout tests sample stability only; even a pass
+    requires separately preregistered fresh-initialization confirmation before
+    any trajectory probe is fitted.
+
+seeds: [503, 607, 709]
+
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 4
+  chain_hops: 1
+  train_samples: 8000
+  validation_samples: 1800
+  probe_samples: 4000
+
+base_model:
+  d_model: 32
+  n_heads: 2
+  d_ff: 64
+  n_layers: 6
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+  tie_layers: true
+  use_step_embeddings: false
+
+base_training:
+  batch_size: 96
+  validation_batch_size: 600
+  learning_rate: 0.0005
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.0
+  log_every: 200
+  curriculum:
+    - name: full_auxiliary
+      steps: 1700
+      data_stream_id: 0
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.02
+      learning_rate: 0.0012
+    - name: taper_015
+      steps: 200
+      data_stream_id: 0
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.015
+      learning_rate: 0.0012
+    - name: taper_010_pre_transition
+      steps: 100
+      data_stream_id: 0
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.01
+      learning_rate: 0.0012
+    - name: taper_010_post_transition
+      steps: 100
+      data_stream_id: 1
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.01
+      learning_rate: 0.0005
+    - name: taper_005
+      steps: 200
+      data_stream_id: 1
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.005
+      learning_rate: 0.0005
+    - name: final_only
+      steps: 1700
+      data_stream_id: 1
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.0
+      learning_rate: 0.0005
+
+candidates:
+  - id: U5-R-scale-0.5
+    train: false
+    residual_scale: 0.5
+    source_candidate_id: U4-D-combined
+    source_history: outputs/t1_u4/screening_training_history.csv
+    source_trajectory_statistics: outputs/t1_u4/independent_trajectory_statistics.csv
+    rationale: Closed T1-U4 combined reference; not eligible for selection.
+  - id: U5-A-scale-0.6
+    train: true
+    residual_scale: 0.6
+    rationale: Smallest upward adjustment from the stable T1-U4 residual scale.
+  - id: U5-B-scale-0.7
+    train: true
+    residual_scale: 0.7
+    rationale: Midpoint calibration between the stable and unscaled regimes.
+  - id: U5-C-scale-0.8
+    train: true
+    residual_scale: 0.8
+    rationale: Largest bounded adjustment before the unstable full-scale regime.
+
+validation_screen:
+  tail_validation_points: 4
+  minimum_seed_tail_mean_validation_accuracy: 0.90
+  minimum_mean_tail_validation_accuracy: 0.93
+
+development_joint_gate:
+  minimum_final_accuracy: 0.95
+  minimum_future_flip_rate: 0.05
+  maximum_future_flip_rate: 0.45
+  minimum_valid_layers_per_seed: 2
+  minimum_passing_seed_fraction: 1.0
+
+selection:
+  eligibility: >-
+    Trainable candidates must pass the validation screen and the development
+    joint gate for every seed.
+  ranking:
+    - minimum_development_final_accuracy_descending
+    - mean_development_final_accuracy_descending
+    - minimum_valid_layer_count_descending
+    - mean_valid_layer_count_descending
+    - minimum_seed_tail_mean_validation_accuracy_descending
+    - residual_scale_ascending
+    - candidate_id_ascending
+  no_feasible_candidate_rule: >-
+    If no trainable candidate is eligible, no candidate is selected and the
+    sealed task-sample holdout remains unopened.
+
+sealed_sample:
+  seed_formula: seed_times_100_plus_offset
+  seed_offset: 83
+  samples: 4000
+  minimum_final_accuracy: 0.95
+  minimum_future_flip_rate: 0.05
+  maximum_future_flip_rate: 0.45
+  minimum_valid_layers_per_seed: 2
+  minimum_passing_seed_fraction: 1.0
+  rule: >-
+    Open only for the development-selected candidate after every candidate and
+    seed has completed. This holdout changes task samples but not model
+    initialization and therefore cannot substitute for fresh-seed confirmation.
+
+execution:
+  max_workers: 2
+  note: >-
+    Two isolated workers are used to stay within the runtime memory envelope.
+    Worker count does not change seeds, data streams, updates, or selection.
+
+probes:
+  policy: >-
+    No state-history, motion, or attention-history probe is fitted in T1-U5.
+    A passing result advances only to fresh-initialization confirmation.

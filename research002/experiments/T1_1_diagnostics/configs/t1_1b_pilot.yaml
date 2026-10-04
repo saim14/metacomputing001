@@ -1,0 +1,61 @@
+experiment:
+  id: T1.1b-pilot
+  name: Structurally Encoded Multi-hop Trajectory and Attention Pilot
+  version: 0.2.2
+  research_object: Six-layer encoder Transformer on balanced three-hop pointer chasing with role and pair embeddings
+
+hypotheses:
+  primary: >-
+    Ordered layer-wise state history improves prediction of future decision
+    changes beyond current, dimension-matched, shuffled, and sample-mismatched
+    controls in a learned multi-hop computation.
+  attention: >-
+    Ordered per-head attention-summary history improves prediction beyond the
+    current state plus current attention and matched attention-history controls.
+  secondary: >-
+    Ordered state and attention history improve prediction of future reduction
+    in negative log-likelihood under their respective controls.
+  null: >-
+    Neither earlier states nor earlier attention summaries add stable predictive
+    information after the current state and current attention are available.
+
+seeds: [101]
+
+data:
+  task_type: chain_lookup
+  key_count: 12
+  pair_count: 6
+  chain_hops: 3
+  train_samples: 8000
+  validation_samples: 1600
+  probe_samples: 3200
+
+model:
+  d_model: 32
+  n_heads: 4
+  d_ff: 64
+  n_layers: 6
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+
+training:
+  steps: 1800
+  batch_size: 80
+  validation_batch_size: 320
+  learning_rate: 0.0012
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.05
+  log_every: 100
+
+probes:
+  test_fraction: 0.40
+  minimum_class_count: 24
+  ridge_alpha: 1.0
+
+validity:
+  minimum_final_accuracy: 0.85
+  minimum_future_flip_rate: 0.05
+  maximum_future_flip_rate: 0.45
+  minimum_valid_layers_per_seed: 3
+  minimum_passing_seed_fraction: 1.0

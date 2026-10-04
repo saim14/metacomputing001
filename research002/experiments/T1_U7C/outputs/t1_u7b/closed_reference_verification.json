@@ -1,0 +1,22 @@
+{
+  "fixed_fields_verified": [
+    "development_seeds",
+    "fresh_confirmation_seeds",
+    "data",
+    "model",
+    "development_gate",
+    "fresh_confirmation",
+    "training_noncurriculum_fields",
+    "training_t1_u7_prefix"
+  ],
+  "base_updates": 4000,
+  "extension_updates": 2000,
+  "extension_stream_ids": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "total_updates": 6000,
+  "passed": true
+}

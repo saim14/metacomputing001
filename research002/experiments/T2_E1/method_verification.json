@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "ridge path matches independent scikit-learn reference on collinear data",
+    "changing held-out labels cannot affect predictions or hyperparameter selection",
+    "changing held-out features cannot affect training normalization",
+    "shuffle alters order while preserving the past multiset",
+    "current/future features cannot enter past-history controls",
+    "counterfactual members map to the same split-family key"
+  ]
+}

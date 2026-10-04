@@ -1,0 +1,299 @@
+{
+  "audit_date_utc": "2026-09-05T02:53:12.995766+00:00",
+  "status": "recovered_complete_outputs_verified",
+  "training_performed_during_recovery": false,
+  "probes_fitted_during_recovery": false,
+  "confirmation_seeds_instantiated_during_recovery": [],
+  "direct_tests_passed": [
+    "test_t1_controls.py::test_attention_controls_match_ordered_dimension",
+    "test_t1_controls.py::test_chain_task_balances_value_token_counts",
+    "test_t1_controls.py::test_constant_residual_schedule_matches_scalar_scale",
+    "test_t1_controls.py::test_default_residual_scale_preserves_prior_forward_pass",
+    "test_t1_controls.py::test_residual_scale_changes_dynamics_without_changing_parameters",
+    "test_t1_controls.py::test_residual_schedule_order_changes_dynamics_not_parameters",
+    "test_t1_controls.py::test_step_embeddings_parameterize_recurrent_time",
+    "test_t1_controls.py::test_structural_embeddings_enter_transformer_state",
+    "test_t1_controls.py::test_tied_transformer_reuses_one_block",
+    "test_t1_controls.py::test_two_hop_counterfactual_suite_is_balanced_and_matched",
+    "test_t1_controls.py::test_two_hop_edge_corruptions_remove_the_required_path",
+    "test_t1_controls.py::test_u7b_only_appends_preregistered_fresh_streams",
+    "test_t1_controls.py::test_u7c_only_changes_extension_auxiliary_weight",
+    "test_tiny_autograd.py::test_broadcast_matmul_gradient",
+    "test_tiny_autograd.py::test_cross_entropy_gradient_sums_to_zero_per_row",
+    "test_tiny_autograd.py::test_softmax_rows_sum_to_one"
+  ],
+  "direct_test_count": 16,
+  "original_output_files_unchanged": true,
+  "original_output_sha256": {
+    "outputs/t1_u7c/advancement_decision.json": "a57c75ede3fad748ddfcb792c72bde345b7d475fe2e9aaf5b248795d8d27cd30",
+    "outputs/t1_u7c/closed_reference_verification.json": "74ce526fa10b631a3d2e31876e78f9d3727f12da46ec18e5a4a0b238541b72c3",
+    "outputs/t1_u7c/development/seed_1009/checkpoints/t1_transformer_seed_1009.npz": "cb7aff2d1839446640dbb8c5f9353e5a8e82cdfcbb257dcf7f330e877e747897",
+    "outputs/t1_u7c/development/seed_1009/trajectory/t1_u7_development_trajectory_seed_1009.npz": "8a2c10bab3e063581d14c77a19447ca797bf89c862d1279af2dea2901bc2ec6c",
+    "outputs/t1_u7c/development/seed_503/checkpoints/t1_transformer_seed_503.npz": "62f3133d1fe8c95dcf18d2a7e13e41a78d94c1ed42a308e11d4ea6a60b34ed56",
+    "outputs/t1_u7c/development/seed_503/trajectory/t1_u7_development_trajectory_seed_503.npz": "7789ddb7de5089b04fca828b7967adb405a144c8664a8bba6b5154818ef51f5f",
+    "outputs/t1_u7c/development/seed_607/checkpoints/t1_transformer_seed_607.npz": "24463a8f639c14ed0cf13463052f0ed89e84440282a126c58c45ed3474ce622a",
+    "outputs/t1_u7c/development/seed_607/trajectory/t1_u7_development_trajectory_seed_607.npz": "7d5c246b29aaf4aa0f2fc7560fd2e227e04448024a94b2e71a1ce8176da1ec4d",
+    "outputs/t1_u7c/development/seed_709/checkpoints/t1_transformer_seed_709.npz": "f2dc29b67c48718f36c80ce1e130d8bdd69f04d11b810f8040b6e534f7d2aaf8",
+    "outputs/t1_u7c/development/seed_709/trajectory/t1_u7_development_trajectory_seed_709.npz": "fe78a535d1e1459e5f4e42427549870e9fbe583d1276f57833f032266ab98d26",
+    "outputs/t1_u7c/development/seed_811/checkpoints/t1_transformer_seed_811.npz": "59baaf596fa5e801b99c6032819640e3571a8e65f6ae3ff665902753709bacb8",
+    "outputs/t1_u7c/development/seed_811/trajectory/t1_u7_development_trajectory_seed_811.npz": "7de4bc458f226b9375ea3452a126e87dc19cacb62f51a896b9bf588cc0e1478c",
+    "outputs/t1_u7c/development/seed_907/checkpoints/t1_transformer_seed_907.npz": "45b67d9544d4513ac0470ce7d0eff7242a216d1ca2c8b95c467ecba0417d69b3",
+    "outputs/t1_u7c/development/seed_907/trajectory/t1_u7_development_trajectory_seed_907.npz": "42923a4ca38db778b5dc1138df79f4525fd2a4b46e312987ef353897773e8371",
+    "outputs/t1_u7c/development_causal_metrics.csv": "4cfa3a5c3afc333f1eded49ae113461c7defec7b28ef1c9a0845497f5853a5f0",
+    "outputs/t1_u7c/development_seed_gate.csv": "71899e37aec621f9ed8393f9c46ebdf0b04a8f2c5a4328f95677035fdc9ce2b1",
+    "outputs/t1_u7c/development_training_history.csv": "11ebc0ddea7a96ae9a8cb6a4e9ffecb6ba4c2a19246ea66dd7a49fb62288fba8",
+    "outputs/t1_u7c/development_trajectory_value_statistics.csv": "b2202f38e13164f0a4659b1e5d7ddaf957b85f34e4635e5fa06070df6f4c43a8",
+    "outputs/t1_u7c/environment.json": "d800a527ddb78a0757b2f8ca6574afdde2cdcd400fcbd77b199719330ed39cb5",
+    "outputs/t1_u7c/paired_development_effects.csv": "a9f44291afb2b498b5a5ff149a5fc5d7c6ac705c333bfce7f314f8edfbf0cf3c",
+    "outputs/t1_u7c/preregistered_protocol.yaml": "7e4b1cfd6b618ad29c49cc958af8dd138ccb3a006961ef220da645a8469f937c",
+    "outputs/t1_u7c/summary.json": "e9d6740d914582b4bba9c8efdbb833723bffdd24b42f3a86192c816310d78c26",
+    "outputs/t1_u7c/t1_u7c_training_signal_repair.png": "81ce87546727296ce7b9d0ce687cb278966d7b7a50673802754127ff54ee8364"
+  },
+  "protocol_configuration_verification": {
+    "fixed_fields_verified": [
+      "data",
+      "model",
+      "development_gate",
+      "fresh_confirmation",
+      "training_noncurriculum_fields",
+      "training_phase_count",
+      "training_phase_names",
+      "training_phase_steps",
+      "training_stream_ids",
+      "training_data_overrides",
+      "training_learning_rates",
+      "training_t1_u7b_prefix"
+    ],
+    "exposed_development_seeds": [
+      503,
+      607,
+      709,
+      811,
+      907,
+      1009
+    ],
+    "new_fresh_confirmation_seeds": [
+      1103,
+      1201,
+      1301
+    ],
+    "prefix_updates": 4000,
+    "intervention_updates": 2000,
+    "intervention_stream_ids": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "reference_extension_auxiliary_loss_weight": 0.0,
+    "intervention_auxiliary_loss_weight": 0.005,
+    "total_updates": 6000,
+    "changed_fields": [
+      "training.curriculum.extension.auxiliary_loss_weight"
+    ],
+    "passed": true
+  },
+  "seeds": [
+    {
+      "seed": 503,
+      "logged_rows": 44,
+      "final_update": 6000,
+      "prefix_logged_rows_exactly_equal_to_u7b": 28,
+      "checkpoint_sha256": "62f3133d1fe8c95dcf18d2a7e13e41a78d94c1ed42a308e11d4ea6a60b34ed56",
+      "trajectory_sha256": "7789ddb7de5089b04fca828b7967adb405a144c8664a8bba6b5154818ef51f5f",
+      "checkpoint_trajectory_max_absolute_difference": 0.0,
+      "original_clean_examples_reproduced": true,
+      "original_causal_metrics_reproduced": true,
+      "gate_recomputed": {
+        "evaluation_phase": "development",
+        "seed": 503,
+        "final_accuracy": 0.992,
+        "counterfactual_pair_accuracy": 0.9875,
+        "first_edge_corrupted_accuracy": 0.4985,
+        "second_edge_corrupted_accuracy": 0.4945,
+        "valid_value_steps": [
+          1,
+          2,
+          3
+        ],
+        "valid_value_step_count": 3,
+        "accuracy_gate_passed": true,
+        "counterfactual_gate_passed": true,
+        "first_edge_gate_passed": true,
+        "second_edge_gate_passed": true,
+        "value_gate_passed": true,
+        "passed": true
+      }
+    },
+    {
+      "seed": 607,
+      "logged_rows": 44,
+      "final_update": 6000,
+      "prefix_logged_rows_exactly_equal_to_u7b": 28,
+      "checkpoint_sha256": "24463a8f639c14ed0cf13463052f0ed89e84440282a126c58c45ed3474ce622a",
+      "trajectory_sha256": "7d5c246b29aaf4aa0f2fc7560fd2e227e04448024a94b2e71a1ce8176da1ec4d",
+      "checkpoint_trajectory_max_absolute_difference": 0.0,
+      "original_clean_examples_reproduced": true,
+      "original_causal_metrics_reproduced": true,
+      "gate_recomputed": {
+        "evaluation_phase": "development",
+        "seed": 607,
+        "final_accuracy": 0.9975,
+        "counterfactual_pair_accuracy": 0.9975,
+        "first_edge_corrupted_accuracy": 0.4965,
+        "second_edge_corrupted_accuracy": 0.4965,
+        "valid_value_steps": [
+          1,
+          2
+        ],
+        "valid_value_step_count": 2,
+        "accuracy_gate_passed": true,
+        "counterfactual_gate_passed": true,
+        "first_edge_gate_passed": true,
+        "second_edge_gate_passed": true,
+        "value_gate_passed": true,
+        "passed": true
+      }
+    },
+    {
+      "seed": 709,
+      "logged_rows": 44,
+      "final_update": 6000,
+      "prefix_logged_rows_exactly_equal_to_u7b": 28,
+      "checkpoint_sha256": "f2dc29b67c48718f36c80ce1e130d8bdd69f04d11b810f8040b6e534f7d2aaf8",
+      "trajectory_sha256": "fe78a535d1e1459e5f4e42427549870e9fbe583d1276f57833f032266ab98d26",
+      "checkpoint_trajectory_max_absolute_difference": 0.0,
+      "original_clean_examples_reproduced": true,
+      "original_causal_metrics_reproduced": true,
+      "gate_recomputed": {
+        "evaluation_phase": "development",
+        "seed": 709,
+        "final_accuracy": 1.0,
+        "counterfactual_pair_accuracy": 0.998,
+        "first_edge_corrupted_accuracy": 0.494,
+        "second_edge_corrupted_accuracy": 0.509,
+        "valid_value_steps": [
+          1,
+          2,
+          3
+        ],
+        "valid_value_step_count": 3,
+        "accuracy_gate_passed": true,
+        "counterfactual_gate_passed": true,
+        "first_edge_gate_passed": true,
+        "second_edge_gate_passed": true,
+        "value_gate_passed": true,
+        "passed": true
+      }
+    },
+    {
+      "seed": 811,
+      "logged_rows": 44,
+      "final_update": 6000,
+      "prefix_logged_rows_exactly_equal_to_u7b": 28,
+      "checkpoint_sha256": "59baaf596fa5e801b99c6032819640e3571a8e65f6ae3ff665902753709bacb8",
+      "trajectory_sha256": "7de4bc458f226b9375ea3452a126e87dc19cacb62f51a896b9bf588cc0e1478c",
+      "checkpoint_trajectory_max_absolute_difference": 0.0,
+      "original_clean_examples_reproduced": true,
+      "original_causal_metrics_reproduced": true,
+      "gate_recomputed": {
+        "evaluation_phase": "development",
+        "seed": 811,
+        "final_accuracy": 0.7,
+        "counterfactual_pair_accuracy": 0.583,
+        "first_edge_corrupted_accuracy": 0.5085,
+        "second_edge_corrupted_accuracy": 0.5105,
+        "valid_value_steps": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "valid_value_step_count": 4,
+        "accuracy_gate_passed": false,
+        "counterfactual_gate_passed": false,
+        "first_edge_gate_passed": true,
+        "second_edge_gate_passed": true,
+        "value_gate_passed": true,
+        "passed": false
+      }
+    },
+    {
+      "seed": 907,
+      "logged_rows": 44,
+      "final_update": 6000,
+      "prefix_logged_rows_exactly_equal_to_u7b": 28,
+      "checkpoint_sha256": "45b67d9544d4513ac0470ce7d0eff7242a216d1ca2c8b95c467ecba0417d69b3",
+      "trajectory_sha256": "42923a4ca38db778b5dc1138df79f4525fd2a4b46e312987ef353897773e8371",
+      "checkpoint_trajectory_max_absolute_difference": 0.0,
+      "original_clean_examples_reproduced": true,
+      "original_causal_metrics_reproduced": true,
+      "gate_recomputed": {
+        "evaluation_phase": "development",
+        "seed": 907,
+        "final_accuracy": 0.73375,
+        "counterfactual_pair_accuracy": 0.6135,
+        "first_edge_corrupted_accuracy": 0.4915,
+        "second_edge_corrupted_accuracy": 0.51,
+        "valid_value_steps": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "valid_value_step_count": 4,
+        "accuracy_gate_passed": false,
+        "counterfactual_gate_passed": false,
+        "first_edge_gate_passed": true,
+        "second_edge_gate_passed": true,
+        "value_gate_passed": true,
+        "passed": false
+      }
+    },
+    {
+      "seed": 1009,
+      "logged_rows": 44,
+      "final_update": 6000,
+      "prefix_logged_rows_exactly_equal_to_u7b": 28,
+      "checkpoint_sha256": "cb7aff2d1839446640dbb8c5f9353e5a8e82cdfcbb257dcf7f330e877e747897",
+      "trajectory_sha256": "8a2c10bab3e063581d14c77a19447ca797bf89c862d1279af2dea2901bc2ec6c",
+      "checkpoint_trajectory_max_absolute_difference": 0.0,
+      "original_clean_examples_reproduced": true,
+      "original_causal_metrics_reproduced": true,
+      "gate_recomputed": {
+        "evaluation_phase": "development",
+        "seed": 1009,
+        "final_accuracy": 0.711,
+        "counterfactual_pair_accuracy": 0.6115,
+        "first_edge_corrupted_accuracy": 0.502,
+        "second_edge_corrupted_accuracy": 0.505,
+        "valid_value_steps": [
+          1,
+          2,
+          3
+        ],
+        "valid_value_step_count": 3,
+        "accuracy_gate_passed": false,
+        "counterfactual_gate_passed": false,
+        "first_edge_gate_passed": true,
+        "second_edge_gate_passed": true,
+        "value_gate_passed": true,
+        "passed": false
+      }
+    }
+  ],
+  "decision": {
+    "development_passed": false,
+    "development_passing_fraction": 0.5,
+    "fresh_confirmation_opened": false,
+    "fresh_confirmation_passed": false,
+    "trajectory_probes_fitted": false,
+    "advance_to_t1_u8": false
+  },
+  "interpretation_cautions": [
+    "Protocol validator preserves data fields, but moving 811/907/1009 from fresh confirmation to development changes the active evaluation offsets from 83/89 to 37/43. Their historical differences are paired by model seed, not by evaluation example. Original measurements are preserved.",
+    "Model seed also controls training data and minibatch randomness; between-seed differences do not isolate weight initialization.",
+    "Checkpoints contain final model weights, not optimizer or RNG states. No mid-training resume was needed or attempted.",
+    "Corruption controls test the specified edge dependencies; chance performance does not exclude every possible shortcut."
+  ]
+}

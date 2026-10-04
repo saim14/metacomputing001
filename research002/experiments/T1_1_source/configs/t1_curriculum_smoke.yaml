@@ -1,0 +1,47 @@
+experiment:
+  id: T1-curriculum-smoke
+  name: Curriculum Pipeline Smoke Test
+  version: 0.2.5
+  research_object: Pipeline validation only
+hypotheses:
+  primary: Pipeline validation only.
+  attention: Pipeline validation only.
+  secondary: Pipeline validation only.
+  null: Pipeline validation only.
+seeds: [7]
+data:
+  task_type: chain_lookup
+  key_count: 6
+  pair_count: 5
+  chain_hops: 2
+  train_samples: 120
+  validation_samples: 60
+  probe_samples: 120
+model:
+  d_model: 16
+  n_heads: 2
+  d_ff: 32
+  n_layers: 3
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+training:
+  batch_size: 20
+  validation_batch_size: 40
+  learning_rate: 0.002
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.2
+  log_every: 2
+  curriculum:
+    - name: one_hop
+      steps: 2
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.25
+    - name: two_hop
+      steps: 2
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.10
+probes:
+  test_fraction: 0.40
+  minimum_class_count: 4
+  ridge_alpha: 1.0

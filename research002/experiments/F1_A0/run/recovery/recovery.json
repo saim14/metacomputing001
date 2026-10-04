@@ -1,0 +1,13 @@
+{
+  "derived_record": "planning_3137.npz",
+  "old_bytes": 1324075,
+  "new_bytes": 9819324,
+  "old_sha256": "d0e87ebe024004e0cb887ecbae0f42c082c21f8ad6314b3b5de4653abe0281bd",
+  "new_sha256": "54392119b909366596c2748dbc6e92e103a782e5c50a95f181b3b71439f7f2aa",
+  "entire_original_is_exact_prefix": true,
+  "evaluation_outcomes_exactly_preserved": true,
+  "other_records_unchanged": true,
+  "additional_model_fits": 0,
+  "additional_observer_fits": 0,
+  "method": "Replay identical six-round planner from frozen weights, scenarios and fixed noise; no new data or selection."
+}

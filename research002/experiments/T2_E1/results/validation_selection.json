@@ -1,0 +1,4706 @@
+[
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.9703085202386945,
+      0.9702944558262129,
+      0.9701565289467271,
+      0.9690129795533609,
+      0.9667698840796155
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.9703090066126998,
+      0.970299302775166,
+      0.9702034426565486,
+      0.969351653719369,
+      0.9660973188139512
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.961981086657517,
+      0.9619435702890021,
+      0.9615856696264287,
+      0.9591379772806904,
+      0.9544421118651246
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.948072702874873,
+      0.9480119370793573,
+      0.9474718936669434,
+      0.9449538573846483,
+      0.9453354295142447
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.948072702874873,
+      0.9480119370793573,
+      0.9474718936669434,
+      0.9449538573846483,
+      0.9453354295142447
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.9811939259718868,
+      0.9811698855798495,
+      0.9809354458229612,
+      0.9790223661930939,
+      0.9734229629379035
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.948078015748128,
+      0.948064315310257,
+      0.9479299279983664,
+      0.9468142400419063,
+      0.9447359575441483
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.822836609162665,
+      0.8225978443969839,
+      0.820363869473618,
+      0.8073605377299736,
+      0.8030342190134442
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.8228376596360786,
+      0.8226082415896022,
+      0.8204579260516183,
+      0.8077733545608177,
+      0.802649201111043
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.8191397974651619,
+      0.8188931306474635,
+      0.8165815482086255,
+      0.8028793774805473,
+      0.7946335248265826
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.8247994557625856,
+      0.8243250228269252,
+      0.8201174674730853,
+      0.7997686352489219,
+      0.7871145660857812
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.8247994557625856,
+      0.8243250228269252,
+      0.8201174674730853,
+      0.7997686352489219,
+      0.7871145660857812
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.8361137988368477,
+      0.8358443670000877,
+      0.833324311767558,
+      0.8187062340889895,
+      0.8127725424681662
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.8248246831934987,
+      0.8245725771956453,
+      0.8222064334408862,
+      0.8080268449875178,
+      0.7980791404607923
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.4101173341642609,
+      0.4101168811245337,
+      0.4101132600743794,
+      0.41015324624686306,
+      0.41265090324396164
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.41011735977518193,
+      0.4101171310927017,
+      0.410115038997956,
+      0.41011192055479556,
+      0.4109501623306074
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.38688343886685805,
+      0.38687666231946044,
+      0.3868357616273035,
+      0.3872708145142165,
+      0.39289291822552674
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.36713255166517655,
+      0.36720063365773276,
+      0.3678712866249673,
+      0.37160260444387583,
+      0.381848245099577
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.3761452959034118,
+      0.3761488257598301,
+      0.3761914152667345,
+      0.3769780226602457,
+      0.3850922309790336
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.4167200062938515,
+      0.41670961954098146,
+      0.4166146052789601,
+      0.41609116794973594,
+      0.41683415717290084
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.3671254270860178,
+      0.367129124168574,
+      0.367166861344625,
+      0.36760144751727397,
+      0.372457534181084
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.35029555588236905,
+      0.35023553746878605,
+      0.3496921115990096,
+      0.3471675585043134,
+      0.3516717978783116
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.35029638347278014,
+      0.3502436885513658,
+      0.34976258310047476,
+      0.3474031425643229,
+      0.3510117225683666
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.343311039912054,
+      0.34324993679534394,
+      0.34270696923447547,
+      0.3405356542125037,
+      0.34549028235476315
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.3301502278169285,
+      0.3301553655758822,
+      0.3302805184355389,
+      0.3301420671988077,
+      0.338124437247729
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.3400282620361052,
+      0.3398386047583829,
+      0.338261754356111,
+      0.3325084607839385,
+      0.3382206500881675
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.35640447213495946,
+      0.35632748444996926,
+      0.3556308218645492,
+      0.3522717173028619,
+      0.3548366042594174
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.3301438858004293,
+      0.33008916048340203,
+      0.32959977352153785,
+      0.3276333762283872,
+      0.33561829682141064
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.10057667533650588,
+      0.1005777730140469,
+      0.10058898445356357,
+      0.1007187097541547,
+      0.10210237228018762
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.10057657372853278,
+      0.1005767547749005,
+      0.10057858254452373,
+      0.10059846945460267,
+      0.10088281459970594
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.0937298359204951,
+      0.09372618968721304,
+      0.09369556498459872,
+      0.09368136913981609,
+      0.09512987824498469
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.08465506683992893,
+      0.08464045555097557,
+      0.08529778942360605,
+      0.08870277796306032,
+      0.09468657502937569
+    ],
+    "selected_alpha": 0.1
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.09603538612018331,
+      0.09603875593518317,
+      0.09607195497252576,
+      0.09635302344326531,
+      0.09843902025601876
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.10286209455597789,
+      0.1028521247576159,
+      0.10277478057107531,
+      0.10260164485344177,
+      0.1035902622337197
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.0846616683831405,
+      0.08465762610306587,
+      0.08462804093349453,
+      0.08477726785598837,
+      0.08785236302740619
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.09828292055959503,
+      0.09826710198495837,
+      0.09812788590885488,
+      0.09764982514165893,
+      0.09934374094303931
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.0982831198964654,
+      0.09826904080732703,
+      0.09814252036833554,
+      0.09761841397154074,
+      0.09901887559476
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.10135284234102462,
+      0.10133187123759665,
+      0.1011447056829989,
+      0.10030251308703725,
+      0.10011127237762754
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.08937234739534179,
+      0.08921133994293434,
+      0.0890957367823702,
+      0.09079792343422896,
+      0.09526273453677085
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.09599347442299808,
+      0.09597838101718886,
+      0.09585459995657777,
+      0.09572773290564555,
+      0.09825845779376008
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.10004346440806812,
+      0.10000822604291251,
+      0.09971484494369248,
+      0.09879532557186613,
+      0.10031490314610146
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.08939702104585255,
+      0.08937777995071984,
+      0.08920634648627847,
+      0.08854240939675102,
+      0.09041622243837721
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.009968204075416381,
+      0.009968040019012213,
+      0.00996646376380652,
+      0.009955451250474211,
+      0.009943805971779738
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.009968218090034708,
+      0.009968179535650329,
+      0.009967797106214185,
+      0.009964261822452594,
+      0.009945104332144274
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.010898859487757852,
+      0.010898405522321953,
+      0.010888753835815891,
+      0.010696415232721992,
+      0.01007325988981817
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.006965459535425254,
+      0.006945382152671317,
+      0.006930321580861754,
+      0.0069655748210198445,
+      0.007549007443344767
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.009863299390797355,
+      0.009861566673469263,
+      0.00984562568553134,
+      0.009758014915217807,
+      0.009639890686922791
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.010467070129079312,
+      0.010438746195752824,
+      0.010371217714841934,
+      0.010276140517354107,
+      0.010154258938960355
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.006972646127223203,
+      0.006971701553272882,
+      0.006965348337903632,
+      0.006951108973557004,
+      0.006931589267783013
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.012154151170946951,
+      0.012146609617639916,
+      0.012078806150209233,
+      0.011725642902513296,
+      0.011060521230493548
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.012154307489120502,
+      0.012148143409167908,
+      0.012091698990799277,
+      0.011774525038546913,
+      0.011136283956636102
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.01295732896332674,
+      0.012947528383028865,
+      0.01285991106812089,
+      0.012396577757959626,
+      0.011420289277205911
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.008940953059761536,
+      0.008918201202016125,
+      0.00891978522489252,
+      0.008685699295523805,
+      0.008676783174934893
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.012196005995801834,
+      0.01218189839657196,
+      0.01208096480742439,
+      0.011710180637852754,
+      0.010937518116293225
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.012692321978586957,
+      0.012666708787121951,
+      0.012527388632727168,
+      0.012056596255019657,
+      0.011261172048208035
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 503,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.008950405026319767,
+      0.008943821294454268,
+      0.008886631131437707,
+      0.008616809787503048,
+      0.008178062787448277
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.12107696609876407,
+      0.12103836849574863,
+      0.12067121991241928,
+      0.11812107236484674,
+      0.1122700541901123
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.1210788684568333,
+      0.12105726152432146,
+      0.1208482827106703,
+      0.11925053943270417,
+      0.11436292352278767
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.10367307781458295,
+      0.10360977491405361,
+      0.10306449991817936,
+      0.10058781051953897,
+      0.09714418041458883
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.11198638215339757,
+      0.11175033234801603,
+      0.11012068425279364,
+      0.10726207607373395,
+      0.10633164245928337
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.11198638215339757,
+      0.11175033234801603,
+      0.11012068425279364,
+      0.10726207607373395,
+      0.10633164245928337
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.12326411474355208,
+      0.12321989384750383,
+      0.12281432123453617,
+      0.12017976117617264,
+      0.11397944675591204
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.1120093176229549,
+      0.11196925148785843,
+      0.11158643594757242,
+      0.10887125706477818,
+      0.10272962288552914
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.09617785717448088,
+      0.0960395400730074,
+      0.09513019363590085,
+      0.09343093556911927,
+      0.09236349056708136
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.0961788912748752,
+      0.09604927608054435,
+      0.09519385112849901,
+      0.09365333170228435,
+      0.09249960331605685
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.09692120230442879,
+      0.09675463009737664,
+      0.09565284478683292,
+      0.0937600431918675,
+      0.09265269700883891
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.09258133781682341,
+      0.09230277833401253,
+      0.0910704057023896,
+      0.0904260739251001,
+      0.09054953885865714
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.09258133781682341,
+      0.09230277833401253,
+      0.0910704057023896,
+      0.0904260739251001,
+      0.09054953885865714
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.09756018686225637,
+      0.09740078055328726,
+      0.0963424282827091,
+      0.09420260106485995,
+      0.09274132497694905
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.09260550461239499,
+      0.09251190816885302,
+      0.09193639104664747,
+      0.09106692169404583,
+      0.09019884180919994
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.03175099423889288,
+      0.031750818391313315,
+      0.03174798201752185,
+      0.03169414092795444,
+      0.0314732407114118
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.03175102469866599,
+      0.03175113342331273,
+      0.03175196877972975,
+      0.03174685528335837,
+      0.031626697913947135
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.03141606171679617,
+      0.03140429361633565,
+      0.03131776163857132,
+      0.031176492430036607,
+      0.03125817828228296
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.02874474191306244,
+      0.028596990611492408,
+      0.028599211244568098,
+      0.029135093191171895,
+      0.030279283720947035
+    ],
+    "selected_alpha": 0.1
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.02956453444948997,
+      0.02955333523250825,
+      0.02950987428872587,
+      0.029809589384338375,
+      0.03095810107268246
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.032600473278579185,
+      0.032582637820412125,
+      0.03245656937112745,
+      0.03206066353103407,
+      0.03149680448982023
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.028773553049556172,
+      0.028774156953613114,
+      0.02877638023467277,
+      0.0287100445451679,
+      0.02864483523915094
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.034348344015133085,
+      0.034293798033466716,
+      0.033891005131657444,
+      0.03272090899644169,
+      0.03191508669860352
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.034348810741769126,
+      0.03429818409743315,
+      0.033919153744721535,
+      0.03280049252920723,
+      0.03197709029304557
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.033968441534311805,
+      0.033916103990478993,
+      0.03352428738783606,
+      0.03231466392253358,
+      0.03159534396604531
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.03131404252158577,
+      0.031186674326504123,
+      0.031034603513273296,
+      0.030830524053776013,
+      0.031249492363748792
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.03200943207334885,
+      0.03196750032782842,
+      0.03165681643781592,
+      0.03111462992782816,
+      0.03165960653168951
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.03448469122872801,
+      0.03442121240823171,
+      0.033950412247566474,
+      0.032599226700333966,
+      0.03173257781378383
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.03134629022973965,
+      0.03131234017482769,
+      0.03105539649034764,
+      0.030162707442009006,
+      0.02947313410112902
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.0099469681466479,
+      0.00994709995708452,
+      0.009947294840087549,
+      0.00992762881780373,
+      0.009875541191442402
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.00994696564059302,
+      0.009947087951374863,
+      0.009948172638310503,
+      0.009951488485339761,
+      0.00992912129586609
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.010694644698945783,
+      0.010688096413895605,
+      0.010636308226331805,
+      0.010390777680581614,
+      0.01013979302376147
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.008986907212992055,
+      0.009033355700012407,
+      0.009078708883360345,
+      0.009201739966666555,
+      0.009516527410493492
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.010001435184832895,
+      0.010004874934537646,
+      0.009977497239365626,
+      0.009846495602560207,
+      0.009955069446566663
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.010356130080379538,
+      0.010329980725293977,
+      0.010232839918521319,
+      0.010084877061505418,
+      0.009973074025193977
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.008979100990809251,
+      0.008992857637852873,
+      0.009024556092593866,
+      0.008958592913462713,
+      0.00896178729234186
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.011130655745733672,
+      0.011113770222611438,
+      0.010986065129205089,
+      0.010544353779387677,
+      0.010135190960193543
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.011130957055786334,
+      0.011116644313524987,
+      0.011006542386251351,
+      0.010605022545180207,
+      0.01019485716468308
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.011928071895910879,
+      0.011911121240381935,
+      0.01177617625239377,
+      0.011303411031605471,
+      0.010709042521473224
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.01018567111269007,
+      0.01019602754467481,
+      0.010163894686664687,
+      0.009977752421699935,
+      0.009823326271345212
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.011248802613434628,
+      0.011214266704806037,
+      0.011002824656808212,
+      0.010526131363562626,
+      0.01021445072430733
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.011472850317925594,
+      0.011437783411404159,
+      0.011222183714644078,
+      0.010663104106724821,
+      0.010213155385126751
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.010239274051354323,
+      0.010225786423136374,
+      0.010032652916322583,
+      0.009537081071478657,
+      0.009247391232272232
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.00154060699051919,
+      0.0015405278023318003,
+      0.001540304109779854,
+      0.0015494532039353867,
+      0.0016303825736940602
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.0015406166272301889,
+      0.0015406165454407434,
+      0.0015406264931085208,
+      0.0015414031631257946,
+      0.001556128508353939
+    ],
+    "selected_alpha": 0.1
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.0032391610306341675,
+      0.0032137438891892615,
+      0.00305234939714398,
+      0.0026338629423932718,
+      0.0021621252061542547
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.00183383172815765,
+      0.001749188849246549,
+      0.0015685989243113968,
+      0.0015098773817844994,
+      0.0017267784506531899
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.0016525785653241,
+      0.0016476290673253522,
+      0.0016276988162398302,
+      0.0015959716192441775,
+      0.0016462363080882564
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.0015635420273179433,
+      0.0015648065775060115,
+      0.0015610833430002322,
+      0.0015591191935796819,
+      0.0016340284370860417
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.001989592427744444,
+      0.001959670110499549,
+      0.0018749399757748456,
+      0.0018440207790516847,
+      0.0018752624851440037
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.0014646486658839114,
+      0.0014620634876649741,
+      0.0014515277034715718,
+      0.0014591694759271414,
+      0.001570974366692022
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.0014647343198064195,
+      0.0014627907724926014,
+      0.0014538276691886715,
+      0.001457988640861644,
+      0.0015500282699621188
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.0015796558444235403,
+      0.00157637063713225,
+      0.001561932121290212,
+      0.00154679093002781,
+      0.0016116862660460918
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.0015433319118078684,
+      0.0014941921877334315,
+      0.001395842176237522,
+      0.0014154202750463942,
+      0.001681063901615918
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.0015455892230310216,
+      0.0015281494867812934,
+      0.001499744110136575,
+      0.0014945307113946036,
+      0.0015946746347409375
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.00151286691925192,
+      0.0015053400351184134,
+      0.0014825785508752079,
+      0.0014755289028567174,
+      0.0015771933112784286
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 607,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.0016500643896253258,
+      0.001637343585675212,
+      0.0015835554911443795,
+      0.001607258941400079,
+      0.0017512352704032027
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.25404804831547123,
+      0.25404738843371377,
+      0.2540422070887888,
+      0.2540819641148781,
+      0.2554878014935391
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.2540481420905476,
+      0.254048314008505,
+      0.2540502711002767,
+      0.2540862854923589,
+      0.2546822238402698
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.23938426851938044,
+      0.23937142999342356,
+      0.23925621970604147,
+      0.2387759544112551,
+      0.23981943621672194
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.24484100005733983,
+      0.24472559226566515,
+      0.24382020107749294,
+      0.24191332022590697,
+      0.24691326755362009
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.24484100005733983,
+      0.24472559226566515,
+      0.24382020107749294,
+      0.24191332022590697,
+      0.24691326755362009
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.25364484316731883,
+      0.25363620949586146,
+      0.25355853634656783,
+      0.2532526546497895,
+      0.254656937819457
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.24485361341222867,
+      0.24484859544479723,
+      0.24480041317961437,
+      0.2444617493507663,
+      0.24441369774244293
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.21592495070802123,
+      0.21586171935934703,
+      0.21531262687863395,
+      0.21307713154053318,
+      0.21514437011824736
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.21592546791233283,
+      0.2158667726175378,
+      0.21535327476837765,
+      0.21314296147811174,
+      0.21443356535204935
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.2115809423668732,
+      0.21151109476573723,
+      0.2109041762176087,
+      0.20849981942311213,
+      0.21080124406624304
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.2048751283156971,
+      0.20462379099490138,
+      0.20277235051594303,
+      0.198747051739553,
+      0.204644308935764
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.2048751283156971,
+      0.20462379099490138,
+      0.20277235051594303,
+      0.198747051739553,
+      0.204644308935764
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.21666738862133947,
+      0.21658375460563506,
+      0.21585248602995455,
+      0.212758906472973,
+      0.2144641208665144
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.20489703015109526,
+      0.20483326718725414,
+      0.2042797282474669,
+      0.20196000195737918,
+      0.2033825118839672
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.04495625021664015,
+      0.0449553570804922,
+      0.04494681332033483,
+      0.04488782134876856,
+      0.044779117977341076
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.04495630108266255,
+      0.044955862398345564,
+      0.04495153790763858,
+      0.04491372657077788,
+      0.04475848308563932
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.045226420081726754,
+      0.04522523770711068,
+      0.04521706768447665,
+      0.04523657987122201,
+      0.04503954610608246
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.04331487218587651,
+      0.043339411036390524,
+      0.043533759292416596,
+      0.04404680636593818,
+      0.04428791264639833
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.04450224127025814,
+      0.0444996525955012,
+      0.0444794549724591,
+      0.04441422982739676,
+      0.044258202267309296
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.045246398101532234,
+      0.04524245074958083,
+      0.04520973823908452,
+      0.045056397956750004,
+      0.044825012451178495
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.04331208712222062,
+      0.043311856087995315,
+      0.043309958476962625,
+      0.043314312831923794,
+      0.043510877704828005
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.041413444362086674,
+      0.041404383552761444,
+      0.04132460691472916,
+      0.04096580749858074,
+      0.040936353911146035
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.041413511766234,
+      0.04140504075394333,
+      0.04132983436667467,
+      0.040976867326114254,
+      0.04090437283005365
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.041087211952569744,
+      0.04107619122112076,
+      0.04098070457981961,
+      0.040585674819585804,
+      0.0405789812374807
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.04067093458302474,
+      0.04070954382025261,
+      0.04092531519605425,
+      0.04105763260452136,
+      0.04108777426435343
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.04185578786980849,
+      0.041846384168589254,
+      0.0417591916016915,
+      0.04129412496596338,
+      0.04101059550922948
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.041795045188727356,
+      0.04178133456679434,
+      0.04166506284171069,
+      0.04116301557174028,
+      0.040969365470886816
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.04066556203108554,
+      0.04065810546493475,
+      0.0405944168735091,
+      0.0403520962408028,
+      0.040667439631077516
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.004031887243454662,
+      0.004030067938409746,
+      0.0040119961838377535,
+      0.0038430647793527817,
+      0.002867509506359257
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.00403205226062339,
+      0.004031716948261666,
+      0.004028366919706517,
+      0.003995193540888131,
+      0.003700860195533058
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.001896006508332849,
+      0.001892924801394999,
+      0.0018970949856673244,
+      0.0021782527645032306,
+      0.0022871696118364755
+    ],
+    "selected_alpha": 0.1
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.003595789516189296,
+      0.003590731295807922,
+      0.0035583853224546895,
+      0.0033832590830745707,
+      0.002669538288598586
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.003998762144808296,
+      0.0039963060624890875,
+      0.003973485918996767,
+      0.0037892875637486802,
+      0.0028458045637279354
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.003976265670144061,
+      0.003973526946362314,
+      0.003950346372258597,
+      0.003778573383139269,
+      0.0028242256818751103
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.0035960326763931822,
+      0.003593870305339406,
+      0.0035727995057997187,
+      0.00339341597604764,
+      0.0024696076368852025
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.003955118008146127,
+      0.003952616839093707,
+      0.0039282679367281855,
+      0.0037218282293886903,
+      0.0027236470459670054
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.003955147578621122,
+      0.00395291145018535,
+      0.003931125645826459,
+      0.0037459845936493098,
+      0.0028149439553906714
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.003673917662883776,
+      0.003669986364326647,
+      0.00363216827644576,
+      0.0033427239026687138,
+      0.0023598910878202465
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.003454431239322332,
+      0.0034607598528177564,
+      0.003452303478818552,
+      0.0032910753219921648,
+      0.002573547444076703
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.0038316730951373514,
+      0.0038286958793428876,
+      0.003804138951893114,
+      0.003616156640926792,
+      0.002702687837963902
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.0039204493927613385,
+      0.003916614673140245,
+      0.0038847708022391246,
+      0.003666567107685314,
+      0.0026831452857159115
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.003451972932036848,
+      0.003449280481182418,
+      0.0034240316456697834,
+      0.0032314931152255173,
+      0.002332490295692002
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      2.3524903522574213e-05,
+      2.3519936217789196e-05,
+      2.3471350637734294e-05,
+      2.3069023369151966e-05,
+      2.1162942160476896e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      2.3525358973993403e-05,
+      2.3524479542844182e-05,
+      2.351572122283743e-05,
+      2.3431564335192417e-05,
+      2.2815028165832406e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      2.3427178822870002e-05,
+      2.3383660701713473e-05,
+      2.3076298334328257e-05,
+      2.2384147652381313e-05,
+      2.057389790536898e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      2.3935859349698857e-05,
+      2.3900118718723178e-05,
+      2.3716202860178103e-05,
+      2.272004645513256e-05,
+      2.0476158111099305e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      2.3571625114321582e-05,
+      2.3563922538487376e-05,
+      2.3490737404301453e-05,
+      2.2954650030542523e-05,
+      2.0909168044144513e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      2.3504283823934184e-05,
+      2.349940511962967e-05,
+      2.345110196245298e-05,
+      2.3037562357022023e-05,
+      2.110118266059879e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      2.3940044882364374e-05,
+      2.393454354038416e-05,
+      2.388074228175597e-05,
+      2.344871797854563e-05,
+      2.1504678520770046e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      2.348531586021748e-05,
+      2.3478654097194683e-05,
+      2.3414007912474908e-05,
+      2.291097401395471e-05,
+      2.085082402579089e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      2.3485458727988124e-05,
+      2.348007707939902e-05,
+      2.342769353310238e-05,
+      2.3011731534941073e-05,
+      2.1294451440413267e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      2.3509856591481663e-05,
+      2.3496472481939996e-05,
+      2.336951355944864e-05,
+      2.2507611160297548e-05,
+      1.991304798511287e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      2.3990318809388576e-05,
+      2.393654048678653e-05,
+      2.367748220003511e-05,
+      2.2350940344633643e-05,
+      1.998133132147626e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      2.3538470226520045e-05,
+      2.352794245786032e-05,
+      2.3428452628899002e-05,
+      2.275018268845224e-05,
+      2.0577252565019168e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      2.3450251337406258e-05,
+      2.3443790989089636e-05,
+      2.337951602453222e-05,
+      2.2866351854459364e-05,
+      2.0783978849518094e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 709,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      2.400265521809005e-05,
+      2.3994287391469103e-05,
+      2.3915176555860193e-05,
+      2.3343716588601e-05,
+      2.118642472558213e-05
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.37300546481888924,
+      0.3729788545947067,
+      0.37272428586370915,
+      0.37095911561083944,
+      0.36762529131714333
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.3730068157188476,
+      0.3729922751320299,
+      0.3728502784671515,
+      0.37170155794789883,
+      0.3681661586933459
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.3721564945188628,
+      0.37214516158606387,
+      0.37203418868913984,
+      0.371136460284227,
+      0.36860500079322506
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.3679648712711823,
+      0.3678469274319752,
+      0.3671295938215436,
+      0.3666383227625312,
+      0.36642076304910937
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.3679648712711823,
+      0.3678469274319752,
+      0.3671295938215436,
+      0.3666383227625312,
+      0.36642076304910937
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.3814332036897597,
+      0.38139662257982315,
+      0.3810485521960468,
+      0.3786947933298137,
+      0.3738686854337922
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.36797551495336334,
+      0.36794616804288416,
+      0.3676641828826152,
+      0.36564385182000786,
+      0.3615699601888267
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.37709297738138176,
+      0.376934385532382,
+      0.37553092111142866,
+      0.36844425643109646,
+      0.35784907306325364
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.3770934046495523,
+      0.3769386426480997,
+      0.37557256145436335,
+      0.36872186600604046,
+      0.35784697023401135
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.3818994681580569,
+      0.38173635591336813,
+      0.38029212805318663,
+      0.3728103585580954,
+      0.3621268255384931
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.379209337128477,
+      0.37880819185614717,
+      0.37616637971839045,
+      0.3681419912271965,
+      0.3566136366651706
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.379209337128477,
+      0.37880819185614717,
+      0.37616637971839045,
+      0.3681419912271965,
+      0.3566136366651706
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.3887782236623709,
+      0.3885914224173175,
+      0.3869364297859265,
+      0.37867666111998455,
+      0.36540760280994244
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.3792374432877873,
+      0.3790665162938781,
+      0.3775648311951349,
+      0.37015019101942087,
+      0.3592442896055061
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.2586956130165706,
+      0.2586954911169032,
+      0.2586939292657295,
+      0.25866569899120484,
+      0.2585864785967061
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.2586957424256703,
+      0.258696786766578,
+      0.2587069708908037,
+      0.2587877531533272,
+      0.25899045546730015
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.2508628628664734,
+      0.2508241336462678,
+      0.25052357072715625,
+      0.24961721450341073,
+      0.2493279942265257
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.2471064323941185,
+      0.24695567427148257,
+      0.24688152220523737,
+      0.24829864483791725,
+      0.25237318647180035
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.2551523522123334,
+      0.2551758994866585,
+      0.25539639149343374,
+      0.2562957708379887,
+      0.2567730782331643
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.26795212032364935,
+      0.26791859196556106,
+      0.26764603435369205,
+      0.2662547968652116,
+      0.26315070825101844
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.24712904558308071,
+      0.24712293472182525,
+      0.24707144722745966,
+      0.246996803365808,
+      0.24815183417769937
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.26189907484693314,
+      0.26175329350084653,
+      0.26052083473808385,
+      0.25568374261021043,
+      0.25066398305930354
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.26190065336691326,
+      0.2617686194756269,
+      0.26063890416493557,
+      0.2559976917564686,
+      0.2510242985945498
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.2586089444385824,
+      0.25843755857339157,
+      0.257028297374115,
+      0.2523706215075437,
+      0.24926074009986593
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.2630597137207735,
+      0.26229438549519296,
+      0.25932042510226383,
+      0.2527665511596042,
+      0.24842520733679105
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.2630609981317244,
+      0.26280137000047593,
+      0.2609098127362664,
+      0.2554371083810574,
+      0.25058053672050895
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.27065659802121833,
+      0.2704293540341514,
+      0.2686073145675627,
+      0.2619105474545457,
+      0.25433862523525474
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.2631606164839886,
+      0.2630301289429132,
+      0.2619157942624014,
+      0.2573807357899336,
+      0.2527884904182469
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.10663436131180182,
+      0.1066334018690376,
+      0.10662433315556315,
+      0.10657150799378554,
+      0.10661100177595101
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.10663444504374357,
+      0.1066342339186458,
+      0.10663216656234072,
+      0.10661532604841466,
+      0.10659678506249236
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.10435870404568519,
+      0.10435397591109453,
+      0.10431374244487866,
+      0.10414447375481276,
+      0.10343320697007163
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.10369303743560138,
+      0.10333779867998276,
+      0.10257462423436904,
+      0.10199865980735634,
+      0.10318765735086298
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.10548348769109117,
+      0.10546418454443485,
+      0.10536882722348441,
+      0.1054698204779882,
+      0.10562781030801167
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.11236098955991691,
+      0.11219127978530037,
+      0.11135469387827884,
+      0.10992316341974365,
+      0.10885258617933316
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.10375320127915626,
+      0.10373167631792389,
+      0.10357298270647561,
+      0.10312058685996835,
+      0.10257771840445987
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.11274358400063245,
+      0.11265333903404837,
+      0.11189052247623532,
+      0.10876160342009968,
+      0.10568267865036793
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.1127446037475862,
+      0.1126631831436742,
+      0.11196432075888958,
+      0.10898122085315441,
+      0.10601176857239113
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.11546717581543957,
+      0.11536504705711469,
+      0.11452062689122337,
+      0.11117328942336391,
+      0.10715898434605427
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.11480910831657608,
+      0.11372785276706246,
+      0.11156288536495797,
+      0.10752873516233384,
+      0.1044041522318957
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.11646656540932429,
+      0.11630984987100207,
+      0.1151276076393291,
+      0.1111541354387804,
+      0.10642726214883787
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.12112483665470718,
+      0.12081636723820839,
+      0.11881598050574997,
+      0.11296244279505664,
+      0.10803217041861174
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.11501789437085859,
+      0.11491539874955853,
+      0.11403804601705884,
+      0.11018658676184545,
+      0.10564926767733672
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.020570145081717676,
+      0.020569731229288242,
+      0.020565806512093932,
+      0.020540588176962027,
+      0.02050910119362242
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.020570185543747743,
+      0.020570133748996144,
+      0.020569621299379514,
+      0.020564991285668213,
+      0.02054301789136002
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.02060452942575072,
+      0.02060035663111332,
+      0.02056639825770587,
+      0.020441461132835227,
+      0.020259925507325964
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.020756413520802815,
+      0.02069828511158194,
+      0.020521949065868916,
+      0.020277934919230783,
+      0.020140938409395223
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.021023157611786678,
+      0.021016806746126066,
+      0.020969503202719845,
+      0.02081378290304503,
+      0.02065125130588088
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.021669689183983754,
+      0.021424209015437817,
+      0.021104607601145315,
+      0.02081125134482126,
+      0.02061639254392476
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.020789019730171616,
+      0.020780000222427493,
+      0.020748406077666592,
+      0.02064729546760372,
+      0.020419708461982992
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.02205636131153478,
+      0.022034910471753304,
+      0.021851938440030486,
+      0.02109603298052236,
+      0.02044487423237323
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.022056730990998738,
+      0.022038504796795592,
+      0.021880228483338704,
+      0.021179432797347405,
+      0.020505179879032207
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.02382290448196979,
+      0.023787466510928224,
+      0.023495979763888893,
+      0.022362553580748363,
+      0.021131178305303852
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.02309166304313161,
+      0.02289176344602758,
+      0.022298763560319033,
+      0.021189369383119865,
+      0.020321760700831165
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.023136567804978345,
+      0.023094187276509207,
+      0.022764077480315826,
+      0.021599621016579352,
+      0.02063772273154953
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.023796220261268167,
+      0.023531287104083632,
+      0.02295506516764217,
+      0.021654639230863002,
+      0.020624355263649332
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 811,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.023167902956211087,
+      0.02312786504806016,
+      0.02283653086529839,
+      0.021848822062645684,
+      0.020852055880807085
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.3667571020842889,
+      0.3667402980598983,
+      0.36658551773842235,
+      0.36576372259193946,
+      0.36569925318594537
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.366757536546043,
+      0.36674457246679026,
+      0.3666223067240124,
+      0.3658602351359376,
+      0.3650744956617431
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.35298613225535397,
+      0.3529690970245644,
+      0.35281091876729304,
+      0.3519240191661685,
+      0.3519695184096589
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.355074803986125,
+      0.35497275336882644,
+      0.35436290805985643,
+      0.3535723015206787,
+      0.3553838699264222
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.355074803986125,
+      0.35497275336882644,
+      0.35436290805985643,
+      0.3535723015206787,
+      0.3553838699264222
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.37381037422758245,
+      0.37377187523727023,
+      0.37345167693495773,
+      0.37206580972881476,
+      0.37082139777534523
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.35508493690855575,
+      0.3550671865988896,
+      0.3549027741353117,
+      0.35398548383120665,
+      0.35375083364892596
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.37406735018597176,
+      0.3735485392023623,
+      0.3695914557636592,
+      0.3572729617544407,
+      0.3466086211296072
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.3740702636001292,
+      0.37357636262592087,
+      0.36978651694667347,
+      0.3578183292246402,
+      0.3468940770506478
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.3730773708658222,
+      0.3725197454739479,
+      0.3683644543719394,
+      0.35588964688765823,
+      0.3422366574418889
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.37020818840786146,
+      0.36943511948816593,
+      0.364631006598028,
+      0.3526983424804182,
+      0.3402596513981623
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.37020818840786146,
+      0.36943511948816593,
+      0.364631006598028,
+      0.3526983424804182,
+      0.3402596513981623
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.3854935073587565,
+      0.3849513260874394,
+      0.3807938239894381,
+      0.36710143235117765,
+      0.35342025899318413
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.37024111440934304,
+      0.36972152133753694,
+      0.36578258009650794,
+      0.3536703700037724,
+      0.34285357836939306
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.2231072015016759,
+      0.22310576913536942,
+      0.22309236195235177,
+      0.22301426011063605,
+      0.22293427353896295
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.22310723779470684,
+      0.22310612631743754,
+      0.223095379066205,
+      0.22301624354978705,
+      0.22287332324906092
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.22535150368715784,
+      0.22529587808937,
+      0.22483270128152907,
+      0.22287571621345947,
+      0.22055780100606012
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.22576791752149172,
+      0.22542269507034476,
+      0.22464996169190163,
+      0.2226416437095009,
+      0.2198216023041132
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.22865446948454765,
+      0.22848333967587103,
+      0.22716145885060088,
+      0.222856046796142,
+      0.22042485051988506
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.232998262353155,
+      0.23288635968061933,
+      0.23204292951149996,
+      0.22923647510983955,
+      0.22627493751153668
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.22581838910357901,
+      0.2258025815432609,
+      0.22565997635376775,
+      0.2249511528974112,
+      0.2232550196073675
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.24182968327619522,
+      0.24158570840956006,
+      0.23952674262749915,
+      0.2309868984808924,
+      0.22092339491827795
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.24183134814905055,
+      0.24160169464391898,
+      0.23964004614628226,
+      0.23120710157809643,
+      0.2211807244126735
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.25363557883941446,
+      0.2533320011478922,
+      0.2508007639179063,
+      0.24063799099074942,
+      0.22682217298105026
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.2502308888306332,
+      0.24931694837655669,
+      0.24441752010948842,
+      0.23178966672406898,
+      0.21925063018151422
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.24818665529412343,
+      0.24756772818209,
+      0.24343650510272294,
+      0.23166868963813822,
+      0.22000298339861935
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.24929483592815974,
+      0.24890689861585727,
+      0.24576884052424322,
+      0.23421812127652383,
+      0.2223208229167475
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.25032488355497867,
+      0.2500898272693836,
+      0.24808135234900064,
+      0.23924193545411204,
+      0.22568908371640894
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.08936837587494682,
+      0.08936727174494791,
+      0.08935658466027649,
+      0.08927364264348597,
+      0.08896122080700229
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.08936846264059582,
+      0.0893681361806419,
+      0.0893648955300888,
+      0.08933467543528381,
+      0.08914759362904323
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.0906229631364314,
+      0.0906099986600928,
+      0.09049791368303195,
+      0.09000195548687191,
+      0.08900975846215121
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.0950202614895759,
+      0.09446089858795155,
+      0.09340611727724911,
+      0.09199655835698392,
+      0.08969623654451561
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.09285298256641393,
+      0.092820744205377,
+      0.09256090537252254,
+      0.09141007829771293,
+      0.0895839103494373
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.0945738041333875,
+      0.09447219062588987,
+      0.09383249557241422,
+      0.09218725224997637,
+      0.09044581741947418
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.09511032647418777,
+      0.09507713174636796,
+      0.09479886187614436,
+      0.0937432146725168,
+      0.09210461223089775
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.10171701296234327,
+      0.10160542725412788,
+      0.10062763515051168,
+      0.09611732593635482,
+      0.09048964199290879
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.1017185641348976,
+      0.10162057737608039,
+      0.10075076231364316,
+      0.09651011120996568,
+      0.09089646129987275
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.10522400729777581,
+      0.1050942347400292,
+      0.10395884816085074,
+      0.09873079999583466,
+      0.09210503721870529
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.10931332071836752,
+      0.10840181842700353,
+      0.1058275865816055,
+      0.09878245003026886,
+      0.0914038328816018
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.10699330192437756,
+      0.10674956609949543,
+      0.10488250364514468,
+      0.09827801069148105,
+      0.09153693897080377
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.10840036568565299,
+      0.10812869661394434,
+      0.10615824946967352,
+      0.09947581590244757,
+      0.09206945509542563
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.10948598526663311,
+      0.1093574251709082,
+      0.10823415495527627,
+      0.10310121920747145,
+      0.09579255276784057
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.01629320441029098,
+      0.016293030821558113,
+      0.016291365429727492,
+      0.016279353363214125,
+      0.01624628985871295
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.016293221518276352,
+      0.016293201169500424,
+      0.016292999466644337,
+      0.01629114223922237,
+      0.016279943789672874
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.01660471028913767,
+      0.016600080309453483,
+      0.016563646939920768,
+      0.016433553586878206,
+      0.016272915852016463
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.01819207259643364,
+      0.017975782010580962,
+      0.01768910767614934,
+      0.01724748073587278,
+      0.01670644398599437
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.017362522928337287,
+      0.017351664215713967,
+      0.017265448722353673,
+      0.016962268691756936,
+      0.016623691198334012
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.01701797300530912,
+      0.016992159665214338,
+      0.016900526173864897,
+      0.016690239776884316,
+      0.016455477913372415
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.018271246488776302,
+      0.01824852963709579,
+      0.018110388613112722,
+      0.017772190817329954,
+      0.017233654450469912
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.018131596342093916,
+      0.018114907243728412,
+      0.017969088531679837,
+      0.0173177847543454,
+      0.01655409104283815
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.018131912900338342,
+      0.018117999935377806,
+      0.017994218312527704,
+      0.01739835688413767,
+      0.01663490843884692
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.0194306113551133,
+      0.0194082322153032,
+      0.019214925010547133,
+      0.018370486980799274,
+      0.017216899257751644
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.020505197710065474,
+      0.020209912150183192,
+      0.01961229377572372,
+      0.018275672311885042,
+      0.017015992860457713
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.01932231241989193,
+      0.019273885101357194,
+      0.018918592781214202,
+      0.017801335675452796,
+      0.016856435486864992
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.019422491948960646,
+      0.019361438860667796,
+      0.019018782104119555,
+      0.017951270149499297,
+      0.016782337495435562
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 907,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.020626759155949807,
+      0.020589558045715474,
+      0.020310784152566517,
+      0.019328960807908965,
+      0.017973103710109527
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.29342258037030466,
+      0.29342201978265975,
+      0.29342332408460164,
+      0.29364454865115464,
+      0.2944079461574385
+    ],
+    "selected_alpha": 0.1
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.2934223528068021,
+      0.29341970316397525,
+      0.2933969113718665,
+      0.2933468710647429,
+      0.29380012806143946
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.28947349109857584,
+      0.289380211721195,
+      0.2885849143722527,
+      0.28558653725622873,
+      0.28382213699981235
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.2849765781900885,
+      0.2850385456909239,
+      0.285677685787156,
+      0.2883796344367973,
+      0.29138026136696044
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.2849765781900885,
+      0.2850385456909239,
+      0.285677685787156,
+      0.2883796344367973,
+      0.29138026136696044
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.2988715603960212,
+      0.29885683352980236,
+      0.2987298953061507,
+      0.2982212215298075,
+      0.2973663244359567
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.28497049969001537,
+      0.2849753817222275,
+      0.2850261805730856,
+      0.2854832249095255,
+      0.28636171538912364
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.2992349582307532,
+      0.29870082427877337,
+      0.29470553967665647,
+      0.283565347072268,
+      0.27807758143522077
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.2992371112762246,
+      0.29872085505699997,
+      0.29481327236798377,
+      0.2835162440556528,
+      0.2774393933839565
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.3030973528191691,
+      0.30252811689239034,
+      0.29824512247481444,
+      0.2858014290383824,
+      0.2780800136950423
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.3009952079444687,
+      0.30013985847580643,
+      0.2951389033359917,
+      0.28265411897510345,
+      0.27608518694760104
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.3009952079444687,
+      0.30013985847580643,
+      0.2951389033359917,
+      0.28265411897510345,
+      0.27608518694760104
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.30646051931814183,
+      0.3058808978425908,
+      0.30149963438463534,
+      0.28844173246016863,
+      0.2804045339812227
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 2,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.3010404464726071,
+      0.30051981553675833,
+      0.29673426570040634,
+      0.2865020241073932,
+      0.2809083544286969
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.16205094716077237,
+      0.16205282877582225,
+      0.16207350045248378,
+      0.16234887240814858,
+      0.16446643693094726
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.16205089192788458,
+      0.16205225818906144,
+      0.16206621997498868,
+      0.16222339154761245,
+      0.16361164892492716
+    ],
+    "selected_alpha": 0.01
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.15536632806135608,
+      0.15532408241348966,
+      0.15496570667265927,
+      0.15359416784477345,
+      0.15442569016132768
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.16017607568297243,
+      0.15991277454653008,
+      0.15970777240786502,
+      0.16147529969281188,
+      0.16365966627280035
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.16585158167480923,
+      0.16581841031047945,
+      0.16557648389783733,
+      0.16492448354914196,
+      0.1648429550183987
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.16476776427736567,
+      0.16473084841725846,
+      0.1644856447594668,
+      0.16405854464361092,
+      0.165378136307122
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.1602175000794338,
+      0.16020940194588162,
+      0.16014075491296392,
+      0.1600765739521568,
+      0.1631226887138973
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.17673121314065135,
+      0.1764313368598383,
+      0.17429802931899882,
+      0.16826877262690096,
+      0.16205788209365482
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.17673461695690007,
+      0.17646335019162873,
+      0.1745042044605799,
+      0.16883236873047885,
+      0.16246419623455044
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.17753596354574908,
+      0.17725104655538204,
+      0.17518150796162035,
+      0.16865892939272203,
+      0.16060017950369027
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.18019469416211437,
+      0.17946702891544158,
+      0.17628282298472794,
+      0.1691987228440273,
+      0.16129565142129546
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.18169031576866254,
+      0.18126816635997284,
+      0.1784897710899748,
+      0.1704764784619073,
+      0.16208107102455607
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.181600440547152,
+      0.18121130229040922,
+      0.17849883207526404,
+      0.17093777632125456,
+      0.16311770831149858
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 3,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.18026645456877838,
+      0.17999562869516572,
+      0.17802687737232092,
+      0.1715082949387401,
+      0.16424859248103757
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.057896126455933394,
+      0.05789550110043908,
+      0.05789003234475865,
+      0.057874324392734156,
+      0.058112944516295305
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.05789616171187613,
+      0.057895845205481695,
+      0.05789277690323511,
+      0.057869492695315064,
+      0.05783961089648328
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.060273309051000215,
+      0.06025566628390029,
+      0.06011143156820559,
+      0.05946652662630381,
+      0.058243260915942334
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.060539498510514995,
+      0.059707135184564566,
+      0.05809007970390517,
+      0.05705215382391159,
+      0.057021889475772296
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.06148548767634666,
+      0.06144765135950924,
+      0.061148726838004895,
+      0.060063448371133435,
+      0.058576137155382325
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.06068114615720998,
+      0.06061094083765504,
+      0.060299921520556764,
+      0.05948763899681311,
+      0.05873119635358579
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.06069144813311583,
+      0.06066291260728919,
+      0.06041976251824289,
+      0.05934474387481927,
+      0.058112077442545894
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.06622667217684974,
+      0.06610976524014311,
+      0.06526798579475977,
+      0.06259760758634648,
+      0.0592881968003831
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.0662285587071498,
+      0.0661274105850113,
+      0.06537739489790034,
+      0.06288422159749006,
+      0.0595304783460826
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.06692549795540863,
+      0.06679408951710919,
+      0.06588332326047333,
+      0.06324900436303676,
+      0.05968864376600511
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.06773462217512607,
+      0.06671078384682665,
+      0.06491415616290008,
+      0.061614601358147746,
+      0.05840941454736055
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.06853958275642524,
+      0.06841242983295558,
+      0.067400015716883,
+      0.06386947336794693,
+      0.059769891397030143
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.0696928372910637,
+      0.06943280460567836,
+      0.0680057985396941,
+      0.06425786657747622,
+      0.05997093690577792
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 4,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.0679502258161122,
+      0.06785182015225097,
+      0.06710676718700243,
+      0.06415418939944305,
+      0.05978291048791044
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.012913453273060824,
+      0.012913339342364777,
+      0.012912591065824174,
+      0.012913858156367862,
+      0.012930646577277964
+    ],
+    "selected_alpha": 1.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.012913464033680289,
+      0.012913442090871571,
+      0.012913239402992943,
+      0.012912273898753584,
+      0.012914976326413863
+    ],
+    "selected_alpha": 10.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.01399224135483096,
+      0.013983060813811619,
+      0.013911310477438231,
+      0.013667709317337516,
+      0.013352901242201558
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.013790672920127582,
+      0.013745345328058245,
+      0.013608604156843403,
+      0.013295463098646088,
+      0.012864741929765328
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.013554321637814216,
+      0.01353968848628166,
+      0.013425231928815375,
+      0.013066508652892552,
+      0.012805643726519302
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.013528486135204949,
+      0.013477531123298579,
+      0.013375167495156373,
+      0.013253784300156614,
+      0.013118464746595638
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "cls_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.013747259007432226,
+      0.013750454585914298,
+      0.013725058939338643,
+      0.013566992051418194,
+      0.013472707250591536
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_linear",
+    "validation_mse_by_alpha": [
+      0.014559764426967176,
+      0.014524406045961396,
+      0.014296667235295697,
+      0.013714533678655431,
+      0.013169927482758872
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_dimension_control",
+    "validation_mse_by_alpha": [
+      0.014560674729782548,
+      0.014532743146832021,
+      0.014345282476759109,
+      0.013806631572549143,
+      0.013231542290231317
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "current_rff",
+    "validation_mse_by_alpha": [
+      0.01497488999552341,
+      0.014930272160317094,
+      0.014656469265604967,
+      0.01407442248915819,
+      0.013536724745604672
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "ordered_history",
+    "validation_mse_by_alpha": [
+      0.015123846654960624,
+      0.01502752430964234,
+      0.014722099000311694,
+      0.01389466870001706,
+      0.013068416151571595
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "shuffled_history",
+    "validation_mse_by_alpha": [
+      0.015168823470230934,
+      0.015111983783173213,
+      0.014775935009305281,
+      0.013912837382472353,
+      0.013111399944106117
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "sample_mismatched_history",
+    "validation_mse_by_alpha": [
+      0.015241763283065616,
+      0.0151564630844432,
+      0.0147812243907084,
+      0.014044304234566256,
+      0.013340294800902328
+    ],
+    "selected_alpha": 100.0
+  },
+  {
+    "seed": 1009,
+    "step": 5,
+    "observer": "full_current",
+    "arm": "residualized_history",
+    "validation_mse_by_alpha": [
+      0.015139248371210745,
+      0.015120743911198381,
+      0.014940498675541022,
+      0.01432318022664624,
+      0.01368207428819457
+    ],
+    "selected_alpha": 100.0
+  }
+]

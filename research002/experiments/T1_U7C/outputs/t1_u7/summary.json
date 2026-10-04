@@ -1,0 +1,523 @@
+{
+  "experiment": {
+    "id": "T1-U7",
+    "name": "Bounded Two-Hop Learnability and Causal-Dependence Gate",
+    "version": "0.9.0",
+    "research_object": "Establish a shortcut-free two-hop Transformer task that is learned reliably, causally depends on both chain edges, and retains a nondegenerate continuous value-of-additional-computation target before any trajectory probe is fit."
+  },
+  "status": "failed_development_gate_fresh_seeds_unopened",
+  "hypotheses": {
+    "learning": "The fixed T1-U4-D architecture reaches at least 0.95 clean final accuracy for every exposed development seed on balanced two-hop retrieval.",
+    "causal_dependence": "Matched counterfactual pairs are solved consistently, while independently corrupting either required edge returns performance to the preregistered chance band.",
+    "computational_value": "At least two intermediate refinement steps retain positive and variable remaining NLL reduction relative to the final step for every seed.",
+    "null": "Any development seed fails learning, counterfactual, causal-dependence, or target-availability gates."
+  },
+  "scientific_boundary": {
+    "development_seeds_are_exposed": true,
+    "development_seeds": [
+      503,
+      607,
+      709
+    ],
+    "note": "These seeds are retained only to establish the task and learning protocol. Fresh model seeds remain unopened unless all development seeds pass every gate. No state-history, motion, or attention-history probe is fit in T1-U7."
+  },
+  "configuration": {
+    "development_seeds": [
+      503,
+      607,
+      709
+    ],
+    "fresh_confirmation_seeds": [
+      811,
+      907,
+      1009
+    ],
+    "data": {
+      "task_type": "chain_lookup",
+      "key_count": 8,
+      "pair_count": 5,
+      "chain_hops": 2,
+      "train_samples": 8000,
+      "validation_samples": 1800,
+      "probe_samples": 4000,
+      "causal_pairs": 2000,
+      "development_sample_seed_offset": 37,
+      "development_causal_seed_offset": 43,
+      "fresh_sample_seed_offset": 83,
+      "fresh_causal_seed_offset": 89
+    },
+    "model": {
+      "d_model": 32,
+      "n_heads": 2,
+      "d_ff": 64,
+      "n_layers": 6,
+      "n_classes": 2,
+      "layer_norm_epsilon": 1e-05,
+      "use_structure_embeddings": true,
+      "tie_layers": true,
+      "use_step_embeddings": false,
+      "residual_scale": 0.5
+    },
+    "training": {
+      "batch_size": 96,
+      "validation_batch_size": 600,
+      "learning_rate": 0.0005,
+      "max_grad_norm": 1.0,
+      "auxiliary_loss_weight": 0.0,
+      "log_every": 200,
+      "curriculum": [
+        {
+          "name": "full_auxiliary_two_hop",
+          "steps": 1700,
+          "data_stream_id": 0,
+          "data_overrides": {
+            "chain_hops": 2
+          },
+          "auxiliary_loss_weight": 0.02,
+          "learning_rate": 0.0012
+        },
+        {
+          "name": "taper_015_two_hop",
+          "steps": 200,
+          "data_stream_id": 0,
+          "data_overrides": {
+            "chain_hops": 2
+          },
+          "auxiliary_loss_weight": 0.015,
+          "learning_rate": 0.0012
+        },
+        {
+          "name": "taper_010_pre_transition_two_hop",
+          "steps": 100,
+          "data_stream_id": 0,
+          "data_overrides": {
+            "chain_hops": 2
+          },
+          "auxiliary_loss_weight": 0.01,
+          "learning_rate": 0.0012
+        },
+        {
+          "name": "taper_010_post_transition_two_hop",
+          "steps": 100,
+          "data_stream_id": 1,
+          "data_overrides": {
+            "chain_hops": 2
+          },
+          "auxiliary_loss_weight": 0.01,
+          "learning_rate": 0.0005
+        },
+        {
+          "name": "taper_005_two_hop",
+          "steps": 200,
+          "data_stream_id": 1,
+          "data_overrides": {
+            "chain_hops": 2
+          },
+          "auxiliary_loss_weight": 0.005,
+          "learning_rate": 0.0005
+        },
+        {
+          "name": "final_only_two_hop",
+          "steps": 1700,
+          "data_stream_id": 1,
+          "data_overrides": {
+            "chain_hops": 2
+          },
+          "auxiliary_loss_weight": 0.0,
+          "learning_rate": 0.0005
+        }
+      ]
+    }
+  },
+  "gate_thresholds": {
+    "minimum_final_accuracy": 0.95,
+    "minimum_counterfactual_pair_accuracy": 0.9,
+    "corruption_accuracy_minimum": 0.4,
+    "corruption_accuracy_maximum": 0.6,
+    "minimum_mean_remaining_nll_reduction": 0.02,
+    "minimum_std_remaining_nll_reduction": 0.02,
+    "minimum_valid_value_steps": 2,
+    "value_positive_epsilon": 0.01,
+    "minimum_passing_seed_fraction": 1.0
+  },
+  "development": {
+    "passed": false,
+    "passing_fraction": 0.6666666666666666,
+    "seed_gate": [
+      {
+        "evaluation_phase": "development",
+        "seed": 503,
+        "final_accuracy": 0.9305,
+        "counterfactual_pair_accuracy": 0.8895,
+        "first_edge_corrupted_accuracy": 0.511,
+        "second_edge_corrupted_accuracy": 0.492,
+        "valid_value_steps": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "valid_value_step_count": 4,
+        "accuracy_gate_passed": false,
+        "counterfactual_gate_passed": false,
+        "first_edge_gate_passed": true,
+        "second_edge_gate_passed": true,
+        "value_gate_passed": true,
+        "passed": false
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 607,
+        "final_accuracy": 0.9955,
+        "counterfactual_pair_accuracy": 0.9895,
+        "first_edge_corrupted_accuracy": 0.4955,
+        "second_edge_corrupted_accuracy": 0.4965,
+        "valid_value_steps": [
+          1,
+          2,
+          3
+        ],
+        "valid_value_step_count": 3,
+        "accuracy_gate_passed": true,
+        "counterfactual_gate_passed": true,
+        "first_edge_gate_passed": true,
+        "second_edge_gate_passed": true,
+        "value_gate_passed": true,
+        "passed": true
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 709,
+        "final_accuracy": 0.984,
+        "counterfactual_pair_accuracy": 0.9705,
+        "first_edge_corrupted_accuracy": 0.484,
+        "second_edge_corrupted_accuracy": 0.5075,
+        "valid_value_steps": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "valid_value_step_count": 4,
+        "accuracy_gate_passed": true,
+        "counterfactual_gate_passed": true,
+        "first_edge_gate_passed": true,
+        "second_edge_gate_passed": true,
+        "value_gate_passed": true,
+        "passed": true
+      }
+    ],
+    "causal_metrics": [
+      {
+        "evaluation_phase": "development",
+        "seed": 503,
+        "pairs": 2000,
+        "causal_clean_accuracy": 0.935,
+        "counterfactual_accuracy": 0.937,
+        "counterfactual_pair_accuracy": 0.8895,
+        "counterfactual_prediction_flip_consistency": 0.907,
+        "first_edge_corrupted_accuracy": 0.511,
+        "second_edge_corrupted_accuracy": 0.492,
+        "second_edge_oracle_accuracy": 0.4955
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 607,
+        "pairs": 2000,
+        "causal_clean_accuracy": 0.994,
+        "counterfactual_accuracy": 0.9955,
+        "counterfactual_pair_accuracy": 0.9895,
+        "counterfactual_prediction_flip_consistency": 0.9895,
+        "first_edge_corrupted_accuracy": 0.4955,
+        "second_edge_corrupted_accuracy": 0.4965,
+        "second_edge_oracle_accuracy": 0.4975
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 709,
+        "pairs": 2000,
+        "causal_clean_accuracy": 0.987,
+        "counterfactual_accuracy": 0.9825,
+        "counterfactual_pair_accuracy": 0.9705,
+        "counterfactual_prediction_flip_consistency": 0.9715,
+        "first_edge_corrupted_accuracy": 0.484,
+        "second_edge_corrupted_accuracy": 0.5075,
+        "second_edge_oracle_accuracy": 0.509
+      }
+    ],
+    "trajectory_value_statistics": [
+      {
+        "evaluation_phase": "development",
+        "seed": 503,
+        "step": 1,
+        "samples": 4000,
+        "current_accuracy": 0.50325,
+        "final_accuracy": 0.9305,
+        "future_flip_rate": 0.48525,
+        "mean_current_nll": 0.9762320518493652,
+        "mean_final_nll": 0.17992989718914032,
+        "mean_remaining_nll_reduction": 0.7963021397590637,
+        "std_remaining_nll_reduction": 1.2223814725875854,
+        "median_remaining_nll_reduction": 0.6062375903129578,
+        "iqr_remaining_nll_reduction": 0.9250792264938354,
+        "positive_value_fraction": 0.91,
+        "negative_value_fraction": 0.073
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 503,
+        "step": 2,
+        "samples": 4000,
+        "current_accuracy": 0.69375,
+        "final_accuracy": 0.9305,
+        "future_flip_rate": 0.29575,
+        "mean_current_nll": 0.7531917691230774,
+        "mean_final_nll": 0.17992989718914032,
+        "mean_remaining_nll_reduction": 0.5732618570327759,
+        "std_remaining_nll_reduction": 1.2170562744140625,
+        "median_remaining_nll_reduction": 0.16884511709213257,
+        "iqr_remaining_nll_reduction": 0.7827247381210327,
+        "positive_value_fraction": 0.80025,
+        "negative_value_fraction": 0.086
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 503,
+        "step": 3,
+        "samples": 4000,
+        "current_accuracy": 0.83625,
+        "final_accuracy": 0.9305,
+        "future_flip_rate": 0.13975,
+        "mean_current_nll": 0.396799772977829,
+        "mean_final_nll": 0.17992989718914032,
+        "mean_remaining_nll_reduction": 0.21686987578868866,
+        "std_remaining_nll_reduction": 0.7864570021629333,
+        "median_remaining_nll_reduction": 0.021018588915467262,
+        "iqr_remaining_nll_reduction": 0.1923528015613556,
+        "positive_value_fraction": 0.581,
+        "negative_value_fraction": 0.093
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 503,
+        "step": 4,
+        "samples": 4000,
+        "current_accuracy": 0.906,
+        "final_accuracy": 0.9305,
+        "future_flip_rate": 0.055,
+        "mean_current_nll": 0.23209531605243683,
+        "mean_final_nll": 0.17992989718914032,
+        "mean_remaining_nll_reduction": 0.052165400236845016,
+        "std_remaining_nll_reduction": 0.4502059519290924,
+        "median_remaining_nll_reduction": 0.002619762672111392,
+        "iqr_remaining_nll_reduction": 0.029729751870036125,
+        "positive_value_fraction": 0.361,
+        "negative_value_fraction": 0.09725
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 503,
+        "step": 5,
+        "samples": 4000,
+        "current_accuracy": 0.92975,
+        "final_accuracy": 0.9305,
+        "future_flip_rate": 0.01875,
+        "mean_current_nll": 0.18558673560619354,
+        "mean_final_nll": 0.17992989718914032,
+        "mean_remaining_nll_reduction": 0.005656813737004995,
+        "std_remaining_nll_reduction": 0.20677857100963593,
+        "median_remaining_nll_reduction": 0.00039546421612612903,
+        "iqr_remaining_nll_reduction": 0.004716141149401665,
+        "positive_value_fraction": 0.19475,
+        "negative_value_fraction": 0.09
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 607,
+        "step": 1,
+        "samples": 4000,
+        "current_accuracy": 0.51675,
+        "final_accuracy": 0.9955,
+        "future_flip_rate": 0.48575,
+        "mean_current_nll": 1.1071323156356812,
+        "mean_final_nll": 0.018113715574145317,
+        "mean_remaining_nll_reduction": 1.0890185832977295,
+        "std_remaining_nll_reduction": 1.1927489042282104,
+        "median_remaining_nll_reduction": 0.6107879281044006,
+        "iqr_remaining_nll_reduction": 1.696857213973999,
+        "positive_value_fraction": 0.99075,
+        "negative_value_fraction": 0.00575
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 607,
+        "step": 2,
+        "samples": 4000,
+        "current_accuracy": 0.7085,
+        "final_accuracy": 0.9955,
+        "future_flip_rate": 0.2905,
+        "mean_current_nll": 0.7307236194610596,
+        "mean_final_nll": 0.018113715574145317,
+        "mean_remaining_nll_reduction": 0.7126099467277527,
+        "std_remaining_nll_reduction": 1.2043993473052979,
+        "median_remaining_nll_reduction": 0.08327260613441467,
+        "iqr_remaining_nll_reduction": 0.9109221696853638,
+        "positive_value_fraction": 0.71225,
+        "negative_value_fraction": 0.005
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 607,
+        "step": 3,
+        "samples": 4000,
+        "current_accuracy": 0.95025,
+        "final_accuracy": 0.9955,
+        "future_flip_rate": 0.04825,
+        "mean_current_nll": 0.13400126993656158,
+        "mean_final_nll": 0.018113715574145317,
+        "mean_remaining_nll_reduction": 0.11588754504919052,
+        "std_remaining_nll_reduction": 0.4898180067539215,
+        "median_remaining_nll_reduction": 0.0032613659277558327,
+        "iqr_remaining_nll_reduction": 0.025902878493070602,
+        "positive_value_fraction": 0.36,
+        "negative_value_fraction": 0.00575
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 607,
+        "step": 4,
+        "samples": 4000,
+        "current_accuracy": 0.99025,
+        "final_accuracy": 0.9955,
+        "future_flip_rate": 0.00775,
+        "mean_current_nll": 0.03079320676624775,
+        "mean_final_nll": 0.018113715574145317,
+        "mean_remaining_nll_reduction": 0.012679489329457283,
+        "std_remaining_nll_reduction": 0.18087217211723328,
+        "median_remaining_nll_reduction": 0.00038195349043235183,
+        "iqr_remaining_nll_reduction": 0.001501816906966269,
+        "positive_value_fraction": 0.084,
+        "negative_value_fraction": 0.00575
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 607,
+        "step": 5,
+        "samples": 4000,
+        "current_accuracy": 0.996,
+        "final_accuracy": 0.9955,
+        "future_flip_rate": 0.0015,
+        "mean_current_nll": 0.01914941519498825,
+        "mean_final_nll": 0.018113715574145317,
+        "mean_remaining_nll_reduction": 0.0010356989223510027,
+        "std_remaining_nll_reduction": 0.08543457090854645,
+        "median_remaining_nll_reduction": 7.136678323149681e-05,
+        "iqr_remaining_nll_reduction": 0.00021781332907266915,
+        "positive_value_fraction": 0.02025,
+        "negative_value_fraction": 0.00575
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 709,
+        "step": 1,
+        "samples": 4000,
+        "current_accuracy": 0.5245,
+        "final_accuracy": 0.984,
+        "future_flip_rate": 0.4745,
+        "mean_current_nll": 1.0147453546524048,
+        "mean_final_nll": 0.060977786779403687,
+        "mean_remaining_nll_reduction": 0.9537675976753235,
+        "std_remaining_nll_reduction": 1.3047502040863037,
+        "median_remaining_nll_reduction": 0.6327018737792969,
+        "iqr_remaining_nll_reduction": 1.0882929563522339,
+        "positive_value_fraction": 0.908,
+        "negative_value_fraction": 0.0215
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 709,
+        "step": 2,
+        "samples": 4000,
+        "current_accuracy": 0.735,
+        "final_accuracy": 0.984,
+        "future_flip_rate": 0.2655,
+        "mean_current_nll": 0.7035650610923767,
+        "mean_final_nll": 0.060977786779403687,
+        "mean_remaining_nll_reduction": 0.6425873041152954,
+        "std_remaining_nll_reduction": 1.3447682857513428,
+        "median_remaining_nll_reduction": 0.10749121755361557,
+        "iqr_remaining_nll_reduction": 0.7190936803817749,
+        "positive_value_fraction": 0.74625,
+        "negative_value_fraction": 0.023
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 709,
+        "step": 3,
+        "samples": 4000,
+        "current_accuracy": 0.9165,
+        "final_accuracy": 0.984,
+        "future_flip_rate": 0.0805,
+        "mean_current_nll": 0.23366983234882355,
+        "mean_final_nll": 0.060977786779403687,
+        "mean_remaining_nll_reduction": 0.17269204556941986,
+        "std_remaining_nll_reduction": 0.822816014289856,
+        "median_remaining_nll_reduction": 0.0031945703085511923,
+        "iqr_remaining_nll_reduction": 0.0320294164121151,
+        "positive_value_fraction": 0.36675,
+        "negative_value_fraction": 0.02475
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 709,
+        "step": 4,
+        "samples": 4000,
+        "current_accuracy": 0.96875,
+        "final_accuracy": 0.984,
+        "future_flip_rate": 0.02325,
+        "mean_current_nll": 0.09035336971282959,
+        "mean_final_nll": 0.060977786779403687,
+        "mean_remaining_nll_reduction": 0.029375581070780754,
+        "std_remaining_nll_reduction": 0.408575177192688,
+        "median_remaining_nll_reduction": 0.00028160284273326397,
+        "iqr_remaining_nll_reduction": 0.0019872263073921204,
+        "positive_value_fraction": 0.13325,
+        "negative_value_fraction": 0.0255
+      },
+      {
+        "evaluation_phase": "development",
+        "seed": 709,
+        "step": 5,
+        "samples": 4000,
+        "current_accuracy": 0.984,
+        "final_accuracy": 0.984,
+        "future_flip_rate": 0.0055,
+        "mean_current_nll": 0.059175338596105576,
+        "mean_final_nll": 0.060977786779403687,
+        "mean_remaining_nll_reduction": -0.001802448881790042,
+        "std_remaining_nll_reduction": 0.15865561366081238,
+        "median_remaining_nll_reduction": 4.456009264686145e-05,
+        "iqr_remaining_nll_reduction": 0.0002725637750700116,
+        "positive_value_fraction": 0.0485,
+        "negative_value_fraction": 0.0245
+      }
+    ]
+  },
+  "fresh_confirmation": {
+    "opened": false,
+    "passed": false,
+    "seed_gate": [],
+    "causal_metrics": [],
+    "trajectory_value_statistics": []
+  },
+  "advancement_decision": {
+    "development_passed": false,
+    "development_passing_fraction": 0.6666666666666666,
+    "fresh_confirmation_opened": false,
+    "fresh_confirmation_passed": false,
+    "trajectory_probes_fitted": false,
+    "advance_to_t1_u8": false
+  },
+  "probe_policy": "No trajectory probe is fit in T1-U7. Passing development and fresh-seed confirmation permits a separately preregistered T1-U8 probe experiment.",
+  "elapsed_seconds": 1489.416316678
+}

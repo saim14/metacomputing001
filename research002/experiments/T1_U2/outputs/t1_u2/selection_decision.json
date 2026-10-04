@@ -1,0 +1,26 @@
+{
+  "selected_candidate": "U2-A-low-aux",
+  "selected_record": {
+    "candidate_id": "U2-A-low-aux",
+    "rationale": "Isolate reduced intermediate-loss pressure at T1-U capacity.",
+    "d_model": 32,
+    "n_heads": 2,
+    "d_ff": 64,
+    "n_layers": 6,
+    "use_step_embeddings": false,
+    "unique_parameters": 9666,
+    "tail_mean_validation_accuracy": 0.9527777777777778,
+    "terminal_validation_accuracy": 0.97,
+    "best_validation_accuracy": 0.9716666666666667,
+    "best_validation_step": 2200
+  },
+  "minimum_validation_score": 0.85,
+  "advanced_to_independent_evaluation": true,
+  "ranking_rule": [
+    "descending_tail_mean_validation_accuracy",
+    "descending_terminal_validation_accuracy",
+    "ascending_unique_parameter_count",
+    "ascending_candidate_id"
+  ],
+  "sealed_data_rule": "Independent probe data and trajectory-validity statistics are evaluated only for the selected candidate after it clears the validation advancement gate."
+}

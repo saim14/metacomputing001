@@ -1,0 +1,4 @@
+evaluation_phase,seed,final_accuracy,counterfactual_pair_accuracy,first_edge_corrupted_accuracy,second_edge_corrupted_accuracy,valid_value_steps,valid_value_step_count,accuracy_gate_passed,counterfactual_gate_passed,first_edge_gate_passed,second_edge_gate_passed,value_gate_passed,passed
+fresh_confirmation,811,0.71225,0.566,0.499,0.496,"[1, 2, 3, 4]",4,False,False,True,True,True,False
+fresh_confirmation,907,0.729,0.6455,0.536,0.4955,"[1, 2, 3, 4]",4,False,False,True,True,True,False
+fresh_confirmation,1009,0.70925,0.5895,0.474,0.496,"[1, 2, 3]",3,False,False,True,True,True,False

@@ -1,0 +1,160 @@
+{
+  "audit_id": "T1-U7BC-M1",
+  "status": "completed",
+  "completed_utc": "2026-09-11T14:21:16.815332+00:00",
+  "elapsed_seconds": 133.12856936454773,
+  "spec_sha256": "de713c37ceada655b490d5b436c477be9808ba27518355f96940ac67e828d038",
+  "runner_sha256": "69fe7d83193c5431ba068885b1ef2cfeadab4ef1a11b8460a363ef4d95ec5844",
+  "input_manifest_sha256": "ec7082c1d33a82bd1c81a99bf6f057da401814d760dcafc2e0ae0e0a2c65adf0",
+  "unique_model_suite_evaluations": 18,
+  "reported_model_suite_rows": 24,
+  "native_endpoint_checks": [
+    {
+      "version": "U7B",
+      "seed": 503,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    },
+    {
+      "version": "U7C",
+      "seed": 503,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    },
+    {
+      "version": "U7B",
+      "seed": 607,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    },
+    {
+      "version": "U7C",
+      "seed": 607,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    },
+    {
+      "version": "U7B",
+      "seed": 709,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    },
+    {
+      "version": "U7C",
+      "seed": 709,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    },
+    {
+      "version": "U7B",
+      "seed": 811,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    },
+    {
+      "version": "U7C",
+      "seed": 811,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    },
+    {
+      "version": "U7B",
+      "seed": 907,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    },
+    {
+      "version": "U7C",
+      "seed": 907,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    },
+    {
+      "version": "U7B",
+      "seed": 1009,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    },
+    {
+      "version": "U7C",
+      "seed": 1009,
+      "native_probability_max_absolute_error": 0.0,
+      "all_native_metrics_reproduced": true
+    }
+  ],
+  "shared_arrays_unchanged_after_both_models": true,
+  "frozen_inputs_unchanged": true,
+  "training_updates": 0,
+  "probe_fits": 0,
+  "confirmation_seeds_opened": [],
+  "original_failed_advancement_decisions_unchanged": true,
+  "advance_to_t1_u8": false,
+  "suite_decisions": [
+    {
+      "version": "U7B",
+      "suite": "original_U7B",
+      "passed_seeds": [
+        503,
+        607,
+        709
+      ],
+      "failed_seeds": [
+        811,
+        907,
+        1009
+      ],
+      "all_seed_rescue": false
+    },
+    {
+      "version": "U7B",
+      "suite": "original_U7C",
+      "passed_seeds": [
+        503,
+        607,
+        709
+      ],
+      "failed_seeds": [
+        811,
+        907,
+        1009
+      ],
+      "all_seed_rescue": false
+    },
+    {
+      "version": "U7C",
+      "suite": "original_U7B",
+      "passed_seeds": [
+        503,
+        607,
+        709
+      ],
+      "failed_seeds": [
+        811,
+        907,
+        1009
+      ],
+      "all_seed_rescue": false
+    },
+    {
+      "version": "U7C",
+      "suite": "original_U7C",
+      "passed_seeds": [
+        503,
+        607,
+        709
+      ],
+      "failed_seeds": [
+        811,
+        907,
+        1009
+      ],
+      "all_seed_rescue": false
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39"
+  }
+}

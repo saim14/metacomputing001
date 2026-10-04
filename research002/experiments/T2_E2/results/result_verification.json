@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "phase": "main",
+  "metric_rows_independently_recomputed": 216,
+  "seed_comparisons_verified": 48,
+  "panel_comparisons_verified": 8,
+  "decisions_reproduced": 1,
+  "mlp_training_runs_accounted": 456,
+  "ridge_paths_accounted": 72,
+  "unique_families_verified": 18000,
+  "reference_choices_verified": 24,
+  "refitting_required": false
+}

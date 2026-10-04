@@ -1,0 +1,144 @@
+{
+  "study_id": "P1-A0B",
+  "version": "1.0.0",
+  "date_utc": "2026-09-15",
+  "title": "Arithmetic competence: paired training-budget and weight-decay development screen",
+  "scope": "A new bounded development stage informed by P1-A0; not confirmation or a history-observer study.",
+  "rationale": "P1-A0 had a large train/calibration gap after 1200 updates. Test longer training with a paired decoupled-weight-decay contrast, retaining task, architecture and exposed development split.",
+  "preserved": {
+    "task": "(a+b+c) mod 17",
+    "architecture": "P1-A0 six-step weight-tied encoder; width24 heads2 feedforward48; 5873 parameters",
+    "data_source": "Exact P1-A0 canonical-family split and train/calibration examples; these calibration outcomes are exposed development data, not untouched confirmation.",
+    "train_families": 581,
+    "train_examples": 2992,
+    "calibration_families": 193,
+    "calibration_examples": 950,
+    "reserved_families": 195,
+    "reserved_example_policy": "Do not expand, train on, or evaluate reserved families.",
+    "old_reserved_model_seeds": [
+      1103,
+      1201,
+      1301
+    ],
+    "loss": "Final-step cross entropy only; no intermediate supervision",
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "epsilon": 1e-08,
+    "gradient_clip": 1.0
+  },
+  "design": {
+    "model_seeds": [
+      2017,
+      2027
+    ],
+    "arms": [
+      {
+        "name": "no_decay",
+        "weight_decay": 0.0
+      },
+      {
+        "name": "matrix_decay",
+        "weight_decay": 1.0
+      }
+    ],
+    "run_order": [
+      [
+        2017,
+        "no_decay"
+      ],
+      [
+        2017,
+        "matrix_decay"
+      ],
+      [
+        2027,
+        "no_decay"
+      ],
+      [
+        2027,
+        "matrix_decay"
+      ]
+    ],
+    "updates_per_run": 6000,
+    "maximum_natural_training_runs": 4,
+    "maximum_total_updates": 24000,
+    "sampling_seed_rule": "500000 + model_seed; NumPy PCG64 with-replacement index matrix [6000,64], int64",
+    "pairing": "Identical initial weights and complete batch-index matrix within each model-seed pair; train both arms from initialization, not the old checkpoint.",
+    "checkpoints": [
+      0,
+      1200,
+      3000,
+      6000
+    ],
+    "selection_checkpoint": 6000,
+    "logging_interval": 1000,
+    "evaluation_batch_size": 64,
+    "run_all_planned_arms": true,
+    "best_checkpoint_selection": false,
+    "hyperparameter_search": false,
+    "outcome_driven_extension": false
+  },
+  "optimizer": {
+    "implementation": "Original P1-A0 Adam plus decoupled multiplicative decay of parameter matrices BEFORE the Adam update, using gradients computed at pre-decay parameters.",
+    "decay_parameters": "Every trainable tensor with ndim >= 2: token and position embeddings and linear weights. Exclude all biases and LayerNorm scale/bias vectors.",
+    "matrix_update": "theta_new=(1-lr*lambda)*theta_old - lr*m_hat/(sqrt(v_hat)+epsilon)",
+    "bias_and_norm_update": "Original Adam only",
+    "decay_step_fraction": 0.001,
+    "justification": "Weight decay and longer training have precedent in algorithmic generalization research. Lambda=1 is a fixed literature-motivated development candidate, not an optimum; matrix-only decay and the smaller tied architecture differ from that literature."
+  },
+  "measurements": {
+    "primary_contrast": "Final calibration exact-answer accuracy: matrix_decay minus no_decay, paired by model seed; report both differences and their arithmetic mean descriptively.",
+    "budget_diagnostic": "Within each arm/seed, report accuracy at 1200,3000,6000 without selecting a best checkpoint.",
+    "competence_threshold": 0.9,
+    "competence_gate_rationale": "Same declared development readiness threshold as P1-A0, not a validated deployment criterion.",
+    "decision_target": "Z_l=1[argmax(logits_l) != argmax(logits_6)]",
+    "candidate_steps": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "min_examples_per_class": 50,
+    "min_families_per_class": 25,
+    "min_class_fraction": 0.1,
+    "min_common_eligible_steps": 2,
+    "no_inferential_p_values": true,
+    "no_model_population_confidence_interval": true,
+    "descriptive_limit": "Two new initialization seeds on the same exposed development families do not establish out-of-sample model/population generalization or an untouched replication."
+  },
+  "decisions": {
+    "arm_ready": "Both seeds complete all updates, final accuracy >=90% for both, and at least two of steps2..5 satisfy all target-count/family/prevalence gates for BOTH seeds.",
+    "arm_preference_if_both_ready": "no_decay (simpler unchanged optimizer)",
+    "one_ready": "The passing arm is a development candidate for later observer-protocol design, not automatic probe fitting or confirmation.",
+    "none_ready": "Close this bounded competence screen with no ready regimen; do not add updates, select a best seed, or fit history predictors.",
+    "numeric_or_method_failure": "Mark study incomplete/invalid, preserve diagnostics, stop; no replacement run within this protocol.",
+    "history_probes_allowed": false,
+    "confirmation_allowed": false,
+    "sufficiency_hypothesis_tested": false,
+    "next_boundary": "Any further competence recipe or observer study requires its own justification and frozen protocol; retain every current failure and the sealed old/reserved data."
+  },
+  "artifacts": {
+    "save": [
+      "local_protocol_source_freeze",
+      "exact_development_arrays",
+      "paired_batch_index_matrices",
+      "all_scheduled_model_checkpoints",
+      "all_scheduled_train_and_calibration_logits",
+      "optimizer_moments_and_step_counts",
+      "all_update_logs",
+      "resume_checks",
+      "regimen_decisions",
+      "verification_report"
+    ],
+    "full_states": "Regenerate from frozen weights and exact inputs to keep the archive compact. No observer fitting is performed.",
+    "notebook": "Standalone NumPy Colab; method checks and recorded report by default; full development reproduction is explicitly opt-in."
+  },
+  "sources": [
+    "P1_A0_Report.md",
+    "P1_A0_protocol.json",
+    "https://arxiv.org/abs/2201.02177",
+    "https://arxiv.org/abs/1711.05101"
+  ]
+}

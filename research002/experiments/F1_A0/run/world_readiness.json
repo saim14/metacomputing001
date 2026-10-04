@@ -1,0 +1,26 @@
+[
+  {
+    "seed": 3109,
+    "epochs": 180,
+    "one_step_rmse": 0.029739244758345787,
+    "ten_step_rmse": 0.22688223918565098,
+    "ready": true,
+    "training_seconds": 1.9426448510000682
+  },
+  {
+    "seed": 3119,
+    "epochs": 180,
+    "one_step_rmse": 0.029920997435859072,
+    "ten_step_rmse": 0.2235422546048983,
+    "ready": true,
+    "training_seconds": 1.9057484590000513
+  },
+  {
+    "seed": 3137,
+    "epochs": 180,
+    "one_step_rmse": 0.002862084065554385,
+    "ten_step_rmse": 0.012263972900891212,
+    "ready": true,
+    "training_seconds": 1.8896602669999538
+  }
+]

@@ -1,0 +1,3 @@
+a8caffaaeb1e13a9c204769648a3dcbf4044c948c220bb2f843d36adb58914ad  outputs/t1_u4/candidates/U4-D-combined/seed_503/checkpoints/t1_transformer_seed_503.npz
+d1177587512614775986d71113ed535c9fcda203d3b539598e05e226a350734c  outputs/t1_u4/candidates/U4-D-combined/seed_607/checkpoints/t1_transformer_seed_607.npz
+130c57c6948e4c794459ccf976509a12ae1b3f9312b300801649e16b04fe1d26  outputs/t1_u4/candidates/U4-D-combined/seed_709/checkpoints/t1_transformer_seed_709.npz

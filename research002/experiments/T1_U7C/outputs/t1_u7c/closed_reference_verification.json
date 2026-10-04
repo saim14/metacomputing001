@@ -1,0 +1,44 @@
+{
+  "fixed_fields_verified": [
+    "data",
+    "model",
+    "development_gate",
+    "fresh_confirmation",
+    "training_noncurriculum_fields",
+    "training_phase_count",
+    "training_phase_names",
+    "training_phase_steps",
+    "training_stream_ids",
+    "training_data_overrides",
+    "training_learning_rates",
+    "training_t1_u7b_prefix"
+  ],
+  "exposed_development_seeds": [
+    503,
+    607,
+    709,
+    811,
+    907,
+    1009
+  ],
+  "new_fresh_confirmation_seeds": [
+    1103,
+    1201,
+    1301
+  ],
+  "prefix_updates": 4000,
+  "intervention_updates": 2000,
+  "intervention_stream_ids": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "reference_extension_auxiliary_loss_weight": 0.0,
+  "intervention_auxiliary_loss_weight": 0.005,
+  "total_updates": 6000,
+  "changed_fields": [
+    "training.curriculum.extension.auxiliary_loss_weight"
+  ],
+  "passed": true
+}

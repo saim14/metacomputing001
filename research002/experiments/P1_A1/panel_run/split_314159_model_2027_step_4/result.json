@@ -1,0 +1,753 @@
+{
+  "key": [
+    314159,
+    2027,
+    4
+  ],
+  "step": 4,
+  "started_at_utc": "2026-09-15T13:51:22.463179+00:00",
+  "arms": {
+    "current": {
+      "candidates": [
+        {
+          "index": 0,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 1.0,
+          "coefficient_count": 116,
+          "input_width": 115,
+          "tune_brier": 0.11155331720107643,
+          "fit_brier": 0.09400292583287936
+        },
+        {
+          "index": 1,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.01,
+          "coefficient_count": 116,
+          "input_width": 115,
+          "tune_brier": 0.08522831837314106,
+          "fit_brier": 0.06707860811801476
+        },
+        {
+          "index": 2,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.0001,
+          "coefficient_count": 116,
+          "input_width": 115,
+          "tune_brier": 0.07282211417756909,
+          "fit_brier": 0.04974435408874228
+        },
+        {
+          "index": 3,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 115,
+          "tune_brier": 0.11206544749763861,
+          "fit_brier": 0.09384923820157363
+        },
+        {
+          "index": 4,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 115,
+          "tune_brier": 0.09994566936940849,
+          "fit_brier": 0.0737017330075699
+        },
+        {
+          "index": 5,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 115,
+          "tune_brier": 0.09550763615038514,
+          "fit_brier": 0.06962519430279453
+        },
+        {
+          "index": 6,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 115,
+          "tune_brier": 0.11168935645721946,
+          "fit_brier": 0.09331482014317341
+        },
+        {
+          "index": 7,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 115,
+          "tune_brier": 0.09524371012976662,
+          "fit_brier": 0.07450852732921842
+        },
+        {
+          "index": 8,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 115,
+          "tune_brier": 0.08478612498310259,
+          "fit_brier": 0.06341989362549573
+        }
+      ],
+      "selected_index": 2,
+      "selected": {
+        "index": 2,
+        "kind": "linear",
+        "bandwidth": null,
+        "penalty": 0.0001,
+        "coefficient_count": 116,
+        "input_width": 115,
+        "tune_brier": 0.07282211417756909,
+        "fit_brier": 0.04974435408874228
+      },
+      "evaluation": {
+        "brier": 0.0880152101001545,
+        "balanced_accuracy": 0.6480317529360591,
+        "roc_auc": 0.8900173988690794,
+        "family_weighted_prevalence": 0.16407599309153711
+      }
+    },
+    "expanded_current": {
+      "candidates": [
+        {
+          "index": 0,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 1.0,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.11180493527444231,
+          "fit_brier": 0.09413761284587996
+        },
+        {
+          "index": 1,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.01,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.0862072074609137,
+          "fit_brier": 0.06567061167306329
+        },
+        {
+          "index": 2,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.0001,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.07157845090489856,
+          "fit_brier": 0.035253849036491765
+        },
+        {
+          "index": 3,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.11224962782861654,
+          "fit_brier": 0.09397272989576617
+        },
+        {
+          "index": 4,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.10117860603302056,
+          "fit_brier": 0.07449664345850242
+        },
+        {
+          "index": 5,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.09789986166185384,
+          "fit_brier": 0.07090172827729752
+        },
+        {
+          "index": 6,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.11174130713203471,
+          "fit_brier": 0.09324084575198209
+        },
+        {
+          "index": 7,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.09525247971606164,
+          "fit_brier": 0.07368320255033346
+        },
+        {
+          "index": 8,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.0873374169188504,
+          "fit_brier": 0.06480941103258236
+        }
+      ],
+      "selected_index": 2,
+      "selected": {
+        "index": 2,
+        "kind": "linear",
+        "bandwidth": null,
+        "penalty": 0.0001,
+        "coefficient_count": 576,
+        "input_width": 575,
+        "tune_brier": 0.07157845090489856,
+        "fit_brier": 0.035253849036491765
+      },
+      "evaluation": {
+        "brier": 0.08901083855930883,
+        "balanced_accuracy": 0.7059264897781644,
+        "roc_auc": 0.8537298825576405,
+        "family_weighted_prevalence": 0.16407599309153711
+      }
+    },
+    "ordered_history": {
+      "candidates": [
+        {
+          "index": 0,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 1.0,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.1119650835575898,
+          "fit_brier": 0.09432018457569744
+        },
+        {
+          "index": 1,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.01,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.08790351290643769,
+          "fit_brier": 0.06922069455773422
+        },
+        {
+          "index": 2,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.0001,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.0719130080355214,
+          "fit_brier": 0.041511356617023765
+        },
+        {
+          "index": 3,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.11260009706747134,
+          "fit_brier": 0.0944602887445419
+        },
+        {
+          "index": 4,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.10588885685248435,
+          "fit_brier": 0.07814054111049575
+        },
+        {
+          "index": 5,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.10378111090091031,
+          "fit_brier": 0.0733838113805329
+        },
+        {
+          "index": 6,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.11252408720943397,
+          "fit_brier": 0.0943140514542185
+        },
+        {
+          "index": 7,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.1008900794254233,
+          "fit_brier": 0.07861865194261912
+        },
+        {
+          "index": 8,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.08618137282622124,
+          "fit_brier": 0.06428720304148153
+        }
+      ],
+      "selected_index": 2,
+      "selected": {
+        "index": 2,
+        "kind": "linear",
+        "bandwidth": null,
+        "penalty": 0.0001,
+        "coefficient_count": 576,
+        "input_width": 575,
+        "tune_brier": 0.0719130080355214,
+        "fit_brier": 0.041511356617023765
+      },
+      "evaluation": {
+        "brier": 0.08688826563425806,
+        "balanced_accuracy": 0.6396204871683341,
+        "roc_auc": 0.8971400608960479,
+        "family_weighted_prevalence": 0.16407599309153711
+      }
+    },
+    "residual_history": {
+      "candidates": [
+        {
+          "index": 0,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 1.0,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.11227478554827897,
+          "fit_brier": 0.09461061571373448
+        },
+        {
+          "index": 1,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.01,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.0886684707460461,
+          "fit_brier": 0.0684404495219378
+        },
+        {
+          "index": 2,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.0001,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.07859919591473295,
+          "fit_brier": 0.034198479352136
+        },
+        {
+          "index": 3,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.11273892301437932,
+          "fit_brier": 0.09477424433854569
+        },
+        {
+          "index": 4,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.10643365375013443,
+          "fit_brier": 0.08187754746052607
+        },
+        {
+          "index": 5,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.10465836237705076,
+          "fit_brier": 0.07849360971709249
+        },
+        {
+          "index": 6,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.11229527733781644,
+          "fit_brier": 0.09465937003629696
+        },
+        {
+          "index": 7,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.09881911559272097,
+          "fit_brier": 0.07999991408719852
+        },
+        {
+          "index": 8,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.0896122851087193,
+          "fit_brier": 0.06719979166930104
+        }
+      ],
+      "selected_index": 2,
+      "selected": {
+        "index": 2,
+        "kind": "linear",
+        "bandwidth": null,
+        "penalty": 0.0001,
+        "coefficient_count": 576,
+        "input_width": 575,
+        "tune_brier": 0.07859919591473295,
+        "fit_brier": 0.034198479352136
+      },
+      "evaluation": {
+        "brier": 0.08951635696325178,
+        "balanced_accuracy": 0.6780121792083516,
+        "roc_auc": 0.8872390169639045,
+        "family_weighted_prevalence": 0.16407599309153711
+      }
+    },
+    "mismatched_history": {
+      "candidates": [
+        {
+          "index": 0,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 1.0,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.11229331019642644,
+          "fit_brier": 0.09451971391676141
+        },
+        {
+          "index": 1,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.01,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.09106150300289498,
+          "fit_brier": 0.06967122051305534
+        },
+        {
+          "index": 2,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.0001,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.08260439712726034,
+          "fit_brier": 0.04250399623590061
+        },
+        {
+          "index": 3,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.11274193779474383,
+          "fit_brier": 0.09466959698929035
+        },
+        {
+          "index": 4,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.1064100448048758,
+          "fit_brier": 0.08009077854720616
+        },
+        {
+          "index": 5,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.10475681679141588,
+          "fit_brier": 0.0765566281347095
+        },
+        {
+          "index": 6,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.11235555894670451,
+          "fit_brier": 0.09435237335450437
+        },
+        {
+          "index": 7,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.10124134322581703,
+          "fit_brier": 0.07790049978391073
+        },
+        {
+          "index": 8,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.09183593810097677,
+          "fit_brier": 0.06574916218027595
+        }
+      ],
+      "selected_index": 2,
+      "selected": {
+        "index": 2,
+        "kind": "linear",
+        "bandwidth": null,
+        "penalty": 0.0001,
+        "coefficient_count": 576,
+        "input_width": 575,
+        "tune_brier": 0.08260439712726034,
+        "fit_brier": 0.04250399623590061
+      },
+      "evaluation": {
+        "brier": 0.08545689968809765,
+        "balanced_accuracy": 0.6401370160939539,
+        "roc_auc": 0.8911564810787379,
+        "family_weighted_prevalence": 0.16407599309153711
+      }
+    },
+    "shuffled_history": {
+      "candidates": [
+        {
+          "index": 0,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 1.0,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.11210686207501207,
+          "fit_brier": 0.09447174403344856
+        },
+        {
+          "index": 1,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.01,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.08871960038246934,
+          "fit_brier": 0.06981433252818825
+        },
+        {
+          "index": 2,
+          "kind": "linear",
+          "bandwidth": null,
+          "penalty": 0.0001,
+          "coefficient_count": 576,
+          "input_width": 575,
+          "tune_brier": 0.07434967746879667,
+          "fit_brier": 0.04073031135878085
+        },
+        {
+          "index": 3,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.11263283702590567,
+          "fit_brier": 0.09451824421604993
+        },
+        {
+          "index": 4,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.10482690992855334,
+          "fit_brier": 0.07974518014348278
+        },
+        {
+          "index": 5,
+          "kind": "rbf",
+          "bandwidth": 0.5,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.10194752581683557,
+          "fit_brier": 0.07643333967535244
+        },
+        {
+          "index": 6,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 1.0,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.11245238272691102,
+          "fit_brier": 0.09403346706871929
+        },
+        {
+          "index": 7,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.01,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.0996151780803056,
+          "fit_brier": 0.07802138306211208
+        },
+        {
+          "index": 8,
+          "kind": "rbf",
+          "bandwidth": 2.0,
+          "penalty": 0.0001,
+          "coefficient_count": 65,
+          "input_width": 575,
+          "tune_brier": 0.0861976385711024,
+          "fit_brier": 0.06580028166900967
+        }
+      ],
+      "selected_index": 2,
+      "selected": {
+        "index": 2,
+        "kind": "linear",
+        "bandwidth": null,
+        "penalty": 0.0001,
+        "coefficient_count": 576,
+        "input_width": 575,
+        "tune_brier": 0.07434967746879667,
+        "fit_brier": 0.04073031135878085
+      },
+      "evaluation": {
+        "brier": 0.09109222473626154,
+        "balanced_accuracy": 0.6475152240104393,
+        "roc_auc": 0.8810977598956138,
+        "family_weighted_prevalence": 0.16407599309153711
+      }
+    }
+  },
+  "current_reference": "expanded_current",
+  "baseline_prevalence": 0.1068100358422939,
+  "baseline_evaluation": {
+    "brier": 0.14043445144223518,
+    "balanced_accuracy": 0.5,
+    "roc_auc": 0.5000000000000018,
+    "family_weighted_prevalence": 0.16407599309153711
+  },
+  "timing": {
+    "expanded_current": {
+      "median_seconds": 0.017489076999936515,
+      "repetitions_seconds": [
+        0.01796171199998753,
+        0.01780490600003759,
+        0.01730244500004119,
+        0.017196211000054973,
+        0.017338436000045476,
+        0.01770534399997814,
+        0.01814809100005732,
+        0.017203848000008293,
+        0.01903636799988817,
+        0.017027064999865615,
+        0.017352971000036632,
+        0.017564998000125343,
+        0.02131048799992641,
+        0.017489076999936515,
+        0.0173201570000856
+      ],
+      "warmup_repetitions": 3
+    },
+    "ordered_history": {
+      "median_seconds": 0.0041392480000013165,
+      "repetitions_seconds": [
+        0.003827781000154573,
+        0.0038476409999930183,
+        0.0038879990001987608,
+        0.004037882000147874,
+        0.004034993000004761,
+        0.0044721849999405094,
+        0.004434454000147525,
+        0.0040719739999985904,
+        0.004224206000117192,
+        0.004512574000045788,
+        0.004283664000013232,
+        0.004660233999857155,
+        0.00441977900004531,
+        0.0041392480000013165,
+        0.0039837429999352025
+      ],
+      "warmup_repetitions": 3
+    },
+    "continuation": {
+      "median_seconds": 0.07910070399998403,
+      "repetitions_seconds": [
+        0.09114476900003865,
+        0.07736782300003142,
+        0.0947382250001283,
+        0.07508049800003391,
+        0.08314166500008469,
+        0.0721111570001085,
+        0.07212450900010481,
+        0.09390021400008663,
+        0.07910070399998403,
+        0.08493749100011883,
+        0.09229233100018064,
+        0.10095794400012892,
+        0.07532005799998842,
+        0.07204855600002702,
+        0.069489448000013
+      ],
+      "warmup_repetitions": 3
+    }
+  },
+  "target_fits": 54,
+  "completed_at_utc": "2026-09-15T13:51:24.108139+00:00",
+  "resume_max_error": 0.0
+}

@@ -1,0 +1,100 @@
+{
+  "study_id": "T2-C1",
+  "version": "1.0.0",
+  "frozen_utc": "2026-09-12T03:57:50.189037+00:00",
+  "title": "Synthetic sensitivity calibration of the T2-E1 probe screen",
+  "purpose": "Quantify null behavior and detection rates for known synthetic history signals using the T2-E1 step-2 all-token probe dimensions and screening rule. No natural Transformer hypothesis test is performed.",
+  "scope": "One synthetic calibration configuration; new independent simulated datasets. No actual Transformer checkpoint is loaded, trained, changed, or used for tuning. T2-E1 and all earlier empirical results remain closed.",
+  "replicates": 24,
+  "datasets_per_replicate": 6,
+  "examples_per_dataset": 6000,
+  "family_size": 2,
+  "pair_intraclass_correlation": 0.5,
+  "splits": {
+    "train_families": 1600,
+    "validation_families": 400,
+    "test_families": 1000
+  },
+  "current_dimensions": 388,
+  "past_dimensions": 36,
+  "calibrated_step": 2,
+  "data_rng_base": 310000000,
+  "rff_rng_base": 320000000,
+  "bootstrap_rng_base": 330000000,
+  "rng_rule": "base + replicate*100 + dataset_slot; replicate and slot are zero-indexed",
+  "generator": "For every current coordinate, past coordinate, and independent noise scalar: (independent standard Gaussian family component + independent standard Gaussian member component)/sqrt(2). Coordinates and X/H/noise blocks independent; pairs share family component.",
+  "target": "Y_delta = 1 + sqrt(0.5)*X[:,0] + sqrt(delta)*H[:,0] + sqrt(0.5-delta)*epsilon",
+  "planted_population_delta_r2": [
+    0.0,
+    0.01,
+    0.05,
+    0.1
+  ],
+  "oracle": {
+    "target_mean": 1.0,
+    "target_variance": 1.0,
+    "current_conditional_mean": "1 + sqrt(0.5)*X[:,0]",
+    "history_conditional_mean": "current_conditional_mean + sqrt(delta)*H[:,0]",
+    "current_population_r2": 0.5,
+    "history_population_r2": "0.5+delta",
+    "incremental_population_r2": "delta"
+  },
+  "scenario_reuse": "Within a replicate/dataset, all deltas use the same X, H, epsilon and feature transforms. Replicates independent. Scenario rates are paired, not independent across deltas.",
+  "arms": [
+    "current_linear",
+    "current_rff",
+    "history"
+  ],
+  "features": {
+    "current_linear": "raw X",
+    "history": "concatenate X and H",
+    "current_rff": "X plus 36 cosine random Fourier features of training-standardized X; W_ij~N(0,1/388), bias~Uniform(0,2pi), scaled sqrt(2/36)"
+  },
+  "fitted_coefficients": {
+    "current_linear": 389,
+    "current_rff": 425,
+    "history": 425
+  },
+  "ridge": {
+    "alpha_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "selection": "minimum validation MSE; exact ties choose larger alpha",
+    "standardization": "training-only feature mean and population SD with floor 1e-8",
+    "target_centering": "training mean",
+    "refit_after_selection": false,
+    "solve": "Same ridge normal-equation/eigendecomposition calculation as T2-E1; share feature decompositions across target scenarios, which does not change each fitted solution"
+  },
+  "aggregation": "Equal weight across the six independent simulated datasets in each replicate. One step per dataset; no step-selection or chronology claim.",
+  "bootstrap": {
+    "replicates": 1000,
+    "unit": "held-out family, retaining both members",
+    "rule": "Common draws across both comparisons and all signal scenarios within a dataset; independent draws across datasets; bootstrap dataset models fixed",
+    "interval": "2.5/97.5 percentile"
+  },
+  "screen": "For history against both current_rff and current_linear: mean held-out delta R2 >=0.01, conditional bootstrap lower bound >0, positive held-out delta R2 in all six datasets, and nonnegative mean MAE advantage. Both comparisons must pass.",
+  "outputs": [
+    "per-dataset scores and validation choices",
+    "per-panel effects, intervals, and individual screen components",
+    "detection fraction at each known delta with 95% Wilson Monte Carlo interval",
+    "oracle score checks",
+    "bootstrap panel draws for reproducing decisions"
+  ],
+  "calibration_checks": "At most 1/24 null panels may pass, and at least 22/24 panels at planted delta=0.10 must pass. This is a fixed observed-run diagnostic, not a population type-I-error guarantee. No required pass fraction for 0.01 or 0.05; report their measured sensitivity.",
+  "budget": {
+    "dataset_generations": 144,
+    "scenario_datasets": 576,
+    "ridge_target_fits": 1728,
+    "alpha_candidates": 8640,
+    "feature_factorizations": 432,
+    "adaptive_repeats": 0,
+    "base_model_training": 0,
+    "reserved_model_seeds_opened": []
+  },
+  "limits": "Gaussian synthetic observations, an easily accessible linear planted signal, one step, fixed pair correlation, and 24 panel replicates do not reproduce the neural representation geometry or heavy-tailed NLL targets. This is not a calibrated power estimate for natural T2-E1 history signals and cannot retroactively confirm or refute them.",
+  "stop_rule": "Run all 24 paired scenario panels once, report every result and all screen components, then stop. Do not tune the screen, increase samples, or substitute a neural study after seeing results. Implementation errors may be repaired with a recorded amendment and retained failed logs."
+}

@@ -1,0 +1,9 @@
+{
+  "study": "F1-A1", "version": "1.0", "model_seeds": [3109, 3119, 3137],
+  "n_scenarios": 2400, "n_fit": 1200, "n_tune": 400,
+  "horizon": 10, "rounds": 6, "checkpoint": 3, "candidates": 32, "elites": 8,
+  "calibration_size": 2048, "neighbors": 16,
+  "alphas": [0.0001, 0.01, 1.0, 100.0], "bandwidths": [0.5, 2.0],
+  "rff_width": 128, "expanded_width": 212, "bootstrap": 4000,
+  "charge": 0.01, "runtime_cases": 24, "runtime_repeats": 3
+}

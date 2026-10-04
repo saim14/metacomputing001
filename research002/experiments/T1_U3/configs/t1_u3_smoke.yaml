@@ -1,0 +1,63 @@
+experiment:
+  id: T1-U3-smoke
+  name: T1-U3 Pipeline Smoke Test
+  version: 0.7.0
+  research_object: Exercise multi-seed stability and freeze-decision paths.
+hypotheses:
+  learning: Pipeline execution only.
+  target: Pipeline execution only.
+  null: Pipeline execution only.
+historical_reference:
+  experiment: T1-U2
+  selected_candidate: U2-A-low-aux
+  seed_311_independent_accuracy: 0.9725
+  seed_421_independent_accuracy: 0.81675
+  note: Smoke-test metadata only.
+seeds: [7, 8]
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 4
+  chain_hops: 1
+  train_samples: 64
+  validation_samples: 32
+  probe_samples: 64
+model:
+  d_model: 12
+  n_heads: 2
+  d_ff: 24
+  n_layers: 3
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+  tie_layers: true
+  use_step_embeddings: false
+training:
+  batch_size: 8
+  validation_batch_size: 16
+  learning_rate: 0.001
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.0
+  log_every: 1
+  comparison_horizon_step: 1
+  curriculum:
+    - name: smoke_low_aux
+      steps: 1
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.01
+      learning_rate: 0.001
+    - name: smoke_final_only
+      steps: 1
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.0
+      learning_rate: 0.001
+independent_validity:
+  minimum_final_accuracy: 0.0
+  minimum_future_flip_rate: 0.0
+  maximum_future_flip_rate: 1.0
+  minimum_valid_layers_per_seed: 1
+  minimum_passing_seed_fraction: 1.0
+sealed_evaluation:
+  rule: Independent data are evaluated only after each fixed run finishes.
+probes:
+  policy: No trajectory probes are run.

@@ -1,0 +1,78 @@
+experiment:
+  id: T1-U5-SMOKE
+  name: Residual-Scale Calibration Smoke Test
+  version: 0.9.0
+  research_object: Exercise every T1-U5 runner branch on a tiny workload.
+hypotheses:
+  joint_development: Smoke only.
+  sample_holdout: Smoke only.
+  null: Smoke only.
+scientific_boundary:
+  development_seeds_are_exposed: true
+  sample_holdout_is_not_fresh_initialization: true
+  note: Smoke-test output has no scientific interpretation.
+seeds: [7]
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 4
+  chain_hops: 1
+  train_samples: 128
+  validation_samples: 64
+  probe_samples: 128
+base_model:
+  d_model: 16
+  n_heads: 2
+  d_ff: 24
+  n_layers: 4
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+  tie_layers: true
+  use_step_embeddings: false
+base_training:
+  batch_size: 16
+  validation_batch_size: 64
+  learning_rate: 0.0005
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.0
+  log_every: 2
+  curriculum:
+    - {name: full_auxiliary, steps: 4, data_stream_id: 0, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.02, learning_rate: 0.0012}
+    - {name: taper_015, steps: 1, data_stream_id: 0, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.015, learning_rate: 0.0012}
+    - {name: taper_010_pre_transition, steps: 1, data_stream_id: 0, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.01, learning_rate: 0.0012}
+    - {name: taper_010_post_transition, steps: 1, data_stream_id: 1, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.01, learning_rate: 0.0005}
+    - {name: taper_005, steps: 1, data_stream_id: 1, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.005, learning_rate: 0.0005}
+    - {name: final_only, steps: 4, data_stream_id: 1, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.0, learning_rate: 0.0005}
+candidates:
+  - {id: U5-A-scale-0.6, train: true, residual_scale: 0.6, rationale: Smoke candidate.}
+  - {id: U5-B-scale-0.7, train: true, residual_scale: 0.7, rationale: Smoke candidate.}
+  - {id: U5-C-scale-0.8, train: true, residual_scale: 0.8, rationale: Smoke candidate.}
+validation_screen:
+  tail_validation_points: 2
+  minimum_seed_tail_mean_validation_accuracy: 0.0
+  minimum_mean_tail_validation_accuracy: 0.0
+development_joint_gate:
+  minimum_final_accuracy: 0.0
+  minimum_future_flip_rate: 0.0
+  maximum_future_flip_rate: 1.0
+  minimum_valid_layers_per_seed: 0
+  minimum_passing_seed_fraction: 1.0
+selection:
+  eligibility: Smoke only.
+  ranking: [fixed_T1_U5_lexicographic_rule]
+  no_feasible_candidate_rule: Smoke only.
+sealed_sample:
+  seed_formula: seed_times_100_plus_offset
+  seed_offset: 83
+  samples: 128
+  minimum_final_accuracy: 0.0
+  minimum_future_flip_rate: 0.0
+  maximum_future_flip_rate: 1.0
+  minimum_valid_layers_per_seed: 0
+  minimum_passing_seed_fraction: 1.0
+  rule: Smoke only.
+execution:
+  max_workers: 1
+probes:
+  policy: No probes are fitted.

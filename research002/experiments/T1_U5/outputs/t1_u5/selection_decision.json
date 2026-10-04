@@ -1,0 +1,19 @@
+{
+  "selected_candidate_id": null,
+  "eligible_candidate_ids": [],
+  "eligible_candidate_count": 0,
+  "sealed_sample_opened": false,
+  "rule": {
+    "eligibility": "Trainable candidates must pass the validation screen and the development joint gate for every seed.",
+    "ranking": [
+      "minimum_development_final_accuracy_descending",
+      "mean_development_final_accuracy_descending",
+      "minimum_valid_layer_count_descending",
+      "mean_valid_layer_count_descending",
+      "minimum_seed_tail_mean_validation_accuracy_descending",
+      "residual_scale_ascending",
+      "candidate_id_ascending"
+    ],
+    "no_feasible_candidate_rule": "If no trainable candidate is eligible, no candidate is selected and the sealed task-sample holdout remains unopened."
+  }
+}

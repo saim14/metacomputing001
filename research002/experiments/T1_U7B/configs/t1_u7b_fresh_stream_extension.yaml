@@ -1,0 +1,163 @@
+experiment:
+  id: T1-U7B
+  name: Two-Hop Fresh-Stream Training-Stability Repair
+  version: 0.10.0
+  research_object: >-
+    Determine whether one fixed 2,000-update extension across four new two-hop
+    data streams repairs the seed-level learning failure in T1-U7 while the
+    task, model, causal controls, value target, and evaluation gates remain fixed.
+
+hypotheses:
+  learning_repair: >-
+    The fresh-stream extension raises every exposed development seed above the
+    unchanged 0.95 clean-accuracy and 0.90 paired-counterfactual gates.
+  invariance: >-
+    Both required-edge corruptions remain inside the fixed chance band and at
+    least two intermediate steps retain the fixed continuous-value criterion.
+  confirmation: >-
+    If and only if every development seed passes, the complete 6,000-update
+    protocol will satisfy the same gate on all three fresh model seeds.
+  null: >-
+    At least one development seed still fails, or a development-selected
+    protocol fails fresh-seed confirmation.
+
+scientific_boundary:
+  development_seeds_are_exposed: true
+  development_seeds: [503, 607, 709]
+  note: >-
+    T1-U7 outcomes and development samples are exposed. T1-U7B tests exactly
+    one bounded intervention: a 2,000-update final-only extension using four
+    new two-hop streams. Fresh model seeds remain unopened unless every exposed
+    seed passes. No trajectory probe is fit.
+
+development_seeds: [503, 607, 709]
+fresh_confirmation_seeds: [811, 907, 1009]
+
+closed_reference:
+  config: configs/t1_u7_two_hop_gate.yaml
+  output: outputs/t1_u7
+  expected_base_updates: 4000
+
+extension:
+  total_updates: 2000
+  stream_ids: [2, 3, 4, 5]
+  updates_per_stream: 500
+  interpretation_boundary: >-
+    The intervention jointly changes training duration and exposure to fresh
+    streams. It does not separately identify a pure data-diversity effect from
+    a pure additional-update effect.
+
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 5
+  chain_hops: 2
+  train_samples: 8000
+  validation_samples: 1800
+  probe_samples: 4000
+  causal_pairs: 2000
+  development_sample_seed_offset: 37
+  development_causal_seed_offset: 43
+  fresh_sample_seed_offset: 83
+  fresh_causal_seed_offset: 89
+
+model:
+  d_model: 32
+  n_heads: 2
+  d_ff: 64
+  n_layers: 6
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+  tie_layers: true
+  use_step_embeddings: false
+  residual_scale: 0.5
+
+training:
+  batch_size: 96
+  validation_batch_size: 600
+  learning_rate: 0.0005
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.0
+  log_every: 200
+  curriculum:
+    - name: full_auxiliary_two_hop
+      steps: 1700
+      data_stream_id: 0
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.02
+      learning_rate: 0.0012
+    - name: taper_015_two_hop
+      steps: 200
+      data_stream_id: 0
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.015
+      learning_rate: 0.0012
+    - name: taper_010_pre_transition_two_hop
+      steps: 100
+      data_stream_id: 0
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.01
+      learning_rate: 0.0012
+    - name: taper_010_post_transition_two_hop
+      steps: 100
+      data_stream_id: 1
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.01
+      learning_rate: 0.0005
+    - name: taper_005_two_hop
+      steps: 200
+      data_stream_id: 1
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.005
+      learning_rate: 0.0005
+    - name: final_only_two_hop
+      steps: 1700
+      data_stream_id: 1
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.0
+      learning_rate: 0.0005
+    - name: fresh_stream_2
+      steps: 500
+      data_stream_id: 2
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.0
+      learning_rate: 0.0005
+    - name: fresh_stream_3
+      steps: 500
+      data_stream_id: 3
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.0
+      learning_rate: 0.0005
+    - name: fresh_stream_4
+      steps: 500
+      data_stream_id: 4
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.0
+      learning_rate: 0.0005
+    - name: fresh_stream_5
+      steps: 500
+      data_stream_id: 5
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.0
+      learning_rate: 0.0005
+
+development_gate:
+  minimum_final_accuracy: 0.95
+  minimum_counterfactual_pair_accuracy: 0.90
+  corruption_accuracy_minimum: 0.40
+  corruption_accuracy_maximum: 0.60
+  minimum_mean_remaining_nll_reduction: 0.02
+  minimum_std_remaining_nll_reduction: 0.02
+  minimum_valid_value_steps: 2
+  value_positive_epsilon: 0.01
+  minimum_passing_seed_fraction: 1.0
+
+fresh_confirmation:
+  open_only_after_development_passes: true
+  require_same_gate_for_every_seed: true
+
+probes:
+  policy: >-
+    No trajectory probe is fit in T1-U7B. Only a complete development and
+    fresh-seed pass can authorize a separately preregistered T1-U8 experiment.

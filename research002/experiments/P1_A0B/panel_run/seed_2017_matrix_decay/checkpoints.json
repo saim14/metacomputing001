@@ -1,0 +1,446 @@
+[
+  {
+    "update": 0,
+    "recorded_at_utc": "2026-09-15T04:50:50.012691+00:00",
+    "train": {
+      "accuracy_by_step": [
+        0.061163101604278076,
+        0.04946524064171123,
+        0.04512032085561497,
+        0.05748663101604278,
+        0.05848930481283422,
+        0.05815508021390375,
+        0.05815508021390375
+      ],
+      "decision_change": [
+        {
+          "step": 2,
+          "unchanged_examples": 1251,
+          "changed_examples": 1741,
+          "unchanged_families": 470,
+          "changed_families": 533,
+          "flip_prevalence": 0.5818850267379679,
+          "eligible": true
+        },
+        {
+          "step": 3,
+          "unchanged_examples": 2172,
+          "changed_examples": 820,
+          "unchanged_families": 567,
+          "changed_families": 402,
+          "flip_prevalence": 0.27406417112299464,
+          "eligible": true
+        },
+        {
+          "step": 4,
+          "unchanged_examples": 2622,
+          "changed_examples": 370,
+          "unchanged_families": 578,
+          "changed_families": 262,
+          "flip_prevalence": 0.12366310160427807,
+          "eligible": true
+        },
+        {
+          "step": 5,
+          "unchanged_examples": 2832,
+          "changed_examples": 160,
+          "unchanged_families": 581,
+          "changed_families": 132,
+          "flip_prevalence": 0.053475935828877004,
+          "eligible": false
+        }
+      ]
+    },
+    "calibration": {
+      "accuracy_by_step": [
+        0.037894736842105266,
+        0.05789473684210526,
+        0.07157894736842105,
+        0.056842105263157895,
+        0.05052631578947368,
+        0.05473684210526316,
+        0.05789473684210526
+      ],
+      "decision_change": [
+        {
+          "step": 2,
+          "unchanged_examples": 401,
+          "changed_examples": 549,
+          "unchanged_families": 151,
+          "changed_families": 169,
+          "flip_prevalence": 0.5778947368421052,
+          "eligible": true
+        },
+        {
+          "step": 3,
+          "unchanged_examples": 651,
+          "changed_examples": 299,
+          "unchanged_families": 186,
+          "changed_families": 123,
+          "flip_prevalence": 0.31473684210526315,
+          "eligible": true
+        },
+        {
+          "step": 4,
+          "unchanged_examples": 795,
+          "changed_examples": 155,
+          "unchanged_families": 192,
+          "changed_families": 90,
+          "flip_prevalence": 0.1631578947368421,
+          "eligible": true
+        },
+        {
+          "step": 5,
+          "unchanged_examples": 880,
+          "changed_examples": 70,
+          "unchanged_families": 193,
+          "changed_families": 53,
+          "flip_prevalence": 0.07368421052631578,
+          "eligible": false
+        }
+      ]
+    },
+    "resume_errors": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0
+    }
+  },
+  {
+    "update": 1200,
+    "recorded_at_utc": "2026-09-15T04:51:11.904334+00:00",
+    "train": {
+      "accuracy_by_step": [
+        0.05548128342245989,
+        0.07887700534759358,
+        0.15274064171122995,
+        0.32887700534759357,
+        0.49064171122994654,
+        0.6209893048128342,
+        0.643048128342246
+      ],
+      "decision_change": [
+        {
+          "step": 2,
+          "unchanged_examples": 501,
+          "changed_examples": 2491,
+          "unchanged_families": 108,
+          "changed_families": 497,
+          "flip_prevalence": 0.8325534759358288,
+          "eligible": true
+        },
+        {
+          "step": 3,
+          "unchanged_examples": 1235,
+          "changed_examples": 1757,
+          "unchanged_families": 259,
+          "changed_families": 364,
+          "flip_prevalence": 0.5872326203208557,
+          "eligible": true
+        },
+        {
+          "step": 4,
+          "unchanged_examples": 1993,
+          "changed_examples": 999,
+          "unchanged_families": 422,
+          "changed_families": 227,
+          "flip_prevalence": 0.3338903743315508,
+          "eligible": true
+        },
+        {
+          "step": 5,
+          "unchanged_examples": 2604,
+          "changed_examples": 388,
+          "unchanged_families": 527,
+          "changed_families": 106,
+          "flip_prevalence": 0.12967914438502673,
+          "eligible": true
+        }
+      ]
+    },
+    "calibration": {
+      "accuracy_by_step": [
+        0.056842105263157895,
+        0.06,
+        0.08,
+        0.1168421052631579,
+        0.1968421052631579,
+        0.2305263157894737,
+        0.2873684210526316
+      ],
+      "decision_change": [
+        {
+          "step": 2,
+          "unchanged_examples": 106,
+          "changed_examples": 844,
+          "unchanged_families": 26,
+          "changed_families": 175,
+          "flip_prevalence": 0.888421052631579,
+          "eligible": true
+        },
+        {
+          "step": 3,
+          "unchanged_examples": 298,
+          "changed_examples": 652,
+          "unchanged_families": 69,
+          "changed_families": 141,
+          "flip_prevalence": 0.6863157894736842,
+          "eligible": true
+        },
+        {
+          "step": 4,
+          "unchanged_examples": 554,
+          "changed_examples": 396,
+          "unchanged_families": 123,
+          "changed_families": 92,
+          "flip_prevalence": 0.4168421052631579,
+          "eligible": true
+        },
+        {
+          "step": 5,
+          "unchanged_examples": 758,
+          "changed_examples": 192,
+          "unchanged_families": 167,
+          "changed_families": 51,
+          "flip_prevalence": 0.20210526315789473,
+          "eligible": true
+        }
+      ]
+    },
+    "resume_errors": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0
+    }
+  },
+  {
+    "update": 3000,
+    "recorded_at_utc": "2026-09-15T04:51:44.023805+00:00",
+    "train": {
+      "accuracy_by_step": [
+        0.061163101604278076,
+        0.11664438502673796,
+        0.35060160427807485,
+        0.6310160427807486,
+        0.9004010695187166,
+        0.973596256684492,
+        0.9732620320855615
+      ],
+      "decision_change": [
+        {
+          "step": 2,
+          "unchanged_examples": 1043,
+          "changed_examples": 1949,
+          "unchanged_families": 206,
+          "changed_families": 399,
+          "flip_prevalence": 0.651403743315508,
+          "eligible": true
+        },
+        {
+          "step": 3,
+          "unchanged_examples": 1925,
+          "changed_examples": 1067,
+          "unchanged_families": 379,
+          "changed_families": 236,
+          "flip_prevalence": 0.35661764705882354,
+          "eligible": true
+        },
+        {
+          "step": 4,
+          "unchanged_examples": 2731,
+          "changed_examples": 261,
+          "unchanged_families": 534,
+          "changed_families": 75,
+          "flip_prevalence": 0.08723262032085562,
+          "eligible": false
+        },
+        {
+          "step": 5,
+          "unchanged_examples": 2963,
+          "changed_examples": 29,
+          "unchanged_families": 576,
+          "changed_families": 12,
+          "flip_prevalence": 0.009692513368983958,
+          "eligible": false
+        }
+      ]
+    },
+    "calibration": {
+      "accuracy_by_step": [
+        0.037894736842105266,
+        0.09263157894736843,
+        0.28526315789473683,
+        0.5652631578947368,
+        0.84,
+        0.9357894736842105,
+        0.9484210526315789
+      ],
+      "decision_change": [
+        {
+          "step": 2,
+          "unchanged_examples": 266,
+          "changed_examples": 684,
+          "unchanged_families": 55,
+          "changed_families": 145,
+          "flip_prevalence": 0.72,
+          "eligible": true
+        },
+        {
+          "step": 3,
+          "unchanged_examples": 564,
+          "changed_examples": 386,
+          "unchanged_families": 122,
+          "changed_families": 87,
+          "flip_prevalence": 0.4063157894736842,
+          "eligible": true
+        },
+        {
+          "step": 4,
+          "unchanged_examples": 820,
+          "changed_examples": 130,
+          "unchanged_families": 166,
+          "changed_families": 36,
+          "flip_prevalence": 0.1368421052631579,
+          "eligible": true
+        },
+        {
+          "step": 5,
+          "unchanged_examples": 924,
+          "changed_examples": 26,
+          "unchanged_families": 189,
+          "changed_families": 10,
+          "flip_prevalence": 0.02736842105263158,
+          "eligible": false
+        }
+      ]
+    },
+    "resume_errors": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0
+    }
+  },
+  {
+    "update": 6000,
+    "recorded_at_utc": "2026-09-15T04:52:39.795684+00:00",
+    "train": {
+      "accuracy_by_step": [
+        0.04913101604278075,
+        0.07921122994652406,
+        0.2162433155080214,
+        0.4832887700534759,
+        0.9127673796791443,
+        0.9946524064171123,
+        0.9993315508021391
+      ],
+      "decision_change": [
+        {
+          "step": 2,
+          "unchanged_examples": 647,
+          "changed_examples": 2345,
+          "unchanged_families": 130,
+          "changed_families": 465,
+          "flip_prevalence": 0.7837566844919787,
+          "eligible": true
+        },
+        {
+          "step": 3,
+          "unchanged_examples": 1445,
+          "changed_examples": 1547,
+          "unchanged_families": 294,
+          "changed_families": 327,
+          "flip_prevalence": 0.5170454545454546,
+          "eligible": true
+        },
+        {
+          "step": 4,
+          "unchanged_examples": 2729,
+          "changed_examples": 263,
+          "unchanged_families": 527,
+          "changed_families": 69,
+          "flip_prevalence": 0.08790106951871658,
+          "eligible": false
+        },
+        {
+          "step": 5,
+          "unchanged_examples": 2974,
+          "changed_examples": 18,
+          "unchanged_families": 574,
+          "changed_families": 11,
+          "flip_prevalence": 0.006016042780748663,
+          "eligible": false
+        }
+      ]
+    },
+    "calibration": {
+      "accuracy_by_step": [
+        0.05368421052631579,
+        0.07263157894736842,
+        0.15368421052631578,
+        0.4663157894736842,
+        0.84,
+        0.991578947368421,
+        0.9957894736842106
+      ],
+      "decision_change": [
+        {
+          "step": 2,
+          "unchanged_examples": 143,
+          "changed_examples": 807,
+          "unchanged_families": 30,
+          "changed_families": 170,
+          "flip_prevalence": 0.8494736842105263,
+          "eligible": true
+        },
+        {
+          "step": 3,
+          "unchanged_examples": 440,
+          "changed_examples": 510,
+          "unchanged_families": 90,
+          "changed_families": 110,
+          "flip_prevalence": 0.5368421052631579,
+          "eligible": true
+        },
+        {
+          "step": 4,
+          "unchanged_examples": 796,
+          "changed_examples": 154,
+          "unchanged_families": 161,
+          "changed_families": 38,
+          "flip_prevalence": 0.16210526315789472,
+          "eligible": true
+        },
+        {
+          "step": 5,
+          "unchanged_examples": 940,
+          "changed_examples": 10,
+          "unchanged_families": 191,
+          "changed_families": 4,
+          "flip_prevalence": 0.010526315789473684,
+          "eligible": false
+        }
+      ]
+    },
+    "resume_errors": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0
+    }
+  }
+]

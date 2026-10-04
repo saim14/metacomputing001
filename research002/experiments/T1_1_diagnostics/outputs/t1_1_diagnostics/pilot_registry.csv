@@ -1,0 +1,9 @@
+run_id,change,probe_final_accuracy,max_logged_validation_accuracy,validity_status,inferential_use
+T1.1-pilot,three-hop six-layer low auxiliary supervision,0.5253125,0.5312500,failed,none
+T1.1a-pilot,two-hop only,0.5100000,0.5343750,failed,none
+T1.1b-pilot,three-hop plus role and pair embeddings,0.5000000,0.5375000,failed,none
+T1.1c-primitive,balanced one-hop in six-layer regime,0.5262500,0.5656250,failed,learning diagnostic
+T1.1d-diagnostic,balanced one-hop T1 architecture 900 steps,0.6668750,0.6566667,failed,learning diagnostic
+T1.1e-diagnostic,balanced one-hop T1 architecture 1800 steps,0.8187500,0.8533333,failed,learning diagnostic
+T1.1f-pilot,one-to-two-to-three-hop curriculum,0.5100000,0.6937500,failed,none
+T1-R-pilot,balanced retrieval with long training and reduced-auxiliary finetune,0.7830556,0.7850000,failed,learning and trajectory diagnostic

@@ -1,0 +1,18 @@
+{
+  "study_id": "T2-E2",
+  "frozen_utc": "2026-09-13T03:31:20.193482+00:00",
+  "development_result_sha256": "dd0429673b54fcb4197563c2652bbba8a23d702b062d6602bf333f372a0ca515",
+  "protocol_sha256": "f6af08f870b514a9ba7113317f4c6567cbcbcc7b504e965b6522928db7b6591d",
+  "sources": {
+    "verify_results.py": "64aed4cc78024d825a8e06cee0817f119199593bf35c6a0be7a8ad88c392d252",
+    "legacy_t2e1.py": "05ef29b2017bdcf45dba3c104963fd72b141b359db40b85e390dd03798cccb96",
+    "observer.py": "2bde7a74173cba1abe9f25bc453aab0bfec51062ab2d64cc5545c1cd26398dca",
+    "verify_methods.py": "9446db70a4b7ef7ee7369fe0d2328a53206c4c629dd30cf704660ea4be7d8724",
+    "run_experiment.py": "5e7a8c1b76267ed59cf67e8a188aa0e3319312b9b58605d3a4fa048fbbe2bf24",
+    "aggregate_results.py": "55596dee0e6ab7431d62ae608ed958a0115b8e0f8b602df7592d6a67397bf048",
+    "study_common.py": "0e93e5329d8e70e5ded889ee622091055920611279205f5231d51a0c50244808"
+  },
+  "main_data_generated": false,
+  "development_go_rule_passed": true,
+  "scientific_protocol_changes": []
+}

@@ -1,0 +1,100 @@
+experiment:
+  id: T1-U4-U4-D-combined
+  name: Weight-Tied Transformer Optimization-Basin Stabilization Study
+  version: 0.8.0
+  research_object: Determine whether residual-update scaling, an area-matched auxiliary-loss
+    taper, or their combination improves robust learning across the exposed T1-U3
+    development seeds while the task, model size, data, and total update budget remain
+    fixed.
+hypotheses:
+  optimization: At least one intervention improves the minimum seed-level tail validation
+    accuracy over the closed T1-U3 reference by at least 0.03 and satisfies the preregistered
+    screening thresholds.
+  independent: The validation-selected intervention reaches at least 0.95 independent
+    accuracy and retains at least two nonsaturated future-flip layers for every development
+    seed.
+  null: No intervention clears the screening gate, or the selected intervention fails
+    the independent multi-seed gate.
+seeds:
+- 503
+- 607
+- 709
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 4
+  chain_hops: 1
+  train_samples: 8000
+  validation_samples: 1800
+  probe_samples: 4000
+model:
+  d_model: 32
+  n_heads: 2
+  d_ff: 64
+  n_layers: 6
+  n_classes: 2
+  layer_norm_epsilon: 1.0e-05
+  use_structure_embeddings: true
+  tie_layers: true
+  use_step_embeddings: false
+  residual_scale: 0.5
+training:
+  batch_size: 96
+  validation_batch_size: 600
+  learning_rate: 0.0005
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.0
+  log_every: 200
+  curriculum:
+  - name: full_auxiliary
+    steps: 1700
+    data_stream_id: 0
+    data_overrides:
+      chain_hops: 1
+    auxiliary_loss_weight: 0.02
+    learning_rate: 0.0012
+  - name: taper_015
+    steps: 200
+    data_stream_id: 0
+    data_overrides:
+      chain_hops: 1
+    auxiliary_loss_weight: 0.015
+    learning_rate: 0.0012
+  - name: taper_010_pre_transition
+    steps: 100
+    data_stream_id: 0
+    data_overrides:
+      chain_hops: 1
+    auxiliary_loss_weight: 0.01
+    learning_rate: 0.0012
+  - name: taper_010_post_transition
+    steps: 100
+    data_stream_id: 1
+    data_overrides:
+      chain_hops: 1
+    auxiliary_loss_weight: 0.01
+    learning_rate: 0.0005
+  - name: taper_005
+    steps: 200
+    data_stream_id: 1
+    data_overrides:
+      chain_hops: 1
+    auxiliary_loss_weight: 0.005
+    learning_rate: 0.0005
+  - name: final_only
+    steps: 1700
+    data_stream_id: 1
+    data_overrides:
+      chain_hops: 1
+    auxiliary_loss_weight: 0.0
+    learning_rate: 0.0005
+probes:
+  test_fraction: 0.4
+  minimum_class_count: 30
+  ridge_alpha: 1.0
+validity:
+  minimum_final_accuracy: 0.95
+  minimum_future_flip_rate: 0.05
+  maximum_future_flip_rate: 0.45
+  minimum_valid_layers_per_seed: 2
+  minimum_passing_seed_fraction: 1.0

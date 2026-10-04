@@ -1,0 +1,24 @@
+{
+  "experiment": "T1-U5",
+  "incident": "Three-worker process pool terminated after all scale-0.6 jobs completed and as scale-0.7 jobs began.",
+  "scientific_impact": "None. No selection or gate had been applied.",
+  "recovery": "Added validated checkpoint resumption and reduced execution concurrency from three workers to two.",
+  "completed_jobs_reused": [
+    "U5-A-scale-0.6 seed 503",
+    "U5-A-scale-0.6 seed 607",
+    "U5-A-scale-0.6 seed 709"
+  ],
+  "incomplete_jobs_restarted": [
+    "U5-B-scale-0.7 seed 503",
+    "U5-B-scale-0.7 seed 607",
+    "U5-B-scale-0.7 seed 709"
+  ],
+  "unchanged": [
+    "candidate residual scales",
+    "model parameters and initialization seeds",
+    "training and validation data streams",
+    "4,000-update budget",
+    "development trajectory samples",
+    "all thresholds and selection rules"
+  ]
+}

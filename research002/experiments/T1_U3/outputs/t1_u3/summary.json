@@ -1,0 +1,146 @@
+{
+  "experiment": {
+    "id": "T1-U3",
+    "name": "Weight-Tied Transformer Training-Stability Study",
+    "version": "0.7.0",
+    "research_object": "Test whether extending final-only training makes the compact T1-U2 configuration reliably learn shortcut-free balanced retrieval across fresh seeds."
+  },
+  "status": "failed_multi_seed_stability_gate",
+  "configuration": {
+    "seeds": [
+      503,
+      607,
+      709
+    ],
+    "data": {
+      "task_type": "chain_lookup",
+      "key_count": 8,
+      "pair_count": 4,
+      "chain_hops": 1,
+      "train_samples": 8000,
+      "validation_samples": 1800,
+      "probe_samples": 4000
+    },
+    "model": {
+      "d_model": 32,
+      "n_heads": 2,
+      "d_ff": 64,
+      "n_layers": 6,
+      "n_classes": 2,
+      "layer_norm_epsilon": 1e-05,
+      "use_structure_embeddings": true,
+      "tie_layers": true,
+      "use_step_embeddings": false
+    },
+    "training": {
+      "batch_size": 96,
+      "validation_batch_size": 600,
+      "learning_rate": 0.0005,
+      "max_grad_norm": 1.0,
+      "auxiliary_loss_weight": 0.0,
+      "log_every": 200,
+      "comparison_horizon_step": 2400,
+      "curriculum": [
+        {
+          "name": "low_auxiliary_learning",
+          "steps": 2000,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.02,
+          "learning_rate": 0.0012
+        },
+        {
+          "name": "extended_final_only",
+          "steps": 2000,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.0,
+          "learning_rate": 0.0005
+        }
+      ]
+    }
+  },
+  "historical_reference": {
+    "experiment": "T1-U2",
+    "selected_candidate": "U2-A-low-aux",
+    "seed_311_independent_accuracy": 0.9725,
+    "seed_421_independent_accuracy": 0.81675,
+    "note": "Historical context only. T1-U2 remains closed; T1-U3 uses fresh seeds and does not reinterpret or extend its statistical claims."
+  },
+  "sealed_evaluation": {
+    "rule": "Training schedules complete without adaptive stopping. Independent data are evaluated only after each fixed run finishes and never influence later runs."
+  },
+  "probe_policy": "No state-history or attention-history probes are run in T1-U3. Passing freezes this configuration for a separately preregistered confirmatory experiment.",
+  "validity": {
+    "thresholds": {
+      "minimum_final_accuracy": 0.95,
+      "minimum_future_flip_rate": 0.05,
+      "maximum_future_flip_rate": 0.45,
+      "minimum_valid_layers_per_seed": 2,
+      "minimum_passing_seed_fraction": 1.0
+    },
+    "passing_seed_fraction": 0.3333333333333333,
+    "required_passing_seed_fraction": 1.0,
+    "passed": false,
+    "seeds": [
+      {
+        "seed": 503,
+        "final_accuracy": 0.961,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": true,
+        "validation_accuracy_at_2400": 0.9333333333333333,
+        "terminal_validation_accuracy": 0.9583333333333334,
+        "validation_gain_after_2400": 0.025000000000000022,
+        "best_validation_accuracy": 0.9616666666666667,
+        "best_validation_step": 2800
+      },
+      {
+        "seed": 607,
+        "final_accuracy": 0.802,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": false,
+        "validation_accuracy_at_2400": 0.7183333333333334,
+        "terminal_validation_accuracy": 0.7966666666666666,
+        "validation_gain_after_2400": 0.07833333333333325,
+        "best_validation_accuracy": 0.7966666666666666,
+        "best_validation_step": 4000
+      },
+      {
+        "seed": 709,
+        "final_accuracy": 0.86375,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": false,
+        "validation_accuracy_at_2400": 0.8266666666666667,
+        "terminal_validation_accuracy": 0.8833333333333333,
+        "validation_gain_after_2400": 0.05666666666666664,
+        "best_validation_accuracy": 0.8833333333333333,
+        "best_validation_step": 4000
+      }
+    ]
+  },
+  "aggregate": {
+    "mean_independent_accuracy": 0.8755833333333333,
+    "sample_std_independent_accuracy": 0.08015778710352056,
+    "minimum_independent_accuracy": 0.802,
+    "maximum_independent_accuracy": 0.961,
+    "mean_validation_gain_after_2400": 0.05333333333333331
+  },
+  "elapsed_seconds": 1402.461835527
+}

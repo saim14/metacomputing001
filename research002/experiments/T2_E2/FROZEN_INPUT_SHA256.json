@@ -1,0 +1,20 @@
+{
+  "legacy_t2e1.py": "05ef29b2017bdcf45dba3c104963fd72b141b359db40b85e390dd03798cccb96",
+  "STUDY_PROTOCOL.json": "f6af08f870b514a9ba7113317f4c6567cbcbcc7b504e965b6522928db7b6591d",
+  "reference/T2_E1_PROTOCOL.json": "b63b9020b3ab5714c9d6896f3937b988e2f7e7a98d049b8345a239886dde0e06",
+  "reference/T2_E1_Report.md": "ac04f9ac587a96ab54f1b1dd425044969aa64184e6e589c099df63ab5efefefd",
+  "reference/exposed_T2_E1_tokens.npz": "dec70e08fc717f02c8bc9078e55c6f0da2e02641b6e1381911ada3fddc12a858",
+  "frozen/model_protocol.yaml": "7e4b1cfd6b618ad29c49cc958af8dd138ccb3a006961ef220da645a8469f937c",
+  "frozen/prior_matched_audit.json": "db9ccdbd80527a4af9cc7e6ca02bdb9521821f25a33e772157699156aabbac5f",
+  "frozen/code/run_t1_u7.py": "726c5b5dbb920ef9a21a8707014cdfd03a189e58eebdf6b97a1ca02afdeb1ed1",
+  "frozen/checkpoints/seed_709.npz": "f2dc29b67c48718f36c80ce1e130d8bdd69f04d11b810f8040b6e534f7d2aaf8",
+  "frozen/checkpoints/seed_907.npz": "45b67d9544d4513ac0470ce7d0eff7242a216d1ca2c8b95c467ecba0417d69b3",
+  "frozen/checkpoints/seed_607.npz": "24463a8f639c14ed0cf13463052f0ed89e84440282a126c58c45ed3474ce622a",
+  "frozen/checkpoints/seed_1009.npz": "cb7aff2d1839446640dbb8c5f9353e5a8e82cdfcbb257dcf7f330e877e747897",
+  "frozen/checkpoints/seed_811.npz": "59baaf596fa5e801b99c6032819640e3571a8e65f6ae3ff665902753709bacb8",
+  "frozen/checkpoints/seed_503.npz": "62f3133d1fe8c95dcf18d2a7e13e41a78d94c1ed42a308e11d4ea6a60b34ed56",
+  "frozen/code/src/t1_experiment.py": "7e359f717a47f0a53d8acfe95b977d92098bfb68f02cb288e99bd1cf502b2100",
+  "frozen/code/src/__init__.py": "3a526a67d00e49be7d87d98b7f79fd57815d5f8b5524030abb5be34b5d8a9162",
+  "frozen/code/src/tiny_transformer.py": "27518d69b796a2132ebfcd7fbdd87eabf325a033ff07070409e5f6bbdfde9676",
+  "frozen/code/src/tiny_autograd.py": "18fb91003d171b881c7afeb909fa08c278dd3f19ef93dbd71a2e9bbd7089d61f"
+}

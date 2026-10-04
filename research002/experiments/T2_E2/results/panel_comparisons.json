@@ -1,0 +1,240 @@
+[
+  {
+    "case": "natural",
+    "baseline": "current_mlp",
+    "seeds": [
+      503,
+      607,
+      709,
+      811,
+      907,
+      1009
+    ],
+    "mean_relative_mse_gain": -0.010820849074722957,
+    "conditional_gain_ci95": [
+      -0.04826138248095838,
+      0.016726734718484022
+    ],
+    "mean_delta_r2": -0.0034383756987851045,
+    "conditional_delta_r2_ci95": [
+      -0.014575425321605717,
+      0.009350883101601022
+    ],
+    "mean_mae_advantage": 0.007484514179326607,
+    "positive_seeds": 4,
+    "all_six_models_eligible": true,
+    "useful_point_gain": false,
+    "lower_bound_above_zero": false,
+    "all_six_positive": false,
+    "mae_not_worse": true,
+    "screen_passed": false
+  },
+  {
+    "case": "natural",
+    "baseline": "current_rff_mlp",
+    "seeds": [
+      503,
+      607,
+      709,
+      811,
+      907,
+      1009
+    ],
+    "mean_relative_mse_gain": 0.01962383164477238,
+    "conditional_gain_ci95": [
+      0.009217152960770596,
+      0.031139379670414743
+    ],
+    "mean_delta_r2": 0.008255662995754838,
+    "conditional_delta_r2_ci95": [
+      0.0032323976765664705,
+      0.013590306063189962
+    ],
+    "mean_mae_advantage": 0.003646547723511617,
+    "positive_seeds": 5,
+    "all_six_models_eligible": true,
+    "useful_point_gain": false,
+    "lower_bound_above_zero": true,
+    "all_six_positive": false,
+    "mae_not_worse": true,
+    "screen_passed": false
+  },
+  {
+    "case": "natural",
+    "baseline": "shuffled_mlp",
+    "seeds": [
+      503,
+      811,
+      907,
+      1009
+    ],
+    "mean_relative_mse_gain": 0.027564930116488574,
+    "conditional_gain_ci95": [
+      0.016024087908825882,
+      0.03849474187610545
+    ],
+    "mean_delta_r2": 0.01594934749258585,
+    "conditional_delta_r2_ci95": [
+      0.00945643266459213,
+      0.02289152405819527
+    ],
+    "mean_mae_advantage": 0.002961026980503567,
+    "positive_seeds": 4,
+    "all_six_models_eligible": false,
+    "useful_point_gain": false,
+    "lower_bound_above_zero": true,
+    "all_six_positive": false,
+    "mae_not_worse": true,
+    "screen_passed": false
+  },
+  {
+    "case": "natural",
+    "baseline": "mismatched_mlp",
+    "seeds": [
+      503,
+      607,
+      709,
+      811,
+      907,
+      1009
+    ],
+    "mean_relative_mse_gain": 0.034484645955879946,
+    "conditional_gain_ci95": [
+      0.014111965421792995,
+      0.055255355482598544
+    ],
+    "mean_delta_r2": 0.01731033152517499,
+    "conditional_delta_r2_ci95": [
+      0.007963507536998421,
+      0.02571727424918508
+    ],
+    "mean_mae_advantage": -0.003648099653655404,
+    "positive_seeds": 6,
+    "all_six_models_eligible": true,
+    "useful_point_gain": false,
+    "lower_bound_above_zero": true,
+    "all_six_positive": true,
+    "mae_not_worse": false,
+    "screen_passed": false
+  },
+  {
+    "case": "natural",
+    "baseline": "current_ridge",
+    "seeds": [
+      503,
+      607,
+      709,
+      811,
+      907,
+      1009
+    ],
+    "mean_relative_mse_gain": 0.20423090524522217,
+    "conditional_gain_ci95": [
+      0.18198333113898665,
+      0.23026637920044313
+    ],
+    "mean_delta_r2": 0.14447473580495476,
+    "conditional_delta_r2_ci95": [
+      0.13114371092292004,
+      0.1589037449209001
+    ],
+    "mean_mae_advantage": 0.034905525939547564,
+    "positive_seeds": 6,
+    "all_six_models_eligible": true,
+    "useful_point_gain": true,
+    "lower_bound_above_zero": true,
+    "all_six_positive": true,
+    "mae_not_worse": true,
+    "screen_passed": true
+  },
+  {
+    "case": "natural",
+    "baseline": "current_rff_ridge",
+    "seeds": [
+      503,
+      607,
+      709,
+      811,
+      907,
+      1009
+    ],
+    "mean_relative_mse_gain": 0.20555459170154658,
+    "conditional_gain_ci95": [
+      0.18313393336057782,
+      0.2322788662163411
+    ],
+    "mean_delta_r2": 0.14564007815421767,
+    "conditional_delta_r2_ci95": [
+      0.13239759375355223,
+      0.16007526195965363
+    ],
+    "mean_mae_advantage": 0.035192449373401526,
+    "positive_seeds": 6,
+    "all_six_models_eligible": true,
+    "useful_point_gain": true,
+    "lower_bound_above_zero": true,
+    "all_six_positive": true,
+    "mae_not_worse": true,
+    "screen_passed": true
+  },
+  {
+    "case": "natural",
+    "baseline": "history_ridge",
+    "seeds": [
+      503,
+      607,
+      709,
+      811,
+      907,
+      1009
+    ],
+    "mean_relative_mse_gain": 0.19629982967565474,
+    "conditional_gain_ci95": [
+      0.17473106319561021,
+      0.22240578164214944
+    ],
+    "mean_delta_r2": 0.13402260370758753,
+    "conditional_delta_r2_ci95": [
+      0.12152479792532486,
+      0.14777874898129945
+    ],
+    "mean_mae_advantage": 0.03292518203876869,
+    "positive_seeds": 6,
+    "all_six_models_eligible": true,
+    "useful_point_gain": true,
+    "lower_bound_above_zero": true,
+    "all_six_positive": true,
+    "mae_not_worse": true,
+    "screen_passed": true
+  },
+  {
+    "case": "natural",
+    "baseline": "current_reference",
+    "seeds": [
+      503,
+      607,
+      709,
+      811,
+      907,
+      1009
+    ],
+    "mean_relative_mse_gain": 0.006745480041583978,
+    "conditional_gain_ci95": [
+      -0.006127348821072697,
+      0.021169455092249077
+    ],
+    "mean_delta_r2": 0.00497982555408987,
+    "conditional_delta_r2_ci95": [
+      -0.0007315590147176937,
+      0.010942640613020381
+    ],
+    "mean_mae_advantage": 0.0017538194192088543,
+    "positive_seeds": 4,
+    "all_six_models_eligible": true,
+    "useful_point_gain": false,
+    "lower_bound_above_zero": false,
+    "all_six_positive": false,
+    "mae_not_worse": true,
+    "screen_passed": false
+  }
+]

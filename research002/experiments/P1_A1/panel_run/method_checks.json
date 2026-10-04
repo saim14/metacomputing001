@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "ridge_against_augmented_least_squares_max_error": 1.7780915628762273e-16,
+  "family_weights_and_brier_auc_checked": true,
+  "future_and_target_feature_exclusion": true,
+  "all_token_dimensions_checked": true,
+  "donor_bijection_and_family_exclusion": true,
+  "shuffle_slots_checked": true,
+  "fit_only_scaling_and_transform_immutability": true,
+  "all_six_preprocessor_serializations_exact": true,
+  "gaussian_kernel_fixture": true,
+  "all_family_splits_disjoint": true,
+  "natural_target_fits": 0,
+  "tuning_selection_and_selected_pipeline_roundtrip": true,
+  "method_target_ridge_solves": 12,
+  "method_label_free_residualization_solves": 1
+}

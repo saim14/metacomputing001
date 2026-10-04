@@ -1,0 +1,174 @@
+{
+  "study_id": "T2-E2",
+  "version": "1.0.0",
+  "frozen_utc": "2026-09-13T03:07:01.995013+00:00",
+  "title": "Bounded nonlinear observer comparison on frozen Transformer trajectories",
+  "hypothesis": "With specified limited predictors, adding past CLS observations improves prediction of remaining true-label NLL reduction beyond the full current representation and strong current-only references.",
+  "scope": "Final bounded exploratory observer comparison in these six development-exposed auxiliary-supervised models. No retraining, reserved seeds, controller deployment, or confirmation advancement.",
+  "model_seeds": [
+    503,
+    607,
+    709,
+    811,
+    907,
+    1009
+  ],
+  "steps": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "target": "V_l = -log(clip(p_l[y],1e-8,1)) + log(clip(p_6[y],1e-8,1)); negative values retained; labels and future outputs never enter predictors.",
+  "data": {
+    "families_per_seed_per_phase": 3000,
+    "family_size": 2,
+    "train_families": 1600,
+    "validation_families": 400,
+    "evaluation_families": 1000,
+    "phases": [
+      "development_calibration",
+      "main"
+    ],
+    "data_rng_bases": {
+      "development": 400000000,
+      "main": 410000000
+    },
+    "order_rng_offset": 1000000,
+    "candidate_budget_batches": 5,
+    "families_per_candidate_batch": 4000,
+    "exclusions": "Exact counterfactual families in that model training/validation streams and U7B/U7C evaluation suites; all six T2-E1 datasets; all earlier-generated families in this study, across phases and model seeds. Mapping-order equivalences are not canonicalized.",
+    "grouping": "Both counterfactual members share partition; all steps share partition. Main data generated only after development decision and main freeze."
+  },
+  "eligibility": "Step eligible only if main probe-training V mean and sample SD both >=0.02 nats. All steps still evaluated and reported; all six models must contribute for primary panel.",
+  "features": {
+    "current": "All 12x32 residual states in fixed token order plus 2 probabilities, entropy bits, margin:388 columns.",
+    "history": "Append CLS residual32 plus probabilities2,entropy,margin at steps1..l-1:36*(l-1) columns, identical current prefix retained.",
+    "current_rff": "Append 36*(l-1) fixed cosine random features of train-standardized current; W~N(0,1/388), bias~U(0,2pi), scale sqrt(2/h).",
+    "shuffle": "Permute past slots independently per family, same permutation for both members; current unchanged. At step2 exact alias, no chronology evidence.",
+    "mismatch": "Within each split, cyclic nonzero donor-family shift, retaining member index; no self-donations.",
+    "feature_rng": "420000000 + phase_offset + seed*100 + step; phase_offset=0 development,1000000 main."
+  },
+  "mlp": {
+    "hidden_layer_sizes": [
+      32
+    ],
+    "activation": "relu",
+    "output": "identity",
+    "loss": "squared_error",
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "alphas": [
+      0.1,
+      10.0
+    ],
+    "epochs": 80,
+    "checkpoint_epochs": [
+      20,
+      40,
+      80
+    ],
+    "batch_size": 128,
+    "initializations": 2,
+    "ensemble": "Average two fixed initialization predictions for each alpha/checkpoint candidate. Select candidate with lowest ensemble validation MSE; exact ties larger alpha, then fewer epochs. All candidates train full80 epochs; no adaptive extension.",
+    "preprocessing": "Training-only feature means/population SD, floor1e-8; training target mean/population SD floor1e-6; float32 fitting; invert target standardization for scores.",
+    "batch_order": "Common fixed epoch permutations for every arm/alpha/initialization in each seed-step-phase. sklearn shuffle=False.",
+    "rng": "430000000 + phase_offset + seed*1000 + step*10 + initialization; phase_offset0 development,10000000 main. Epoch order base440000000 plus phase_offset+seed*100+step.",
+    "matched_budget": "history,current_rff,shuffle,mismatch have identical input width and 32 hidden units; identical grids, training examples, updates, checkpoint searches and two-member ensemble. Fixed-transform costs differ and are reported."
+  },
+  "ridge_reference": {
+    "alphas": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "selection": "Train-only standardization and centering, validation MSE, ties larger alpha; no refit."
+  },
+  "main_arms": [
+    "current_mlp",
+    "current_rff_mlp",
+    "history_mlp",
+    "shuffled_mlp",
+    "mismatched_mlp",
+    "current_ridge",
+    "current_rff_ridge",
+    "history_ridge",
+    "current_reference"
+  ],
+  "current_reference": "For each seed-step, choose lowest validation MSE among current_mlp,current_rff_mlp,current_ridge,current_rff_ridge, with ties in that listed order. A necessary reference, not a claim of equal search capacity.",
+  "development": {
+    "purpose": "One representation-based synthetic sensitivity check, no main natural target comparisons.",
+    "step": 2,
+    "seeds": [
+      503,
+      607,
+      709,
+      811,
+      907,
+      1009
+    ],
+    "delta_mse": [
+      0.0,
+      0.025,
+      0.1
+    ],
+    "construction": "Real current and past observations from development examples. Replace first historical coordinate by independent paired Gaussian Z; preserve all other columns. g(X) is the highest training-variance current coordinate, standardized on training data. Y_delta=1+sqrt(0.5)*g(X)+sqrt(delta)*Z+sqrt(0.5-delta)*epsilon. Z and epsilon independent of each other and all real features; pair correlation0.5.",
+    "known_oracle": "Current conditional-mean predictor MSE=0.5; history conditional-mean predictor MSE=0.5-delta. Population oracle relative MSE reduction=2*delta, i.e.0%,5%,20%. These are oracle errors; fitted gains need not equal them.",
+    "rng": "450000000+seed for Z and epsilon; same features/noise/initializations shared across scenarios.",
+    "arms": [
+      "current_mlp",
+      "current_rff_mlp",
+      "history_mlp",
+      "current_ridge",
+      "current_rff_ridge",
+      "current_reference"
+    ],
+    "go_rule": "Null scenario must fail the complete screen and strongest20% oracle-gain scenario must pass against both required references on the one six-model panel.5% oracle scenario descriptive only. Any go-rule failure ends this study before main data are generated; no calibration tuning or retry.",
+    "limits": "One six-model calibration panel at step2. Replaces one past coordinate and uses synthetic linear targets; does not prove power on natural NLL, all steps, or arbitrary nonlinear history signals."
+  },
+  "aggregation": {
+    "primary": "Equal mean of per-cell relative MSE reductions across training-eligible steps within each seed, then equal mean across six fixed seeds. Relative MSE reduction=(MSE_baseline-MSE_history)/MSE_baseline.",
+    "supporting": [
+      "delta_R2",
+      "MAE_baseline_minus_history",
+      "absolute_MSE",
+      "absolute_R2"
+    ],
+    "bootstrap": 2000,
+    "bootstrap_rng": 460000000,
+    "unit": "Resample evaluation families within each seed, preserve both members and common draws across steps/arms; independent resampling across seeds; fitted probes and six models fixed.",
+    "interval": "2.5/97.5 percentile conditional bootstrap; not model-population or selection uncertainty."
+  },
+  "decision": {
+    "minimum_worth_pursuing_relative_mse_gain": 0.05,
+    "threshold_justification": "5% lower squared prediction error is a declared research continuation threshold; it is separate from statistical evidence and is not validated controller utility.",
+    "required_baselines": [
+      "current_rff_mlp",
+      "current_reference"
+    ],
+    "screen": "Against BOTH required baselines: mean relative MSE reduction>=0.05, conditional95% lower bound>0, positive seed-level relative improvement for all six models, and mean MAE improvement>=0.",
+    "classification": "If calibration passed and main panel eligible: full screen pass => advantage_worth_independent_replication; otherwise if BOTH required upper95% bounds<0.05 => useful_gain_excluded_for_this_fixed_panel_and_predictor; otherwise inconclusive. An ineligible panel is reported separately.",
+    "chronology": "Ordered vs shuffled is secondary only at steps>=3. No chronology claim without positive ordered-vs-shuffled evidence; single-slot alias cannot count.",
+    "stop": "One development panel and at most one main evaluation. Keep earlier findings closed. No outcome-driven family/grid/sample expansion, retraining, reserved seeds, or automatic confirmation. Record implementation fixes and retain failed logs."
+  },
+  "cost_reporting": [
+    "Actual fit wall seconds",
+    "selected two-network parameter count",
+    "affine multiply-accumulate estimates",
+    "extra RFF projection cost separately",
+    "float32 history storage per example; scalar transforms and extraction overhead excluded from MAC estimate"
+  ],
+  "budget": {
+    "development_mlp_training_runs": 216,
+    "development_ridge_paths": 36,
+    "main_mlp_training_runs": 456,
+    "main_ridge_paths": 72,
+    "maximum_mlp_epochs": 53760,
+    "maximum_mlp_minibatch_updates": 1344000,
+    "maximum_unique_probe_examples": 72000,
+    "base_model_training_updates": 0,
+    "reserved_model_seeds_opened": []
+  }
+}

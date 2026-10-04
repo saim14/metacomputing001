@@ -1,0 +1,66 @@
+experiment:
+  id: T1-U4-SMOKE
+  name: T1-U4 Pipeline Smoke Test
+  version: 0.8.0
+  research_object: Exercise every T1-U4 code path without scientific interpretation.
+hypotheses: {optimization: smoke, independent: smoke, null: smoke}
+scientific_boundary:
+  development_seeds_are_exposed: true
+  note: Smoke test only.
+seeds: [7]
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 4
+  chain_hops: 1
+  train_samples: 192
+  validation_samples: 96
+  probe_samples: 96
+base_model:
+  d_model: 16
+  n_heads: 2
+  d_ff: 24
+  n_layers: 4
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+  tie_layers: true
+  use_step_embeddings: false
+base_training:
+  batch_size: 24
+  validation_batch_size: 96
+  learning_rate: 0.001
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.0
+  log_every: 5
+schedules:
+  abrupt:
+    - {name: low_auxiliary, steps: 10, data_stream_id: 0, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.02, learning_rate: 0.001}
+    - {name: final_only, steps: 10, data_stream_id: 1, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.0, learning_rate: 0.0005}
+  area_matched_taper:
+    - {name: full_auxiliary, steps: 8, data_stream_id: 0, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.02, learning_rate: 0.001}
+    - {name: taper_pre, steps: 2, data_stream_id: 0, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.01, learning_rate: 0.001}
+    - {name: taper_post, steps: 2, data_stream_id: 1, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.01, learning_rate: 0.0005}
+    - {name: final_only, steps: 8, data_stream_id: 1, data_overrides: {chain_hops: 1}, auxiliary_loss_weight: 0.0, learning_rate: 0.0005}
+factor_matrix:
+  - {id: U4-A-reference, train: true, residual_scale: 1.0, transition: abrupt, rationale: smoke}
+  - {id: U4-B-residual-half, train: true, residual_scale: 0.5, transition: abrupt, rationale: smoke}
+  - {id: U4-C-aux-taper, train: true, residual_scale: 1.0, transition: area_matched_taper, rationale: smoke}
+  - {id: U4-D-combined, train: true, residual_scale: 0.5, transition: area_matched_taper, rationale: smoke}
+screening:
+  tail_validation_points: 2
+  primary_metric: minimum_seed_tail_mean_validation_accuracy
+  minimum_seed_tail_mean_validation_accuracy: 0.0
+  minimum_mean_tail_validation_accuracy: 0.0
+  minimum_primary_gain_over_reference: -1.0
+  ranking_tiebreakers: [mean_seed_tail_validation_accuracy, minimum_terminal_validation_accuracy, mean_terminal_validation_accuracy, candidate_id_ascending]
+independent_validity:
+  minimum_final_accuracy: 0.0
+  minimum_future_flip_rate: 0.0
+  maximum_future_flip_rate: 1.0
+  minimum_valid_layers_per_seed: 1
+  minimum_passing_seed_fraction: 1.0
+sealed_evaluation:
+  rule: Smoke test only.
+probes:
+  policy: No probes are fitted.

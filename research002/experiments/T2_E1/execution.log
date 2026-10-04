@@ -1,0 +1,23 @@
+PREPARE seed=503: fresh grouped examples; frozen model
+EXTRACTED seed=503: eligible steps=[2, 3, 4]
+FINISHED seed=503 elapsed=10.1s fits=54
+PREPARE seed=607: fresh grouped examples; frozen model
+EXTRACTED seed=607: eligible steps=[2]
+FINISHED seed=607 elapsed=9.8s fits=108
+PREPARE seed=709: fresh grouped examples; frozen model
+EXTRACTED seed=709: eligible steps=[2, 3]
+FINISHED seed=709 elapsed=10.5s fits=162
+PREPARE seed=811: fresh grouped examples; frozen model
+EXTRACTED seed=811: eligible steps=[2, 3, 4]
+FINISHED seed=811 elapsed=6.6s fits=216
+PREPARE seed=907: fresh grouped examples; frozen model
+EXTRACTED seed=907: eligible steps=[2, 3, 4]
+FINISHED seed=907 elapsed=6.3s fits=270
+PREPARE seed=1009: fresh grouped examples; frozen model
+EXTRACTED seed=1009: eligible steps=[2, 3]
+FINISHED seed=1009 elapsed=6.9s fits=324
+STUDY COMPLETE. Exploratory screen passed: False
+{"observer": "cls_current", "baseline": "current_linear", "contributing_seeds": [503, 607, 709, 811, 907, 1009], "mean_delta_r2": 0.015939626221137024, "mean_mae_advantage": -0.001236237845875346, "conditional_ci95": [-0.012207104342291298, 0.02872055264130909], "positive_seed_count": 5, "passes_frozen_screen": false}
+{"observer": "cls_current", "baseline": "current_rff", "contributing_seeds": [503, 607, 709, 811, 907, 1009], "mean_delta_r2": -0.001985278105250746, "mean_mae_advantage": -0.0009885032119976286, "conditional_ci95": [-0.01819161156117394, 0.008130979783888576], "positive_seed_count": 2, "passes_frozen_screen": false}
+{"observer": "full_current", "baseline": "current_linear", "contributing_seeds": [503, 607, 709, 811, 907, 1009], "mean_delta_r2": 0.003409641440894746, "mean_mae_advantage": -0.0025883119062752144, "conditional_ci95": [-0.03929867398860054, 0.014613842361769087], "positive_seed_count": 4, "passes_frozen_screen": false}
+{"observer": "full_current", "baseline": "current_rff", "contributing_seeds": [503, 607, 709, 811, 907, 1009], "mean_delta_r2": -0.0008841290496201581, "mean_mae_advantage": -0.0011851071404975584, "conditional_ci95": [-0.039842537360002525, 0.010258214613192065], "positive_seed_count": 3, "passes_frozen_screen": false}

@@ -1,0 +1,10 @@
+schedule_id,selectable,seed,final_accuracy,valid_future_flip_layers,valid_layer_count,passed
+constant,False,503,1.0,[],0,False
+constant,False,607,0.9485,"[2, 3, 4]",3,False
+constant,False,709,0.968,"[2, 3, 4]",3,True
+back_loaded,True,503,0.973,[2],1,False
+back_loaded,True,607,0.81425,"[2, 3, 4]",3,False
+back_loaded,True,709,0.788,"[2, 3, 4, 5]",4,False
+front_loaded,True,503,0.99925,[],0,False
+front_loaded,True,607,0.9115,"[1, 2, 3, 4]",4,False
+front_loaded,True,709,0.87275,"[1, 2, 3, 4]",4,False

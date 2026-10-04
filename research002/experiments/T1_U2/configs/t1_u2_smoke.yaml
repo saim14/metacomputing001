@@ -1,0 +1,67 @@
+experiment:
+  id: T1-U2-smoke
+  name: T1-U2 Pipeline Smoke Test
+  version: 0.6.0
+  research_object: Exercise candidate selection, sealed evaluation, and replication paths.
+hypotheses:
+  learning: Pipeline execution only.
+  null: Pipeline execution only.
+historical_reference:
+  experiment: T1-U
+  independent_accuracy: 0.75525
+  best_validation_accuracy: 0.77250
+  note: Smoke-test metadata only.
+selection:
+  seed: 7
+  replication_seed: 8
+  tail_checkpoints: 1
+  minimum_validation_score: 0.0
+  ranking:
+    - descending_tail_mean_validation_accuracy
+    - descending_terminal_validation_accuracy
+    - ascending_unique_parameter_count
+    - ascending_candidate_id
+  sealed_data_rule: Independent data are evaluated after selection.
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 4
+  chain_hops: 1
+  train_samples: 64
+  validation_samples: 32
+  probe_samples: 64
+base_model:
+  n_layers: 3
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+  tie_layers: true
+base_training:
+  batch_size: 8
+  validation_batch_size: 16
+  learning_rate: 0.001
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.0
+  log_every: 1
+  curriculum:
+    - name: smoke
+      steps: 2
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.01
+      learning_rate: 0.001
+candidates:
+  - id: smoke-time
+    rationale: Full-path smoke candidate.
+    model:
+      d_model: 12
+      n_heads: 2
+      d_ff: 24
+      use_step_embeddings: true
+independent_validity:
+  minimum_final_accuracy: 0.0
+  minimum_future_flip_rate: 0.0
+  maximum_future_flip_rate: 1.0
+  minimum_valid_layers_per_seed: 1
+  require_selection_and_replication_seed: true
+probes:
+  policy: No trajectory probes are run.

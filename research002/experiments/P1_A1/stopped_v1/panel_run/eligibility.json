@@ -1,0 +1,326 @@
+[
+  {
+    "split": 314159,
+    "model": 2017,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1183,
+        1220
+      ],
+      "families": [
+        239,
+        259
+      ],
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        262,
+        327
+      ],
+      "families": [
+        55,
+        68
+      ],
+      "eligible": true
+    }
+  },
+  {
+    "split": 314159,
+    "model": 2017,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2195,
+        208
+      ],
+      "families": [
+        421,
+        55
+      ],
+      "eligible": false
+    },
+    "tune": {
+      "counts": [
+        534,
+        55
+      ],
+      "families": [
+        106,
+        14
+      ],
+      "eligible": false
+    }
+  },
+  {
+    "split": 314159,
+    "model": 2027,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1027,
+        1376
+      ],
+      "families": [
+        224,
+        294
+      ],
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        268,
+        321
+      ],
+      "families": [
+        57,
+        72
+      ],
+      "eligible": true
+    }
+  },
+  {
+    "split": 314159,
+    "model": 2027,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2163,
+        240
+      ],
+      "families": [
+        436,
+        76
+      ],
+      "eligible": false
+    },
+    "tune": {
+      "counts": [
+        519,
+        70
+      ],
+      "families": [
+        107,
+        24
+      ],
+      "eligible": true
+    }
+  },
+  {
+    "split": 314160,
+    "model": 2017,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1144,
+        1270
+      ],
+      "families": [
+        230,
+        264
+      ],
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        301,
+        277
+      ],
+      "families": [
+        64,
+        63
+      ],
+      "eligible": true
+    }
+  },
+  {
+    "split": 314160,
+    "model": 2017,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2188,
+        226
+      ],
+      "families": [
+        419,
+        58
+      ],
+      "eligible": false
+    },
+    "tune": {
+      "counts": [
+        541,
+        37
+      ],
+      "families": [
+        108,
+        11
+      ],
+      "eligible": false
+    }
+  },
+  {
+    "split": 314160,
+    "model": 2027,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1116,
+        1298
+      ],
+      "families": [
+        238,
+        281
+      ],
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        179,
+        399
+      ],
+      "families": [
+        43,
+        85
+      ],
+      "eligible": true
+    }
+  },
+  {
+    "split": 314160,
+    "model": 2027,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2191,
+        223
+      ],
+      "families": [
+        437,
+        73
+      ],
+      "eligible": false
+    },
+    "tune": {
+      "counts": [
+        491,
+        87
+      ],
+      "families": [
+        106,
+        27
+      ],
+      "eligible": true
+    }
+  },
+  {
+    "split": 314161,
+    "model": 2017,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1150,
+        1248
+      ],
+      "families": [
+        235,
+        264
+      ],
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        295,
+        299
+      ],
+      "families": [
+        59,
+        63
+      ],
+      "eligible": true
+    }
+  },
+  {
+    "split": 314161,
+    "model": 2017,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2202,
+        196
+      ],
+      "families": [
+        425,
+        54
+      ],
+      "eligible": false
+    },
+    "tune": {
+      "counts": [
+        527,
+        67
+      ],
+      "families": [
+        102,
+        15
+      ],
+      "eligible": true
+    }
+  },
+  {
+    "split": 314161,
+    "model": 2027,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1031,
+        1367
+      ],
+      "families": [
+        224,
+        289
+      ],
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        264,
+        330
+      ],
+      "families": [
+        57,
+        77
+      ],
+      "eligible": true
+    }
+  },
+  {
+    "split": 314161,
+    "model": 2027,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2129,
+        269
+      ],
+      "families": [
+        434,
+        86
+      ],
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        553,
+        41
+      ],
+      "families": [
+        109,
+        14
+      ],
+      "eligible": false
+    }
+  }
+]

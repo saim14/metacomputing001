@@ -1,0 +1,20 @@
+{
+  "study": "F1-A0",
+  "protocol_version": "1.0",
+  "started_utc": "2026-09-17T04:46:08.762986+00:00",
+  "source_sha256": {
+    "F1_A0_Protocol.md": "ccb26db1cb696b171c2089ec1286b1a3c58e9afaee09154274cc243a7e17730a",
+    "config.json": "1ab1125d68948967252a8170a0de946d4097949a06f109a9b2b7ecafe3599aed",
+    "run_f1.py": "47be3d810c4b09d4281a8f1e6df1bd178c722142828a545756bc2af96f5943a6"
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  },
+  "fixtures": {
+    "geometry_rigid_transform_max_error": 8.881784197001252e-16,
+    "geometry_dimensions": 12
+  }
+}

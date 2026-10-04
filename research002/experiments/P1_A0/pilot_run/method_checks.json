@@ -1,0 +1,56 @@
+{
+  "exact_labels_family_separation_and_repeatability": true,
+  "reserved_examples_not_constructed": true,
+  "one_shared_block_unique_parameters_and_shapes": true,
+  "normalization": true,
+  "state_resume_max_errors": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0
+  },
+  "partial_state_resume_rejected": true,
+  "current_prefix_identical_no_future_or_label_leakage": true,
+  "tied_gradient_finite_differences": [
+    {
+      "parameter": "layers.0.q_proj.weight",
+      "index": [
+        22,
+        18
+      ],
+      "analytic": 0.23743411898612976,
+      "finite_difference": 0.2372264862060547
+    },
+    {
+      "parameter": "layers.0.ff1.weight",
+      "index": [
+        21,
+        32
+      ],
+      "analytic": 0.9017373323440552,
+      "finite_difference": 0.9015798568725586
+    },
+    {
+      "parameter": "readout.weight",
+      "index": [
+        21,
+        3
+      ],
+      "analytic": 1.6570067405700684,
+      "finite_difference": 1.6568899154663086
+    }
+  ],
+  "serialization_exact_roundtrip": true,
+  "synthetic_scalar_optimizer": true,
+  "exact_oracle_controls": {
+    "partial_current_brier": 0.25,
+    "partial_current_plus_missing_history_brier": 0.0,
+    "complete_current_brier": 0.0,
+    "complete_current_plus_redundant_history_brier": 0.0,
+    "scope": "Truth-table arithmetic, not fitted-probe power or Transformer evidence."
+  },
+  "passed": true
+}

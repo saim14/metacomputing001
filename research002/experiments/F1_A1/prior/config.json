@@ -1,0 +1,7 @@
+{
+  "study": "F1-A0", "version": "1.0", "model_seeds": [3109, 3119, 3137],
+  "n_dynamics_train": 8000, "n_scenarios": 1600, "n_fit": 1000, "n_tune": 300,
+  "horizon": 10, "rounds": 6, "decision_round": 2, "candidates": 32, "elites": 8,
+  "hidden": [32, 32], "epochs": 180, "alphas": [0.0001, 0.01, 1.0],
+  "rff_width": 128, "bandwidths": [0.5, 2.0], "bootstrap": 2000
+}

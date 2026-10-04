@@ -1,0 +1,41 @@
+experiment:
+  id: T1-smoke
+  name: Transformer Trajectory Sufficiency Smoke Test
+  version: 0.1.0
+  research_object: Pipeline validation only
+
+hypotheses:
+  primary: Pipeline validation only; no scientific inference.
+  secondary: Pipeline validation only; no scientific inference.
+  null: Pipeline validation only; no scientific inference.
+
+seeds: [7]
+
+data:
+  key_count: 6
+  pair_count: 3
+  train_samples: 400
+  validation_samples: 120
+  probe_samples: 180
+
+model:
+  d_model: 16
+  n_heads: 2
+  d_ff: 32
+  n_layers: 3
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+
+training:
+  steps: 8
+  batch_size: 24
+  validation_batch_size: 60
+  learning_rate: 0.002
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.25
+  log_every: 4
+
+probes:
+  test_fraction: 0.40
+  minimum_class_count: 4
+  ridge_alpha: 1.0

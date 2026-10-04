@@ -1,0 +1,350 @@
+[
+  {
+    "split": 314159,
+    "model": 2017,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1183,
+        1220
+      ],
+      "families": [
+        239,
+        259
+      ],
+      "minority_example_fraction": 0.49230129005409906,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        262,
+        327
+      ],
+      "families": [
+        55,
+        68
+      ],
+      "minority_example_fraction": 0.44482173174872663,
+      "eligible": true
+    }
+  },
+  {
+    "split": 314159,
+    "model": 2017,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2195,
+        208
+      ],
+      "families": [
+        421,
+        55
+      ],
+      "minority_example_fraction": 0.08655846858094049,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        534,
+        55
+      ],
+      "families": [
+        106,
+        14
+      ],
+      "minority_example_fraction": 0.0933786078098472,
+      "eligible": true
+    }
+  },
+  {
+    "split": 314159,
+    "model": 2027,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1027,
+        1376
+      ],
+      "families": [
+        224,
+        294
+      ],
+      "minority_example_fraction": 0.4273824386183937,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        268,
+        321
+      ],
+      "families": [
+        57,
+        72
+      ],
+      "minority_example_fraction": 0.45500848896434637,
+      "eligible": true
+    }
+  },
+  {
+    "split": 314159,
+    "model": 2027,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2163,
+        240
+      ],
+      "families": [
+        436,
+        76
+      ],
+      "minority_example_fraction": 0.09987515605493133,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        519,
+        70
+      ],
+      "families": [
+        107,
+        24
+      ],
+      "minority_example_fraction": 0.11884550084889643,
+      "eligible": true
+    }
+  },
+  {
+    "split": 314160,
+    "model": 2017,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1144,
+        1270
+      ],
+      "families": [
+        230,
+        264
+      ],
+      "minority_example_fraction": 0.4739022369511185,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        301,
+        277
+      ],
+      "families": [
+        64,
+        63
+      ],
+      "minority_example_fraction": 0.47923875432525953,
+      "eligible": true
+    }
+  },
+  {
+    "split": 314160,
+    "model": 2017,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2188,
+        226
+      ],
+      "families": [
+        419,
+        58
+      ],
+      "minority_example_fraction": 0.0936205468102734,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        541,
+        37
+      ],
+      "families": [
+        108,
+        11
+      ],
+      "minority_example_fraction": 0.06401384083044982,
+      "eligible": true
+    }
+  },
+  {
+    "split": 314160,
+    "model": 2027,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1116,
+        1298
+      ],
+      "families": [
+        238,
+        281
+      ],
+      "minority_example_fraction": 0.4623032311516156,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        179,
+        399
+      ],
+      "families": [
+        43,
+        85
+      ],
+      "minority_example_fraction": 0.3096885813148789,
+      "eligible": true
+    }
+  },
+  {
+    "split": 314160,
+    "model": 2027,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2191,
+        223
+      ],
+      "families": [
+        437,
+        73
+      ],
+      "minority_example_fraction": 0.09237779618889809,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        491,
+        87
+      ],
+      "families": [
+        106,
+        27
+      ],
+      "minority_example_fraction": 0.15051903114186851,
+      "eligible": true
+    }
+  },
+  {
+    "split": 314161,
+    "model": 2017,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1150,
+        1248
+      ],
+      "families": [
+        235,
+        264
+      ],
+      "minority_example_fraction": 0.47956630525437866,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        295,
+        299
+      ],
+      "families": [
+        59,
+        63
+      ],
+      "minority_example_fraction": 0.49663299663299665,
+      "eligible": true
+    }
+  },
+  {
+    "split": 314161,
+    "model": 2017,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2202,
+        196
+      ],
+      "families": [
+        425,
+        54
+      ],
+      "minority_example_fraction": 0.0817347789824854,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        527,
+        67
+      ],
+      "families": [
+        102,
+        15
+      ],
+      "minority_example_fraction": 0.1127946127946128,
+      "eligible": true
+    }
+  },
+  {
+    "split": 314161,
+    "model": 2027,
+    "step": 3,
+    "fit": {
+      "counts": [
+        1031,
+        1367
+      ],
+      "families": [
+        224,
+        289
+      ],
+      "minority_example_fraction": 0.4299416180150125,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        264,
+        330
+      ],
+      "families": [
+        57,
+        77
+      ],
+      "minority_example_fraction": 0.4444444444444444,
+      "eligible": true
+    }
+  },
+  {
+    "split": 314161,
+    "model": 2027,
+    "step": 4,
+    "fit": {
+      "counts": [
+        2129,
+        269
+      ],
+      "families": [
+        434,
+        86
+      ],
+      "minority_example_fraction": 0.1121768140116764,
+      "eligible": true
+    },
+    "tune": {
+      "counts": [
+        553,
+        41
+      ],
+      "families": [
+        109,
+        14
+      ],
+      "minority_example_fraction": 0.06902356902356903,
+      "eligible": true
+    }
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "study_id": "T2-C1",
+  "status": "completed",
+  "completed_utc": "2026-09-12T04:04:49.035000+00:00",
+  "elapsed_seconds": 43.510014057159424,
+  "independent_panel_replicates": 24,
+  "unique_synthetic_datasets": 144,
+  "synthetic_examples": 864000,
+  "scenario_dataset_evaluations": 576,
+  "ridge_target_fits": 1728,
+  "alpha_candidates": 8640,
+  "shared_feature_factorizations": 432,
+  "null_control_check_passed": true,
+  "strong_signal_control_check_passed": true,
+  "calibration_checks_passed": true,
+  "natural_history_evidence_added": false,
+  "base_models_loaded": 0,
+  "base_model_training_updates": 0,
+  "reserved_model_seeds_opened": [],
+  "prior_test_sets_used_for_fitting": false,
+  "protocol_sha256": "bf4a889970419aa511eec51a6a78fc7e1dcfc215022b9f688192f6835ead8181",
+  "runner_sha256": "9f51a79a2d854f9c03b5676cf0fbee7633e9729c7231f18c9e43f9c8f3a1d03d",
+  "frozen_inputs_unchanged": true,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  }
+}

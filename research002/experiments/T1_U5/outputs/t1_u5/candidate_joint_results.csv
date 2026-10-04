@@ -1,0 +1,5 @@
+candidate_id,trained_in_t1_u5,residual_scale,minimum_seed_tail_mean_validation_accuracy,mean_seed_tail_validation_accuracy,validation_screen_passed,minimum_development_final_accuracy,mean_development_final_accuracy,sample_std_development_final_accuracy,minimum_valid_layer_count,mean_valid_layer_count,passing_seed_fraction,development_joint_gate_passed,eligible
+U5-R-scale-0.5,False,0.5,0.9483333333333335,0.9677777777777777,True,0.9485,0.9721666666666667,0.02600160251471692,0,2.0,0.3333333333333333,False,False
+U5-A-scale-0.6,True,0.6,0.8608333333333333,0.9427777777777777,False,0.853,0.9420833333333333,0.07829923903419071,0,2.0,0.3333333333333333,False,False
+U5-B-scale-0.7,True,0.7,0.87875,0.9556944444444445,False,0.88025,0.95775,0.06720816542653132,0,1.6666666666666667,0.3333333333333333,False,False
+U5-C-scale-0.8,True,0.8,0.91125,0.9222222222222222,False,0.9135,0.9267500000000001,0.02166362158088992,3,4.0,0.3333333333333333,False,False

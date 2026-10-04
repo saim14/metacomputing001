@@ -1,0 +1,65 @@
+experiment:
+  id: T1-U6-SMOKE
+  name: Frozen-Pacing Smoke Test
+  version: 1.0.0
+  research_object: Exercise T1-U6 without external reference verification.
+hypotheses: {pacing: Smoke only., order: Smoke only., null: Smoke only.}
+scientific_boundary:
+  development_seeds_are_exposed: true
+  learned_weights_are_frozen: true
+  intervention_occurs_only_at_inference: true
+  sample_holdout_is_not_fresh_initialization: true
+  note: Smoke output has no scientific interpretation.
+seeds: [503]
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 4
+  chain_hops: 1
+  development_samples: 128
+  development_seed_offset: 37
+model:
+  d_model: 32
+  n_heads: 2
+  d_ff: 64
+  n_layers: 6
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+  tie_layers: true
+  use_step_embeddings: false
+  residual_scale: 0.5
+checkpoint_source:
+  pattern: outputs/t1_u4/candidates/U4-D-combined/seed_{seed}/checkpoints/t1_transformer_seed_{seed}.npz
+  reference_statistics: null
+  reference_candidate_id: null
+schedules:
+  constant: {values: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5], selectable: false, rationale: Smoke reference.}
+  back_loaded: {values: [0.25, 0.35, 0.45, 0.55, 0.65, 0.75], selectable: true, rationale: Smoke intervention.}
+  front_loaded: {values: [0.75, 0.65, 0.55, 0.45, 0.35, 0.25], selectable: true, rationale: Smoke control.}
+area_matching:
+  required_sum: 3.0
+  tolerance: 0.000000000001
+  note: Smoke only.
+joint_gate:
+  minimum_final_accuracy: 0.0
+  minimum_future_flip_rate: 0.0
+  maximum_future_flip_rate: 1.0
+  minimum_valid_layers_per_seed: 0
+  minimum_passing_seed_fraction: 1.0
+selection:
+  eligibility: Smoke only.
+  ranking: [fixed_T1_U6_lexicographic_rule]
+  no_feasible_candidate_rule: Smoke only.
+sealed_sample:
+  seed_formula: seed_times_100_plus_offset
+  seed_offset: 83
+  samples: 128
+  minimum_final_accuracy: 0.0
+  minimum_future_flip_rate: 0.0
+  maximum_future_flip_rate: 1.0
+  minimum_valid_layers_per_seed: 0
+  minimum_passing_seed_fraction: 1.0
+  rule: Smoke only.
+probes:
+  policy: No probes are fitted.

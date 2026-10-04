@@ -1,0 +1,4 @@
+candidate_id,trained_in_t1_u4,residual_scale,transition,minimum_seed_tail_mean_validation_accuracy,mean_seed_tail_validation_accuracy,sample_std_seed_tail_validation_accuracy,minimum_terminal_validation_accuracy,mean_terminal_validation_accuracy
+U4-D-combined,True,0.5,area_matched_taper,0.9483333333333334,0.9677777777777777,0.028103644155426086,0.9566666666666667,0.976111111111111
+U4-B-residual-half,True,0.5,abrupt,0.9416666666666667,0.9652777777777777,0.030712978315966637,0.955,0.9727777777777779
+U4-C-aux-taper,True,1.0,area_matched_taper,0.7604166666666666,0.8519444444444444,0.10081295707802056,0.7916666666666666,0.8616666666666667

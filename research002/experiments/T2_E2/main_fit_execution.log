@@ -1,0 +1,37 @@
+MAIN FIT seed=503: training/validation observations only
+MAIN FIT seed=503 step=2 completed; training eligibility=True
+MAIN FIT seed=503 step=3 completed; training eligibility=True
+MAIN FIT seed=503 step=4 completed; training eligibility=False
+MAIN FIT seed=503 step=5 completed; training eligibility=False
+MAIN FIT seed=503 finished in 60.0s
+MAIN FIT seed=607: training/validation observations only
+MAIN FIT seed=607 step=2 completed; training eligibility=True
+MAIN FIT seed=607 step=3 completed; training eligibility=False
+MAIN FIT seed=607 step=4 completed; training eligibility=False
+MAIN FIT seed=607 step=5 completed; training eligibility=False
+MAIN FIT seed=607 finished in 56.1s
+MAIN FIT seed=709: training/validation observations only
+MAIN FIT seed=709 step=2 completed; training eligibility=True
+MAIN FIT seed=709 step=3 completed; training eligibility=False
+MAIN FIT seed=709 step=4 completed; training eligibility=False
+MAIN FIT seed=709 step=5 completed; training eligibility=False
+MAIN FIT seed=709 finished in 56.9s
+MAIN FIT seed=811: training/validation observations only
+MAIN FIT seed=811 step=2 completed; training eligibility=True
+MAIN FIT seed=811 step=3 completed; training eligibility=True
+MAIN FIT seed=811 step=4 completed; training eligibility=True
+MAIN FIT seed=811 step=5 completed; training eligibility=False
+MAIN FIT seed=811 finished in 58.9s
+MAIN FIT seed=907: training/validation observations only
+MAIN FIT seed=907 step=2 completed; training eligibility=True
+MAIN FIT seed=907 step=3 completed; training eligibility=True
+MAIN FIT seed=907 step=4 completed; training eligibility=True
+MAIN FIT seed=907 step=5 completed; training eligibility=False
+MAIN FIT seed=907 finished in 56.0s
+MAIN FIT seed=1009: training/validation observations only
+MAIN FIT seed=1009 step=2 completed; training eligibility=True
+MAIN FIT seed=1009 step=3 completed; training eligibility=True
+MAIN FIT seed=1009 step=4 completed; training eligibility=False
+MAIN FIT seed=1009 step=5 completed; training eligibility=False
+MAIN FIT seed=1009 finished in 55.2s
+MAIN FIT COMPLETE: all probe choices fixed; test outcomes still unopened

@@ -1,0 +1,4 @@
+candidate_id,rationale,d_model,n_heads,d_ff,n_layers,use_step_embeddings,unique_parameters,tail_mean_validation_accuracy,terminal_validation_accuracy,best_validation_accuracy,best_validation_step
+U2-A-low-aux,Isolate reduced intermediate-loss pressure at T1-U capacity.,32,2,64,6,False,9666,0.9527777777777778,0.97,0.9716666666666667,2200
+U2-B-wide,Add shared-block capacity without adding a recurrent time signal.,48,3,96,6,False,20642,0.8183333333333334,0.8383333333333334,0.8383333333333334,2400
+U2-C-wide-time,Add shared-block capacity and learned refinement-step embeddings.,48,3,96,6,True,20930,0.7505555555555556,0.7566666666666667,0.7566666666666667,2400

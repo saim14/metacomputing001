@@ -1,0 +1,37 @@
+DEVELOPMENT seed=503: synthetic targets, real development representations
+DEVELOPMENT seed=503 oracle_gain=0% fits complete
+DEVELOPMENT seed=503 oracle_gain=5% fits complete
+DEVELOPMENT seed=503 oracle_gain=20% fits complete
+DEVELOPMENT seed=503 finished in 31.9s
+DEVELOPMENT seed=607: synthetic targets, real development representations
+DEVELOPMENT seed=607 oracle_gain=0% fits complete
+DEVELOPMENT seed=607 oracle_gain=5% fits complete
+DEVELOPMENT seed=607 oracle_gain=20% fits complete
+DEVELOPMENT seed=607 finished in 30.7s
+DEVELOPMENT seed=709: synthetic targets, real development representations
+DEVELOPMENT seed=709 oracle_gain=0% fits complete
+DEVELOPMENT seed=709 oracle_gain=5% fits complete
+DEVELOPMENT seed=709 oracle_gain=20% fits complete
+DEVELOPMENT seed=709 finished in 32.0s
+DEVELOPMENT seed=811: synthetic targets, real development representations
+DEVELOPMENT seed=811 oracle_gain=0% fits complete
+DEVELOPMENT seed=811 oracle_gain=5% fits complete
+DEVELOPMENT seed=811 oracle_gain=20% fits complete
+DEVELOPMENT seed=811 finished in 27.1s
+DEVELOPMENT seed=907: synthetic targets, real development representations
+DEVELOPMENT seed=907 oracle_gain=0% fits complete
+DEVELOPMENT seed=907 oracle_gain=5% fits complete
+DEVELOPMENT seed=907 oracle_gain=20% fits complete
+DEVELOPMENT seed=907 finished in 27.0s
+DEVELOPMENT seed=1009: synthetic targets, real development representations
+DEVELOPMENT seed=1009 oracle_gain=0% fits complete
+DEVELOPMENT seed=1009 oracle_gain=5% fits complete
+DEVELOPMENT seed=1009 oracle_gain=20% fits complete
+DEVELOPMENT seed=1009 finished in 26.7s
+DEVELOPMENT COMPLETE {"study_id": "T2-E2", "phase": "development_calibration", "completed_utc": "2026-09-13T03:30:36.924865+00:00", "elapsed_seconds": 176.44621300697327, "go_to_main": true, "individual_mlp_training_runs": 216, "ridge_paths": 36, "synthetic_scenarios": 3, "main_data_generated": false, "natural_history_evidence_added": false, "protocol_sha256": "f6af08f870b514a9ba7113317f4c6567cbcbcc7b504e965b6522928db7b6591d"}
+{"case": 0.0, "baseline": "current_rff_mlp", "seeds": [503, 607, 709, 811, 907, 1009], "mean_relative_mse_gain": -0.0010646448015011536, "conditional_gain_ci95": [-0.0051662095640867016, 0.00303933552286445], "mean_delta_r2": -0.0005394382559791325, "conditional_delta_r2_ci95": [-0.002688266307806714, 0.0016359889807983318], "mean_mae_advantage": 0.0004346202591539881, "positive_seeds": 3, "all_six_models_eligible": true, "useful_point_gain": false, "lower_bound_above_zero": false, "all_six_positive": false, "mae_not_worse": true, "screen_passed": false}
+{"case": 0.0, "baseline": "current_reference", "seeds": [503, 607, 709, 811, 907, 1009], "mean_relative_mse_gain": -0.003058476134097061, "conditional_gain_ci95": [-0.008435703000468331, 0.0018673507689524677], "mean_delta_r2": -0.0016058791830144473, "conditional_delta_r2_ci95": [-0.0043897383840637415, 0.001024786586337014], "mean_mae_advantage": -0.0002405955343892693, "positive_seeds": 2, "all_six_models_eligible": true, "useful_point_gain": false, "lower_bound_above_zero": false, "all_six_positive": false, "mae_not_worse": false, "screen_passed": false}
+{"case": 0.025, "baseline": "current_rff_mlp", "seeds": [503, 607, 709, 811, 907, 1009], "mean_relative_mse_gain": 0.03750426751532929, "conditional_gain_ci95": [0.03101185434439464, 0.04394540792542858], "mean_delta_r2": 0.01983250886262267, "conditional_delta_r2_ci95": [0.016331096927507872, 0.023490461851383846], "mean_mae_advantage": 0.01164520694114741, "positive_seeds": 6, "all_six_models_eligible": true, "useful_point_gain": false, "lower_bound_above_zero": true, "all_six_positive": true, "mae_not_worse": true, "screen_passed": false}
+{"case": 0.025, "baseline": "current_reference", "seeds": [503, 607, 709, 811, 907, 1009], "mean_relative_mse_gain": 0.0322542490592941, "conditional_gain_ci95": [0.02543106745609141, 0.03916685154664746], "mean_delta_r2": 0.016938074693534578, "conditional_delta_r2_ci95": [0.013265403444546629, 0.02080106503297653], "mean_mae_advantage": 0.00974443217386667, "positive_seeds": 6, "all_six_models_eligible": true, "useful_point_gain": false, "lower_bound_above_zero": true, "all_six_positive": true, "mae_not_worse": true, "screen_passed": false}
+{"case": 0.1, "baseline": "current_rff_mlp", "seeds": [503, 607, 709, 811, 907, 1009], "mean_relative_mse_gain": 0.1739663121834886, "conditional_gain_ci95": [0.1633533182433039, 0.18440340396828075], "mean_delta_r2": 0.09248310770517064, "conditional_delta_r2_ci95": [0.08625768896182623, 0.09895644754894407], "mean_mae_advantage": 0.05289348458346793, "positive_seeds": 6, "all_six_models_eligible": true, "useful_point_gain": true, "lower_bound_above_zero": true, "all_six_positive": true, "mae_not_worse": true, "screen_passed": true}
+{"case": 0.1, "baseline": "current_reference", "seeds": [503, 607, 709, 811, 907, 1009], "mean_relative_mse_gain": 0.17191586796396818, "conditional_gain_ci95": [0.16084261411820605, 0.18282589055583534], "mean_delta_r2": 0.09117386654586722, "conditional_delta_r2_ci95": [0.08465346893890822, 0.09779550807233445], "mean_mae_advantage": 0.05190609156373799, "positive_seeds": 6, "all_six_models_eligible": true, "useful_point_gain": true, "lower_bound_above_zero": true, "all_six_positive": true, "mae_not_worse": true, "screen_passed": true}

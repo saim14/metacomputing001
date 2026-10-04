@@ -1,70 +1,40 @@
-# TC-CVE: Trajectory-Conditioned Computational Value Experiment
+# Metacomputation research
 
-## Paper
-**Beyond the Current State: Latent Computational Dynamics Predict Future Decision Stability in Iterative Neural Networks**
+Author: MD Saim Islam · Research reports credited as Saim 13.02.
 
-Author: MD Saim Islam
+This repository preserves the original TC-CVE iterative-network notebook and extends it with **Research 002 — Metacognitive Analysis in Attention**: Transformer experiments, current-state studies and controlled foresight/world-model experiments.
 
-## Research question
-Does the trajectory of iterative neural computation provide predictively useful information about whether an intermediate decision will remain stable under further computation, beyond an instantaneous-state baseline?
+The common question is whether accessible features of an ongoing computation help predict **when more computation will improve a decision**, beyond a strong current-state reference. Predictive information, causal diagnostics and practical controller performance are reported separately.
 
-## Core result
-The strongest reproducible result occurs at the intermediate computational regime. At `t=3`, trajectory-conditioned prediction substantially improves future-decision-stability prediction relative to the current-state decoder. Across five independently trained underlying networks, the trajectory effect is positive for balanced accuracy, log loss, Brier score, and unstable-class PR-AUC in all five models for the principal `t=3` comparison.
+## Start here
 
-## Important scientific scope
-This repository supports a **predictive-accessibility** claim. It does **not** establish:
-- information-theoretic insufficiency of the instantaneous state;
-- violation of the Markov property;
-- unique dependence on chronological order;
-- a universal one-dimensional stability axis;
-- machine metacognition;
-- generalization beyond the tested iterative architecture family and controlled task.
+- [Research 002 index and current state](research002/README.md)
+- [Latest completed main study: F1-A2 report](research002/experiments/F1_A2/F1_A2_Report.md)
+- [F1-A3 methods development and protocol draft](research002/experiments/F1_A3/README.md)
+- [Original Research 001 overview](research001_README.md)
+- [Original TC-CVE notebook](TC_CVE_Experiment_001.ipynb)
 
-## Repository structure
-- `notebooks/TC_CVE_Experiment_001.ipynb` — original research notebook available in this release.
-- `results/` — place exported CSV result files here.
-- `figures/` — publication figures.
-- `src/` — optional modularized experiment scripts.
-- `docs/REPRODUCIBILITY.md` — experiment and reporting notes.
-- `requirements.txt` — principal Python dependencies.
+## Snapshot — 4 October 2026
 
-## Experiment sequence
-The research developed through progressively stricter tests:
+Twenty-three recovered source/study archives are preserved byte-for-byte as checked parts in `research002/archives/`. Their code, notebooks, protocols, reports, recorded audits and figures are also available as browsable files under `research002/experiments/`. Checkpoints and numerical arrays are restored from the archive parts with the script below; no account or original Drive access is needed after cloning.
 
-1. **A — Computational dynamics:** characterize iterative convergence.
-2. **B — Exact future-loss prediction:** negative result; trajectory does not improve exact next-step loss regression.
-3. **C/D — Future decision stability:** define the stability target and replicate the trajectory advantage over downstream seeds.
-4. **F / G1 / G2 — Temporal-history controls:** exact chronology is not uniquely responsible for the advantage.
-5. **G3 — Core trajectory comparison:** strongest clean current-vs-trajectory effect at intermediate steps.
-6. **G4 — Mechanistic decomposition:** rule out simple downstream-capacity explanations and test endpoints, geometry, local dynamics, and information-equivalent trajectory parameterizations.
-7. **G5 — Minimal dynamical signals:** vector-valued hidden velocity/acceleration are substantially more informative than scalar motion summaries.
-8. **G6 — Dimensionality:** high explained variance in a few PCs does not imply equivalent predictive recovery; supervised 1-D projection fails.
-9. **G7 — Cross-network robustness:** replicate the central trajectory effect across independently trained underlying networks.
+```bash
+git clone https://github.com/saim14/metacomputing001.git
+cd metacomputing001
+python research002/restore_archives.py --verify-only
+python research002/restore_archives.py --study F1_A2
+```
 
-## Primary metrics
-Because the future-stability target becomes highly imbalanced at later computational steps, the principal reporting set is:
-- balanced accuracy;
-- log loss;
-- Brier score;
-- unstable-class PR-AUC.
+Each study retains its own recorded environment and reproduction instructions. Older absolute scratch paths in original records document provenance; use each study's relative README instructions to reproduce it. Completed experiments are fixed development evidence, not newly independent replications.
 
-ROC-AUC is secondary in near-saturated regimes.
+## Findings and limits
 
-## Reproducibility unit
-For the final cross-network analysis, the **underlying network seed** is the principal replication unit. Downstream predictor seeds should not be treated as independent biological/statistical replicates.
+- Research 001 found reproducible trajectory-based prediction gains within its tested iterative-network architecture and task. Its scope limits are preserved in the original overview.
+- T2-E2's Transformer observer study did not meet its 5% useful-history-gain threshold under stronger current-state controls. P1-A1 separately passed a bounded current-state sufficiency criterion: current-state prediction was noninferior to ordered history within a declared 0.01 Brier-loss tolerance in its two arithmetic networks. Read the individual reports for exact endpoints, exposed development conditions and scope limits.
+- F1-A1 isolated harmful planning caused by world-model error in its toy-world intervention: +20.7 percentage points on average relative to exact dynamics.
+- F1-A2 found a useful decision-specific cost-bias signal: 30.25% lower prediction MSE for privileged diagnostic information and 6.89% for an accessible estimate. The practical controller criterion failed; the estimator added runtime.
+- F1-A3 has **only a calibration-based methods pilot**, not a completed new planning/controller study. A fast quadratic correction lost accuracy in two model conditions, motivating a prospective candidate-subset comparison.
 
-## Data
-The controlled task uses synthetic overlapping two-class Gaussian data:
-- 10,000 training examples;
-- 3,000 held-out test examples;
-- input dimension 2;
-- hidden dimension 32;
-- final computational step `T=10`.
+Nothing here establishes subjective awareness, general machine metacognition, chronological-history necessity, or a deployed compute-saving controller. Historical positive and negative results remain visible.
 
-Because the dataset is synthetic, it can be regenerated by the notebook rather than redistributed as a fixed proprietary dataset.
-
-## Citation
-A formal citation will be added after public preprint or journal publication.
-
-## License
-Code is released under the MIT License unless otherwise noted. Manuscript text and figures should be cited when reused.
+The original overview's license description is retained; this snapshot does not introduce a new blanket license over separately authored papers or source records.

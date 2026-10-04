@@ -1,0 +1,125 @@
+experiment:
+  id: T1-U7
+  name: Bounded Two-Hop Learnability and Causal-Dependence Gate
+  version: 0.9.0
+  research_object: >-
+    Establish a shortcut-free two-hop Transformer task that is learned reliably,
+    causally depends on both chain edges, and retains a nondegenerate continuous
+    value-of-additional-computation target before any trajectory probe is fit.
+
+hypotheses:
+  learning: >-
+    The fixed T1-U4-D architecture reaches at least 0.95 clean final accuracy for
+    every exposed development seed on balanced two-hop retrieval.
+  causal_dependence: >-
+    Matched counterfactual pairs are solved consistently, while independently
+    corrupting either required edge returns performance to the preregistered
+    chance band.
+  computational_value: >-
+    At least two intermediate refinement steps retain positive and variable
+    remaining NLL reduction relative to the final step for every seed.
+  null: >-
+    Any development seed fails learning, counterfactual, causal-dependence, or
+    target-availability gates.
+
+scientific_boundary:
+  development_seeds_are_exposed: true
+  development_seeds: [503, 607, 709]
+  note: >-
+    These seeds are retained only to establish the task and learning protocol.
+    Fresh model seeds remain unopened unless all development seeds pass every
+    gate. No state-history, motion, or attention-history probe is fit in T1-U7.
+
+development_seeds: [503, 607, 709]
+fresh_confirmation_seeds: [811, 907, 1009]
+
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 5
+  chain_hops: 2
+  train_samples: 8000
+  validation_samples: 1800
+  probe_samples: 4000
+  causal_pairs: 2000
+  development_sample_seed_offset: 37
+  development_causal_seed_offset: 43
+  fresh_sample_seed_offset: 83
+  fresh_causal_seed_offset: 89
+
+model:
+  d_model: 32
+  n_heads: 2
+  d_ff: 64
+  n_layers: 6
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+  tie_layers: true
+  use_step_embeddings: false
+  residual_scale: 0.5
+
+training:
+  batch_size: 96
+  validation_batch_size: 600
+  learning_rate: 0.0005
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.0
+  log_every: 200
+  curriculum:
+    - name: full_auxiliary_two_hop
+      steps: 1700
+      data_stream_id: 0
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.02
+      learning_rate: 0.0012
+    - name: taper_015_two_hop
+      steps: 200
+      data_stream_id: 0
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.015
+      learning_rate: 0.0012
+    - name: taper_010_pre_transition_two_hop
+      steps: 100
+      data_stream_id: 0
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.01
+      learning_rate: 0.0012
+    - name: taper_010_post_transition_two_hop
+      steps: 100
+      data_stream_id: 1
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.01
+      learning_rate: 0.0005
+    - name: taper_005_two_hop
+      steps: 200
+      data_stream_id: 1
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.005
+      learning_rate: 0.0005
+    - name: final_only_two_hop
+      steps: 1700
+      data_stream_id: 1
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.0
+      learning_rate: 0.0005
+
+development_gate:
+  minimum_final_accuracy: 0.95
+  minimum_counterfactual_pair_accuracy: 0.90
+  corruption_accuracy_minimum: 0.40
+  corruption_accuracy_maximum: 0.60
+  minimum_mean_remaining_nll_reduction: 0.02
+  minimum_std_remaining_nll_reduction: 0.02
+  minimum_valid_value_steps: 2
+  value_positive_epsilon: 0.01
+  minimum_passing_seed_fraction: 1.0
+
+fresh_confirmation:
+  open_only_after_development_passes: true
+  require_same_gate_for_every_seed: true
+
+probes:
+  policy: >-
+    No trajectory probe is fit in T1-U7. Passing development and fresh-seed
+    confirmation permits a separately preregistered T1-U8 probe experiment.

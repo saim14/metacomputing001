@@ -1,0 +1,164 @@
+[
+  {
+    "seed": 503,
+    "delta_mse": 0.0,
+    "population_relative_oracle_gain": 0.0,
+    "current_teacher_coordinate": 270,
+    "realized_current_oracle_mse": 0.5035680132011207,
+    "realized_history_oracle_mse": 0.5035680132011207,
+    "realized_relative_oracle_gain": 0.0
+  },
+  {
+    "seed": 503,
+    "delta_mse": 0.025,
+    "population_relative_oracle_gain": 0.05,
+    "current_teacher_coordinate": 270,
+    "realized_current_oracle_mse": 0.5100497021655754,
+    "realized_history_oracle_mse": 0.4783896125410645,
+    "realized_relative_oracle_gain": 0.06207255781169588
+  },
+  {
+    "seed": 503,
+    "delta_mse": 0.1,
+    "population_relative_oracle_gain": 0.2,
+    "current_teacher_coordinate": 270,
+    "realized_current_oracle_mse": 0.5165867160953873,
+    "realized_history_oracle_mse": 0.40285441056089644,
+    "realized_relative_oracle_gain": 0.22016111136990657
+  },
+  {
+    "seed": 607,
+    "delta_mse": 0.0,
+    "population_relative_oracle_gain": 0.0,
+    "current_teacher_coordinate": 303,
+    "realized_current_oracle_mse": 0.5074701251615755,
+    "realized_history_oracle_mse": 0.5074701251615755,
+    "realized_relative_oracle_gain": 0.0
+  },
+  {
+    "seed": 607,
+    "delta_mse": 0.025,
+    "population_relative_oracle_gain": 0.05,
+    "current_teacher_coordinate": 303,
+    "realized_current_oracle_mse": 0.505396624942628,
+    "realized_history_oracle_mse": 0.48209661890349675,
+    "realized_relative_oracle_gain": 0.04610241716943852
+  },
+  {
+    "seed": 607,
+    "delta_mse": 0.1,
+    "population_relative_oracle_gain": 0.2,
+    "current_teacher_coordinate": 303,
+    "realized_current_oracle_mse": 0.5072422567312604,
+    "realized_history_oracle_mse": 0.40597610012926044,
+    "realized_relative_oracle_gain": 0.19964061601368382
+  },
+  {
+    "seed": 709,
+    "delta_mse": 0.0,
+    "population_relative_oracle_gain": 0.0,
+    "current_teacher_coordinate": 330,
+    "realized_current_oracle_mse": 0.4954895439461494,
+    "realized_history_oracle_mse": 0.4954895439461494,
+    "realized_relative_oracle_gain": 0.0
+  },
+  {
+    "seed": 709,
+    "delta_mse": 0.025,
+    "population_relative_oracle_gain": 0.05,
+    "current_teacher_coordinate": 330,
+    "realized_current_oracle_mse": 0.4943075070295873,
+    "realized_history_oracle_mse": 0.4707150667488419,
+    "realized_relative_oracle_gain": 0.04772826620117114
+  },
+  {
+    "seed": 709,
+    "delta_mse": 0.1,
+    "population_relative_oracle_gain": 0.2,
+    "current_teacher_coordinate": 330,
+    "realized_current_oracle_mse": 0.4943100786240143,
+    "realized_history_oracle_mse": 0.3963916351569195,
+    "realized_relative_oracle_gain": 0.1980911328768885
+  },
+  {
+    "seed": 811,
+    "delta_mse": 0.0,
+    "population_relative_oracle_gain": 0.0,
+    "current_teacher_coordinate": 111,
+    "realized_current_oracle_mse": 0.5155204734333517,
+    "realized_history_oracle_mse": 0.5155204734333517,
+    "realized_relative_oracle_gain": 0.0
+  },
+  {
+    "seed": 811,
+    "delta_mse": 0.025,
+    "population_relative_oracle_gain": 0.05,
+    "current_teacher_coordinate": 111,
+    "realized_current_oracle_mse": 0.5142687797340973,
+    "realized_history_oracle_mse": 0.48974444976168413,
+    "realized_relative_oracle_gain": 0.04768776744544656
+  },
+  {
+    "seed": 811,
+    "delta_mse": 0.1,
+    "population_relative_oracle_gain": 0.2,
+    "current_teacher_coordinate": 111,
+    "realized_current_oracle_mse": 0.5128058863095514,
+    "realized_history_oracle_mse": 0.4124163787466814,
+    "realized_relative_oracle_gain": 0.19576512330100398
+  },
+  {
+    "seed": 907,
+    "delta_mse": 0.0,
+    "population_relative_oracle_gain": 0.0,
+    "current_teacher_coordinate": 257,
+    "realized_current_oracle_mse": 0.5176983193364137,
+    "realized_history_oracle_mse": 0.5176983193364137,
+    "realized_relative_oracle_gain": 0.0
+  },
+  {
+    "seed": 907,
+    "delta_mse": 0.025,
+    "population_relative_oracle_gain": 0.05,
+    "current_teacher_coordinate": 257,
+    "realized_current_oracle_mse": 0.5174696130952502,
+    "realized_history_oracle_mse": 0.491813403369593,
+    "realized_relative_oracle_gain": 0.049580128139687825
+  },
+  {
+    "seed": 907,
+    "delta_mse": 0.1,
+    "population_relative_oracle_gain": 0.2,
+    "current_teacher_coordinate": 257,
+    "realized_current_oracle_mse": 0.5147633019466615,
+    "realized_history_oracle_mse": 0.41415865546913094,
+    "realized_relative_oracle_gain": 0.19543865325495755
+  },
+  {
+    "seed": 1009,
+    "delta_mse": 0.0,
+    "population_relative_oracle_gain": 0.0,
+    "current_teacher_coordinate": 75,
+    "realized_current_oracle_mse": 0.48328815761082206,
+    "realized_history_oracle_mse": 0.48328815761082206,
+    "realized_relative_oracle_gain": 0.0
+  },
+  {
+    "seed": 1009,
+    "delta_mse": 0.025,
+    "population_relative_oracle_gain": 0.05,
+    "current_teacher_coordinate": 75,
+    "realized_current_oracle_mse": 0.47962020695264174,
+    "realized_history_oracle_mse": 0.4591237497302809,
+    "realized_relative_oracle_gain": 0.04273476581103403
+  },
+  {
+    "seed": 1009,
+    "delta_mse": 0.1,
+    "population_relative_oracle_gain": 0.2,
+    "current_teacher_coordinate": 75,
+    "realized_current_oracle_mse": 0.47827924760206636,
+    "realized_history_oracle_mse": 0.3866305260886576,
+    "realized_relative_oracle_gain": 0.191621781569878
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "seed": 503,
+    "forbidden_unique_families": 63587,
+    "new_unique_families": 3000,
+    "candidate_batches_used": 1,
+    "rejected_candidates": 542,
+    "exact_family_overlap_with_excluded_data": 0,
+    "cross_split_family_overlap": 0,
+    "pair_members_share_split": true,
+    "tokens_sha256": "fbb7156e34bd80324e00bf665264bd79b5ad1d723a991766ebf32594f7d20e67",
+    "labels_sha256": "42de69ab1e6413a9930e3ff877d00f24ed5aefe6baaad592dfb3290aff1fecfd"
+  },
+  {
+    "seed": 607,
+    "forbidden_unique_families": 63567,
+    "new_unique_families": 3000,
+    "candidate_batches_used": 1,
+    "rejected_candidates": 571,
+    "exact_family_overlap_with_excluded_data": 0,
+    "cross_split_family_overlap": 0,
+    "pair_members_share_split": true,
+    "tokens_sha256": "4e832f2d42a93359a351845c50f5aed354e879950e7992e6267b9cf2970534b8",
+    "labels_sha256": "692019013d0cfafef678b74f91954d5939e03f60046058fc49d81a1b2f1f1f25"
+  },
+  {
+    "seed": 709,
+    "forbidden_unique_families": 63463,
+    "new_unique_families": 3000,
+    "candidate_batches_used": 1,
+    "rejected_candidates": 527,
+    "exact_family_overlap_with_excluded_data": 0,
+    "cross_split_family_overlap": 0,
+    "pair_members_share_split": true,
+    "tokens_sha256": "8306f9f2413f8585a18d3082e1ca8006ab9a2ac27ee91d23398aee5c7cb90afe",
+    "labels_sha256": "a35b72fba62c06b7ad335af4367c3aa34f03e064cc40930bf360c976a00c102b"
+  },
+  {
+    "seed": 811,
+    "forbidden_unique_families": 72198,
+    "new_unique_families": 3000,
+    "candidate_batches_used": 1,
+    "rejected_candidates": 608,
+    "exact_family_overlap_with_excluded_data": 0,
+    "cross_split_family_overlap": 0,
+    "pair_members_share_split": true,
+    "tokens_sha256": "429778f541ada672d8b929a1b4be0a8a1955207b66e86e19b18dc6dffa000df4",
+    "labels_sha256": "193d0f1f35421a06af05440c699fff01407e425f4e88d8703352afebcb9ad447"
+  },
+  {
+    "seed": 907,
+    "forbidden_unique_families": 72180,
+    "new_unique_families": 3000,
+    "candidate_batches_used": 1,
+    "rejected_candidates": 622,
+    "exact_family_overlap_with_excluded_data": 0,
+    "cross_split_family_overlap": 0,
+    "pair_members_share_split": true,
+    "tokens_sha256": "29de3611fbef11bec513873a2cba9dc9825a7cae198352af8bc387d86d96f013",
+    "labels_sha256": "81ec7078702c49eeb75f3e27b8cd24b8a38cfc6af17d69246b0c09953e4455d5"
+  },
+  {
+    "seed": 1009,
+    "forbidden_unique_families": 72248,
+    "new_unique_families": 3000,
+    "candidate_batches_used": 1,
+    "rejected_candidates": 595,
+    "exact_family_overlap_with_excluded_data": 0,
+    "cross_split_family_overlap": 0,
+    "pair_members_share_split": true,
+    "tokens_sha256": "288d2da997d8cd6508c8142dd625b987e3b9419ddb74ef51c9e6f07070a42e6c",
+    "labels_sha256": "b98440ebdc22d038aca13e87d182f67a8f4a47ab80aacdbf085fb534f1d8fe7d"
+  }
+]

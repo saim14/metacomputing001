@@ -1,0 +1,1265 @@
+{
+  "study_id": "P1-A1",
+  "version": "1.1.0",
+  "completed_at_utc": "2026-09-15T13:51:44.486755+00:00",
+  "elapsed_seconds": 37.3461031679999,
+  "natural_target_fits": 648,
+  "synthetic_target_fits": 432,
+  "arithmetic_network_training_updates": 0,
+  "reserved_examples_evaluated": 0,
+  "frozen_inputs_unchanged": true,
+  "decision": {
+    "status": "bounded_practical_current_state_sufficiency",
+    "margin_absolute_brier": 0.01,
+    "primary": {
+      "history_advantage": {
+        "mean": -0.005649356916543067,
+        "ci95": [
+          -0.010998272541318294,
+          -0.0003869157351125138
+        ],
+        "lower95": -0.010158358491711022,
+        "upper95": -0.001141073644453051
+      },
+      "correspondence_advantage": {
+        "mean": 0.011846489538194423,
+        "ci95": [
+          0.006026968203438584,
+          0.017733301364726967
+        ],
+        "lower95": 0.006956968966882708,
+        "upper95": 0.016643123599221446
+      }
+    },
+    "by_model_primary": {
+      "2017": {
+        "mean": -0.0015265534929824996,
+        "ci95": [
+          -0.009473474875624745,
+          0.006420401006158295
+        ],
+        "lower95": -0.008201710842340752,
+        "upper95": 0.005258949352962661
+      },
+      "2027": {
+        "mean": -0.009772160340103635,
+        "ci95": [
+          -0.01767296658510665,
+          -0.0018345602644322988
+        ],
+        "lower95": -0.016469296646472266,
+        "upper95": -0.00317172325295836
+      }
+    },
+    "by_observer_split": {
+      "314159": {
+        "history_advantage": {
+          "mean": -0.005649356916543067,
+          "ci95": [
+            -0.010998272541318294,
+            -0.0003869157351125138
+          ],
+          "lower95": -0.010158358491711022,
+          "upper95": -0.001141073644453051
+        },
+        "correspondence_advantage": {
+          "mean": 0.011846489538194423,
+          "ci95": [
+            0.006026968203438584,
+            0.017733301364726967
+          ],
+          "lower95": 0.006956968966882708,
+          "upper95": 0.016643123599221446
+        }
+      },
+      "314160": {
+        "history_advantage": {
+          "mean": -0.003983387617664235,
+          "ci95": [
+            -0.010055072391362307,
+            0.001953511187104183
+          ],
+          "lower95": -0.00920180222024792,
+          "upper95": 0.0008966954392274349
+        },
+        "correspondence_advantage": {
+          "mean": 0.00906829973472357,
+          "ci95": [
+            0.0027407352297063453,
+            0.015372975695987853
+          ],
+          "lower95": 0.003834505805931928,
+          "upper95": 0.014257157393156002
+        }
+      },
+      "314161": {
+        "history_advantage": {
+          "mean": -0.00784819946838026,
+          "ci95": [
+            -0.013543265381913694,
+            -0.0023522274646343416
+          ],
+          "lower95": -0.012568429229705453,
+          "upper95": -0.0033699508756066614
+        },
+        "correspondence_advantage": {
+          "mean": 0.00629251697788634,
+          "ci95": [
+            0.00030597775290408156,
+            0.011961928086932935
+          ],
+          "lower95": 0.0013827507371298095,
+          "upper95": 0.01105995991068239
+        }
+      }
+    },
+    "natural_cells": [
+      {
+        "key": [
+          314159,
+          2017,
+          3
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": -0.002946013049102393,
+          "ci95": [
+            -0.016893656832963698,
+            0.010882728792457611
+          ],
+          "lower95": -0.01446107866741743,
+          "upper95": 0.008863354915244395
+        },
+        "current_skill": 0.48745557674104767,
+        "baseline_improvement": {
+          "mean": 0.12104094270599915,
+          "ci95": [
+            0.09829655433633792,
+            0.14231093885647078
+          ],
+          "lower95": 0.10277189723921024,
+          "upper95": 0.13875295601418336
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.015671134957412198,
+          "ci95": [
+            0.0018670254488046434,
+            0.029156978629856087
+          ],
+          "lower95": 0.004318200676132368,
+          "upper95": 0.027036313418846308
+        },
+        "losses": {
+          "current": 0.13648728054897102,
+          "expanded_current": 0.12727079785348994,
+          "ordered_history": 0.13021681090259235,
+          "residual_history": 0.13019832109971488,
+          "mismatched_history": 0.14588794586000456,
+          "shuffled_history": 0.13388644741149994,
+          "baseline": 0.24831174055948907
+        }
+      },
+      {
+        "key": [
+          314159,
+          2017,
+          4
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": -0.00010709393686260502,
+          "ci95": [
+            -0.005871227191379422,
+            0.005375459112470439
+          ],
+          "lower95": -0.004849130753063373,
+          "upper95": 0.004402690691111005
+        },
+        "current_skill": 0.6060732301533827,
+        "baseline_improvement": {
+          "mean": 0.09364281913069611,
+          "ci95": [
+            0.06046349307193759,
+            0.12900963527393072
+          ],
+          "lower95": 0.06490200237381155,
+          "upper95": 0.122975566812427
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.011354675160029937,
+          "ci95": [
+            0.0036697007250466986,
+            0.01848722052000483
+          ],
+          "lower95": 0.00502602966758213,
+          "upper95": 0.017407031066240142
+        },
+        "losses": {
+          "current": 0.06391871864315732,
+          "expanded_current": 0.0608646140832694,
+          "ordered_history": 0.06097170802013201,
+          "residual_history": 0.06133850242749452,
+          "mismatched_history": 0.07232638318016195,
+          "shuffled_history": 0.06272572562500127,
+          "baseline": 0.15450743321396554
+        }
+      },
+      {
+        "key": [
+          314159,
+          2027,
+          3
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": -0.021666893605258062,
+          "ci95": [
+            -0.03658049044975596,
+            -0.007299967423501112
+          ],
+          "lower95": -0.034300556092873094,
+          "upper95": -0.009407512789592907
+        },
+        "current_skill": 0.4188800578716456,
+        "baseline_improvement": {
+          "mean": 0.10055024781735092,
+          "ci95": [
+            0.07858080914263325,
+            0.12286877797284315
+          ],
+          "lower95": 0.08179117095609145,
+          "upper95": 0.11932839597681484
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.021791513981495928,
+          "ci95": [
+            0.0059864628576448385,
+            0.038301552590632046
+          ],
+          "lower95": 0.00819786149906543,
+          "upper95": 0.03573483024576024
+        },
+        "losses": {
+          "current": 0.16309895347077447,
+          "expanded_current": 0.13949519222639978,
+          "ordered_history": 0.16116208583165786,
+          "residual_history": 0.17477520725088036,
+          "mismatched_history": 0.18295359981315376,
+          "shuffled_history": 0.16299301888975107,
+          "baseline": 0.2400454400437507
+        }
+      },
+      {
+        "key": [
+          314159,
+          2027,
+          4
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": 0.002122572925050793,
+          "ci95": [
+            -0.004325921617908594,
+            0.008924384778733528
+          ],
+          "lower95": -0.003300112269534011,
+          "upper95": 0.007689592428223862
+        },
+        "current_skill": 0.36617519671858,
+        "baseline_improvement": {
+          "mean": 0.0514236128829263,
+          "ci95": [
+            0.029274790797050233,
+            0.07542062776614428
+          ],
+          "lower95": 0.03287350212158989,
+          "upper95": 0.07117356388361823
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": -0.0014313659461603788,
+          "ci95": [
+            -0.007876749567516095,
+            0.005171011368859561
+          ],
+          "lower95": -0.006895104851303322,
+          "upper95": 0.0040037848487004535
+        },
+        "losses": {
+          "current": 0.08801521010015449,
+          "expanded_current": 0.08901083855930883,
+          "ordered_history": 0.08688826563425804,
+          "residual_history": 0.08951635696325178,
+          "mismatched_history": 0.08545689968809767,
+          "shuffled_history": 0.09109222473626155,
+          "baseline": 0.14043445144223515
+        }
+      },
+      {
+        "key": [
+          314160,
+          2017,
+          3
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": 0.00043982839128439943,
+          "ci95": [
+            -0.012367426368958762,
+            0.013050704529985524
+          ],
+          "lower95": -0.010549877175569293,
+          "upper95": 0.010819931799506424
+        },
+        "current_skill": 0.4608821880937304,
+        "baseline_improvement": {
+          "mean": 0.11408363758085803,
+          "ci95": [
+            0.09013928050496524,
+            0.13772310119346534
+          ],
+          "lower95": 0.09397407850772102,
+          "upper95": 0.13411547789907233
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.014204154859248459,
+          "ci95": [
+            0.0009018385080268614,
+            0.028452859670615626
+          ],
+          "lower95": 0.002932315676360161,
+          "upper95": 0.025974961486465147
+        },
+        "losses": {
+          "current": 0.13856210561866153,
+          "expanded_current": 0.13344955100410988,
+          "ordered_history": 0.13300972261282548,
+          "residual_history": 0.13514614955624252,
+          "mismatched_history": 0.14721387747207393,
+          "shuffled_history": 0.13725624727391164,
+          "baseline": 0.2475331885849679
+        }
+      },
+      {
+        "key": [
+          314160,
+          2017,
+          4
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": -0.0031115232426959013,
+          "ci95": [
+            -0.010544708623853462,
+            0.003979482845066082
+          ],
+          "lower95": -0.009329601949902474,
+          "upper95": 0.002801415291965992
+        },
+        "current_skill": 0.5950728615100017,
+        "baseline_improvement": {
+          "mean": 0.09131032411758412,
+          "ci95": [
+            0.059137085598953754,
+            0.12512552862279633
+          ],
+          "lower95": 0.06377478623834626,
+          "upper95": 0.11948232226916022
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.007167945518633452,
+          "ci95": [
+            -0.0019748135580734626,
+            0.01653735537700116
+          ],
+          "lower95": -0.00043904511308466077,
+          "upper95": 0.015153519668840598
+        },
+        "losses": {
+          "current": 0.06487525898905123,
+          "expanded_current": 0.06213361531175482,
+          "ordered_history": 0.06524513855445072,
+          "residual_history": 0.06962264392766011,
+          "mismatched_history": 0.07241308407308417,
+          "shuffled_history": 0.06719854845473064,
+          "baseline": 0.1534439394293389
+        }
+      },
+      {
+        "key": [
+          314160,
+          2027,
+          3
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": -0.014516638266564394,
+          "ci95": [
+            -0.03084705646280258,
+            0.0018084300362306203
+          ],
+          "lower95": -0.02838747649119794,
+          "upper95": -0.0008617412625466906
+        },
+        "current_skill": 0.35878692769172893,
+        "baseline_improvement": {
+          "mean": 0.08720936721090485,
+          "ci95": [
+            0.06350725311092266,
+            0.11108367550644599
+          ],
+          "lower95": 0.06736067484473632,
+          "upper95": 0.1072530481045144
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.005285522712899347,
+          "ci95": [
+            -0.012443108123289238,
+            0.02255168836918036
+          ],
+          "lower95": -0.009489958251181957,
+          "upper95": 0.019615256266179788
+        },
+        "losses": {
+          "current": 0.16934398221412136,
+          "expanded_current": 0.15585792560260436,
+          "ordered_history": 0.17037456386916877,
+          "residual_history": 0.18306824026563398,
+          "mismatched_history": 0.17566008658206808,
+          "shuffled_history": 0.17437752085110053,
+          "baseline": 0.24306729281350917
+        }
+      },
+      {
+        "key": [
+          314160,
+          2027,
+          4
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": 0.0012547826473189529,
+          "ci95": [
+            -0.004097058500764998,
+            0.006855996386956471
+          ],
+          "lower95": -0.0032718075789048688,
+          "upper95": 0.006040896207709496
+        },
+        "current_skill": 0.3904483451089239,
+        "baseline_improvement": {
+          "mean": 0.05504924330811926,
+          "ci95": [
+            0.03321888023784305,
+            0.07826751951051023
+          ],
+          "lower95": 0.0367053600444066,
+          "upper95": 0.07428242607978645
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.009615575848113027,
+          "ci95": [
+            0.002348827191455202,
+            0.017481147572499984
+          ],
+          "lower95": 0.003421919498655499,
+          "upper95": 0.01610566137074075
+        },
+        "losses": {
+          "current": 0.08594058030801652,
+          "expanded_current": 0.08407882768191698,
+          "ordered_history": 0.08468579766069757,
+          "residual_history": 0.08669873625184102,
+          "mismatched_history": 0.0943013735088106,
+          "shuffled_history": 0.08482969374410387,
+          "baseline": 0.14098982361613582
+        }
+      },
+      {
+        "key": [
+          314161,
+          2017,
+          3
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": -0.018399804210722223,
+          "ci95": [
+            -0.03362312037906677,
+            -0.003804207271044016
+          ],
+          "lower95": -0.030947924131467845,
+          "upper95": -0.006126723017315347
+        },
+        "current_skill": 0.5288381446086081,
+        "baseline_improvement": {
+          "mean": 0.13102008415476082,
+          "ci95": [
+            0.10882244447005787,
+            0.15152161670457903
+          ],
+          "lower95": 0.11241738854075939,
+          "upper95": 0.14855634109112273
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.011739507187902285,
+          "ci95": [
+            -0.0027316214806269758,
+            0.02616316348616126
+          ],
+          "lower95": -0.0003294667096128247,
+          "upper95": 0.023386160076238154
+        },
+        "losses": {
+          "current": 0.14163191844592926,
+          "expanded_current": 0.11673073618693079,
+          "ordered_history": 0.13513054039765302,
+          "residual_history": 0.13276311970460042,
+          "mismatched_history": 0.1468700475855553,
+          "shuffled_history": 0.13926742624897018,
+          "baseline": 0.2477508203416916
+        }
+      },
+      {
+        "key": [
+          314161,
+          2017,
+          4
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": -0.001317325921999534,
+          "ci95": [
+            -0.009376350957108523,
+            0.006114918510344214
+          ],
+          "lower95": -0.008055985233039298,
+          "upper95": 0.0049118213311102055
+        },
+        "current_skill": 0.5720608608821514,
+        "baseline_improvement": {
+          "mean": 0.08871389412540308,
+          "ci95": [
+            0.05643677261650768,
+            0.12224411257622549
+          ],
+          "lower95": 0.06147248063013442,
+          "upper95": 0.11656151801306452
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.005514134038609385,
+          "ci95": [
+            -0.0030455979444476123,
+            0.013880589783894285
+          ],
+          "lower95": -0.0016934066415782258,
+          "upper95": 0.012507708912138564
+        },
+        "losses": {
+          "current": 0.06636382608185082,
+          "expanded_current": 0.0683027854989551,
+          "ordered_history": 0.06768115200385036,
+          "residual_history": 0.0667476351979514,
+          "mismatched_history": 0.07319528604245974,
+          "shuffled_history": 0.0686245091951396,
+          "baseline": 0.15507772020725388
+        }
+      },
+      {
+        "key": [
+          314161,
+          2027,
+          3
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": -0.010101422778191501,
+          "ci95": [
+            -0.023967487705953035,
+            0.003924781858219461
+          ],
+          "lower95": -0.02201427350802141,
+          "upper95": 0.0016718776672337648
+        },
+        "current_skill": 0.3544460583104654,
+        "baseline_improvement": {
+          "mean": 0.0852617123841398,
+          "ci95": [
+            0.06040012947160408,
+            0.10970222032266734
+          ],
+          "lower95": 0.06449478613259546,
+          "upper95": 0.10594188840796635
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.008043201320081985,
+          "ci95": [
+            -0.0071331207435440065,
+            0.022833442760383207
+          ],
+          "lower95": -0.004737754842912475,
+          "upper95": 0.020211728419209783
+        },
+        "losses": {
+          "current": 0.16916562033638613,
+          "expanded_current": 0.15528747806406556,
+          "ordered_history": 0.1653889008422571,
+          "residual_history": 0.17403146443484963,
+          "mismatched_history": 0.17343210216233906,
+          "shuffled_history": 0.16908083673819724,
+          "baseline": 0.2405491904482054
+        }
+      },
+      {
+        "key": [
+          314161,
+          2027,
+          4
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": -0.0015742449626077826,
+          "ci95": [
+            -0.007400320807108268,
+            0.004328506093388738
+          ],
+          "lower95": -0.006529069250026303,
+          "upper95": 0.003426591970502378
+        },
+        "current_skill": 0.4017786324947039,
+        "baseline_improvement": {
+          "mean": 0.05596186997831087,
+          "ci95": [
+            0.03426080727409685,
+            0.07910317227593018
+          ],
+          "lower95": 0.037765654578398054,
+          "upper95": 0.07548411077109612
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": -0.0001267746350482997,
+          "ci95": [
+            -0.007106064410123429,
+            0.0066815183682981715
+          ],
+          "lower95": -0.005965825346534147,
+          "upper95": 0.005613935727226596
+        },
+        "losses": {
+          "current": 0.08332346142628679,
+          "expanded_current": 0.0867634794731219,
+          "ordered_history": 0.08489770638889457,
+          "residual_history": 0.08866495440432359,
+          "mismatched_history": 0.08477093175384628,
+          "shuffled_history": 0.08570269367351484,
+          "baseline": 0.13928533140459767
+        }
+      }
+    ],
+    "synthetic_cells": [
+      {
+        "key": [
+          "synthetic",
+          9101,
+          0.0
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": 0.0008756567026364374,
+          "ci95": [
+            -0.0007549183047659739,
+            0.002566780503008529
+          ],
+          "lower95": -0.0005021464310626301,
+          "upper95": 0.0022568130764610787
+        },
+        "current_skill": 0.1500132257091641,
+        "baseline_improvement": {
+          "mean": 0.03749707226594413,
+          "ci95": [
+            0.02517653050005902,
+            0.04961759881722463
+          ],
+          "lower95": 0.027192624365411804,
+          "upper95": 0.04784025673993899
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.0002016205227338189,
+          "ci95": [
+            -0.0018115984963215832,
+            0.002291597630345355
+          ],
+          "lower95": -0.0015207471042571104,
+          "upper95": 0.0019567299622585944
+        },
+        "losses": {
+          "current": 0.2124613703225848,
+          "expanded_current": 0.21162903424941426,
+          "ordered_history": 0.21158571361994832,
+          "mismatched_history": 0.21178733414268214,
+          "baseline": 0.24995844258852892
+        },
+        "synthetic_seed": 9101,
+        "history_amplitude": 0.0,
+        "ideal_latent_brier_gain": 0.0
+      },
+      {
+        "key": [
+          "synthetic",
+          9101,
+          0.1
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": 0.005348385272008872,
+          "ci95": [
+            -0.0005720536216012817,
+            0.011233546777975785
+          ],
+          "lower95": 0.0004208165579052326,
+          "upper95": 0.010296686839793127
+        },
+        "current_skill": 0.1567995513827115,
+        "baseline_improvement": {
+          "mean": 0.039213980515800266,
+          "ci95": [
+            0.026144829457062674,
+            0.05208648936941007
+          ],
+          "lower95": 0.02826309941642287,
+          "upper95": 0.05036048331142773
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.006000262278654515,
+          "ci95": [
+            0.0004481986408944608,
+            0.011592543288715493
+          ],
+          "lower95": 0.0013963998121663756,
+          "upper95": 0.010598708758051837
+        },
+        "losses": {
+          "current": 0.2108758964640643,
+          "expanded_current": 0.21041521515235034,
+          "ordered_history": 0.2055275111920554,
+          "mismatched_history": 0.21152777347070992,
+          "baseline": 0.25008987697986457
+        },
+        "synthetic_seed": 9101,
+        "history_amplitude": 0.1,
+        "ideal_latent_brier_gain": 0.010000000000000002
+      },
+      {
+        "key": [
+          "synthetic",
+          9101,
+          0.2
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": 0.028995127992034287,
+          "ci95": [
+            0.01808354846398244,
+            0.03986521627416903
+          ],
+          "lower95": 0.019756979305711575,
+          "upper95": 0.03818443263918474
+        },
+        "current_skill": 0.18792116890912147,
+        "baseline_improvement": {
+          "mean": 0.04691631892979355,
+          "ci95": [
+            0.031526700891829545,
+            0.06220433706303852
+          ],
+          "lower95": 0.03388917730379878,
+          "upper95": 0.05998491063106466
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.029654918768349796,
+          "ci95": [
+            0.018896982493693846,
+            0.04045307078449082
+          ],
+          "lower95": 0.020569023034459677,
+          "upper95": 0.03881555832426112
+        },
+        "losses": {
+          "current": 0.2027432548273398,
+          "expanded_current": 0.2022811822056475,
+          "ordered_history": 0.1737481268353055,
+          "mismatched_history": 0.2034030456036553,
+          "baseline": 0.24965957375713332
+        },
+        "synthetic_seed": 9101,
+        "history_amplitude": 0.2,
+        "ideal_latent_brier_gain": 0.04000000000000001
+      },
+      {
+        "key": [
+          "synthetic",
+          9102,
+          0.0
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": -0.00012144966436118578,
+          "ci95": [
+            -0.0020506507510915316,
+            0.0018171232268589244
+          ],
+          "lower95": -0.001752341741687538,
+          "upper95": 0.00152126396258914
+        },
+        "current_skill": 0.114902065428506,
+        "baseline_improvement": {
+          "mean": 0.02873574841647268,
+          "ci95": [
+            0.016908222578124434,
+            0.040442839018838855
+          ],
+          "lower95": 0.018704195484105762,
+          "upper95": 0.038557992929955404
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": -0.0006208346155210735,
+          "ci95": [
+            -0.003123752385766199,
+            0.0018982119943244246
+          ],
+          "lower95": -0.0026703131916750644,
+          "upper95": 0.001487156356039111
+        },
+        "losses": {
+          "current": 0.22135330184827248,
+          "expanded_current": 0.22104837941162309,
+          "ordered_history": 0.22147475151263368,
+          "mismatched_history": 0.22085391689711256,
+          "baseline": 0.25008905026474515
+        },
+        "synthetic_seed": 9102,
+        "history_amplitude": 0.0,
+        "ideal_latent_brier_gain": 0.0
+      },
+      {
+        "key": [
+          "synthetic",
+          9102,
+          0.1
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": 0.009007364205291175,
+          "ci95": [
+            0.004176643032567307,
+            0.01420504268351573
+          ],
+          "lower95": 0.004885329605577056,
+          "upper95": 0.013335418270176142
+        },
+        "current_skill": 0.1347329578526708,
+        "baseline_improvement": {
+          "mean": 0.033615339700188825,
+          "ci95": [
+            0.021450317738395668,
+            0.045329014559305415
+          ],
+          "lower95": 0.023656351492712894,
+          "upper95": 0.043582213974746466
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.009502923020531245,
+          "ci95": [
+            0.004636313720318214,
+            0.01450489187457063
+          ],
+          "lower95": 0.005407545533163303,
+          "upper95": 0.013605413240088638
+        },
+        "losses": {
+          "current": 0.22027734979755903,
+          "expanded_current": 0.2158807022181284,
+          "ordered_history": 0.20687333801283722,
+          "mismatched_history": 0.2163762610333685,
+          "baseline": 0.24949604191831723
+        },
+        "synthetic_seed": 9102,
+        "history_amplitude": 0.1,
+        "ideal_latent_brier_gain": 0.010000000000000002
+      },
+      {
+        "key": [
+          "synthetic",
+          9102,
+          0.2
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": 0.04191332625903251,
+          "ci95": [
+            0.03159072997049248,
+            0.052018130519424825
+          ],
+          "lower95": 0.03333518567900018,
+          "upper95": 0.05052669938447123
+        },
+        "current_skill": 0.12426724555011448,
+        "baseline_improvement": {
+          "mean": 0.03094489322622286,
+          "ci95": [
+            0.015160774891038842,
+            0.04574897821086065
+          ],
+          "lower95": 0.01789157548600324,
+          "upper95": 0.04369111926561957
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.04255510781621931,
+          "ci95": [
+            0.03232183093135381,
+            0.05254310672399269
+          ],
+          "lower95": 0.03404768470237913,
+          "upper95": 0.050936003612802906
+        },
+        "losses": {
+          "current": 0.21756472879902303,
+          "expanded_current": 0.21807401026064455,
+          "ordered_history": 0.17616068400161197,
+          "mismatched_history": 0.21871579181783132,
+          "baseline": 0.24901890348686737
+        },
+        "synthetic_seed": 9102,
+        "history_amplitude": 0.2,
+        "ideal_latent_brier_gain": 0.04000000000000001
+      },
+      {
+        "key": [
+          "synthetic",
+          9103,
+          0.0
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": -0.0013714495797182028,
+          "ci95": [
+            -0.005236397772739722,
+            0.002468366393832779
+          ],
+          "lower95": -0.004563452411101551,
+          "upper95": 0.001847191215068672
+        },
+        "current_skill": 0.16230043871727873,
+        "baseline_improvement": {
+          "mean": 0.04057510967931968,
+          "ci95": [
+            0.02880112627730868,
+            0.05218367143205228
+          ],
+          "lower95": 0.030965213104394405,
+          "upper95": 0.050023811156151426
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": -0.0008729155202863564,
+          "ci95": [
+            -0.00565458179706676,
+            0.0038224963921498563
+          ],
+          "lower95": -0.00489685468098575,
+          "upper95": 0.0030667087076020273
+        },
+        "losses": {
+          "current": 0.20942489032068032,
+          "expanded_current": 0.20968466564554308,
+          "ordered_history": 0.2107963399003985,
+          "mismatched_history": 0.20992342438011216,
+          "baseline": 0.25
+        },
+        "synthetic_seed": 9103,
+        "history_amplitude": 0.0,
+        "ideal_latent_brier_gain": 0.0
+      },
+      {
+        "key": [
+          "synthetic",
+          9103,
+          0.1
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": 0.010966795049059227,
+          "ci95": [
+            0.005066296626018098,
+            0.01715822975937545
+          ],
+          "lower95": 0.0060938449522435914,
+          "upper95": 0.016119439527110792
+        },
+        "current_skill": 0.13845160284002556,
+        "baseline_improvement": {
+          "mean": 0.034643347078882246,
+          "ci95": [
+            0.02154294061256446,
+            0.04752609853152423
+          ],
+          "lower95": 0.023660508299451252,
+          "upper95": 0.04560203157683359
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.010670700181682504,
+          "ci95": [
+            0.004365342377776614,
+            0.01703128588878865
+          ],
+          "lower95": 0.005463095563181601,
+          "upper95": 0.01602113601964373
+        },
+        "losses": {
+          "current": 0.2155765591428679,
+          "expanded_current": 0.2154110421829975,
+          "ordered_history": 0.20460976409380868,
+          "mismatched_history": 0.21528046427549116,
+          "baseline": 0.2502199062217501
+        },
+        "synthetic_seed": 9103,
+        "history_amplitude": 0.1,
+        "ideal_latent_brier_gain": 0.010000000000000002
+      },
+      {
+        "key": [
+          "synthetic",
+          9103,
+          0.2
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": 0.04076283530207788,
+          "ci95": [
+            0.02982853334986573,
+            0.05199446457164332
+          ],
+          "lower95": 0.03161807102591623,
+          "upper95": 0.049974666328424525
+        },
+        "current_skill": 0.13217438709965323,
+        "baseline_improvement": {
+          "mean": 0.0332707869060303,
+          "ci95": [
+            0.016330109470685805,
+            0.04945300477673728
+          ],
+          "lower95": 0.019583414966837794,
+          "upper95": 0.04660410051992316
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.03959675682557293,
+          "ci95": [
+            0.029161385381850816,
+            0.05018550052256104
+          ],
+          "lower95": 0.030885685835765012,
+          "upper95": 0.048434043733377286
+        },
+        "losses": {
+          "current": 0.21844807963159701,
+          "expanded_current": 0.21853260948377753,
+          "ordered_history": 0.1776852443295191,
+          "mismatched_history": 0.21728200115509202,
+          "baseline": 0.2517188665376273
+        },
+        "synthetic_seed": 9103,
+        "history_amplitude": 0.2,
+        "ideal_latent_brier_gain": 0.04000000000000001
+      },
+      {
+        "key": [
+          "synthetic",
+          9104,
+          0.0
+        ],
+        "current_reference": "expanded_current",
+        "history_advantage": {
+          "mean": -0.00120764854735117,
+          "ci95": [
+            -0.0032432127366388793,
+            0.0006975558565544029
+          ],
+          "lower95": -0.0028772548619600377,
+          "upper95": 0.0003978516535913545
+        },
+        "current_skill": 0.12074696230048765,
+        "baseline_improvement": {
+          "mean": 0.03018585140796955,
+          "ci95": [
+            0.019188447108757695,
+            0.041124174282617304
+          ],
+          "lower95": 0.021081180125298502,
+          "upper95": 0.039533389599671544
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.0005443840776478507,
+          "ci95": [
+            -0.0019105911460186105,
+            0.0028915699331577686
+          ],
+          "lower95": -0.0014965566382003474,
+          "upper95": 0.002539466511856201
+        },
+        "losses": {
+          "current": 0.2196881861295582,
+          "expanded_current": 0.21980678470365245,
+          "ordered_history": 0.22101443325100362,
+          "mismatched_history": 0.2215588173286515,
+          "baseline": 0.24999263611162198
+        },
+        "synthetic_seed": 9104,
+        "history_amplitude": 0.0,
+        "ideal_latent_brier_gain": 0.0
+      },
+      {
+        "key": [
+          "synthetic",
+          9104,
+          0.1
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": 0.012133608877624633,
+          "ci95": [
+            0.006304960438360704,
+            0.017644609343377693
+          ],
+          "lower95": 0.0073186470323399816,
+          "upper95": 0.01681187477336155
+        },
+        "current_skill": 0.11265094371511464,
+        "baseline_improvement": {
+          "mean": 0.02808283475827833,
+          "ci95": [
+            0.015518386347258035,
+            0.04010344791797004
+          ],
+          "lower95": 0.017892332982645028,
+          "upper95": 0.038486509432581986
+        },
+        "useful": true,
+        "correspondence_advantage": {
+          "mean": 0.010858664747931741,
+          "ci95": [
+            0.005110725311017195,
+            0.016456617308443812
+          ],
+          "lower95": 0.006026584613508245,
+          "upper95": 0.015535681780991836
+        },
+        "losses": {
+          "current": 0.22120788427287014,
+          "expanded_current": 0.22179261501557346,
+          "ordered_history": 0.2090742753952455,
+          "mismatched_history": 0.21993294014317724,
+          "baseline": 0.2492907190311485
+        },
+        "synthetic_seed": 9104,
+        "history_amplitude": 0.1,
+        "ideal_latent_brier_gain": 0.010000000000000002
+      },
+      {
+        "key": [
+          "synthetic",
+          9104,
+          0.2
+        ],
+        "current_reference": "current",
+        "history_advantage": {
+          "mean": 0.03791578276043781,
+          "ci95": [
+            0.02632794271960865,
+            0.04863198668547108
+          ],
+          "lower95": 0.028542025002563757,
+          "upper95": 0.04705150811816395
+        },
+        "current_skill": 0.08772174915538067,
+        "baseline_improvement": {
+          "mean": 0.021904323518394244,
+          "ci95": [
+            0.007013540942178267,
+            0.036494900319566585
+          ],
+          "lower95": 0.009306088721619633,
+          "upper95": 0.034160462308769964
+        },
+        "useful": false,
+        "correspondence_advantage": {
+          "mean": 0.038238280214179195,
+          "ci95": [
+            0.02658848609680822,
+            0.04902715717855368
+          ],
+          "lower95": 0.02885756949840708,
+          "upper95": 0.047251740188529234
+        },
+        "losses": {
+          "current": 0.22779798781599656,
+          "expanded_current": 0.22827510735051984,
+          "ordered_history": 0.1898822050555587,
+          "mismatched_history": 0.2281204852697379,
+          "baseline": 0.24970231133439075
+        },
+        "synthetic_seed": 9104,
+        "history_amplitude": 0.2,
+        "ideal_latent_brier_gain": 0.04000000000000001
+      }
+    ],
+    "sensitivity": {
+      "strong_signal_successes": 4,
+      "near_margin_successes": 4,
+      "null_material_false_positives": 0,
+      "replicates_per_level": 4,
+      "passed": true
+    },
+    "history_checks": {
+      "primary_pooled_lower_exceeds_margin": false,
+      "positive_point_effect_in_both_models": false,
+      "correspondence_lower_positive": true,
+      "other_splits_point_effect_exceeds_margin": false
+    },
+    "sufficiency_checks": {
+      "all_primary_cell_upper_bounds_below_margin": true,
+      "other_splits_pooled_upper_below_margin": true,
+      "all_primary_current_predictors_useful": true,
+      "synthetic_sensitivity_passed": true
+    },
+    "current_faster_than_continuation_all_primary_cells": true,
+    "confirmation_opened": false,
+    "awareness_tested": false,
+    "uncertainty_scope": "Paired canonical-family bootstrap, conditional on two fixed models and exposed development split."
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  }
+}

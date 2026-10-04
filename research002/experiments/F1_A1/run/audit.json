@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "candidate_tuning_scores_reconstructed": 1344,
+  "selected_pipelines_reconstructed": 112,
+  "max_absolute_errors": {
+    "candidate_tuning_score": 0.0,
+    "selected_prediction": 0.0,
+    "true_outcome": 4.440892098500626e-15,
+    "prefix_feature": 0.0,
+    "fit_normalization": 0.0
+  },
+  "headline_interval_max_abs_error": 4.336808689942018e-19,
+  "mismatch_self_pairs": 0,
+  "past_swap_fractions": [
+    0.515,
+    0.48833333333333334,
+    0.51375,
+    0.4979166666666667,
+    0.5075,
+    0.5204166666666666,
+    0.51125
+  ],
+  "prefix_cases_per_condition": 100,
+  "source_and_checkpoint_hashes_unchanged": true,
+  "all_reference_selections_verified": true,
+  "online_decisions_verified": true,
+  "additional_neural_fits": 0,
+  "additional_observer_fits": 0,
+  "audit_seconds": 10.80975450599999
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "case": 0.0,
+    "panel_eligible": true,
+    "screen_passed": false,
+    "classification": "useful_gain_excluded_for_this_fixed_panel_and_predictor"
+  },
+  {
+    "case": 0.025,
+    "panel_eligible": true,
+    "screen_passed": false,
+    "classification": "useful_gain_excluded_for_this_fixed_panel_and_predictor"
+  },
+  {
+    "case": 0.1,
+    "panel_eligible": true,
+    "screen_passed": true,
+    "classification": "advantage_worth_independent_replication"
+  }
+]

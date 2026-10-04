@@ -1,0 +1,13 @@
+candidate_id,residual_scale,seed,final_accuracy,valid_future_flip_layers,valid_layer_count,passed
+U5-R-scale-0.5,0.5,503,1.0,[],0,False
+U5-R-scale-0.5,0.5,607,0.9485,"[2, 3, 4]",3,False
+U5-R-scale-0.5,0.5,709,0.968,"[2, 3, 4]",3,True
+U5-A-scale-0.6,0.6,503,0.853,"[2, 3, 4, 5]",4,False
+U5-A-scale-0.6,0.6,607,0.97325,"[2, 3]",2,True
+U5-A-scale-0.6,0.6,709,1.0,[],0,False
+U5-B-scale-0.7,0.7,503,0.993,"[2, 3]",2,True
+U5-B-scale-0.7,0.7,607,0.88025,"[2, 3, 4]",3,False
+U5-B-scale-0.7,0.7,709,1.0,[],0,False
+U5-C-scale-0.8,0.8,503,0.95175,"[1, 2, 3, 4]",4,True
+U5-C-scale-0.8,0.8,607,0.915,"[1, 2, 3, 4, 5]",5,False
+U5-C-scale-0.8,0.8,709,0.9135,"[2, 3, 4]",3,False

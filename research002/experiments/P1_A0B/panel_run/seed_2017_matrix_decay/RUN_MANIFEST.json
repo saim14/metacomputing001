@@ -1,0 +1,21 @@
+{
+  "seed": 2017,
+  "arm": "matrix_decay",
+  "weight_decay": 1.0,
+  "initial_weight_sha256": "25cc4e29a497e9731e5bde43936af942d82e7f2a11a8bd7f523f82c6624ff843",
+  "batch_index_sha256": "c2f5bc1d83bc6e7516330718d7e0b592cf9682db6f78365124c6426c969f4c17",
+  "parameter_count": 5873,
+  "decayed_parameter_names": [
+    "token_embedding",
+    "position_embedding",
+    "layers.0.q_proj.weight",
+    "layers.0.k_proj.weight",
+    "layers.0.v_proj.weight",
+    "layers.0.o_proj.weight",
+    "layers.0.ff1.weight",
+    "layers.0.ff2.weight",
+    "readout.weight"
+  ],
+  "started_at_utc": "2026-09-15T04:50:50.010980+00:00",
+  "training_started_at_utc": "2026-09-15T04:50:50.771834+00:00"
+}

@@ -1,0 +1,4 @@
+schedule_id,selectable,schedule_values,scale_sum,minimum_development_final_accuracy,mean_development_final_accuracy,sample_std_development_final_accuracy,minimum_valid_layer_count,mean_valid_layer_count,passing_seed_fraction,development_joint_gate_passed,eligible
+constant,False,"[0.5, 0.5, 0.5, 0.5, 0.5, 0.5]",3.0,0.9485,0.9721666666666667,0.02600160251471692,0,2.0,0.3333333333333333,False,False
+back_loaded,True,"[0.25, 0.35, 0.45, 0.55, 0.65, 0.75]",3.0,0.788,0.8584166666666667,0.10009630779071386,1,2.6666666666666665,0.0,False,False
+front_loaded,True,"[0.75, 0.65, 0.55, 0.45, 0.35, 0.25]",3.0,0.87275,0.9278333333333334,0.06481238950488812,0,2.6666666666666665,0.0,False,False

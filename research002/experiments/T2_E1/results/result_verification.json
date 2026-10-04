@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "held_out_cells_recomputed_with_sklearn": 336,
+  "seed_and_panel_aggregation_verified": true,
+  "runner_and_protocol_hashes_verified": true,
+  "probe_refits": 0
+}

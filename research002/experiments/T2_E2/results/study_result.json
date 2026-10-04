@@ -1,0 +1,29 @@
+{
+  "study_id": "T2-E2",
+  "status": "completed",
+  "completed_utc": "2026-09-13T03:38:10.579344+00:00",
+  "decision": {
+    "case": "natural",
+    "panel_eligible": true,
+    "screen_passed": false,
+    "classification": "useful_gain_excluded_for_this_fixed_panel_and_predictor"
+  },
+  "evaluation_seconds": 14.728894472122192,
+  "main_examples": 36000,
+  "development_examples": 36000,
+  "main_reported_cells": 216,
+  "main_mlp_training_runs": 456,
+  "main_ridge_paths": 72,
+  "base_model_training_updates": 0,
+  "reserved_model_seeds_opened": [],
+  "confirmation_advancement": false,
+  "protocol_sha256": "f6af08f870b514a9ba7113317f4c6567cbcbcc7b504e965b6522928db7b6591d",
+  "main_freeze_sha256": "ab85474b045097c463ec510f966c753d8c8ca72837af7720fdfd889fb6458e71",
+  "fit_manifest_unchanged": true,
+  "test_evaluated_after_all_model_selection": true,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sklearn": "1.8.0"
+  }
+}

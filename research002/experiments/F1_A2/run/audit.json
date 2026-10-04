@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "candidate_tuning_scores_reconstructed": 1260,
+  "selected_pipelines_reconstructed": 105,
+  "max_absolute_errors": {
+    "true_outcome": 4.440892098500626e-15,
+    "true_candidate_cost": 6.661338147750939e-15,
+    "prefix_feature": 0.0,
+    "normalization": 0.0,
+    "candidate_tuning_score": 0.0,
+    "selected_prediction": 0.0,
+    "headline": 1.734723475976807e-18
+  },
+  "prefix_cases_per_condition": 100,
+  "mismatch_self_pairs": 0,
+  "full_models_audited_with_true_simulator_blocked": 3,
+  "all_reference_selections_verified": true,
+  "online_replay_verified": true,
+  "source_and_checkpoint_hashes_unchanged": true,
+  "additional_observer_fits": 0,
+  "additional_neural_fits": 0,
+  "audit_seconds": 7.8512523469999
+}

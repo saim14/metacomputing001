@@ -1,0 +1,120 @@
+{
+  "all_zip_crc_passed": true,
+  "archives": [
+    {
+      "archive": "P1_A0B_Study.zip",
+      "crc_passed": true,
+      "members": 108
+    },
+    {
+      "archive": "P1_A0_Study.zip",
+      "crc_passed": true,
+      "members": 46
+    },
+    {
+      "archive": "P1_A1_Study.zip",
+      "crc_passed": true,
+      "members": 277
+    },
+    {
+      "archive": "F1_A0_Study.zip",
+      "crc_passed": true,
+      "members": 40
+    },
+    {
+      "archive": "F1_A1_Study.zip",
+      "crc_passed": true,
+      "members": 168
+    },
+    {
+      "archive": "F1_A2_Study.zip",
+      "crc_passed": true,
+      "members": 171
+    },
+    {
+      "archive": "T1_U7BC_Matched_Audit.zip",
+      "crc_passed": true,
+      "members": 74
+    },
+    {
+      "archive": "T1_U7C_PORTABLE_BUNDLE.zip",
+      "crc_passed": true,
+      "members": 73
+    },
+    {
+      "archive": "T2_C1_Sensitivity.zip",
+      "crc_passed": true,
+      "members": 50
+    },
+    {
+      "archive": "T2_E1_Observer_Study.zip",
+      "crc_passed": true,
+      "members": 49
+    },
+    {
+      "archive": "T2_E2_Nonlinear_Observer.zip",
+      "crc_passed": true,
+      "members": 434
+    },
+    {
+      "archive": "T1_1_diagnostics_0.4.0_portable.zip",
+      "crc_passed": true,
+      "members": 105
+    },
+    {
+      "archive": "T1_1_source_0.4.0.zip",
+      "crc_passed": true,
+      "members": 22
+    },
+    {
+      "archive": "T1_U2_PORTABLE_BUNDLE.zip",
+      "crc_passed": true,
+      "members": 34
+    },
+    {
+      "archive": "T1_U3_PORTABLE_BUNDLE.zip",
+      "crc_passed": true,
+      "members": 31
+    },
+    {
+      "archive": "T1_U4_PORTABLE_BUNDLE.zip",
+      "crc_passed": true,
+      "members": 47
+    },
+    {
+      "archive": "T1_U5_PORTABLE_BUNDLE.zip",
+      "crc_passed": true,
+      "members": 49
+    },
+    {
+      "archive": "T1_U6_PORTABLE_BUNDLE.zip",
+      "crc_passed": true,
+      "members": 34
+    },
+    {
+      "archive": "T1_U7B_PORTABLE_BUNDLE.zip",
+      "crc_passed": true,
+      "members": 51
+    },
+    {
+      "archive": "T1_U7_PORTABLE_BUNDLE.zip",
+      "crc_passed": true,
+      "members": 27
+    },
+    {
+      "archive": "T1_U_PORTABLE_BUNDLE.zip",
+      "crc_passed": true,
+      "members": 22
+    },
+    {
+      "archive": "T1_baseline_0.1.0_portable.zip",
+      "crc_passed": true,
+      "members": 24
+    },
+    {
+      "archive": "T1_source_0.1.0.zip",
+      "crc_passed": true,
+      "members": 10
+    }
+  ]
+}

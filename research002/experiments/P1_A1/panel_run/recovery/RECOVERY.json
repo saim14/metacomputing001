@@ -1,0 +1,15 @@
+{
+  "recovered_at_utc": "2026-09-15T13:59:55.297742+00:00",
+  "artifact": "trajectory_2027_train.npz",
+  "observed_issue": "Saved derived trajectory NPZ was truncated; the cause is not established.",
+  "preserved_original": "recovery/trajectory_2027_train_truncated.bin",
+  "original_size": 6576994,
+  "original_sha256": "3ac6ef6dc18311700f1a843f24849c299922d28e7fcdb67ea9d00bef82e703ac",
+  "reconstructed_size": 8879781,
+  "reconstructed_sha256": "2b5c853ebce17dea7bc9758ea97d1047dbe02c4d8a123240a75e8b790a0fdab7",
+  "entire_original_is_exact_prefix_of_reconstruction": true,
+  "model_sha256": "43058b150c6b1c1d6805dcc8ee3f9aaf439fadfcb5e3bc0d0a40d5e4eba63c04",
+  "method": "Pure forward regeneration from frozen weights and original training inputs; atomic replacement of derived cache.",
+  "observer_fits_added": 0,
+  "network_training_updates_added": 0
+}

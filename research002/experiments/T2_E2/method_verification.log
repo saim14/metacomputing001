@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "mlp_serialization": "exact",
+  "manual_forward_vs_sklearn": "passed",
+  "selected_ensemble_validation_mse": "reproduced",
+  "training_only_standardizer": "verified",
+  "parameter_and_update_counts": "verified",
+  "temporal_permutation_pair_consistency": "passed",
+  "separate_test_control_generation": "matches_combined_generation",
+  "known_36_percent_gain_and_bootstrap_interval": "reproduced_for_all_comparisons",
+  "eligibility_and_chronology_filtering": "verified",
+  "research_datasets_used": 0,
+  "synthetic_mlp_training_runs": 4,
+  "direct_sklearn_fixture_runs": 1
+}

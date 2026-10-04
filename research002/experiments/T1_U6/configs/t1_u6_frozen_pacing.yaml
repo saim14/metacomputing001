@@ -1,0 +1,120 @@
+experiment:
+  id: T1-U6
+  name: Frozen-Weight Area-Matched Residual-Pacing Intervention
+  version: 1.0.0
+  research_object: >-
+    Test whether allocating a fixed total residual-update scale differently
+    across recurrent depth can restore an observable computation window without
+    changing learned weights or retraining the T1-U4 stable models.
+
+hypotheses:
+  pacing: >-
+    The back-loaded schedule preserves at least 0.95 final accuracy and produces
+    at least two intermediate future-flip steps in [0.05, 0.45] for every
+    exposed development seed.
+  order: >-
+    The back-loaded schedule outperforms its front-loaded reverse under the same
+    scale multiset, providing evidence that allocation across recurrent depth,
+    rather than only total or marginal scale, affects the computation path.
+  null: >-
+    Neither ordered intervention satisfies the all-seed joint gate, or the
+    back-loaded and front-loaded schedules do not differ meaningfully.
+
+scientific_boundary:
+  development_seeds_are_exposed: true
+  learned_weights_are_frozen: true
+  intervention_occurs_only_at_inference: true
+  sample_holdout_is_not_fresh_initialization: true
+  note: >-
+    Seeds 503, 607, and 709 and their seed-times-100-plus-37 samples were
+    observed in T1-U4 and T1-U5. T1-U6 is a paired causal development study.
+    A sample-holdout pass would still require fresh-initialization confirmation
+    before trajectory probes.
+
+seeds: [503, 607, 709]
+
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 4
+  chain_hops: 1
+  development_samples: 4000
+  development_seed_offset: 37
+
+model:
+  d_model: 32
+  n_heads: 2
+  d_ff: 64
+  n_layers: 6
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+  tie_layers: true
+  use_step_embeddings: false
+  residual_scale: 0.5
+
+checkpoint_source:
+  pattern: outputs/t1_u4/candidates/U4-D-combined/seed_{seed}/checkpoints/t1_transformer_seed_{seed}.npz
+  reference_statistics: outputs/t1_u4/independent_trajectory_statistics.csv
+  reference_candidate_id: U4-D-combined
+
+schedules:
+  constant:
+    values: [0.50, 0.50, 0.50, 0.50, 0.50, 0.50]
+    selectable: false
+    rationale: Exact closed T1-U4 inference behavior.
+  back_loaded:
+    values: [0.25, 0.35, 0.45, 0.55, 0.65, 0.75]
+    selectable: true
+    rationale: Slow early state movement and reserve larger updates for later refinement.
+  front_loaded:
+    values: [0.75, 0.65, 0.55, 0.45, 0.35, 0.25]
+    selectable: true
+    rationale: Reverse-order control with the identical residual-scale multiset.
+
+area_matching:
+  required_sum: 3.0
+  tolerance: 0.000000000001
+  note: >-
+    All schedules have mean scale 0.5 across six steps. Back-loaded and
+    front-loaded schedules additionally share the same scale multiset.
+
+joint_gate:
+  minimum_final_accuracy: 0.95
+  minimum_future_flip_rate: 0.05
+  maximum_future_flip_rate: 0.45
+  minimum_valid_layers_per_seed: 2
+  minimum_passing_seed_fraction: 1.0
+
+selection:
+  eligibility: >-
+    A selectable schedule must satisfy both accuracy and trajectory validity
+    for every development seed.
+  ranking:
+    - minimum_development_final_accuracy_descending
+    - mean_development_final_accuracy_descending
+    - minimum_valid_layer_count_descending
+    - mean_valid_layer_count_descending
+    - schedule_id_ascending
+  no_feasible_candidate_rule: >-
+    If neither ordered schedule is eligible, select nothing and leave the
+    sample holdout unopened.
+
+sealed_sample:
+  seed_formula: seed_times_100_plus_offset
+  seed_offset: 83
+  samples: 4000
+  minimum_final_accuracy: 0.95
+  minimum_future_flip_rate: 0.05
+  maximum_future_flip_rate: 0.45
+  minimum_valid_layers_per_seed: 2
+  minimum_passing_seed_fraction: 1.0
+  rule: >-
+    Open only for the development-selected schedule. The model weights remain
+    the frozen T1-U4 checkpoints.
+
+probes:
+  policy: >-
+    No state-history, motion, or attention-history probe is fitted in T1-U6.
+    A pass advances only to fresh-initialization confirmation of the combined
+    training-at-0.5 and inference-pacing protocol.

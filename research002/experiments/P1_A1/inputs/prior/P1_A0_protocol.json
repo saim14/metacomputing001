@@ -1,0 +1,102 @@
+{
+  "study_id": "P1-A0",
+  "version": "1.0.0",
+  "title": "Present-state sufficiency after arithmetic practice: readiness pilot",
+  "stage": "development_only_no_observer_fits",
+  "created_date_utc": "2026-09-15",
+  "question": "Can an affordable observer use a practiced arithmetic Transformer's current representation to predict future decision change without a useful increment from its computational history?",
+  "scope": {
+    "this_stage": "Validate code, exact continuation, held-out arithmetic competence and non-degenerate decision-change targets in one fixed pilot.",
+    "history_hypothesis_tested": false,
+    "observer_fitting_allowed": false,
+    "old_models_loaded": false,
+    "old_reserved_seeds_forbidden": [1103, 1201, 1301],
+    "maximum_natural_training_runs": 1,
+    "outcome_driven_reruns_or_extensions": false,
+    "confirmation": "Not opened. A subsequent observer protocol and new-model replication plan must be frozen separately."
+  },
+  "data": {
+    "task": "(a+b+c) mod 17",
+    "modulus": 17,
+    "operands": 3,
+    "input_tokens": "[CLS, a, b, c], where CLS has token id 17",
+    "family_key": "sorted operand triple: all permutations share a partition",
+    "partition_seed": 271828,
+    "train_fraction": 0.6,
+    "calibration_fraction": 0.2,
+    "reserve_fraction": 0.2,
+    "partition_rule": "Lexicographic combinations_with_replacement, PCG64 permutation; floor(.6*N) train, floor(.2*N) calibration, remainder reserved.",
+    "weighting": "Uniform ordered examples within each partition; family assignment, not independent permutation assignment.",
+    "reserve_policy": "Reserve family IDs are assigned but their ordered examples, labels and model outputs are not constructed or evaluated. IDs are a procedural holdout, not a secrecy or cryptographic guarantee.",
+    "claim_boundary": "Unseen canonical operand combinations within the same modulus and length; not length extrapolation or proof of a general algorithm."
+  },
+  "model": {
+    "source": "Unchanged T1_source_0.1.0 tiny_autograd.py and tiny_transformer.py; a new weight-tied wrapper reuses TransformerBlock and readout.",
+    "d_model": 24,
+    "n_heads": 2,
+    "d_ff": 48,
+    "n_steps": 6,
+    "shared_block_count": 1,
+    "layer_norm_epsilon": 0.00001,
+    "dropout": 0.0,
+    "dtype": "float32",
+    "readout": "Shared CLS LayerNorm plus 17-class linear head, trained on final step only. Intermediate head alignment is diagnostic, not guaranteed.",
+    "seed": 2003
+  },
+  "training": {
+    "updates": 1200,
+    "batch_size": 64,
+    "sampling": "With replacement from training ordered examples only, independent PCG64 stream.",
+    "sampling_seed": 314159,
+    "optimizer": "Original NumPy Adam",
+    "learning_rate": 0.001,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "epsilon": 0.00000001,
+    "max_grad_norm": 1.0,
+    "weight_decay": 0.0,
+    "loss": "Final-step multiclass cross-entropy only",
+    "auxiliary_loss_weight": 0.0,
+    "checkpoints": [0, 100, 400, 1200],
+    "checkpoint_selection": "None: retain and report every scheduled checkpoint; final readiness uses update 1200 only.",
+    "progress_every": 100,
+    "evaluation_batch_size": 64,
+    "early_stop": "Non-finite loss/gradient/weights or method assertion failure only; record incomplete and do not change scientific settings."
+  },
+  "measurements": {
+    "primary_future_observer_target": "Z_l = 1[argmax(logits_l) != argmax(logits_6)]",
+    "eligible_candidate_steps": [2, 3, 4, 5],
+    "target_is_not": "Correctness, consciousness, or the value of continuing computation",
+    "competence_metric": "Final-step exact answer accuracy on all calibration ordered examples",
+    "competence_gate": 0.9,
+    "competence_gate_rationale": "Development readiness requires at least nine correct answers in ten; this is a declared screening target, not deployment validation.",
+    "target_gate_min_events_per_class": 50,
+    "target_gate_min_families_per_class": 25,
+    "target_gate_min_class_fraction": 0.1,
+    "target_gate_min_eligible_steps": 2,
+    "target_gate_rationale": "Avoid a nearly constant binary target and apparent replication from permutations; not a power calculation for the future observer study.",
+    "record": ["accuracy_at_every_step", "decision_flip_counts", "flip_prevalence", "families_with_each_flip_class", "full_state_resume_max_error", "training_loss", "gradient_norm", "parameter_count", "elapsed_time"]
+  },
+  "observables_for_later_stage": {
+    "limited_current": "Current 24-D CLS plus 17 probabilities, natural-log entropy and top-two probability margin = 43 dimensions",
+    "all_token_current": "All 4x24 residuals plus the same prediction summaries = 115 dimensions",
+    "history": "Append past-step CLS+prediction summaries from steps 1 through l-1 to the identical current prefix; omit step 0",
+    "forbidden_inputs": ["true_label", "current_true_label_loss", "future_logits", "future_state", "future_correctness"],
+    "attention": "Not included. Any future attention-history analysis must also include current-attention controls.",
+    "required_future_controls": ["strong_nonlinear_current_only", "dimension_and_compute_accounting", "sample_mismatched_history", "train_only_residualized_history", "per_example_past_permutation_with_current_fixed"],
+    "fitting_and_decision_rules": "Not executable in P1-A0. Freeze families, parameter counts, tuning/update/inference budgets, scaling, Brier-score margin, absolute accuracy/skill criterion, calibration sensitivity, family-level intervals, seed aggregation and confirmation rules before any observer fit."
+  },
+  "outcome_rules": {
+    "methods_failed": "Invalid implementation; no scientific interpretation.",
+    "competence_failed": "This recipe did not reach the declared competence gate; no support for or against present-state sufficiency.",
+    "target_failed": "Competence may be adequate but the decision-change target is insufficiently varied; no sufficiency conclusion.",
+    "ready_for_observer_design": "Methods, final competence and target gates pass; permits design of a separate observer study, not automatic fitting or confirmation.",
+    "practice_claim": "No claim that practice reduces the history advantage can be made without observer comparisons at fixed checkpoints and non-degenerate, comparable evaluation conditions."
+  },
+  "sources": [
+    "https://drive.google.com/file/d/1116fOMjOUzIfyT-oYoI9gKv1bfoX63g9/view",
+    "https://drive.google.com/file/d/1DyJAbpnvQXhIr_pqDwGJvQTU13VfypXf/view",
+    "https://drive.google.com/file/d/1MwJIAc5stQ-6_987_ZPyBaa7L5M4ruLD/view",
+    "https://arxiv.org/abs/2201.02177"
+  ]
+}

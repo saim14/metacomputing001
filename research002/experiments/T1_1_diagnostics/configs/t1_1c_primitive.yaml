@@ -1,0 +1,52 @@
+experiment:
+  id: T1.1c-primitive
+  name: Balanced One-hop Retrieval Learning Diagnostic
+  version: 0.2.3
+  research_object: Six-layer encoder Transformer on balanced one-hop retrieval with role and pair embeddings
+
+hypotheses:
+  primary: The model can learn the equality-based retrieval primitive without token-count leakage.
+  attention: Diagnostic only; no attention-history inference is authorized.
+  secondary: Diagnostic only; no trajectory-history inference is authorized.
+  null: The current model and optimizer cannot reliably learn the retrieval primitive.
+
+seeds: [101]
+
+data:
+  task_type: chain_lookup
+  key_count: 12
+  pair_count: 6
+  chain_hops: 1
+  train_samples: 8000
+  validation_samples: 1600
+  probe_samples: 1600
+
+model:
+  d_model: 32
+  n_heads: 4
+  d_ff: 64
+  n_layers: 6
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+
+training:
+  steps: 1200
+  batch_size: 80
+  validation_batch_size: 320
+  learning_rate: 0.0012
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.05
+  log_every: 100
+
+probes:
+  test_fraction: 0.40
+  minimum_class_count: 24
+  ridge_alpha: 1.0
+
+validity:
+  minimum_final_accuracy: 0.85
+  minimum_future_flip_rate: 0.0
+  maximum_future_flip_rate: 1.0
+  minimum_valid_layers_per_seed: 0
+  minimum_passing_seed_fraction: 1.0

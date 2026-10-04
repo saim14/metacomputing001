@@ -1,0 +1,17 @@
+{
+  "selected_schedule_id": null,
+  "eligible_schedule_ids": [],
+  "eligible_schedule_count": 0,
+  "sealed_sample_opened": false,
+  "rule": {
+    "eligibility": "A selectable schedule must satisfy both accuracy and trajectory validity for every development seed.",
+    "ranking": [
+      "minimum_development_final_accuracy_descending",
+      "mean_development_final_accuracy_descending",
+      "minimum_valid_layer_count_descending",
+      "mean_valid_layer_count_descending",
+      "schedule_id_ascending"
+    ],
+    "no_feasible_candidate_rule": "If neither ordered schedule is eligible, select nothing and leave the sample holdout unopened."
+  }
+}

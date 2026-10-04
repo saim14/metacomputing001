@@ -1,0 +1,332 @@
+{
+  "experiment": {
+    "id": "T1-U6",
+    "name": "Frozen-Weight Area-Matched Residual-Pacing Intervention",
+    "version": "1.0.0",
+    "research_object": "Test whether allocating a fixed total residual-update scale differently across recurrent depth can restore an observable computation window without changing learned weights or retraining the T1-U4 stable models."
+  },
+  "status": "failed_development_joint_gate_sealed_sample_unopened",
+  "scientific_boundary": {
+    "development_seeds_are_exposed": true,
+    "learned_weights_are_frozen": true,
+    "intervention_occurs_only_at_inference": true,
+    "sample_holdout_is_not_fresh_initialization": true,
+    "note": "Seeds 503, 607, and 709 and their seed-times-100-plus-37 samples were observed in T1-U4 and T1-U5. T1-U6 is a paired causal development study. A sample-holdout pass would still require fresh-initialization confirmation before trajectory probes."
+  },
+  "configuration": {
+    "seeds": [
+      503,
+      607,
+      709
+    ],
+    "data": {
+      "task_type": "chain_lookup",
+      "key_count": 8,
+      "pair_count": 4,
+      "chain_hops": 1,
+      "development_samples": 4000,
+      "development_seed_offset": 37
+    },
+    "model": {
+      "d_model": 32,
+      "n_heads": 2,
+      "d_ff": 64,
+      "n_layers": 6,
+      "n_classes": 2,
+      "layer_norm_epsilon": 1e-05,
+      "use_structure_embeddings": true,
+      "tie_layers": true,
+      "use_step_embeddings": false,
+      "residual_scale": 0.5
+    },
+    "checkpoint_source": {
+      "pattern": "outputs/t1_u4/candidates/U4-D-combined/seed_{seed}/checkpoints/t1_transformer_seed_{seed}.npz",
+      "reference_statistics": "outputs/t1_u4/independent_trajectory_statistics.csv",
+      "reference_candidate_id": "U4-D-combined"
+    },
+    "schedules": {
+      "constant": {
+        "values": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selectable": false,
+        "rationale": "Exact closed T1-U4 inference behavior."
+      },
+      "back_loaded": {
+        "values": [
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75
+        ],
+        "selectable": true,
+        "rationale": "Slow early state movement and reserve larger updates for later refinement."
+      },
+      "front_loaded": {
+        "values": [
+          0.75,
+          0.65,
+          0.55,
+          0.45,
+          0.35,
+          0.25
+        ],
+        "selectable": true,
+        "rationale": "Reverse-order control with the identical residual-scale multiset."
+      }
+    },
+    "area_matching": {
+      "required_sum": 3.0,
+      "tolerance": 1e-12,
+      "note": "All schedules have mean scale 0.5 across six steps. Back-loaded and front-loaded schedules additionally share the same scale multiset."
+    }
+  },
+  "reference_verification": {
+    "performed": true,
+    "passed": true,
+    "expected_source": "outputs/t1_u4/independent_trajectory_statistics.csv",
+    "rows_compared": 15,
+    "maximum_absolute_error": 2.220446049250313e-16,
+    "tolerance": 1e-07
+  },
+  "development_joint_gate": {
+    "thresholds": {
+      "minimum_final_accuracy": 0.95,
+      "minimum_future_flip_rate": 0.05,
+      "maximum_future_flip_rate": 0.45,
+      "minimum_valid_layers_per_seed": 2,
+      "minimum_passing_seed_fraction": 1.0
+    },
+    "schedules": [
+      {
+        "schedule_id": "constant",
+        "selectable": false,
+        "schedule_values": "[0.5, 0.5, 0.5, 0.5, 0.5, 0.5]",
+        "scale_sum": 3.0,
+        "minimum_development_final_accuracy": 0.9485,
+        "mean_development_final_accuracy": 0.9721666666666667,
+        "sample_std_development_final_accuracy": 0.02600160251471692,
+        "minimum_valid_layer_count": 0,
+        "mean_valid_layer_count": 2.0,
+        "passing_seed_fraction": 0.3333333333333333,
+        "development_joint_gate_passed": false,
+        "eligible": false
+      },
+      {
+        "schedule_id": "back_loaded",
+        "selectable": true,
+        "schedule_values": "[0.25, 0.35, 0.45, 0.55, 0.65, 0.75]",
+        "scale_sum": 3.0,
+        "minimum_development_final_accuracy": 0.788,
+        "mean_development_final_accuracy": 0.8584166666666667,
+        "sample_std_development_final_accuracy": 0.10009630779071386,
+        "minimum_valid_layer_count": 1,
+        "mean_valid_layer_count": 2.6666666666666665,
+        "passing_seed_fraction": 0.0,
+        "development_joint_gate_passed": false,
+        "eligible": false
+      },
+      {
+        "schedule_id": "front_loaded",
+        "selectable": true,
+        "schedule_values": "[0.75, 0.65, 0.55, 0.45, 0.35, 0.25]",
+        "scale_sum": 3.0,
+        "minimum_development_final_accuracy": 0.87275,
+        "mean_development_final_accuracy": 0.9278333333333334,
+        "sample_std_development_final_accuracy": 0.06481238950488812,
+        "minimum_valid_layer_count": 0,
+        "mean_valid_layer_count": 2.6666666666666665,
+        "passing_seed_fraction": 0.0,
+        "development_joint_gate_passed": false,
+        "eligible": false
+      }
+    ],
+    "seeds": [
+      {
+        "schedule_id": "constant",
+        "selectable": false,
+        "seed": 503,
+        "final_accuracy": 1.0,
+        "valid_future_flip_layers": [],
+        "valid_layer_count": 0,
+        "passed": false
+      },
+      {
+        "schedule_id": "constant",
+        "selectable": false,
+        "seed": 607,
+        "final_accuracy": 0.9485,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": false
+      },
+      {
+        "schedule_id": "constant",
+        "selectable": false,
+        "seed": 709,
+        "final_accuracy": 0.968,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": true
+      },
+      {
+        "schedule_id": "back_loaded",
+        "selectable": true,
+        "seed": 503,
+        "final_accuracy": 0.973,
+        "valid_future_flip_layers": [
+          2
+        ],
+        "valid_layer_count": 1,
+        "passed": false
+      },
+      {
+        "schedule_id": "back_loaded",
+        "selectable": true,
+        "seed": 607,
+        "final_accuracy": 0.81425,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": false
+      },
+      {
+        "schedule_id": "back_loaded",
+        "selectable": true,
+        "seed": 709,
+        "final_accuracy": 0.788,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "valid_layer_count": 4,
+        "passed": false
+      },
+      {
+        "schedule_id": "front_loaded",
+        "selectable": true,
+        "seed": 503,
+        "final_accuracy": 0.99925,
+        "valid_future_flip_layers": [],
+        "valid_layer_count": 0,
+        "passed": false
+      },
+      {
+        "schedule_id": "front_loaded",
+        "selectable": true,
+        "seed": 607,
+        "final_accuracy": 0.9115,
+        "valid_future_flip_layers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 4,
+        "passed": false
+      },
+      {
+        "schedule_id": "front_loaded",
+        "selectable": true,
+        "seed": 709,
+        "final_accuracy": 0.87275,
+        "valid_future_flip_layers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 4,
+        "passed": false
+      }
+    ]
+  },
+  "paired_order_effects": {
+    "summary": {
+      "mean_back_minus_front_final_accuracy": -0.06941666666666664,
+      "mean_back_minus_front_valid_layer_count": 0.0,
+      "back_better_accuracy_seed_count": 0,
+      "back_better_validity_seed_count": 1
+    },
+    "seeds": [
+      {
+        "seed": 503,
+        "back_minus_front_final_accuracy": -0.026249999999999996,
+        "back_minus_front_valid_layer_count": 1,
+        "back_passed": false,
+        "front_passed": false
+      },
+      {
+        "seed": 607,
+        "back_minus_front_final_accuracy": -0.09724999999999995,
+        "back_minus_front_valid_layer_count": -1,
+        "back_passed": false,
+        "front_passed": false
+      },
+      {
+        "seed": 709,
+        "back_minus_front_final_accuracy": -0.08474999999999999,
+        "back_minus_front_valid_layer_count": 0,
+        "back_passed": false,
+        "front_passed": false
+      }
+    ]
+  },
+  "selection": {
+    "selected_schedule_id": null,
+    "eligible_schedule_ids": [],
+    "eligible_schedule_count": 0,
+    "sealed_sample_opened": false,
+    "rule": {
+      "eligibility": "A selectable schedule must satisfy both accuracy and trajectory validity for every development seed.",
+      "ranking": [
+        "minimum_development_final_accuracy_descending",
+        "mean_development_final_accuracy_descending",
+        "minimum_valid_layer_count_descending",
+        "mean_valid_layer_count_descending",
+        "schedule_id_ascending"
+      ],
+      "no_feasible_candidate_rule": "If neither ordered schedule is eligible, select nothing and leave the sample holdout unopened."
+    }
+  },
+  "sealed_sample": {
+    "opened": false,
+    "thresholds_and_rule": {
+      "seed_formula": "seed_times_100_plus_offset",
+      "seed_offset": 83,
+      "samples": 4000,
+      "minimum_final_accuracy": 0.95,
+      "minimum_future_flip_rate": 0.05,
+      "maximum_future_flip_rate": 0.45,
+      "minimum_valid_layers_per_seed": 2,
+      "minimum_passing_seed_fraction": 1.0,
+      "rule": "Open only for the development-selected schedule. The model weights remain the frozen T1-U4 checkpoints."
+    },
+    "passing_seed_fraction": null,
+    "passed": false,
+    "aggregate": null,
+    "seeds": []
+  },
+  "probe_policy": "No state-history, motion, or attention-history probe is fitted in T1-U6. A pass advances only to fresh-initialization confirmation of the combined training-at-0.5 and inference-pacing protocol.",
+  "elapsed_seconds": 50.7789137940008
+}

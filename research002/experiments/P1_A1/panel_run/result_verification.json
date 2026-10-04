@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "completed_at_utc": "2026-09-15T14:01:03.279138+00:00",
+  "selected_pipelines_audited": 120,
+  "tuning_candidate_scores_checked": 1080,
+  "all_selected_evaluation_and_tuning_predictions_recomputed": true,
+  "max_prediction_error": 0.0,
+  "selected_ridge_stationarity_max_residual": 4.55108776150753e-16,
+  "all_natural_trajectories_recomputed_max_error": 0.0,
+  "all_family_metrics_and_bootstrap_intervals_recomputed": true,
+  "decisions_independently_reconstructed": true,
+  "old_stopped_attempt_preserved": true,
+  "derived_cache_recovery_verified": true,
+  "frozen_sources_and_model_inputs_unchanged": true,
+  "reserve_data_absent": true,
+  "scope": "Numerical evidence audit, conditional on the same models and development data; no fitting or new confirmation."
+}

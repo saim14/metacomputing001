@@ -1,0 +1,11 @@
+{
+  "study": "F1-A2", "version": "1.0", "model_seeds": [3109, 3119, 3137],
+  "n_scenarios": 2400, "n_fit": 1200, "n_tune": 400,
+  "horizon": 10, "rounds": 6, "checkpoint": 3, "candidates": 32, "elites": 8,
+  "calibration_size": 2048, "neighbors": 16, "local_ridge": 0.001,
+  "expansion_width": 12, "bootstrap": 4000, "charge": 0.01,
+  "runtime_cases": 24, "runtime_repeats": 3,
+  "scene_seed": 62001, "split_seed": 62002, "noise_seed": 63001,
+  "calibration_seed": 61001, "diagnostic_seed": 61002,
+  "expansion_seed": 64001, "mismatch_seed": 64002, "bootstrap_seed": 66001
+}

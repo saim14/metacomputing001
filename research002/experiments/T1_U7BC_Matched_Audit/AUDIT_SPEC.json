@@ -1,0 +1,72 @@
+{
+  "audit_id": "T1-U7BC-M1",
+  "version": "1.0.0",
+  "frozen_utc": "2026-09-11T14:16:49.544564+00:00",
+  "status": "prospective audit specification; prior original results exposed",
+  "seeds": [
+    503,
+    607,
+    709,
+    811,
+    907,
+    1009
+  ],
+  "models": [
+    "U7B",
+    "U7C"
+  ],
+  "suites": [
+    "original_U7B",
+    "original_U7C"
+  ],
+  "offset_rule": {
+    "original_U7B": {
+      "503,607,709": [
+        37,
+        43
+      ],
+      "811,907,1009": [
+        83,
+        89
+      ]
+    },
+    "original_U7C": {
+      "all": [
+        37,
+        43
+      ]
+    }
+  },
+  "clean_examples_per_seed_suite": 4000,
+  "causal_pairs_per_seed_suite": 2000,
+  "deduplicate_identical_suites": true,
+  "expected_unique_model_suite_evaluations": 18,
+  "expected_reported_model_suite_rows": 24,
+  "gate_thresholds": {
+    "minimum_final_accuracy": 0.95,
+    "minimum_counterfactual_pair_accuracy": 0.9,
+    "corruption_accuracy_minimum": 0.4,
+    "corruption_accuracy_maximum": 0.6,
+    "minimum_mean_remaining_nll_reduction": 0.02,
+    "minimum_std_remaining_nll_reduction": 0.02,
+    "minimum_valid_value_steps": 2,
+    "value_positive_epsilon": 0.01,
+    "minimum_passing_seed_fraction": 1.0
+  },
+  "metrics": [
+    "clean final accuracy",
+    "joint clean AND counterfactual correctness",
+    "first-edge and second-edge corrupted accuracy",
+    "remaining NLL reduction mean and sample SD at steps 1..5"
+  ],
+  "paired_difference": "U7C minus U7B, on identical arrays; report per-example discordant correctness counts",
+  "aggregation": "Report both original suites separately; group means descriptive only. Identical suites are aliases, not independent replicates. No significance tests or population-level success estimates.",
+  "decision_rule": "For each suite, any exposed seed failing any unchanged gate rejects all-seed rescue on that suite. Both performance gates reported separately. Original failed advancement decisions remain unchanged under every outcome.",
+  "budget": {
+    "audit_configurations": 1,
+    "training_updates": 0,
+    "probe_fits": 0,
+    "confirmation_seeds_opened": []
+  },
+  "stop_rule": "Complete all 18 unique evaluations once, then close audit. A verification error stops execution as invalid; repair implementation only, with a recorded amendment before rerun. No outcome-driven sample or threshold changes."
+}

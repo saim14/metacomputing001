@@ -1,0 +1,35 @@
+[
+  {
+    "fit": {
+      "sd": 0.2655155512494942,
+      "beneficial_count": 499
+    },
+    "tuning": {
+      "sd": 0.2797522554875021,
+      "beneficial_count": 146
+    },
+    "ready": true
+  },
+  {
+    "fit": {
+      "sd": 0.2863088612620182,
+      "beneficial_count": 484
+    },
+    "tuning": {
+      "sd": 0.2516584125586537,
+      "beneficial_count": 154
+    },
+    "ready": true
+  },
+  {
+    "fit": {
+      "sd": 0.05028756033933543,
+      "beneficial_count": 620
+    },
+    "tuning": {
+      "sd": 0.050791278143613165,
+      "beneficial_count": 178
+    },
+    "ready": true
+  }
+]

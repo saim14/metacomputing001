@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "unique_families": 36000,
+  "examples": 72000,
+  "prior_exposure_overlap": 0,
+  "cross_seed_cross_phase_overlap": 0,
+  "array_hashes_match": true,
+  "checks": [
+    {
+      "phase": "development",
+      "seed": 503,
+      "unique_families": 3000,
+      "overlap": 0
+    },
+    {
+      "phase": "development",
+      "seed": 607,
+      "unique_families": 3000,
+      "overlap": 0
+    },
+    {
+      "phase": "development",
+      "seed": 709,
+      "unique_families": 3000,
+      "overlap": 0
+    },
+    {
+      "phase": "development",
+      "seed": 811,
+      "unique_families": 3000,
+      "overlap": 0
+    },
+    {
+      "phase": "development",
+      "seed": 907,
+      "unique_families": 3000,
+      "overlap": 0
+    },
+    {
+      "phase": "development",
+      "seed": 1009,
+      "unique_families": 3000,
+      "overlap": 0
+    },
+    {
+      "phase": "results",
+      "seed": 503,
+      "unique_families": 3000,
+      "overlap": 0
+    },
+    {
+      "phase": "results",
+      "seed": 607,
+      "unique_families": 3000,
+      "overlap": 0
+    },
+    {
+      "phase": "results",
+      "seed": 709,
+      "unique_families": 3000,
+      "overlap": 0
+    },
+    {
+      "phase": "results",
+      "seed": 811,
+      "unique_families": 3000,
+      "overlap": 0
+    },
+    {
+      "phase": "results",
+      "seed": 907,
+      "unique_families": 3000,
+      "overlap": 0
+    },
+    {
+      "phase": "results",
+      "seed": 1009,
+      "unique_families": 3000,
+      "overlap": 0
+    }
+  ]
+}

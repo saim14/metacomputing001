@@ -1,0 +1,451 @@
+{
+  "experiment": {
+    "id": "T1-U5",
+    "name": "Weight-Tied Transformer Residual-Scale Calibration Study",
+    "version": "0.9.0",
+    "research_object": "Determine whether a residual scale between 0.5 and 1.0 preserves the multi-seed learning stability found in T1-U4 while restoring at least two nonsaturated intermediate decision steps for every exposed development seed."
+  },
+  "status": "failed_development_joint_gate_sealed_sample_unopened",
+  "scientific_boundary": {
+    "development_seeds_are_exposed": true,
+    "sample_holdout_is_not_fresh_initialization": true,
+    "note": "Seeds 503, 607, and 709 and the seed-times-100-plus-37 trajectory samples were observed in T1-U4. T1-U5 is a bounded development calibration. The seed-times-100-plus-83 holdout tests sample stability only; even a pass requires separately preregistered fresh-initialization confirmation before any trajectory probe is fitted."
+  },
+  "configuration": {
+    "seeds": [
+      503,
+      607,
+      709
+    ],
+    "data": {
+      "task_type": "chain_lookup",
+      "key_count": 8,
+      "pair_count": 4,
+      "chain_hops": 1,
+      "train_samples": 8000,
+      "validation_samples": 1800,
+      "probe_samples": 4000
+    },
+    "base_model": {
+      "d_model": 32,
+      "n_heads": 2,
+      "d_ff": 64,
+      "n_layers": 6,
+      "n_classes": 2,
+      "layer_norm_epsilon": 1e-05,
+      "use_structure_embeddings": true,
+      "tie_layers": true,
+      "use_step_embeddings": false
+    },
+    "base_training": {
+      "batch_size": 96,
+      "validation_batch_size": 600,
+      "learning_rate": 0.0005,
+      "max_grad_norm": 1.0,
+      "auxiliary_loss_weight": 0.0,
+      "log_every": 200,
+      "curriculum": [
+        {
+          "name": "full_auxiliary",
+          "steps": 1700,
+          "data_stream_id": 0,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.02,
+          "learning_rate": 0.0012
+        },
+        {
+          "name": "taper_015",
+          "steps": 200,
+          "data_stream_id": 0,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.015,
+          "learning_rate": 0.0012
+        },
+        {
+          "name": "taper_010_pre_transition",
+          "steps": 100,
+          "data_stream_id": 0,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.01,
+          "learning_rate": 0.0012
+        },
+        {
+          "name": "taper_010_post_transition",
+          "steps": 100,
+          "data_stream_id": 1,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.01,
+          "learning_rate": 0.0005
+        },
+        {
+          "name": "taper_005",
+          "steps": 200,
+          "data_stream_id": 1,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.005,
+          "learning_rate": 0.0005
+        },
+        {
+          "name": "final_only",
+          "steps": 1700,
+          "data_stream_id": 1,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.0,
+          "learning_rate": 0.0005
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "U5-R-scale-0.5",
+        "train": false,
+        "residual_scale": 0.5,
+        "source_candidate_id": "U4-D-combined",
+        "source_history": "outputs/t1_u4/screening_training_history.csv",
+        "source_trajectory_statistics": "outputs/t1_u4/independent_trajectory_statistics.csv",
+        "rationale": "Closed T1-U4 combined reference; not eligible for selection."
+      },
+      {
+        "id": "U5-A-scale-0.6",
+        "train": true,
+        "residual_scale": 0.6,
+        "rationale": "Smallest upward adjustment from the stable T1-U4 residual scale."
+      },
+      {
+        "id": "U5-B-scale-0.7",
+        "train": true,
+        "residual_scale": 0.7,
+        "rationale": "Midpoint calibration between the stable and unscaled regimes."
+      },
+      {
+        "id": "U5-C-scale-0.8",
+        "train": true,
+        "residual_scale": 0.8,
+        "rationale": "Largest bounded adjustment before the unstable full-scale regime."
+      }
+    ]
+  },
+  "validation_screen": {
+    "thresholds": {
+      "tail_validation_points": 4,
+      "minimum_seed_tail_mean_validation_accuracy": 0.9,
+      "minimum_mean_tail_validation_accuracy": 0.93
+    },
+    "candidates": [
+      {
+        "candidate_id": "U5-R-scale-0.5",
+        "trained_in_t1_u5": false,
+        "residual_scale": 0.5,
+        "minimum_seed_tail_mean_validation_accuracy": 0.9483333333333335,
+        "mean_seed_tail_validation_accuracy": 0.9677777777777777,
+        "sample_std_seed_tail_validation_accuracy": 0.028103644155426048,
+        "minimum_terminal_validation_accuracy": 0.9566666666666668,
+        "mean_terminal_validation_accuracy": 0.9761111111111113
+      },
+      {
+        "candidate_id": "U5-A-scale-0.6",
+        "trained_in_t1_u5": true,
+        "residual_scale": 0.6,
+        "minimum_seed_tail_mean_validation_accuracy": 0.8608333333333333,
+        "mean_seed_tail_validation_accuracy": 0.9427777777777777,
+        "sample_std_seed_tail_validation_accuracy": 0.07280268869678841,
+        "minimum_terminal_validation_accuracy": 0.87,
+        "mean_terminal_validation_accuracy": 0.9461111111111111
+      },
+      {
+        "candidate_id": "U5-B-scale-0.7",
+        "trained_in_t1_u5": true,
+        "residual_scale": 0.7,
+        "minimum_seed_tail_mean_validation_accuracy": 0.87875,
+        "mean_seed_tail_validation_accuracy": 0.9556944444444445,
+        "sample_std_seed_tail_validation_accuracy": 0.06689068265405819,
+        "minimum_terminal_validation_accuracy": 0.895,
+        "mean_terminal_validation_accuracy": 0.9633333333333334
+      },
+      {
+        "candidate_id": "U5-C-scale-0.8",
+        "trained_in_t1_u5": true,
+        "residual_scale": 0.8,
+        "minimum_seed_tail_mean_validation_accuracy": 0.91125,
+        "mean_seed_tail_validation_accuracy": 0.9222222222222222,
+        "sample_std_seed_tail_validation_accuracy": 0.018644766418885884,
+        "minimum_terminal_validation_accuracy": 0.9233333333333333,
+        "mean_terminal_validation_accuracy": 0.9322222222222223
+      }
+    ]
+  },
+  "development_joint_gate": {
+    "thresholds": {
+      "minimum_final_accuracy": 0.95,
+      "minimum_future_flip_rate": 0.05,
+      "maximum_future_flip_rate": 0.45,
+      "minimum_valid_layers_per_seed": 2,
+      "minimum_passing_seed_fraction": 1.0
+    },
+    "candidates": [
+      {
+        "candidate_id": "U5-R-scale-0.5",
+        "trained_in_t1_u5": false,
+        "residual_scale": 0.5,
+        "minimum_seed_tail_mean_validation_accuracy": 0.9483333333333335,
+        "mean_seed_tail_validation_accuracy": 0.9677777777777777,
+        "validation_screen_passed": true,
+        "minimum_development_final_accuracy": 0.9485,
+        "mean_development_final_accuracy": 0.9721666666666667,
+        "sample_std_development_final_accuracy": 0.02600160251471692,
+        "minimum_valid_layer_count": 0,
+        "mean_valid_layer_count": 2.0,
+        "passing_seed_fraction": 0.3333333333333333,
+        "development_joint_gate_passed": false,
+        "eligible": false
+      },
+      {
+        "candidate_id": "U5-A-scale-0.6",
+        "trained_in_t1_u5": true,
+        "residual_scale": 0.6,
+        "minimum_seed_tail_mean_validation_accuracy": 0.8608333333333333,
+        "mean_seed_tail_validation_accuracy": 0.9427777777777777,
+        "validation_screen_passed": false,
+        "minimum_development_final_accuracy": 0.853,
+        "mean_development_final_accuracy": 0.9420833333333333,
+        "sample_std_development_final_accuracy": 0.07829923903419071,
+        "minimum_valid_layer_count": 0,
+        "mean_valid_layer_count": 2.0,
+        "passing_seed_fraction": 0.3333333333333333,
+        "development_joint_gate_passed": false,
+        "eligible": false
+      },
+      {
+        "candidate_id": "U5-B-scale-0.7",
+        "trained_in_t1_u5": true,
+        "residual_scale": 0.7,
+        "minimum_seed_tail_mean_validation_accuracy": 0.87875,
+        "mean_seed_tail_validation_accuracy": 0.9556944444444445,
+        "validation_screen_passed": false,
+        "minimum_development_final_accuracy": 0.88025,
+        "mean_development_final_accuracy": 0.95775,
+        "sample_std_development_final_accuracy": 0.06720816542653132,
+        "minimum_valid_layer_count": 0,
+        "mean_valid_layer_count": 1.6666666666666667,
+        "passing_seed_fraction": 0.3333333333333333,
+        "development_joint_gate_passed": false,
+        "eligible": false
+      },
+      {
+        "candidate_id": "U5-C-scale-0.8",
+        "trained_in_t1_u5": true,
+        "residual_scale": 0.8,
+        "minimum_seed_tail_mean_validation_accuracy": 0.91125,
+        "mean_seed_tail_validation_accuracy": 0.9222222222222222,
+        "validation_screen_passed": false,
+        "minimum_development_final_accuracy": 0.9135,
+        "mean_development_final_accuracy": 0.9267500000000001,
+        "sample_std_development_final_accuracy": 0.02166362158088992,
+        "minimum_valid_layer_count": 3,
+        "mean_valid_layer_count": 4.0,
+        "passing_seed_fraction": 0.3333333333333333,
+        "development_joint_gate_passed": false,
+        "eligible": false
+      }
+    ],
+    "seeds": [
+      {
+        "candidate_id": "U5-R-scale-0.5",
+        "residual_scale": 0.5,
+        "seed": 503,
+        "final_accuracy": 1.0,
+        "valid_future_flip_layers": [],
+        "valid_layer_count": 0,
+        "passed": false
+      },
+      {
+        "candidate_id": "U5-R-scale-0.5",
+        "residual_scale": 0.5,
+        "seed": 607,
+        "final_accuracy": 0.9485,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": false
+      },
+      {
+        "candidate_id": "U5-R-scale-0.5",
+        "residual_scale": 0.5,
+        "seed": 709,
+        "final_accuracy": 0.968,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": true
+      },
+      {
+        "candidate_id": "U5-A-scale-0.6",
+        "residual_scale": 0.6,
+        "seed": 503,
+        "final_accuracy": 0.853,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "valid_layer_count": 4,
+        "passed": false
+      },
+      {
+        "candidate_id": "U5-A-scale-0.6",
+        "residual_scale": 0.6,
+        "seed": 607,
+        "final_accuracy": 0.97325,
+        "valid_future_flip_layers": [
+          2,
+          3
+        ],
+        "valid_layer_count": 2,
+        "passed": true
+      },
+      {
+        "candidate_id": "U5-A-scale-0.6",
+        "residual_scale": 0.6,
+        "seed": 709,
+        "final_accuracy": 1.0,
+        "valid_future_flip_layers": [],
+        "valid_layer_count": 0,
+        "passed": false
+      },
+      {
+        "candidate_id": "U5-B-scale-0.7",
+        "residual_scale": 0.7,
+        "seed": 503,
+        "final_accuracy": 0.993,
+        "valid_future_flip_layers": [
+          2,
+          3
+        ],
+        "valid_layer_count": 2,
+        "passed": true
+      },
+      {
+        "candidate_id": "U5-B-scale-0.7",
+        "residual_scale": 0.7,
+        "seed": 607,
+        "final_accuracy": 0.88025,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": false
+      },
+      {
+        "candidate_id": "U5-B-scale-0.7",
+        "residual_scale": 0.7,
+        "seed": 709,
+        "final_accuracy": 1.0,
+        "valid_future_flip_layers": [],
+        "valid_layer_count": 0,
+        "passed": false
+      },
+      {
+        "candidate_id": "U5-C-scale-0.8",
+        "residual_scale": 0.8,
+        "seed": 503,
+        "final_accuracy": 0.95175,
+        "valid_future_flip_layers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 4,
+        "passed": true
+      },
+      {
+        "candidate_id": "U5-C-scale-0.8",
+        "residual_scale": 0.8,
+        "seed": 607,
+        "final_accuracy": 0.915,
+        "valid_future_flip_layers": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "valid_layer_count": 5,
+        "passed": false
+      },
+      {
+        "candidate_id": "U5-C-scale-0.8",
+        "residual_scale": 0.8,
+        "seed": 709,
+        "final_accuracy": 0.9135,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": false
+      }
+    ]
+  },
+  "selection": {
+    "selected_candidate_id": null,
+    "eligible_candidate_ids": [],
+    "eligible_candidate_count": 0,
+    "sealed_sample_opened": false,
+    "rule": {
+      "eligibility": "Trainable candidates must pass the validation screen and the development joint gate for every seed.",
+      "ranking": [
+        "minimum_development_final_accuracy_descending",
+        "mean_development_final_accuracy_descending",
+        "minimum_valid_layer_count_descending",
+        "mean_valid_layer_count_descending",
+        "minimum_seed_tail_mean_validation_accuracy_descending",
+        "residual_scale_ascending",
+        "candidate_id_ascending"
+      ],
+      "no_feasible_candidate_rule": "If no trainable candidate is eligible, no candidate is selected and the sealed task-sample holdout remains unopened."
+    }
+  },
+  "sealed_sample": {
+    "opened": false,
+    "thresholds_and_rule": {
+      "seed_formula": "seed_times_100_plus_offset",
+      "seed_offset": 83,
+      "samples": 4000,
+      "minimum_final_accuracy": 0.95,
+      "minimum_future_flip_rate": 0.05,
+      "maximum_future_flip_rate": 0.45,
+      "minimum_valid_layers_per_seed": 2,
+      "minimum_passing_seed_fraction": 1.0,
+      "rule": "Open only for the development-selected candidate after every candidate and seed has completed. This holdout changes task samples but not model initialization and therefore cannot substitute for fresh-seed confirmation."
+    },
+    "passing_seed_fraction": null,
+    "passed": false,
+    "aggregate": null,
+    "seeds": []
+  },
+  "probe_policy": "No state-history, motion, or attention-history probe is fitted in T1-U5. A passing result advances only to fresh-initialization confirmation.",
+  "elapsed_seconds": 1119.483571156
+}

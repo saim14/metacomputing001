@@ -1,0 +1,1082 @@
+[
+  {
+    "seed": 3109,
+    "arm": "current",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.09078831724062802,
+    "coefficients": 101
+  },
+  {
+    "seed": 3109,
+    "arm": "current",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.0849071068421042,
+    "coefficients": 101
+  },
+  {
+    "seed": 3109,
+    "arm": "current",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.0781951916166772,
+    "coefficients": 101
+  },
+  {
+    "seed": 3109,
+    "arm": "current",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.09692407252333797,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "current",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.09630757724325638,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "current",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.08176846745927949,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "current",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0951440703758224,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "current",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.0914027466323608,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "current",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.07959529413972971,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "expanded_current",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.09503661343063713,
+    "coefficients": 113
+  },
+  {
+    "seed": 3109,
+    "arm": "expanded_current",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.08838954302628725,
+    "coefficients": 113
+  },
+  {
+    "seed": 3109,
+    "arm": "expanded_current",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.07881689831783006,
+    "coefficients": 113
+  },
+  {
+    "seed": 3109,
+    "arm": "expanded_current",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0902245208889379,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "expanded_current",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.08988487581248059,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "expanded_current",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.08087008301684284,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "expanded_current",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.08903871509174682,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "expanded_current",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.08635912676731053,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "expanded_current",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.07840542119120031,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "geometry",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.09263201786945384,
+    "coefficients": 113
+  },
+  {
+    "seed": 3109,
+    "arm": "geometry",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.08549508127365398,
+    "coefficients": 113
+  },
+  {
+    "seed": 3109,
+    "arm": "geometry",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.07760788573428823,
+    "coefficients": 113
+  },
+  {
+    "seed": 3109,
+    "arm": "geometry",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.08797459029867491,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "geometry",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.08770620998498439,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "geometry",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.08040502457745478,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "geometry",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.08962844265390395,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "geometry",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.08685820466204776,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "geometry",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.07772498919075578,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "raw_rollouts",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.24247556135737697,
+    "coefficients": 805
+  },
+  {
+    "seed": 3109,
+    "arm": "raw_rollouts",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.11061786204220833,
+    "coefficients": 805
+  },
+  {
+    "seed": 3109,
+    "arm": "raw_rollouts",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.0794381034061053,
+    "coefficients": 805
+  },
+  {
+    "seed": 3109,
+    "arm": "raw_rollouts",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.08532043472316775,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "raw_rollouts",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.0849182372752145,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "raw_rollouts",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.07877511875066569,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "raw_rollouts",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0878443180679536,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "raw_rollouts",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.08594623012286298,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "raw_rollouts",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.07900864774064123,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "mismatched_geometry",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.09219996479630957,
+    "coefficients": 113
+  },
+  {
+    "seed": 3109,
+    "arm": "mismatched_geometry",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.08560724837426179,
+    "coefficients": 113
+  },
+  {
+    "seed": 3109,
+    "arm": "mismatched_geometry",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.07876853596835792,
+    "coefficients": 113
+  },
+  {
+    "seed": 3109,
+    "arm": "mismatched_geometry",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.09245654251799623,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "mismatched_geometry",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.09213139150685777,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "mismatched_geometry",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.08224582898772194,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "mismatched_geometry",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0900138506091659,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "mismatched_geometry",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.08814344739799339,
+    "coefficients": 129
+  },
+  {
+    "seed": 3109,
+    "arm": "mismatched_geometry",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.07959698227986796,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "current",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.07049739260026014,
+    "coefficients": 101
+  },
+  {
+    "seed": 3119,
+    "arm": "current",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.0700255487221014,
+    "coefficients": 101
+  },
+  {
+    "seed": 3119,
+    "arm": "current",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.06439138234277247,
+    "coefficients": 101
+  },
+  {
+    "seed": 3119,
+    "arm": "current",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.07577108640258323,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "current",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.07541065231867283,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "current",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.06598142999832078,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "current",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0820450138193227,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "current",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.0786273227955029,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "current",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.06577147284477909,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "expanded_current",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0695223957062804,
+    "coefficients": 113
+  },
+  {
+    "seed": 3119,
+    "arm": "expanded_current",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.06927175362930377,
+    "coefficients": 113
+  },
+  {
+    "seed": 3119,
+    "arm": "expanded_current",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.06428033839817719,
+    "coefficients": 113
+  },
+  {
+    "seed": 3119,
+    "arm": "expanded_current",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.07761615504605388,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "expanded_current",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.07720674972986595,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "expanded_current",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.0666754852747046,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "expanded_current",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.07795903048899391,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "expanded_current",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.07528114530310609,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "expanded_current",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.06475894138330764,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "geometry",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0715775039781548,
+    "coefficients": 113
+  },
+  {
+    "seed": 3119,
+    "arm": "geometry",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.07076130198055001,
+    "coefficients": 113
+  },
+  {
+    "seed": 3119,
+    "arm": "geometry",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.0642010284400274,
+    "coefficients": 113
+  },
+  {
+    "seed": 3119,
+    "arm": "geometry",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.07896708122357123,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "geometry",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.07848492553207197,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "geometry",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.06698157467451127,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "geometry",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0779995484757118,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "geometry",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.07505881161119429,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "geometry",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.06475017115552326,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "raw_rollouts",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.2354046355450604,
+    "coefficients": 805
+  },
+  {
+    "seed": 3119,
+    "arm": "raw_rollouts",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.09528173131119223,
+    "coefficients": 805
+  },
+  {
+    "seed": 3119,
+    "arm": "raw_rollouts",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.06638828861510476,
+    "coefficients": 805
+  },
+  {
+    "seed": 3119,
+    "arm": "raw_rollouts",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.08026863031486144,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "raw_rollouts",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.07962060567397063,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "raw_rollouts",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.06673276018214969,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "raw_rollouts",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.07730919419889631,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "raw_rollouts",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.07568815798482831,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "raw_rollouts",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.06560872333415352,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "mismatched_geometry",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.07159564323688504,
+    "coefficients": 113
+  },
+  {
+    "seed": 3119,
+    "arm": "mismatched_geometry",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.07100183788647525,
+    "coefficients": 113
+  },
+  {
+    "seed": 3119,
+    "arm": "mismatched_geometry",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.0645421007214071,
+    "coefficients": 113
+  },
+  {
+    "seed": 3119,
+    "arm": "mismatched_geometry",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.08163413609798552,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "mismatched_geometry",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.08118992627331943,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "mismatched_geometry",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.06858286978259319,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "mismatched_geometry",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.07537764111396208,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "mismatched_geometry",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.07336964452883468,
+    "coefficients": 129
+  },
+  {
+    "seed": 3119,
+    "arm": "mismatched_geometry",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.06521784103908523,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "current",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.00031794414489021253,
+    "coefficients": 101
+  },
+  {
+    "seed": 3137,
+    "arm": "current",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.0003231022068354091,
+    "coefficients": 101
+  },
+  {
+    "seed": 3137,
+    "arm": "current",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.0007683613806063014,
+    "coefficients": 101
+  },
+  {
+    "seed": 3137,
+    "arm": "current",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0020355252044930274,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "current",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.0020265516431031867,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "current",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.0019115564088474756,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "current",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0005644674374284283,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "current",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.0005590059482062486,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "current",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.0008927394662829869,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "expanded_current",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.00030510608958302636,
+    "coefficients": 113
+  },
+  {
+    "seed": 3137,
+    "arm": "expanded_current",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.00030500956671940667,
+    "coefficients": 113
+  },
+  {
+    "seed": 3137,
+    "arm": "expanded_current",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.0007694283754475384,
+    "coefficients": 113
+  },
+  {
+    "seed": 3137,
+    "arm": "expanded_current",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.002494603242671658,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "expanded_current",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.0024787952775501003,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "expanded_current",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.002120754725019099,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "expanded_current",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006733179416402442,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "expanded_current",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.0006697651981392629,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "expanded_current",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.0008744946309681967,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "geometry",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.00025662682393874837,
+    "coefficients": 113
+  },
+  {
+    "seed": 3137,
+    "arm": "geometry",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.00026559761189411476,
+    "coefficients": 113
+  },
+  {
+    "seed": 3137,
+    "arm": "geometry",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.0007450312839482722,
+    "coefficients": 113
+  },
+  {
+    "seed": 3137,
+    "arm": "geometry",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0022370131791138795,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "geometry",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.00222653273307332,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "geometry",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.002039249974409511,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "geometry",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0005758585771465807,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "geometry",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.0005840279698954871,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "geometry",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.000847595446899642,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "raw_rollouts",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.001230055904069767,
+    "coefficients": 805
+  },
+  {
+    "seed": 3137,
+    "arm": "raw_rollouts",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.000493662549527716,
+    "coefficients": 805
+  },
+  {
+    "seed": 3137,
+    "arm": "raw_rollouts",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.0007993327955526021,
+    "coefficients": 805
+  },
+  {
+    "seed": 3137,
+    "arm": "raw_rollouts",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.002197878458506213,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "raw_rollouts",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.0021821320729768856,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "raw_rollouts",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.0019911261120886168,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "raw_rollouts",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0010421694282344914,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "raw_rollouts",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.0010355874400391112,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "raw_rollouts",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.0011572889084620866,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "mismatched_geometry",
+    "kind": "linear",
+    "alpha": 0.0001,
+    "tuning_mse": 0.00032583645716250005,
+    "coefficients": 113
+  },
+  {
+    "seed": 3137,
+    "arm": "mismatched_geometry",
+    "kind": "linear",
+    "alpha": 0.01,
+    "tuning_mse": 0.0003289150411311269,
+    "coefficients": 113
+  },
+  {
+    "seed": 3137,
+    "arm": "mismatched_geometry",
+    "kind": "linear",
+    "alpha": 1.0,
+    "tuning_mse": 0.0007655046952738497,
+    "coefficients": 113
+  },
+  {
+    "seed": 3137,
+    "arm": "mismatched_geometry",
+    "kind": "0.5",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0021862206874275155,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "mismatched_geometry",
+    "kind": "0.5",
+    "alpha": 0.01,
+    "tuning_mse": 0.0021739750793138687,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "mismatched_geometry",
+    "kind": "0.5",
+    "alpha": 1.0,
+    "tuning_mse": 0.0019909878131016442,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "mismatched_geometry",
+    "kind": "2.0",
+    "alpha": 0.0001,
+    "tuning_mse": 0.0005561527652182797,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "mismatched_geometry",
+    "kind": "2.0",
+    "alpha": 0.01,
+    "tuning_mse": 0.0005648005905369442,
+    "coefficients": 129
+  },
+  {
+    "seed": 3137,
+    "arm": "mismatched_geometry",
+    "kind": "2.0",
+    "alpha": 1.0,
+    "tuning_mse": 0.0008721481191637737,
+    "coefficients": 129
+  }
+]

@@ -1,0 +1,4 @@
+evaluation_phase,seed,pairs,causal_clean_accuracy,counterfactual_accuracy,counterfactual_pair_accuracy,counterfactual_prediction_flip_consistency,first_edge_corrupted_accuracy,second_edge_corrupted_accuracy,second_edge_oracle_accuracy
+fresh_confirmation,811,2000,0.705,0.721,0.566,0.706,0.499,0.496,0.51
+fresh_confirmation,907,2000,0.7445,0.7435,0.6455,0.803,0.536,0.4955,0.52
+fresh_confirmation,1009,2000,0.6935,0.6975,0.5895,0.788,0.474,0.496,0.5215

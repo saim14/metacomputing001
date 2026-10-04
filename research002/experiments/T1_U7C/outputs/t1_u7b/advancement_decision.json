@@ -1,0 +1,8 @@
+{
+  "development_passed": true,
+  "development_passing_fraction": 1.0,
+  "fresh_confirmation_opened": true,
+  "fresh_confirmation_passed": false,
+  "trajectory_probes_fitted": false,
+  "advance_to_t1_u8": false
+}

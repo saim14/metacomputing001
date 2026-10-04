@@ -1,0 +1,8 @@
+[
+  {
+    "case": "natural",
+    "panel_eligible": true,
+    "screen_passed": false,
+    "classification": "useful_gain_excluded_for_this_fixed_panel_and_predictor"
+  }
+]

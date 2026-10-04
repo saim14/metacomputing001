@@ -1,0 +1,121 @@
+{
+  "experiment": {
+    "id": "T1-U2",
+    "name": "Bounded Weight-Tied Transformer Learning Study",
+    "version": "0.6.0",
+    "research_object": "Identify a learnable recurrent Transformer configuration without using trajectory-probe performance for model selection."
+  },
+  "status": "failed_independent_learning_or_target_validity",
+  "historical_reference": {
+    "experiment": "T1-U-pilot",
+    "independent_accuracy": 0.75525,
+    "best_validation_accuracy": 0.7725,
+    "note": "Historical reference only; T1-U remains closed and is not rerun or retuned."
+  },
+  "selection": {
+    "selected_candidate": "U2-A-low-aux",
+    "selected_record": {
+      "candidate_id": "U2-A-low-aux",
+      "rationale": "Isolate reduced intermediate-loss pressure at T1-U capacity.",
+      "d_model": 32,
+      "n_heads": 2,
+      "d_ff": 64,
+      "n_layers": 6,
+      "use_step_embeddings": false,
+      "unique_parameters": 9666,
+      "tail_mean_validation_accuracy": 0.9527777777777778,
+      "terminal_validation_accuracy": 0.97,
+      "best_validation_accuracy": 0.9716666666666667,
+      "best_validation_step": 2200
+    },
+    "minimum_validation_score": 0.85,
+    "advanced_to_independent_evaluation": true,
+    "ranking_rule": [
+      "descending_tail_mean_validation_accuracy",
+      "descending_terminal_validation_accuracy",
+      "ascending_unique_parameter_count",
+      "ascending_candidate_id"
+    ],
+    "sealed_data_rule": "Independent probe data and trajectory-validity statistics are evaluated only for the selected candidate after it clears the validation advancement gate."
+  },
+  "candidate_results": [
+    {
+      "candidate_id": "U2-A-low-aux",
+      "rationale": "Isolate reduced intermediate-loss pressure at T1-U capacity.",
+      "d_model": 32,
+      "n_heads": 2,
+      "d_ff": 64,
+      "n_layers": 6,
+      "use_step_embeddings": false,
+      "unique_parameters": 9666,
+      "tail_mean_validation_accuracy": 0.9527777777777778,
+      "terminal_validation_accuracy": 0.97,
+      "best_validation_accuracy": 0.9716666666666667,
+      "best_validation_step": 2200
+    },
+    {
+      "candidate_id": "U2-B-wide",
+      "rationale": "Add shared-block capacity without adding a recurrent time signal.",
+      "d_model": 48,
+      "n_heads": 3,
+      "d_ff": 96,
+      "n_layers": 6,
+      "use_step_embeddings": false,
+      "unique_parameters": 20642,
+      "tail_mean_validation_accuracy": 0.8183333333333334,
+      "terminal_validation_accuracy": 0.8383333333333334,
+      "best_validation_accuracy": 0.8383333333333334,
+      "best_validation_step": 2400
+    },
+    {
+      "candidate_id": "U2-C-wide-time",
+      "rationale": "Add shared-block capacity and learned refinement-step embeddings.",
+      "d_model": 48,
+      "n_heads": 3,
+      "d_ff": 96,
+      "n_layers": 6,
+      "use_step_embeddings": true,
+      "unique_parameters": 20930,
+      "tail_mean_validation_accuracy": 0.7505555555555556,
+      "terminal_validation_accuracy": 0.7566666666666667,
+      "best_validation_accuracy": 0.7566666666666667,
+      "best_validation_step": 2400
+    }
+  ],
+  "independent_validity": {
+    "thresholds": {
+      "minimum_final_accuracy": 0.95,
+      "minimum_future_flip_rate": 0.05,
+      "maximum_future_flip_rate": 0.45,
+      "minimum_valid_layers_per_seed": 2,
+      "require_selection_and_replication_seed": true
+    },
+    "seeds": [
+      {
+        "seed": 311,
+        "final_accuracy": 0.9725,
+        "valid_future_flip_layers": [
+          2,
+          3
+        ],
+        "valid_layer_count": 2,
+        "passed": true
+      },
+      {
+        "seed": 421,
+        "final_accuracy": 0.81675,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "valid_layer_count": 4,
+        "passed": false
+      }
+    ],
+    "all_required_passed": false
+  },
+  "probe_policy": "No state-history or attention-history probes are run in T1-U2. If the selected model passes learning and target validity, its configuration is frozen for a separately preregistered confirmatory experiment.",
+  "elapsed_seconds": 1000.2218221660003
+}

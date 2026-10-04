@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "dataset_score_rows_verified": 576,
+  "panel_decisions_reproduced": 96,
+  "bootstrap_draws_checked": 24000,
+  "target_alpha_selections_verified": 1728,
+  "shared_feature_tuning_records": 432,
+  "distinct_dataset_hashes": 144,
+  "summary_scenarios_verified": 4,
+  "refitting_required": false
+}

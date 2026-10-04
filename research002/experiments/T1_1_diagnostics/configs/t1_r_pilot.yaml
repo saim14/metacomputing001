@@ -1,0 +1,71 @@
+experiment:
+  id: T1-R-pilot
+  name: Balanced Retrieval Trajectory and Attention Pilot
+  version: 0.4.0
+  research_object: Four-layer Transformer on shortcut-free one-hop retrieval
+
+hypotheses:
+  primary: >-
+    After shortcut-free retrieval is reliably learned, ordered layer-state
+    history improves future-flip prediction beyond current, dimension-matched,
+    shuffled, and sample-mismatched controls.
+  attention: >-
+    Ordered attention-summary history improves prediction beyond current state
+    plus current attention and matched attention-history controls.
+  secondary: >-
+    Ordered state and attention histories improve prediction of future reduction
+    in negative log-likelihood.
+  null: >-
+    Historical features add no stable predictive information after current state
+    and current attention are available.
+
+seeds: [101]
+
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 4
+  chain_hops: 1
+  train_samples: 7000
+  validation_samples: 1600
+  probe_samples: 3600
+
+model:
+  d_model: 32
+  n_heads: 2
+  d_ff: 64
+  n_layers: 4
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+
+training:
+  batch_size: 96
+  validation_batch_size: 400
+  learning_rate: 0.0010
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.05
+  log_every: 100
+  curriculum:
+    - name: balanced_retrieval_learning
+      steps: 2400
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.25
+      learning_rate: 0.0015
+    - name: reduced_auxiliary_finetune
+      steps: 600
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.05
+      learning_rate: 0.0008
+
+probes:
+  test_fraction: 0.40
+  minimum_class_count: 24
+  ridge_alpha: 1.0
+
+validity:
+  minimum_final_accuracy: 0.95
+  minimum_future_flip_rate: 0.05
+  maximum_future_flip_rate: 0.45
+  minimum_valid_layers_per_seed: 2
+  minimum_passing_seed_fraction: 1.0

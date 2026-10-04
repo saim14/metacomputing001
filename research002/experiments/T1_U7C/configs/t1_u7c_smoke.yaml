@@ -1,0 +1,100 @@
+experiment:
+  id: T1-U7C-smoke
+  name: T1-U7C execution-path smoke test
+  version: 0.11.0-smoke
+  research_object: Exercise all branches; results are not scientific evidence.
+hypotheses:
+  training_signal_repair: Smoke only.
+  invariance: Smoke only.
+  confirmation: Smoke only.
+  null: Smoke only.
+scientific_boundary:
+  development_seeds_are_exposed: true
+  development_seeds: [7, 8]
+  fresh_confirmation_seeds_are_unopened: true
+  note: Smoke-only protocol. No trajectory probe is fit.
+development_seeds: [7, 8]
+fresh_confirmation_seeds: [9]
+closed_reference:
+  config: configs/t1_u7b_smoke.yaml
+  output: outputs/t1_u7b_smoke
+  expected_prefix_updates: 20
+  expected_total_updates: 30
+training_signal_intervention:
+  target_auxiliary_loss_weight: 0.005
+  total_updates: 10
+  stream_ids: [2, 3]
+  updates_per_stream: 5
+  changed_field: training.curriculum.extension.auxiliary_loss_weight
+  interpretation_boundary: Smoke only.
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 5
+  chain_hops: 2
+  train_samples: 256
+  validation_samples: 128
+  probe_samples: 128
+  causal_pairs: 96
+  development_sample_seed_offset: 37
+  development_causal_seed_offset: 43
+  fresh_sample_seed_offset: 83
+  fresh_causal_seed_offset: 89
+model:
+  d_model: 16
+  n_heads: 2
+  d_ff: 32
+  n_layers: 3
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+  tie_layers: true
+  use_step_embeddings: false
+  residual_scale: 0.5
+training:
+  batch_size: 24
+  validation_batch_size: 64
+  learning_rate: 0.001
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.0
+  log_every: 5
+  curriculum:
+    - name: smoke_auxiliary
+      steps: 10
+      data_stream_id: 0
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.02
+      learning_rate: 0.001
+    - name: smoke_final
+      steps: 10
+      data_stream_id: 1
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.0
+      learning_rate: 0.001
+    - name: smoke_fresh_2
+      steps: 5
+      data_stream_id: 2
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.005
+      learning_rate: 0.001
+    - name: smoke_fresh_3
+      steps: 5
+      data_stream_id: 3
+      data_overrides: {chain_hops: 2}
+      auxiliary_loss_weight: 0.005
+      learning_rate: 0.001
+development_gate:
+  minimum_final_accuracy: 0.0
+  minimum_counterfactual_pair_accuracy: 0.0
+  corruption_accuracy_minimum: 0.0
+  corruption_accuracy_maximum: 1.0
+  minimum_mean_remaining_nll_reduction: -999.0
+  minimum_std_remaining_nll_reduction: 0.0
+  minimum_valid_value_steps: 0
+  value_positive_epsilon: 0.01
+  minimum_passing_seed_fraction: 1.0
+fresh_confirmation:
+  open_only_after_development_passes: true
+  require_same_gate_for_every_seed: true
+probes:
+  policy: No trajectory probe is fit; smoke only.

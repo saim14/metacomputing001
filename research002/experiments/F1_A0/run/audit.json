@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "selected_pipelines_reconstructed": 15,
+  "prediction_max_abs_error": 0.0,
+  "selected_tuning_mse_max_abs_error": 0.0,
+  "true_value_replay_max_abs_error": 4.884981308350689e-15,
+  "two_round_prefix_max_abs_error": 0.0,
+  "prefix_scenarios_per_model": 100,
+  "source_hashes_unchanged": true,
+  "bootstrap_and_allocation_reconstructed": true,
+  "mismatch_permutation_fixed_points": [
+    {
+      "seed": 3109,
+      "fit": 0,
+      "tuning": 0,
+      "evaluation": 2
+    },
+    {
+      "seed": 3119,
+      "fit": 2,
+      "tuning": 1,
+      "evaluation": 0
+    },
+    {
+      "seed": 3137,
+      "fit": 2,
+      "tuning": 1,
+      "evaluation": 1
+    }
+  ],
+  "inference_timings": [
+    {
+      "seed": 3109,
+      "batch_size": 300,
+      "prepared_feature_inference_ms": {
+        "current": 0.09980800018638547,
+        "expanded_current": 1.6490820000854,
+        "geometry": 0.10740200013970025,
+        "raw_rollouts": 2.370114000086687,
+        "mismatched_geometry": 0.11020300007658079
+      }
+    },
+    {
+      "seed": 3119,
+      "batch_size": 300,
+      "prepared_feature_inference_ms": {
+        "current": 0.09951800007002021,
+        "expanded_current": 0.11147099985464592,
+        "geometry": 0.11120999988634139,
+        "raw_rollouts": 3.073172000085833,
+        "mismatched_geometry": 0.11065800003962067
+      }
+    },
+    {
+      "seed": 3137,
+      "batch_size": 300,
+      "prepared_feature_inference_ms": {
+        "current": 0.10994299987032718,
+        "expanded_current": 0.1160030001301493,
+        "geometry": 0.10181400011788355,
+        "raw_rollouts": 1.17940399991312,
+        "mismatched_geometry": 0.10099500013893703
+      }
+    }
+  ],
+  "additional_model_fits": 0,
+  "additional_observer_fits": 0
+}

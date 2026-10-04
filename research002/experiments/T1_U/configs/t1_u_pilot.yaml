@@ -1,0 +1,72 @@
+experiment:
+  id: T1-U-pilot
+  name: Weight-Tied Transformer Refinement Sufficiency Pilot
+  version: 0.5.0
+  research_object: Six recurrent applications of one Transformer block on shortcut-free retrieval
+
+hypotheses:
+  primary: >-
+    In a learned recurrent Transformer computation, ordered state history
+    predicts future decision changes beyond current, dimension-matched,
+    shuffled, and sample-mismatched controls.
+  attention: >-
+    Ordered attention-summary history predicts future decision changes beyond
+    current state plus current attention and matched attention-history controls.
+  secondary: >-
+    Ordered state and attention histories improve prediction of future reduction
+    in negative log-likelihood.
+  null: >-
+    Earlier refinement states and attention summaries add no stable predictive
+    information after current state and current attention are available.
+
+seeds: [101]
+
+data:
+  task_type: chain_lookup
+  key_count: 8
+  pair_count: 4
+  chain_hops: 1
+  train_samples: 8000
+  validation_samples: 1800
+  probe_samples: 4000
+
+model:
+  d_model: 32
+  n_heads: 2
+  d_ff: 64
+  n_layers: 6
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+  use_structure_embeddings: true
+  tie_layers: true
+
+training:
+  batch_size: 96
+  validation_batch_size: 400
+  learning_rate: 0.0006
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.05
+  log_every: 100
+  curriculum:
+    - name: recurrent_retrieval_learning
+      steps: 3200
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.15
+      learning_rate: 0.0012
+    - name: reduced_auxiliary_finetune
+      steps: 800
+      data_overrides: {chain_hops: 1}
+      auxiliary_loss_weight: 0.05
+      learning_rate: 0.0006
+
+probes:
+  test_fraction: 0.40
+  minimum_class_count: 30
+  ridge_alpha: 1.0
+
+validity:
+  minimum_final_accuracy: 0.95
+  minimum_future_flip_rate: 0.05
+  maximum_future_flip_rate: 0.45
+  minimum_valid_layers_per_seed: 2
+  minimum_passing_seed_fraction: 1.0

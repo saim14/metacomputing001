@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "original_T2_E1_equivalence_targets": 4,
+  "independent_sklearn_candidates": 20,
+  "max_original_prediction_error": 1.3322676295501878e-14,
+  "max_sklearn_prediction_error": 1.2434497875801753e-14,
+  "rank_deficient_and_constant_features": "passed",
+  "test_target_leakage": "passed",
+  "test_feature_preprocessing_leakage": "passed",
+  "exact_tie_rule": "passed",
+  "population_variance_identity": "passed",
+  "wilson_boundaries": "passed",
+  "calibration_panels_used": 0
+}

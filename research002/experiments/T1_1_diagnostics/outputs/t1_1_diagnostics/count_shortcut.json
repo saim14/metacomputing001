@@ -1,0 +1,19 @@
+{
+  "diagnostic": "value-token-count-only logistic probe",
+  "train_samples_per_condition": 30000,
+  "test_samples_per_condition": 30000,
+  "original_direct_lookup": {
+    "accuracy": 0.6884666666666667,
+    "roc_auc": 0.7713994666657328,
+    "mean_value_zero_count": 1.9966333333333333,
+    "mean_value_one_count": 2.0033666666666665
+  },
+  "balanced_one_hop": {
+    "accuracy": 0.49946666666666667,
+    "roc_auc": 0.5,
+    "mean_value_zero_count": 2.0,
+    "mean_value_one_count": 2.0
+  },
+  "analytic_original_majority_accuracy_with_random_ties": 0.6875,
+  "interpretation": "The original generator exposes a count-based shortcut; the balanced generator fixes both value-token counts at two per sample and removes that signal."
+}

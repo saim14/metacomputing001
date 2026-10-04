@@ -1,0 +1,299 @@
+{
+  "experiment": {
+    "id": "T1-U4",
+    "name": "Weight-Tied Transformer Optimization-Basin Stabilization Study",
+    "version": "0.8.0",
+    "research_object": "Determine whether residual-update scaling, an area-matched auxiliary-loss taper, or their combination improves robust learning across the exposed T1-U3 development seeds while the task, model size, data, and total update budget remain fixed."
+  },
+  "status": "failed_independent_stability_gate",
+  "scientific_boundary": {
+    "development_seeds_are_exposed": true,
+    "note": "Seeds 503, 607, and 709 were observed in T1-U3 and are used only for bounded optimization development. A passing T1-U4 candidate still requires a separately preregistered fresh-seed confirmation before trajectory probing."
+  },
+  "configuration": {
+    "seeds": [
+      503,
+      607,
+      709
+    ],
+    "data": {
+      "task_type": "chain_lookup",
+      "key_count": 8,
+      "pair_count": 4,
+      "chain_hops": 1,
+      "train_samples": 8000,
+      "validation_samples": 1800,
+      "probe_samples": 4000
+    },
+    "base_model": {
+      "d_model": 32,
+      "n_heads": 2,
+      "d_ff": 64,
+      "n_layers": 6,
+      "n_classes": 2,
+      "layer_norm_epsilon": 1e-05,
+      "use_structure_embeddings": true,
+      "tie_layers": true,
+      "use_step_embeddings": false
+    },
+    "base_training": {
+      "batch_size": 96,
+      "validation_batch_size": 600,
+      "learning_rate": 0.0005,
+      "max_grad_norm": 1.0,
+      "auxiliary_loss_weight": 0.0,
+      "log_every": 200
+    },
+    "schedules": {
+      "abrupt": [
+        {
+          "name": "low_auxiliary_learning",
+          "steps": 2000,
+          "data_stream_id": 0,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.02,
+          "learning_rate": 0.0012
+        },
+        {
+          "name": "final_only",
+          "steps": 2000,
+          "data_stream_id": 1,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.0,
+          "learning_rate": 0.0005
+        }
+      ],
+      "area_matched_taper": [
+        {
+          "name": "full_auxiliary",
+          "steps": 1700,
+          "data_stream_id": 0,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.02,
+          "learning_rate": 0.0012
+        },
+        {
+          "name": "taper_015",
+          "steps": 200,
+          "data_stream_id": 0,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.015,
+          "learning_rate": 0.0012
+        },
+        {
+          "name": "taper_010_pre_transition",
+          "steps": 100,
+          "data_stream_id": 0,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.01,
+          "learning_rate": 0.0012
+        },
+        {
+          "name": "taper_010_post_transition",
+          "steps": 100,
+          "data_stream_id": 1,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.01,
+          "learning_rate": 0.0005
+        },
+        {
+          "name": "taper_005",
+          "steps": 200,
+          "data_stream_id": 1,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.005,
+          "learning_rate": 0.0005
+        },
+        {
+          "name": "final_only",
+          "steps": 1700,
+          "data_stream_id": 1,
+          "data_overrides": {
+            "chain_hops": 1
+          },
+          "auxiliary_loss_weight": 0.0,
+          "learning_rate": 0.0005
+        }
+      ]
+    },
+    "factor_matrix": [
+      {
+        "id": "U4-A-reference",
+        "train": false,
+        "residual_scale": 1.0,
+        "transition": "abrupt",
+        "source_history": "outputs/t1_u3/training_history.csv",
+        "rationale": "Closed T1-U3 reference; loaded without reusing independent outcomes."
+      },
+      {
+        "id": "U4-B-residual-half",
+        "train": true,
+        "residual_scale": 0.5,
+        "transition": "abrupt",
+        "rationale": "Bound each attention and feed-forward update in the tied recurrence."
+      },
+      {
+        "id": "U4-C-aux-taper",
+        "train": true,
+        "residual_scale": 1.0,
+        "transition": "area_matched_taper",
+        "rationale": "Replace the abrupt auxiliary-loss removal with equal integrated supervision."
+      },
+      {
+        "id": "U4-D-combined",
+        "train": true,
+        "residual_scale": 0.5,
+        "transition": "area_matched_taper",
+        "rationale": "Test whether bounded recurrent updates and smooth supervision interact."
+      }
+    ]
+  },
+  "screening": {
+    "thresholds": {
+      "tail_validation_points": 4,
+      "primary_metric": "minimum_seed_tail_mean_validation_accuracy",
+      "minimum_seed_tail_mean_validation_accuracy": 0.9,
+      "minimum_mean_tail_validation_accuracy": 0.93,
+      "minimum_primary_gain_over_reference": 0.03,
+      "ranking_tiebreakers": [
+        "mean_seed_tail_validation_accuracy",
+        "minimum_terminal_validation_accuracy",
+        "mean_terminal_validation_accuracy",
+        "candidate_id_ascending"
+      ]
+    },
+    "decision": {
+      "selected_candidate_id": "U4-D-combined",
+      "reference_candidate_id": "U4-A-reference",
+      "selected_primary_metric": 0.9483333333333334,
+      "reference_primary_metric": 0.7741666666666667,
+      "primary_gain_over_reference": 0.1741666666666667,
+      "minimum_seed_tail_gate_passed": true,
+      "mean_tail_gate_passed": true,
+      "gain_gate_passed": true,
+      "passed": true
+    },
+    "candidate_results": [
+      {
+        "candidate_id": "U4-A-reference",
+        "trained_in_t1_u4": false,
+        "residual_scale": 1.0,
+        "transition": "abrupt",
+        "minimum_seed_tail_mean_validation_accuracy": 0.7741666666666667,
+        "mean_seed_tail_validation_accuracy": 0.8662500000000001,
+        "sample_std_seed_tail_validation_accuracy": 0.09007230891530058,
+        "minimum_terminal_validation_accuracy": 0.7966666666666666,
+        "mean_terminal_validation_accuracy": 0.8794444444444444
+      },
+      {
+        "candidate_id": "U4-B-residual-half",
+        "trained_in_t1_u4": true,
+        "residual_scale": 0.5,
+        "transition": "abrupt",
+        "minimum_seed_tail_mean_validation_accuracy": 0.9416666666666667,
+        "mean_seed_tail_validation_accuracy": 0.9652777777777777,
+        "sample_std_seed_tail_validation_accuracy": 0.030712978315966637,
+        "minimum_terminal_validation_accuracy": 0.955,
+        "mean_terminal_validation_accuracy": 0.9727777777777779
+      },
+      {
+        "candidate_id": "U4-C-aux-taper",
+        "trained_in_t1_u4": true,
+        "residual_scale": 1.0,
+        "transition": "area_matched_taper",
+        "minimum_seed_tail_mean_validation_accuracy": 0.7604166666666666,
+        "mean_seed_tail_validation_accuracy": 0.8519444444444444,
+        "sample_std_seed_tail_validation_accuracy": 0.10081295707802056,
+        "minimum_terminal_validation_accuracy": 0.7916666666666666,
+        "mean_terminal_validation_accuracy": 0.8616666666666667
+      },
+      {
+        "candidate_id": "U4-D-combined",
+        "trained_in_t1_u4": true,
+        "residual_scale": 0.5,
+        "transition": "area_matched_taper",
+        "minimum_seed_tail_mean_validation_accuracy": 0.9483333333333334,
+        "mean_seed_tail_validation_accuracy": 0.9677777777777777,
+        "sample_std_seed_tail_validation_accuracy": 0.028103644155426086,
+        "minimum_terminal_validation_accuracy": 0.9566666666666667,
+        "mean_terminal_validation_accuracy": 0.976111111111111
+      }
+    ],
+    "factorial_effects_on_mean_tail_accuracy": {
+      "residual_scale_main_effect": 0.10743055555555547,
+      "auxiliary_taper_main_effect": -0.005902777777777812,
+      "factor_interaction": 0.01680555555555574
+    }
+  },
+  "independent_evaluation": {
+    "opened": true,
+    "thresholds": {
+      "minimum_final_accuracy": 0.95,
+      "minimum_future_flip_rate": 0.05,
+      "maximum_future_flip_rate": 0.45,
+      "minimum_valid_layers_per_seed": 2,
+      "minimum_passing_seed_fraction": 1.0
+    },
+    "passing_seed_fraction": 0.3333333333333333,
+    "passed": false,
+    "aggregate": {
+      "mean_accuracy": 0.9721666666666667,
+      "sample_std_accuracy": 0.02600160251471692,
+      "minimum_accuracy": 0.9485,
+      "maximum_accuracy": 1.0
+    },
+    "seeds": [
+      {
+        "candidate_id": "U4-D-combined",
+        "seed": 503,
+        "final_accuracy": 1.0,
+        "valid_future_flip_layers": [],
+        "valid_layer_count": 0,
+        "passed": false
+      },
+      {
+        "candidate_id": "U4-D-combined",
+        "seed": 607,
+        "final_accuracy": 0.9485,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": false
+      },
+      {
+        "candidate_id": "U4-D-combined",
+        "seed": 709,
+        "final_accuracy": 0.968,
+        "valid_future_flip_layers": [
+          2,
+          3,
+          4
+        ],
+        "valid_layer_count": 3,
+        "passed": true
+      }
+    ]
+  },
+  "sealed_evaluation": {
+    "rule": "All trainable candidates and seeds complete without adaptive stopping. Candidate selection uses validation metrics only. Independent data are opened only for the selected candidate if it clears every screening gate."
+  },
+  "probe_policy": "No state-history, motion, or attention-history probe is fitted in T1-U4. Even a passing result advances only to fresh-seed learning confirmation.",
+  "elapsed_seconds": 4349.936490566
+}

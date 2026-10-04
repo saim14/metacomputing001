@@ -1,0 +1,13 @@
+{
+  "study_id": "T2-E2",
+  "phase": "development_calibration",
+  "completed_utc": "2026-09-13T03:30:36.924865+00:00",
+  "elapsed_seconds": 176.44621300697327,
+  "go_to_main": true,
+  "individual_mlp_training_runs": 216,
+  "ridge_paths": 36,
+  "synthetic_scenarios": 3,
+  "main_data_generated": false,
+  "natural_history_evidence_added": false,
+  "protocol_sha256": "f6af08f870b514a9ba7113317f4c6567cbcbcc7b504e965b6522928db7b6591d"
+}

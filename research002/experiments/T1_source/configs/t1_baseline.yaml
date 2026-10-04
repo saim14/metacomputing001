@@ -1,0 +1,48 @@
+experiment:
+  id: T1
+  name: Transformer Trajectory Sufficiency
+  version: 0.1.0
+  research_object: Instrumented encoder-only Transformer on a controlled key-value retrieval task
+
+hypotheses:
+  primary: >-
+    Ordered layer-wise state history improves prediction of future decision changes
+    beyond the current state, a norm-preserving dimension-matched current-state
+    control, per-sample shuffled history, and sample-mismatched history.
+  secondary: >-
+    Ordered history improves prediction of future reduction in negative
+    log-likelihood beyond the same controls.
+  null: >-
+    Earlier layer states add no stable predictive information once the current
+    representation and prediction are available.
+
+seeds: [101, 202, 303]
+
+data:
+  key_count: 8
+  pair_count: 4
+  train_samples: 6000
+  validation_samples: 1200
+  probe_samples: 3600
+
+model:
+  d_model: 32
+  n_heads: 2
+  d_ff: 64
+  n_layers: 4
+  n_classes: 2
+  layer_norm_epsilon: 0.00001
+
+training:
+  steps: 900
+  batch_size: 96
+  validation_batch_size: 300
+  learning_rate: 0.0015
+  max_grad_norm: 1.0
+  auxiliary_loss_weight: 0.25
+  log_every: 100
+
+probes:
+  test_fraction: 0.40
+  minimum_class_count: 24
+  ridge_alpha: 1.0

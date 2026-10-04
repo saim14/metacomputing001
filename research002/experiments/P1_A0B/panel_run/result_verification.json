@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "verified_runs": [
+    [
+      2017,
+      "no_decay"
+    ],
+    [
+      2017,
+      "matrix_decay"
+    ],
+    [
+      2027,
+      "no_decay"
+    ],
+    [
+      2027,
+      "matrix_decay"
+    ]
+  ],
+  "saved_checkpoints_verified": 16,
+  "all_train_and_calibration_logits_recomputed": true,
+  "max_logit_error": 0.0,
+  "all_accuracy_flip_counts_and_gates_recomputed": true,
+  "paired_initializations_streams_and_first_gradient_verified": true,
+  "all_24000_updates_and_optimizer_moments_verified": true,
+  "reserved_examples_absent": true,
+  "scientific_freeze_preceded_all_training_and_is_unchanged": true,
+  "regimen_decisions_recomputed": [
+    {
+      "arm": "no_decay",
+      "ready": false
+    },
+    {
+      "arm": "matrix_decay",
+      "ready": true
+    }
+  ],
+  "scope": "Separate numerical audit; not independent model replication."
+}

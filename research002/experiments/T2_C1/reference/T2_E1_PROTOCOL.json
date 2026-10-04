@@ -1,0 +1,136 @@
+{
+  "study_id": "T2-E1",
+  "version": "1.0.0",
+  "frozen_utc": "2026-09-11T14:34:30.584689+00:00",
+  "title": "Observer sufficiency: CLS history versus current CLS and all-token representations",
+  "scope": "New exploratory observational study of all six development-exposed frozen U7C checkpoints. User requested continue next study on 2026-09-11. This changes scope from training repair to limited-probe decodability; it is not T1-U8 advancement or confirmation.",
+  "prior_results": "U7C and matched audit remain failed all-seed competence protocols; original T1 negative findings retained. No successful-seed-only selection.",
+  "model_seeds": [
+    503,
+    607,
+    709,
+    811,
+    907,
+    1009
+  ],
+  "fixed_prior_groups": {
+    "previously_passed": [
+      503,
+      607,
+      709
+    ],
+    "previously_failed": [
+      811,
+      907,
+      1009
+    ]
+  },
+  "training_updates": 0,
+  "reserved_model_seeds_opened": [],
+  "model_variant": "U7C only; fixed before probe outcomes; auxiliary-supervised regime",
+  "data": {
+    "pair_count": 3000,
+    "train_pairs": 1600,
+    "validation_pairs": 400,
+    "test_pairs": 1000,
+    "generator": "original two-hop paired-counterfactual generator",
+    "generator_rng_base": 200000000,
+    "split_rng_base": 210000000,
+    "exclusions": "Exclude exact clean/counterfactual family matches to every model training and validation stream and both previously used clean/causal evaluation suites; reject duplicate families across the new probe dataset. Equivalent pair-order permutations are not excluded.",
+    "pair_key": "lexicographic minimum of uint8 clean and label-complement token byte strings; same family for both pair members",
+    "split_unit": "counterfactual family; all steps and both members stay together",
+    "same_new_data_across_observers_and_probe_arms": true,
+    "candidate_pair_batches": 4000,
+    "maximum_candidate_batches_per_seed": 5
+  },
+  "steps": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "primary_target": "V_l = true-label NLL_l - true-label NLL_6; probabilities clipped to [1e-8,1]; negative values retained",
+  "secondary_target": "Decision-flip prevalence is diagnostic only; no binary probe fit or decision-stability advantage claim",
+  "eligibility": {
+    "computed_on": "probe-training partition only, before outcome comparisons",
+    "minimum_mean_value_nats": 0.02,
+    "minimum_sample_sd_value_nats": 0.02,
+    "all_steps_still_reported": true,
+    "all_six_seeds_required_for_full_panel_summary": true
+  },
+  "observables": {
+    "cls_current": "32 CLS residual components + 2 probabilities + entropy_bits + absolute_probability_margin = 36",
+    "full_current": "all 12 token residual vectors in fixed token-position order + same prediction summaries = 388",
+    "past": "CLS 36-component observables at steps 1 through l-1; step 0 excluded; append past to unchanged current observations",
+    "attention": "No attention features in this study; no attention-specific mechanism claim",
+    "forbidden_features": [
+      "true labels",
+      "current true-label NLL",
+      "future states",
+      "future predictions",
+      "final loss"
+    ]
+  },
+  "arms": [
+    "current_linear",
+    "current_dimension_control",
+    "current_rff",
+    "ordered_history",
+    "shuffled_history",
+    "sample_mismatched_history",
+    "residualized_history"
+  ],
+  "probe": {
+    "family": "linear ridge with intercept",
+    "alpha_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "selection": "minimum validation MSE; exact ties choose larger alpha",
+    "refit_after_selection": false,
+    "preprocessing": "Each final feature column standardized using probe-training means and population SD only; floor SD at 1e-8",
+    "target_scaling": "center on training mean, no target rescaling",
+    "same_alpha_grid_and_train_validation_examples_for_every_arm": true,
+    "numeric_dtype": "float64 for ridge solves and targets; float32 model observations"
+  },
+  "controls": {
+    "dimension_control": "Current plus fixed Gaussian linear projections of training-standardized current, with exactly 36*(l-1) appended columns",
+    "rff": "Current plus 36*(l-1) cosine random Fourier features of training-standardized current, W_ij~N(0,1/d_current), bias~Uniform(0,2pi). Same fitted coefficient count as history; fixed transforms and compute are not identical.",
+    "shuffle": "Independently permute past-step slots per family, same permutation for both pair members, same policy across train/validation/test. Keep current fixed; l=2 aliases ordered and cannot test chronology.",
+    "sample_mismatch": "Within each partition use a nonzero cyclic donor-family shift, preserving pair member index and all current features; no family donates to itself",
+    "residualization": "Predict raw flattened CLS past from standardized current using ridge alpha=1 trained only on training features; append residual past to current",
+    "rng_base": 220000000
+  },
+  "primary_comparison": {
+    "observer": "full_current",
+    "candidate": "ordered_history",
+    "baseline": "current_rff",
+    "necessary_reference_check": "ordered_history versus current_linear must also meet the same screen",
+    "metric": "test delta R2 = R2(history)-R2(current); report MAE advantage = MAE(current)-MAE(history)",
+    "effect_threshold_delta_r2": 0.01,
+    "threshold_rationale": "Fixed exploratory screening convention: one percentage point of explained variance. This is not calibrated to controller utility or compute savings."
+  },
+  "aggregation": {
+    "step_weight": "Equal weight across training-eligible steps within each seed",
+    "seed_weight": "Equal weight across all six fixed seeds",
+    "uncertainty": "1000 bootstrap replicates of held-out counterfactual families within each seed, retaining both members and common draws across steps and arms; six model seeds fixed, not resampled",
+    "bootstrap_rng": 230000000,
+    "interval": "percentile 2.5% and 97.5%; conditional on fixed models and fitted probes, not a model-seed population CI",
+    "secondary": "CLS observer, prior pass/fail strata, and history controls are exploratory descriptive comparisons; no multiple-testing-adjusted discovery claim"
+  },
+  "screen_rule": "Full-history passes exploratory screen only if both primary and necessary reference comparisons have mean delta R2 >=0.01, conditional bootstrap lower bound >0, positive mean delta R2 for every one of the six seeds, and nonnegative panel mean MAE advantage. All seeds must have at least one training-eligible step. Failure is reported as no robust advantage under this protocol, not broad falsification. Ineligible panel is distinct. No automatic confirmation advancement under any result.",
+  "budgets": {
+    "study_configurations": 1,
+    "maximum_probe_cells": 336,
+    "maximum_alpha_candidates": 1680,
+    "data_regeneration_based_on_results": false,
+    "retraining": false,
+    "hyperparameter_expansion": false,
+    "late_target_changes": false,
+    "probe_execution_retries": "Only documented implementation-error recovery using identical frozen protocol; preserve partial run logs. No outcome-driven reruns."
+  },
+  "stop_rule": "Finish the fixed extraction and ridge panel once, then report all seeds, steps, controls, eligibility and uncertainty. Do not open reserved seeds or optimize model training based on the result."
+}

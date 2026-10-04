@@ -1,0 +1,98 @@
+[
+  {
+    "directory": "split_314159_model_2017_step_3",
+    "target_fits": 54
+  },
+  {
+    "directory": "split_314159_model_2017_step_4",
+    "target_fits": 54
+  },
+  {
+    "directory": "split_314159_model_2027_step_3",
+    "target_fits": 54
+  },
+  {
+    "directory": "split_314159_model_2027_step_4",
+    "target_fits": 54
+  },
+  {
+    "directory": "split_314160_model_2017_step_3",
+    "target_fits": 54
+  },
+  {
+    "directory": "split_314160_model_2017_step_4",
+    "target_fits": 54
+  },
+  {
+    "directory": "split_314160_model_2027_step_3",
+    "target_fits": 54
+  },
+  {
+    "directory": "split_314160_model_2027_step_4",
+    "target_fits": 54
+  },
+  {
+    "directory": "split_314161_model_2017_step_3",
+    "target_fits": 54
+  },
+  {
+    "directory": "split_314161_model_2017_step_4",
+    "target_fits": 54
+  },
+  {
+    "directory": "split_314161_model_2027_step_3",
+    "target_fits": 54
+  },
+  {
+    "directory": "split_314161_model_2027_step_4",
+    "target_fits": 54
+  },
+  {
+    "directory": "synthetic_9101_b0.0",
+    "target_fits": 36
+  },
+  {
+    "directory": "synthetic_9101_b0.1",
+    "target_fits": 36
+  },
+  {
+    "directory": "synthetic_9101_b0.2",
+    "target_fits": 36
+  },
+  {
+    "directory": "synthetic_9102_b0.0",
+    "target_fits": 36
+  },
+  {
+    "directory": "synthetic_9102_b0.1",
+    "target_fits": 36
+  },
+  {
+    "directory": "synthetic_9102_b0.2",
+    "target_fits": 36
+  },
+  {
+    "directory": "synthetic_9103_b0.0",
+    "target_fits": 36
+  },
+  {
+    "directory": "synthetic_9103_b0.1",
+    "target_fits": 36
+  },
+  {
+    "directory": "synthetic_9103_b0.2",
+    "target_fits": 36
+  },
+  {
+    "directory": "synthetic_9104_b0.0",
+    "target_fits": 36
+  },
+  {
+    "directory": "synthetic_9104_b0.1",
+    "target_fits": 36
+  },
+  {
+    "directory": "synthetic_9104_b0.2",
+    "target_fits": 36
+  }
+]

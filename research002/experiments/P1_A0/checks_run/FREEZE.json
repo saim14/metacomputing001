@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-09-15T04:32:40.510598+00:00",
+  "mode": "methods",
+  "files_sha256": {
+    "P1_A0_protocol.json": "6b7f615fcfd6db87098f90330a9260eee0717025c3678b9ed3e37770a47ca482",
+    "P1_A0_Protocol.md": "834684f53c6222d0e3edb3f05461a56a52414ffa3a8368bbc1e42d70f8a6b363",
+    "experiment.py": "c57bc85f56178c701e77a29cf8b0328479d888c8d1869ab97171b7579fbe59f1",
+    "test_methods.py": "0f844a7e3378ceffdd3b0af9bbb548253b504620d0eb94ec935847e53aebf3d6",
+    "vendor/T1_source_0.1.0.zip": "0c91a67c08c09ef7d1081924c1dee50aba946409751f31f72c4c001721734e41",
+    "vendor/t1_original/src/tiny_autograd.py": "18fb91003d171b881c7afeb909fa08c278dd3f19ef93dbd71a2e9bbd7089d61f",
+    "vendor/t1_original/src/tiny_transformer.py": "3278f6a7177caa5478dac30b1912724d2f30c187a891043c547bbaf19d6521dc"
+  },
+  "scope": "Local prospective freeze, not independent registration."
+}

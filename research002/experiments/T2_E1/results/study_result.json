@@ -1,0 +1,24 @@
+{
+  "study_id": "T2-E1",
+  "status": "completed",
+  "completed_utc": "2026-09-11T14:41:19.549008+00:00",
+  "elapsed_seconds": 50.7756712436676,
+  "training_updates": 0,
+  "reserved_model_seeds_opened": [],
+  "actual_probe_fits": 324,
+  "alpha_candidates_evaluated": 1620,
+  "reported_cells": 336,
+  "new_probe_examples": 36000,
+  "protocol_sha256": "b63b9020b3ab5714c9d6896f3937b988e2f7e7a98d049b8345a239886dde0e06",
+  "runner_sha256": "05ef29b2017bdcf45dba3c104963fd72b141b359db40b85e390dd03798cccb96",
+  "frozen_inputs_unchanged": true,
+  "all_six_exposed_models_reported": true,
+  "primary_exploratory_screen_passed": false,
+  "confirmation_advancement": false,
+  "uncertainty_scope": "1000 bootstrap replicates of held-out counterfactual families within each seed, retaining both members and common draws across steps and arms; six model seeds fixed, not resampled",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  }
+}

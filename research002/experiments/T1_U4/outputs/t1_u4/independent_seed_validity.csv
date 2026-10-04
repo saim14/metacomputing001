@@ -1,0 +1,4 @@
+candidate_id,seed,final_accuracy,valid_future_flip_layers,valid_layer_count,passed
+U4-D-combined,503,1.0,[],0,False
+U4-D-combined,607,0.9485,"[2, 3, 4]",3,False
+U4-D-combined,709,0.968,"[2, 3, 4]",3,True

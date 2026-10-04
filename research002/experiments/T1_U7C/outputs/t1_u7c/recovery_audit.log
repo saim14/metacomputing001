@@ -1,0 +1,8 @@
+Existing direct tests passed: 16
+Verified seed 503: update 6000, clean=0.99200, paired_cf=0.9875, gate=True
+Verified seed 607: update 6000, clean=0.99750, paired_cf=0.9975, gate=True
+Verified seed 709: update 6000, clean=1.00000, paired_cf=0.9980, gate=True
+Verified seed 811: update 6000, clean=0.70000, paired_cf=0.5830, gate=False
+Verified seed 907: update 6000, clean=0.73375, paired_cf=0.6135, gate=False
+Verified seed 1009: update 6000, clean=0.71100, paired_cf=0.6115, gate=False
+AUDIT PASSED: six original endpoints verified; no training or probes.
