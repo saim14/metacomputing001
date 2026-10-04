@@ -1,0 +1,53 @@
+{
+  "study": "F1-A3",
+  "version": "main-v1",
+  "started_utc_system_clock": "2026-10-04T08:45:09.140550+00:00",
+  "hashes": {
+    "study.py": "8f58f4f2ae38ed3af98b75fec58bc6d0faa848628a4abc6e8284f8c4f3705fbc",
+    "config.json": "42c152af7b9e447dc10e8fe7ce9c19ea78d7477929f67c8d0aef0d05cfcab4d9",
+    "F1_A3_Protocol.md": "67f0830f02de868b023abff7caf6416d27e9662133d6f175ec7ba4ce63459fdb",
+    "deps/config.json": "ec683609d4b8ee967bb24b6ba75f10b3bfa6d55919fdbaf10f98963f94958ba2",
+    "deps/prior/config.json": "df68c9ac678d0bdf7fbba09fd31661abf4d82b7d3c5a4deb60ad2eb0df36bde7",
+    "deps/prior/prior/config.json": "1ab1125d68948967252a8170a0de946d4097949a06f109a9b2b7ecafe3599aed",
+    "deps/prior/prior/run/world_3109.npz": "1828a79fa3e5cf92a5d7017bac2bc2cb2a4950a63d8db0d0a822580f26dc0bf7",
+    "deps/prior/prior/run/world_3119.npz": "89c4f5ff1164d3678f66b22981b4e1744e423f3ac63d26ff269b73afd70a8354",
+    "deps/prior/prior/run/world_3137.npz": "32c582f25cf265e9525d45d8720aba93b647a64dec2285ce9db78a6df8f3b9d5",
+    "deps/prior/prior/run_f1.py": "47be3d810c4b09d4281a8f1e6df1bd178c722142828a545756bc2af96f5943a6",
+    "deps/prior/study.py": "43e72ece1f4adbef92a73c357d46d84a7696d4098d3d84cacd15f95b6e56a99e",
+    "deps/run/calibration_exact.npz": "e084cbb269c805e29a235ee3556fdd2c2a62537732743e7ce7b5f5a2a3233aaf",
+    "deps/run/calibration_m3109_a100.npz": "2489434e9995b54c860f0c83b9b91aa1e0a378dfce31681eca5607967b03eceb",
+    "deps/run/calibration_m3109_a50.npz": "706fb8a9dc4a0570f4b5458de5bb86ad1793f35c7f1f5bf516fe30aa2d2a0624",
+    "deps/run/calibration_m3119_a100.npz": "d92cd11ae4cb005ea65bf0c4762f61efaa747f4a3f3e3384a171c4e49235261f",
+    "deps/run/calibration_m3119_a50.npz": "7f4044821d04d517c4968db83ac5f992f3f515bc4ef7016bc21b87215eca9a20",
+    "deps/run/calibration_m3137_a100.npz": "9f2327d826b3f047c9ee83c96fd997ae3d191e3bd9733cc56a42a8f1734debde",
+    "deps/run/calibration_m3137_a50.npz": "fda5558700f15f236e6a0bbc38b48e81f620f34f867fb53642b1a7f1cdd9034d",
+    "deps/run/calibration_shared.npz": "3e7e4dcf3b140cc5e30deec1431026594017e730f4ec5ef09d461edf6c8e970a",
+    "deps/study.py": "746f5c69ceec9967658cb2f577f7fce7cf27c37654a14dc4d1c4c3191010192d"
+  },
+  "fixtures": {
+    "subset_ranks": [
+      0,
+      4,
+      9,
+      13,
+      18,
+      22,
+      27,
+      31
+    ],
+    "subset_rollout_max_error": 0.0,
+    "finite_subset_summary": true,
+    "model_call_accounting": true,
+    "charged_policy": true,
+    "inherited_checks": {
+      "affine_residual_max_error": 8.045238636757851e-06,
+      "bias_summary": true,
+      "strict_derangement": true,
+      "call_charge": true,
+      "prefix_step": true
+    }
+  },
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0"
+}

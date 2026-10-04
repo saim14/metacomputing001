@@ -1,0 +1,21 @@
+{
+  "condition": "exact",
+  "modes": [
+    "b8",
+    "b32",
+    "cr",
+    "always_stop",
+    "always_continue"
+  ],
+  "cases": 32,
+  "repeats": 5,
+  "ms_per_case": {
+    "b8": 3.844975062463618,
+    "b32": 5.788346687538137,
+    "cr": 1.6987078437722403,
+    "always_stop": 1.0579774374832596,
+    "always_continue": 1.9733105312695898
+  },
+  "decision_mismatches": 0,
+  "plan_max_abs_error": 0.0
+}

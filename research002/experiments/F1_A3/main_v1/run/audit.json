@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "candidate_tuning_scores_reconstructed": 1008,
+  "selected_pipelines_reconstructed": 84,
+  "max_absolute_errors": {
+    "true_cost": 5.995204332975845e-15,
+    "prefix": 0.0,
+    "subset_rollout": 0.0,
+    "normalization": 0.0,
+    "grid_score": 0.0,
+    "prediction": 0.0,
+    "headline": 4.445228907190568e-18
+  },
+  "prefix_cases_per_condition": 100,
+  "blocked_true_simulator_models": 3,
+  "future_and_privileged_field_poisoning_passed": true,
+  "mismatch_self_pairs": 0,
+  "reference_selections_verified": true,
+  "online_model_transition_counts_verified": true,
+  "runtime_cases_verified": 5600,
+  "source_hashes_unchanged": true,
+  "additional_fits": 0,
+  "seconds": 6.486396038999828
+}

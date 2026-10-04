@@ -1,0 +1,21 @@
+{
+  "condition": "m3119_a100",
+  "modes": [
+    "b8",
+    "b32",
+    "c",
+    "always_stop",
+    "always_continue"
+  ],
+  "cases": 32,
+  "repeats": 5,
+  "ms_per_case": {
+    "b8": 5.037668343760515,
+    "b32": 6.634102625014293,
+    "c": 2.760510781271819,
+    "always_stop": 1.3820224688458893,
+    "always_continue": 2.6678104374866507
+  },
+  "decision_mismatches": 0,
+  "plan_max_abs_error": 0.0
+}

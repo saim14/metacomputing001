@@ -1,3 +1,13 @@
+# F1-A3 — completed main comparison
+
+[Main study report](main_v1/F1_A3_Report.md) · [Protocol](main_v1/F1_A3_Protocol.md) · [Colab](main_v1/F1_A3_Colab.ipynb)
+
+Completed and audited on 4 October 2026: eight-candidate correction reduced MSE 4.34%, below the fixed 5% criterion; accuracy retention was unresolved. Its 0.51% charged controller improvement was inconclusive, and it remained slower than the reference. The primary candidate was not advanced.
+
+The original calibration-only pilot below is preserved as historical methods development. Its “not run” status describes that earlier checkpoint, not the completed main-v1 study.
+
+---
+
 # F1-A3 — Methods development
 
 Started 4 October 2026. **Main experiment: not run. Protocol: draft.**
@@ -26,3 +36,4 @@ python research002/experiments/F1_A3/cheap_bias.py
 ```
 
 Running `methods_pilot.py` refuses to replace an existing pilot result. Copy the F1-A3 sources into a new sibling directory, leave the saved JSON behind, and run the copied script to repeat the benchmark. The F1-A2 inputs are read-only.
+

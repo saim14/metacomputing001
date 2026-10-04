@@ -1,0 +1,9074 @@
+[
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023025153377970506,
+    "coefficients": 101
+  },
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00022577540809602954,
+    "coefficients": 101
+  },
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00027752495300500566,
+    "coefficients": 101
+  },
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005332335529683854,
+    "coefficients": 101
+  },
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0005524902161896112,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0005492184650680328,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0004844582371194376,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006436228288020517,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00022902307025199193,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00022874968039820958,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00030302789315531895,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005635776471641581,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023024960675233349,
+    "coefficients": 105
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002257648127775585,
+    "coefficients": 105
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00027733322694346006,
+    "coefficients": 105
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005323147636642094,
+    "coefficients": 105
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0005266812938889845,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0005228287349313058,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00044642267740270525,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006375270428880661,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00021224595399903763,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00020983837510382526,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00026855182425490317,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005439625610154528,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00020252627955167585,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00019763409413464398,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00027225376067535,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005292133414747024,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0005669814669099816,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.000564110056693864,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005121328910875702,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006470608753633651,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00025982425774524883,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00025695732858219746,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003046703150344846,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005641528839151411,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00021350168076423866,
+    "coefficients": 117
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00020256537970739601,
+    "coefficients": 117
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00026968349076134383,
+    "coefficients": 117
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005288533927368409,
+    "coefficients": 117
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0004772074162990985,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0004748064842349544,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00043239592437412544,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006378693374736817,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00020775911591459152,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.000202317267252268,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00027141250753834925,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005429072738806794,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00044255618955896004,
+    "coefficients": 805
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00025965471159200207,
+    "coefficients": 805
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00027892049524054827,
+    "coefficients": 805
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005329327994759493,
+    "coefficients": 805
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0005558160259278511,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0005518466130081165,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0004938171103250214,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006474527667876549,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00036631924610784877,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.000357327154674353,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003650932971633922,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006329328209703866,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0004420764229095141,
+    "coefficients": 809
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002594554443833113,
+    "coefficients": 809
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0002787388933459884,
+    "coefficients": 809
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005320174878424628,
+    "coefficients": 809
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006177383127489378,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006123654743145923,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.000511401925989941,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006461398976590662,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003569090944250719,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00034763195381767143,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00034708509365095945,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006216284489680781,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002446735173474118,
+    "coefficients": 317
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00021947711144018348,
+    "coefficients": 317
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00025307400011574004,
+    "coefficients": 317
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0004102912511505846,
+    "coefficients": 317
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0005894287625057271,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0005863228303443912,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005083722337178268,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006447561225250415,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003023620418320791,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002992158738401247,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0002987375979759728,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005524664715016932,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023025153377970338,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00022577540809602908,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00027752495300500566,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005332335529683854,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00045221209586928773,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0004500695674087907,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00042726419287200863,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006398405594058651,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023790412259423722,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00023365593454742375,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0002816561127821599,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005499617773541747,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023025153377970338,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00022577540809602908,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00027752495300500566,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005332335529683854,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00045221209586928773,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0004500695674087907,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00042726419287200863,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006398405594058651,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023790412259423722,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00023365593454742375,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0002816561127821599,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005499617773541747,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023025153377970338,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00022577540809602908,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00027752495300500566,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005332335529683854,
+    "coefficients": 113
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00045221209586928773,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0004500695674087907,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00042726419287200863,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006398405594058651,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023790412259423722,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00023365593454742375,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0002816561127821599,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005499617773541747,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023025153377970655,
+    "coefficients": 102
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00022577540809603025,
+    "coefficients": 102
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00027752495300500577,
+    "coefficients": 102
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005332335529683854,
+    "coefficients": 102
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0004952245604130702,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0004917779998183039,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00042635280590133716,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006386554153422288,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023892828736261736,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00023682421296250896,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00028365293990848,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005543334641172449,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002446735173474018,
+    "coefficients": 329
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00021947711144018248,
+    "coefficients": 329
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00025307400011573966,
+    "coefficients": 329
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0004102912511505846,
+    "coefficients": 329
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0005745389632734417,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0005716590768707969,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0004970402307732728,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006438492908603634,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00030606022922147495,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0003029892037095919,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00029827015649113624,
+    "coefficients": 129
+  },
+  {
+    "condition": "exact",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005378870653559416,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.010452729662786884,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.010195993269584178,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00998060718787187,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010158519173103906,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.01145671959463122,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.011417434728268193,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010382961849978228,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010271791002094598,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.010856176396187467,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.010666355062318833,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.009874359087783028,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010180937890409207,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.01045323132808452,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01019397547029982,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.009966916348805088,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010159325039372578,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011329208612489967,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.011297510429893447,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010399224844154415,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010269564192607631,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.010764172918278563,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.010624823772332597,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.009942087162462563,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01016933830751325,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.010763355028379197,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01030641047249774,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010006075057847461,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010155994978707405,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011266257289599868,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01122749007045224,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010306619695810405,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010276327565945393,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011157933553461721,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.010966790393553789,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010048434978032626,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010195867341734863,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011100945554745834,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01069156012529469,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010006343149606958,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010156419805568433,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011808183336238627,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0117631952602793,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010498966940508498,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010272352029549623,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011285793364174906,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01111036181084654,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010061302942929956,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010173052243769787,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.01902962213221513,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.011259863591658465,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.009901442570013026,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01024206762968746,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011104955775564704,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01106719023829243,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.01032878497380861,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01028172687356403,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.010476136457013095,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01036502649087673,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.009950504562731298,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010280312812076586,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.019172459939780277,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.011154598707562939,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.009881476918849002,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010242594145122701,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011202429227971418,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.011158534189960876,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010294839291956822,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010274277668311042,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.01047184226557928,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.010382609574559712,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.01004012160538575,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010273662221665179,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.01259916325342329,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.011424445377112936,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00989751797449045,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.009976595444304712,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.01073877498248252,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01071821234423948,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010191473216414249,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010276107983638339,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.010131578516458226,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.010091555908551226,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00999359776161446,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01017495141018498,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.007700795524784271,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00756824418054389,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00813243785039693,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01007628215008594,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.010349675010055877,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.010324814499750659,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00984895799178734,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010261921137213479,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.008688392016217471,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.008489334654987322,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.008333619541467056,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010117574079488989,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.007578813008534636,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.007482785910859047,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.008529264678618417,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01010475937132112,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011039490427126198,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.011007851806665565,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010238391054237064,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010273057542111441,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.008794223030851393,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.008611863241876357,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.008660568078468153,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010141921397118654,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.010526556119320905,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.010258924870872375,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010032497056050898,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01016053763504746,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011437334392668584,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.011398327531271435,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010431465026655191,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010279161133400631,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011726757949753476,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.011418180941768387,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010201796971830955,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010203755417234901,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.008131942284136691,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.007971052804769336,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.008838622308989425,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01013403667186766,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011229693239248854,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.011192504547488073,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.01027055100854308,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010268090825776996,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.008188810366227615,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.008131468323378965,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.008837925925365288,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010160932710270059,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.009316523395978443,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.008425211189668656,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.008432183287371267,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.009922251346943524,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.011009610102501762,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.010974984963931842,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010101704976790376,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010266980941075431,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.009218404621939283,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.009153997722222947,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.009028813362937333,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.010122676113986628,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.047220071790978764,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.046423602152748565,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.044310264788690316,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0432271812109326,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05058687479635094,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.05038528471192583,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04509013493767654,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043293830237353,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05029697247491607,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04920857007778126,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.044353409860544125,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0432617593177121,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0467441998988883,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04603443319199449,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04415516893716549,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043225690189363404,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.045696215071335027,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.045606107517485214,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04357354885394799,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043264091324745256,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04695585021007854,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04654917150645569,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04423776969876272,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04324180350603796,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.048906321240677286,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04791611087471079,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.044436278123329426,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04323366351893254,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04964482733885078,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04947409139486483,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04487101190230023,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043282611299335805,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.052247490341765165,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.051131760771961236,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.044817157629467586,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043243062856507385,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04767774478231766,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04666314645351163,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04426318771986042,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04322816045801237,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.047162233047247246,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04705320945089623,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.044214854068795564,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04327842155530021,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04858073163477199,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04771595735847683,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.044314543855827254,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0432131235284236,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.09324288420025356,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.05070064123148386,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04408050549157011,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04344181686734359,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04657267303803259,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.046428803014192416,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04367333896322654,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043260401172766055,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04579613864846471,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04537557381633002,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04355760642628906,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043308103108256,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0929438391181217,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.050356979464269376,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04390150581296913,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04344002900709229,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.045079923517509606,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.044933280416316564,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04272210423810085,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04323922718429762,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0478248399181602,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.047091703305691984,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04373568726149012,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04329867705216315,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05559166245450614,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0498683680262637,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04377905098543093,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04322418371700754,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.048013646503425864,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04787897954182486,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04424867845940355,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04327307959765818,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04583822112396633,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.045545608892996955,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04378160217726066,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043227312984169,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04341724574805968,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04257982511575321,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.041738129636599244,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04313067658835787,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05059670927333557,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.050370653966730884,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.044715821212879536,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043283459776151556,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04851309958601944,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04776355274455321,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.042663107291763466,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043159030894681545,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04368132605400083,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.042864147730712024,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04195321345033383,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043154713537344964,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04877941799636547,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.048618618061229274,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04449738328087607,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043279571620846474,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04918153959119856,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04797335565019344,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.042916489362737086,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04315821159236263,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04716203616041299,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0463591742324315,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04425797324955983,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04322299881370034,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04912937939271293,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04892598203751843,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0442539286781183,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043274141769379514,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.051096627528062266,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.050303032539207475,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.044419282867931356,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043224639682656045,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04507167919122897,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.044440202314344965,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04328800427238738,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043208429371975166,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04683877117010162,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04669665380856895,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.043646132356287524,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0432646459853075,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.04923624270977497,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0485092391027416,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.043965002645614655,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04322080394061945,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0523094371743408,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.046318296548968484,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04154061305478848,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04314897657863206,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.048903820680473296,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.04873820213892827,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.04426095326528308,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.04326295698520335,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.047151252682307174,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.046734756068271086,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.043566509047928095,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3109_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.043192702733642376,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013062121283111641,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.012836925026732672,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012244179956876704,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012411465362054883,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013848061111728866,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013810175891841636,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012760127093899705,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012529988010574145,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.014172428207053535,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013709311556888386,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012168358590240305,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012440901173367887,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.012947795488466913,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.012718286151925969,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012199346996599485,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01240869579219129,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.014758738528276598,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.014686699074937231,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012807992289521246,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012521709474570115,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013419300324348826,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013208312301405727,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012093899949031778,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012417269971957124,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013382387153058848,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013065171767487673,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012276428177054264,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012409481622262747,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013676201413452277,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013633088151004204,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012586350970533153,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012525405370695549,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013669283903009938,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01331899110464356,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012095986493649447,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012437952395237649,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013098150017327857,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.012838642342296884,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.01225534955776797,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012408189804865702,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013835646709289828,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013796573787802633,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012679474808213766,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012521914057711223,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.01372726595769215,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013444869528620628,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.01210519139477787,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012412776434775818,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.02722469893872928,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.014944221263058152,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.01232171566615109,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012408485150047055,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013702105139755059,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013662131679451068,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012743152191728108,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01253190179049397,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013312970858229911,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013121752859408897,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012256715362763102,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01251109477785314,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.027354053704457586,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.014785587474814487,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012265802539562892,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012406327092204636,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.014456714731354806,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01438410313577926,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012898518020021616,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0125327201026656,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013940174634231616,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01361658735142498,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012334107442344755,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01249964538028812,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.01638136915233359,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.014576850220373402,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.01222386926148197,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012198906404261798,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.014381366108664367,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.014327986581888491,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012819089002103365,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0125300625290904,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.014083764916586227,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013884365234960975,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.01223118508142984,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012417826274616177,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.009095725260075665,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.008873980617829147,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.009108842762150599,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012231230382247488,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013935191547355327,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013879130749821588,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012397417763179697,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0125057254342457,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.009741221602693832,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.009638325489317066,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.009419222642729864,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012257146459921788,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.01037761549298555,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.009920425976078024,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.009587129671205707,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.01227391517296502,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013836642680664344,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013774711783011961,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012314163268772327,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012506321445690137,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.010889307787469896,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.010809415490180486,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010293459627894746,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012314335845982008,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.01328748217047925,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013022619838832197,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012305679952809477,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012412897721961969,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013390500095922051,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013351179730872657,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012425757182029628,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012519320456267658,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013199181572753847,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01298136840274223,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.012079349144984892,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012430030451259509,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.008951449679724856,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.008755094981598292,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010121779858236778,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012362175383933867,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013164797229196754,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.013127202205923368,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.01223951799105097,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012506339673627829,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.010524648997350934,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.010325955732649258,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010377090135186335,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012371209972694332,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013162002968862923,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.011480740262030142,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00963216596080698,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012065287940492584,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.013651720370670946,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.01360184100548794,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0123920025018342,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012519170487908156,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.01274273493651076,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.012579703541141109,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.010926519873174327,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.012331294006100689,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05874570027384575,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0575660295761976,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.054230754530912424,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05307973970733215,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05849581492384228,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.05830728457546405,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05383027719693767,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053074054698738216,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.06505999499587718,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.06356364299196177,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05500639264339262,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05307113277566526,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0584981406103761,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.057361446088019026,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05411043652728541,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05307990297303231,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.058385402576431496,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.05817005365213961,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05379995944852167,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053085022502921415,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.06217422827262606,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.060790429588676365,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05433596775301707,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05306336558183971,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.058852370293017736,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.057909545758152436,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05433538799247195,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05308942554481586,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.06102823429302001,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.060778897268979296,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05485338341309597,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05310198504794258,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.06191661063808089,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.06116690634835145,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.054874903056594704,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053056678088002816,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.058836281582468376,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.05763973984746034,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05436366629940185,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05309021338790803,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.06269129537423802,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.06244519749982563,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05571090402841305,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0531192254473127,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05975152161311447,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.05903534767644789,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05407444939852022,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05304356456516181,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.15040719110914902,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.07328353890951163,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05442212022397285,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053205949189292036,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05987095679555081,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.05960172603272294,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05459478865296957,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053104270630848625,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.06132595056514146,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.060423999130918754,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05468596225977642,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05313955901140544,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.15105240542906764,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.07308556694535957,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05430401292249894,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05320640538020987,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05902921749085161,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.05881087584719861,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.054429282830008356,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05310380489395028,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.058787114261067266,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.05807116848058012,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05434105630361035,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053120153852013685,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.07880024265173184,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.06876430407341591,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.055294641630615315,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053228165482199226,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.06025235927507225,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.060055217945320524,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05467712088138451,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053096830629346295,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.06267883039494088,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.061391471401752044,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.054100633787046604,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05311540442789869,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05639467473397412,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.055362902787656786,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05284382967265561,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05300283144163929,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0633341447423165,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.06303768548795396,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05528098042983128,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053093900063705686,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.058384388038062285,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.05778210945730437,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.052950670226600646,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053016367522741026,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.062266402490097426,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.06079530133747259,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.055652637622129755,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05307831017012201,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.062736683384616,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.06245030236171305,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.055033468729145524,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053084145757769034,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.06315719169776024,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.06242739021049577,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05503177652562268,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053053869310304765,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.058794790037255545,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.05766906916988992,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.054287326447695336,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05308126564197096,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05873083573799292,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.058543642827429826,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05406639353494146,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05308514622950335,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.059296184236560405,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.058732709304307615,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05428510215493057,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053054123266350714,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0606136564430723,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.059261764282281575,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.054475380146099504,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05307801608641353,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.05975238356984157,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.059514797934566085,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05406238857609651,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053082635609581555,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.061921289743934155,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.061140975690172364,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05469850661644364,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05305647833011228,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.08068635612237145,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.07149652735219328,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05673370847012892,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05322467136621734,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.06134795288152976,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.061128246794453,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.05503490005495809,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.053099677379236675,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0638136598291463,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0631216581560519,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0553901341171478,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3119_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.05309341978383511,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00025908427397179043,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00025715885280062787,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003228225956566424,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006774015755982828,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006638700689931509,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006611685187910239,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0006179817289680585,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.00081033887979405,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00024177118421584877,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00024470610333190653,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00034004563933247105,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.000713006000775868,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00025650062592821844,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002547323753413575,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003218179051597574,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006763758396606124,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006808601102852209,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006776064324399761,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0006130447467216017,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.00080577645264767,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00025712911922834804,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00025720337580704717,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00032766126774083485,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006930591386381109,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023253509854987567,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00023213925192032092,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00031932509699743046,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006725482091151973,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006523666168829485,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006506887847416034,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0006334969521166318,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0008131622677984623,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00026654161832977136,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002646831111138417,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003445501493342523,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007152166561126268,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00023358916464097065,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00023320717800282519,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00031857784490306863,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.000672441258198318,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006438390241220324,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.000641460881616948,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005952908012589508,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0008062596849050828,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002598694990332026,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00025880593637755354,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003277313519372588,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006936714307247989,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00044443408565698797,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00027895008236444434,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003230502704742502,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006761447470113269,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006637657760877256,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006600805491212744,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0006254246899010865,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0008147654901780851,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003860758640886851,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.000382162853758217,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00043841252033559026,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007978390196367181,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00044341451472520874,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002767182362954038,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003220333458973858,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006751330768499394,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0007537338147199696,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0007489177609448505,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0006587187569008591,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0008135588950631016,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0004060232874213315,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00039844562856499816,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0004195770636465995,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007844315795390093,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00026143170276598035,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002507711522111133,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0002991326811224859,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005328126867926616,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006433118198323659,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006417656733011346,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0006181220238395423,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0008113276618155808,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003524383119818999,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00034864838843200603,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00035579361538109566,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007088016400276019,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00024638526225001506,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00024409943152829344,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003097335085323074,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006754599491048069,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006783276307543734,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006749369638460263,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0006186920750866494,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.000810611678268183,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00030511582468342095,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002930593363962905,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003091816713981218,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006999338872189436,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00025856085392116107,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00025599881839255637,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00031807273589667734,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006767058319336516,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006930751316518211,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006902543432651392,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0006394988262286873,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0008112914039006525,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002875940853286176,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00027559369898619084,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003218414489218574,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007028303962357522,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002659776937101496,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00026164961362082654,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003246163824062173,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006774101824660563,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006764152689650378,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006727954732685541,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0006131727340502796,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0008104002488270992,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003019371897416559,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002978258291725427,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003564893768077858,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007095208110681743,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002519916750366969,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00024925703723806773,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003153774266598515,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006764454789650341,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006317249526408787,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006284271424781049,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005784212124447453,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0008067140253294161,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002820772447508849,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00027832279598228584,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003230774671142056,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007021534504574696,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00026499117452212983,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00024835714133848404,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0002936477142152006,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0005325328037874579,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006545739433808684,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006524185583965011,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0006159177821347629,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0008116186352418003,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003547544281240672,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0003504218057297695,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003291196997821285,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a50",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006868689079302803,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00027732406378193304,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00027190243309139166,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003250660479683404,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006208885936792505,
+    "coefficients": 101
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006792886375808621,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006751959112482539,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.000587689015037537,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007465042094234861,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002576837084379772,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002620623172840169,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00035065204013710335,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "c",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006530956227014058,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00027608203096112486,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00027112411529116727,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00032467194715457277,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006200248714959304,
+    "coefficients": 105
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006352002926202117,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006315175655701013,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005602011034497724,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007423378325033967,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00027675613485696795,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00027594217485023146,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00032374016360237783,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cr",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.000632738916958493,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002508667346182961,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00024518890194907063,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003194038888273836,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.000616086781816994,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.000603252127327061,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006010994291510335,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005733863476014312,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007489658606060668,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00030882737776519436,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0003042204787484867,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00034281427836523883,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "ce",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006537910610088492,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.000254614798630049,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002487363699372621,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00031900892500701035,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006160484843527815,
+    "coefficients": 117
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0005966126108327948,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0005940355862149103,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005403397667250636,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007422044890233894,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002682783081628055,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00026638520832201963,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00033250816294167206,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "cre",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006376720019619622,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0004862094336030237,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0003023504321056548,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003245756938408928,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006195048483580923,
+    "coefficients": 805
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006470547702790766,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006425047333513246,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005896782187949156,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.000751402190433553,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003873977782536314,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00037908814256913323,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00041586204232736733,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "craw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007347979391621803,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0004817885590780387,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00030169232439028167,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003242127630127458,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006186258940690026,
+    "coefficients": 809
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0007217083455766388,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00071741341728581,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0006314824782462033,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007511204067402444,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003917312823680205,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00038343439084182027,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00040333830403876963,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "crraw",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007244381357266847,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003144006712876839,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00028170176602544217,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00030368225973548426,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0004908888165441362,
+    "coefficients": 317
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006585646777823822,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006559256820024312,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005957229568741388,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007485657700511106,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003464553446789027,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0003433412656794653,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003448959120219385,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "x",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006501088993184648,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002513338237329857,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00024008350488870806,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0002888172631513905,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006177912267382751,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006148117145023204,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006119924000757902,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005609743569241811,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007461374926369044,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00028351080416272664,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00027110633094881774,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0002963451104491644,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b32",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006426744350684274,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00025411690713428547,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002451970652661495,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003036059994660819,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.00061906153503648,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006242408934467828,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006213995160157726,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.000574526177177,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007471626080951395,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003011129918423711,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0002893550730922524,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003226347599735813,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006472040983935973,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0002774474152409611,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.000271355309065872,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003245163680907276,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006212068511226527,
+    "coefficients": 113
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006258709188127521,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006233597895118088,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005832360511294498,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007485641085384129,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.000329557937800503,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00032282154219014493,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00034086959615502497,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "mb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006478390882921073,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00025836680110477106,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00024726377869350324,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003038299010252579,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006194362013252218,
+    "coefficients": 102
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006020608739584333,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0005988059117591476,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005442337718454189,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.00074353993142779,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00026674010847986735,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00026298192244362433,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003113180540101691,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "b1",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006448374190295873,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0003037818802654164,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00026514752176185895,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.00028478459540039067,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 0,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0004896128700047533,
+    "coefficients": 329
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.0006549748606130754,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.0006523252832276077,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0005893151652268198,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 1,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0007483336089918068,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 0,
+    "alpha": 0.0001,
+    "tuning_mse": 0.00035103477520240234,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 1,
+    "alpha": 0.01,
+    "tuning_mse": 0.00034621416502275335,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 2,
+    "alpha": 1.0,
+    "tuning_mse": 0.0003324858619216843,
+    "coefficients": 129
+  },
+  {
+    "condition": "m3137_a100",
+    "arm": "xb8",
+    "basis_index": 2,
+    "alpha_index": 3,
+    "alpha": 100.0,
+    "tuning_mse": 0.0006365707618440764,
+    "coefficients": 129
+  }
+]

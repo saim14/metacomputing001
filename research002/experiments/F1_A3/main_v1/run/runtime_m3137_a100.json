@@ -1,0 +1,21 @@
+{
+  "condition": "m3137_a100",
+  "modes": [
+    "b8",
+    "b32",
+    "x",
+    "always_stop",
+    "always_continue"
+  ],
+  "cases": 32,
+  "repeats": 5,
+  "ms_per_case": {
+    "b8": 4.490621000030615,
+    "b32": 6.588047656236995,
+    "x": 2.665232531214201,
+    "always_stop": 1.4666024375031839,
+    "always_continue": 2.776643406306789
+  },
+  "decision_mismatches": 0,
+  "plan_max_abs_error": 0.0
+}
